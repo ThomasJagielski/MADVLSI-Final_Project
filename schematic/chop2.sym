@@ -1,8 +1,8 @@
 v {xschem version=2.9.9 file_version=1.2 }
 G {}
 K {type=subcircuit
-format="@name @pinlist @symname"
-template="name=X1"}
+format="@name @pinlist @symname Wp=@Wp Lp=@Lp WW=@WW LL=@LL"
+template="name=X1 Wp=1 Lp=0.15 WW=1 LL=0.15"}
 V {}
 S {}
 E {}
@@ -30,3 +30,5 @@ B 5 27.5 177.5 32.5 182.5 {name=nCLK
 dir=in}
 A 4 30 152.1875 1.397542485937369 153.434948822922 360 {}
 T {@name} -70 -155 0 0 0.2 0.2 {}
+T {P @Wp / @Lp
+N @WW / @LL} -27.5 -167.5 0 0 0.2 0.2 {layer=13}
