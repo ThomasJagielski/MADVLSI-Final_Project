@@ -30,16 +30,16 @@ N 180 -580 180 -540 { lab=Vref}
 N 180 -230 180 -180 { lab=Vref}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 290 -390 0 0 {name=X1}
 C {madvlsi/capacitor.sym} 230 -420 1 0 {name=C1
-value=10f
+value=160f
 m=1}
 C {madvlsi/capacitor.sym} 230 -360 1 0 {name=C2
-value=10f
+value=160f
 m=1}
 C {madvlsi/capacitor.sym} 410 -590 1 0 {name=C3
-value=160f
+value=10f
 m=1}
 C {madvlsi/capacitor.sym} 410 -220 1 0 {name=C4
-value=160f
+value=10f
 m=1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 130 -420 2 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 130 -360 0 0 {name=X3}
@@ -72,9 +72,9 @@ C {devices/lab_pin.sym} 370 -310 3 0 {name=l22 sig_type=std_logic lab=Vb}
 C {madvlsi/vsource.sym} -360 -570 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/vsource.sym} -200 -570 0 0 {name=V1
-value=0.9}
+value=0.3}
 C {madvlsi/vsource.sym} -120 -570 0 0 {name=V2
-value="pwl(0, 0, 5m, 0, 15m, 1.8)" }
+value="pwl(0, 0, 5u, 0, 15u, 1.8)" }
 C {madvlsi/gnd.sym} -360 -540 0 0 {name=l23 lab=GND}
 C {madvlsi/gnd.sym} -200 -540 0 0 {name=l24 lab=GND}
 C {madvlsi/gnd.sym} -120 -540 0 0 {name=l25 lab=GND}
@@ -82,7 +82,7 @@ C {madvlsi/vdd.sym} -360 -600 0 0 {name=l26 lab=VDD}
 C {devices/lab_pin.sym} -200 -600 1 0 {name=l27 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} -120 -600 1 0 {name=l28 sig_type=std_logic lab=V2}
 C {madvlsi/vsource.sym} -500 -380 0 0 {name=Vphi1
-value="pulse(0, 1.8, 0, 0.5u, 0.5u, 1u, 10u)"}
+value="pulse(0, 1.8, 0, 0.5n, 0.5n, 0.5u, 1u)"}
 C {madvlsi/gnd.sym} -500 -350 0 0 {name=l29 lab=GND}
 C {devices/lab_pin.sym} -500 -410 1 0 {name=l30 sig_type=std_logic lab=Vphi1}
 C {madvlsi/isource.sym} -280 -570 0 0 {name=VIb
@@ -101,11 +101,11 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 730 -350 0 0 {name=SPICE only_toplevel=false value=".tran 0.5m 20m
+C {devices/code_shown.sym} 730 -350 0 0 {name=SPICE only_toplevel=false value=".tran 0.5u 20u
 .save v(Vout) v(V1) v(V2) v(Vphi1) v(Vnphi1) v(Vphi2) v(Vnphi2)"
 }
 C {madvlsi/vsource.sym} -220 -380 0 0 {name=Vphi2
-value="pulse(1.8, 0, 0, 0.5u, 0.5u, 5u, 10u)"}
+value="pulse(1.8, 0, 0, 0.5n, 0.5n, 0.1u, 1u)"}
 C {madvlsi/gnd.sym} -220 -350 0 0 {name=l33 lab=GND}
 C {devices/lab_pin.sym} -220 -410 1 0 {name=l34 sig_type=std_logic lab=Vphi2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -220 -190 0 0 {name=X9}
