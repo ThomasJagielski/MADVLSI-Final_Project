@@ -74,7 +74,7 @@ value=1.8}
 C {madvlsi/vsource.sym} -200 -570 0 0 {name=V1
 value=0.9}
 C {madvlsi/vsource.sym} -120 -570 0 0 {name=V2
-value="pwl(0, 0, 1m, 0, 11m, 1.8)" }
+value="pwl(0, 0, 5m, 0, 15m, 1.8)" }
 C {madvlsi/gnd.sym} -360 -540 0 0 {name=l23 lab=GND}
 C {madvlsi/gnd.sym} -200 -540 0 0 {name=l24 lab=GND}
 C {madvlsi/gnd.sym} -120 -540 0 0 {name=l25 lab=GND}
@@ -82,7 +82,7 @@ C {madvlsi/vdd.sym} -360 -600 0 0 {name=l26 lab=VDD}
 C {devices/lab_pin.sym} -200 -600 1 0 {name=l27 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} -120 -600 1 0 {name=l28 sig_type=std_logic lab=V2}
 C {madvlsi/vsource.sym} -500 -380 0 0 {name=Vphi1
-value="pulse(0, 1.8, 0, 0.1n, 0.1n, 0.5u, 1u)"}
+value="pulse(0, 1.8, 0, 0.5u, 0.5u, 1u, 10u)"}
 C {madvlsi/gnd.sym} -500 -350 0 0 {name=l29 lab=GND}
 C {devices/lab_pin.sym} -500 -410 1 0 {name=l30 sig_type=std_logic lab=Vphi1}
 C {madvlsi/isource.sym} -280 -570 0 0 {name=VIb
@@ -102,10 +102,10 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code_shown.sym} 730 -350 0 0 {name=SPICE only_toplevel=false value=".tran 0.5m 20m
-.save all"
+.save v(Vout) v(V1) v(V2) v(Vphi1) v(Vnphi1) v(Vphi2) v(Vnphi2)"
 }
 C {madvlsi/vsource.sym} -220 -380 0 0 {name=Vphi2
-value="pulse(1.8, 0, 0, 0.5n, 0.5n, 0.5u, 1u)"}
+value="pulse(1.8, 0, 0, 0.5u, 0.5u, 5u, 10u)"}
 C {madvlsi/gnd.sym} -220 -350 0 0 {name=l33 lab=GND}
 C {devices/lab_pin.sym} -220 -410 1 0 {name=l34 sig_type=std_logic lab=Vphi2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -220 -190 0 0 {name=X9}
@@ -113,3 +113,7 @@ C {madvlsi/vdd.sym} -220 -230 0 0 {name=l35 lab=VDD}
 C {madvlsi/gnd.sym} -220 -150 0 0 {name=l36 lab=GND}
 C {devices/lab_pin.sym} -260 -190 0 0 {name=l37 sig_type=std_logic lab=Vphi2}
 C {devices/lab_pin.sym} -160 -190 2 0 {name=l38 sig_type=std_logic lab=Vnphi2}
+C {madvlsi/vsource.sym} -430 -570 0 0 {name=Vref
+value=0.9}
+C {madvlsi/gnd.sym} -430 -540 0 0 {name=l39 lab=GND}
+C {devices/lab_pin.sym} -430 -600 1 0 {name=l40 sig_type=std_logic lab=Vref}
