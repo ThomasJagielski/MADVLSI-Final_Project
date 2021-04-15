@@ -96,7 +96,7 @@ N 1280 -810 1300 -810 { lab=#net9}
 N 1420 -940 1440 -940 { lab=#net9}
 N 1420 -940 1420 -810 { lab=#net9}
 N 1420 -810 1440 -810 { lab=#net9}
-N 1510 -940 1510 -810 { lab=#net10}
+N 1510 -940 1510 -810 { lab=Vout}
 N 1080 -880 1200 -880 { lab=#net8}
 N 1300 -890 1420 -890 { lab=#net9}
 N 1360 -890 1360 -880 { lab=#net9}
@@ -104,64 +104,66 @@ N 860 -890 980 -890 { lab=#net7}
 N 860 190 980 190 { lab=#net2}
 N 1300 190 1420 190 { lab=#net4}
 N 1360 190 1360 200 { lab=#net4}
-N 440 -110 440 -100 { lab=#net11}
-N 440 -110 580 -110 { lab=#net11}
-N 580 -110 580 -100 { lab=#net11}
-N 440 -210 440 -200 { lab=#net11}
-N 440 -200 580 -200 { lab=#net11}
-N 580 -210 580 -200 { lab=#net11}
-N 510 -200 510 -110 { lab=#net11}
-N 440 -390 440 -380 { lab=#net12}
-N 440 -380 580 -380 { lab=#net12}
-N 580 -390 580 -380 { lab=#net12}
-N 440 -280 440 -270 { lab=#net12}
-N 440 -280 580 -280 { lab=#net12}
-N 580 -280 580 -270 { lab=#net12}
-N 510 -380 510 -280 { lab=#net12}
-N 440 -460 440 -450 { lab=#net13}
-N 440 -460 580 -460 { lab=#net13}
-N 580 -460 580 -450 { lab=#net13}
-N 440 -570 440 -560 { lab=#net13}
-N 440 -560 580 -560 { lab=#net13}
-N 580 -570 580 -560 { lab=#net13}
-N 510 -560 510 -460 { lab=#net13}
-N 440 -750 440 -740 { lab=#net14}
-N 440 -740 580 -740 { lab=#net14}
-N 580 -750 580 -740 { lab=#net14}
-N 440 -640 440 -630 { lab=#net14}
-N 440 -640 580 -640 { lab=#net14}
-N 580 -640 580 -630 { lab=#net14}
-N 510 -740 510 -640 { lab=#net14}
+N 440 -110 440 -100 { lab=#net10}
+N 440 -110 580 -110 { lab=#net10}
+N 580 -110 580 -100 { lab=#net10}
+N 440 -210 440 -200 { lab=#net10}
+N 440 -200 580 -200 { lab=#net10}
+N 580 -210 580 -200 { lab=#net10}
+N 510 -200 510 -110 { lab=#net10}
+N 440 -390 440 -380 { lab=#net11}
+N 440 -380 580 -380 { lab=#net11}
+N 580 -390 580 -380 { lab=#net11}
+N 440 -280 440 -270 { lab=#net11}
+N 440 -280 580 -280 { lab=#net11}
+N 580 -280 580 -270 { lab=#net11}
+N 510 -380 510 -280 { lab=#net11}
+N 440 -460 440 -450 { lab=#net12}
+N 440 -460 580 -460 { lab=#net12}
+N 580 -460 580 -450 { lab=#net12}
+N 440 -570 440 -560 { lab=#net12}
+N 440 -560 580 -560 { lab=#net12}
+N 580 -570 580 -560 { lab=#net12}
+N 510 -560 510 -460 { lab=#net12}
+N 440 -750 440 -740 { lab=#net13}
+N 440 -740 580 -740 { lab=#net13}
+N 580 -750 580 -740 { lab=#net13}
+N 440 -640 440 -630 { lab=#net13}
+N 440 -640 580 -640 { lab=#net13}
+N 580 -640 580 -630 { lab=#net13}
+N 510 -740 510 -640 { lab=#net13}
 N 300 -860 760 -860 { lab=#net6}
 N 440 -820 440 -810 { lab=#net6}
 N 440 -820 580 -820 { lab=#net6}
 N 580 -820 580 -810 { lab=#net6}
 N 510 -860 510 -820 { lab=#net6}
-N 1500 -810 1510 -810 { lab=#net10}
-N 1500 -940 1510 -940 { lab=#net10}
-N 80 -830 120 -830 { lab=#net13}
-N 80 -830 80 -510 { lab=#net13}
-N 80 -510 510 -510 { lab=#net13}
-N 80 -150 510 -150 { lab=#net11}
-N 80 -150 80 230 { lab=#net11}
-N 80 230 120 230 { lab=#net11}
-N 40 170 120 170 { lab=#net15}
-N 40 -890 120 -890 { lab=#net16}
-N 1150 -340 1150 200 { lab=#net3}
-N 1150 -340 1280 -340 { lab=#net3}
-N 1150 -880 1150 -400 { lab=#net8}
-N 1150 -400 1280 -400 { lab=#net8}
-N 1460 -370 1740 -370 { lab=#net10}
-N 1510 -870 1620 -870 { lab=#net10}
-N 1620 -870 1620 -370 { lab=#net10}
+N 1500 -810 1510 -810 { lab=Vout}
+N 1500 -940 1510 -940 { lab=Vout}
+N 80 -830 120 -830 { lab=#net12}
+N 80 -830 80 -510 { lab=#net12}
+N 80 -510 510 -510 { lab=#net12}
+N 80 -150 510 -150 { lab=#net10}
+N 80 -150 80 230 { lab=#net10}
+N 80 230 120 230 { lab=#net10}
+N 40 170 120 170 { lab=V2}
+N 40 -890 120 -890 { lab=V1}
+N 1460 -370 1740 -370 { lab=Vout}
+N 1510 -870 1620 -870 { lab=Vout}
+N 1620 -870 1620 -370 { lab=Vout}
 N 1520 200 1620 200 { lab=GND}
 N 1620 200 1620 230 { lab=GND}
-N 680 -350 680 -340 { lab=#net12}
-N 510 -350 680 -350 { lab=#net12}
-N 680 -710 680 -700 { lab=#net14}
-N 510 -710 680 -710 { lab=#net14}
-N 680 -0 680 10 {}
-N 510 -0 680 -0 {}
+N 680 -350 680 -340 { lab=#net11}
+N 510 -350 680 -350 { lab=#net11}
+N 680 -710 680 -700 { lab=#net13}
+N 510 -710 680 -710 { lab=#net13}
+N 680 -0 680 10 { lab=#net5}
+N 510 -0 680 -0 { lab=#net5}
+N 1150 -400 1150 200 { lab=#net3}
+N 1150 -400 1280 -400 { lab=#net3}
+N 1130 -880 1130 -480 { lab=#net8}
+N 1130 -480 1200 -480 { lab=#net8}
+N 1200 -480 1200 -340 { lab=#net8}
+N 1200 -340 1280 -340 { lab=#net8}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 90 -860 0 0 {name=X1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 90 200 0 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1250 -370 0 0 {name=X3}
@@ -202,7 +204,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 680 -310 0 0 {name=C1
-value=1p
+value=1.5p
 m=1}
 C {madvlsi/pmos3.sym} 440 -240 0 0 {name=M3
 L=0.15
@@ -265,7 +267,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 680 -670 0 0 {name=C2
-value=1p
+value=200f
 m=1}
 C {madvlsi/pmos3.sym} 440 -600 0 0 {name=M7
 L=0.15
@@ -328,7 +330,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 680 40 0 0 {name=C3
-value=1p
+value=200f
 m=1}
 C {madvlsi/pmos3.sym} 440 110 0 0 {name=M11
 L=0.15
@@ -391,7 +393,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 920 -850 0 0 {name=C4
-value=1p
+value=200f
 m=1}
 C {madvlsi/pmos3.sym} 1030 -940 1 0 {name=M15
 L=0.15
@@ -454,7 +456,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 1360 -850 0 0 {name=C5
-value=1p
+value=200f
 m=1}
 C {madvlsi/pmos3.sym} 1470 -940 1 0 {name=M19
 L=0.15
@@ -517,7 +519,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 920 230 0 0 {name=C6
-value=1p
+value=200f
 m=1}
 C {madvlsi/pmos3.sym} 1030 140 1 0 {name=M23
 L=0.15
@@ -580,7 +582,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 1360 230 0 0 {name=C7
-value=1p
+value=200f
 m=1}
 C {madvlsi/pmos3.sym} 1470 140 1 0 {name=M27
 L=0.15
@@ -620,3 +622,72 @@ C {madvlsi/gnd.sym} 1360 -820 0 0 {name=l11 lab=GND}
 C {madvlsi/gnd.sym} 920 260 0 0 {name=l12 lab=GND}
 C {madvlsi/gnd.sym} 1360 260 0 0 {name=l13 lab=GND}
 C {madvlsi/gnd.sym} 1620 230 0 0 {name=l14 lab=GND}
+C {madvlsi/vsource.sym} -480 -310 0 0 {name=Vdd
+value=1.8}
+C {madvlsi/vsource.sym} -320 -310 0 0 {name=V1
+value=0.9}
+C {madvlsi/vsource.sym} -240 -310 0 0 {name=V2
+value="pwl 0 0 20n 0 30n 1.8" }
+C {madvlsi/gnd.sym} -480 -280 0 0 {name=l15 lab=GND}
+C {madvlsi/gnd.sym} -320 -280 0 0 {name=l16 lab=GND}
+C {madvlsi/gnd.sym} -240 -280 0 0 {name=l17 lab=GND}
+C {madvlsi/vdd.sym} -480 -340 0 0 {name=l18 lab=VDD}
+C {devices/lab_pin.sym} -320 -340 1 0 {name=l19 sig_type=std_logic lab=V1}
+C {devices/lab_pin.sym} -240 -340 1 0 {name=l20 sig_type=std_logic lab=V2}
+C {devices/lab_pin.sym} 40 -890 0 0 {name=l21 sig_type=std_logic lab=V1}
+C {devices/lab_pin.sym} 40 170 0 0 {name=l22 sig_type=std_logic lab=V2}
+C {madvlsi/vsource.sym} -480 -110 0 0 {name=Vphi1
+value="pulse(0, 1.8, 0, 0.1n, 0.1n, 2n, 4n)"}
+C {madvlsi/gnd.sym} -480 -80 0 0 {name=l23 lab=GND}
+C {devices/lab_pin.sym} -480 -140 1 0 {name=l24 sig_type=std_logic lab=Vphi1}
+C {madvlsi/isource.sym} -400 -310 0 0 {name=VIb
+value=1m}
+C {madvlsi/gnd.sym} -400 -280 0 0 {name=l27 lab=GND}
+C {devices/lab_pin.sym} -400 -340 1 0 {name=l28 sig_type=std_logic lab=VIb}
+C {devices/lab_pin.sym} 170 -780 3 0 {name=l29 sig_type=std_logic lab=VIb}
+C {devices/lab_pin.sym} 1330 -290 3 0 {name=l30 sig_type=std_logic lab=VIb}
+C {devices/lab_pin.sym} 170 280 3 0 {name=l31 sig_type=std_logic lab=VIb}
+C {devices/lab_pin.sym} 610 -780 2 0 {name=l32 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 610 -420 2 0 {name=l33 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 610 -70 2 0 {name=l34 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 810 300 3 0 {name=l35 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 1250 300 3 0 {name=l36 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 810 -780 3 0 {name=l37 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 1250 -780 3 0 {name=l38 sig_type=std_logic lab=Vphi1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -480 80 0 0 {name=X4}
+C {madvlsi/vdd.sym} -480 40 0 0 {name=l46 lab=VDD}
+C {madvlsi/gnd.sym} -480 120 0 0 {name=l47 lab=GND}
+C {devices/lab_pin.sym} -520 80 0 0 {name=l48 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} -420 80 2 0 {name=l49 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 410 -420 0 0 {name=l54 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 410 -70 0 0 {name=l55 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 410 -780 0 0 {name=l56 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 810 -970 1 0 {name=l57 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1250 -970 1 0 {name=l58 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 810 110 1 0 {name=l59 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1250 110 1 0 {name=l60 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1740 -370 2 0 {name=l68 sig_type=std_logic lab=Vout}
+C {madvlsi/tt_models.sym} 2040 -370 0 0 {
+name=TT_MODELS
+only_toplevel=false
+value=".option wnflag=1
+.param MC_SWITCH=0.0
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
+}
+C {devices/code_shown.sym} 2050 -180 0 0 {name=SPICE only_toplevel=false value=".tran 0.5n 75n
+.save all"
+}
+C {devices/lab_pin.sym} 410 -600 0 0 {name=l39 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 610 -600 2 0 {name=l40 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 410 -240 0 0 {name=l41 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 610 -240 2 0 {name=l42 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 410 110 0 0 {name=l43 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 610 110 2 0 {name=l44 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1030 300 3 0 {name=l45 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1030 110 1 0 {name=l61 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 1470 300 3 0 {name=l62 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1470 110 1 0 {name=l63 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 1030 -780 3 0 {name=l64 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1030 -970 1 0 {name=l65 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 1470 -780 3 0 {name=l66 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 1470 -970 1 0 {name=l67 sig_type=std_logic lab=Vphi1}
