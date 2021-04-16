@@ -66,8 +66,8 @@ N 1080 -690 1150 -690 { lab=Vg2}
 N 1150 -690 1150 -550 { lab=Vg2}
 N 790 -690 860 -690 { lab=Vg1}
 N 790 -690 790 -550 { lab=Vg1}
-N -310 -640 -310 -610 { lab=Vb}
-N -310 -610 -280 -610 { lab=Vb}
+N -310 -630 -310 -600 { lab=Vb}
+N -310 -600 -280 -600 { lab=Vb}
 N 550 -220 1620 -220 { lab=Voutp}
 N 1620 -700 1620 -220 { lab=Voutp}
 N 160 -870 160 -850 { lab=#net9}
@@ -89,6 +89,20 @@ N 1870 -610 1920 -610 { lab=#net11}
 N 1870 -840 1870 -610 { lab=#net11}
 N 1310 -770 2020 -770 { lab=#net7}
 N 2050 -740 2050 -610 { lab=Voutn}
+N 2580 -410 2580 -400 { lab=#net12}
+N 2470 -410 2490 -410 { lab=#net13}
+N 2260 -440 2290 -440 { lab=Voutp}
+N 2910 -440 2940 -440 { lab=Vout}
+N 2260 -380 2290 -380 { lab=#net13}
+N 2260 -380 2260 -240 { lab=#net13}
+N 2470 -410 2470 -240 { lab=#net13}
+N 2260 -240 2470 -240 { lab=#net13}
+N 2690 -410 2730 -410 { lab=#net12}
+N 2690 -410 2690 -280 { lab=#net12}
+N 2930 -440 2930 -280 { lab=Vout}
+N 2690 -280 2780 -280 { lab=#net12}
+N 2840 -280 2930 -280 { lab=Vout}
+N 2550 -410 2690 -410 { lab=#net12}
 C {madvlsi/capacitor.sym} 230 -420 1 0 {name=C1
 value=1600f
 m=1}
@@ -425,8 +439,8 @@ C {madvlsi/vsource.sym} -730 -380 0 0 {name=Vc1
 value="pwl(0, 3, 0.95u, 3, 0.96u, 0, 25u, 0)"}
 C {madvlsi/gnd.sym} -730 -350 0 0 {name=l60 lab=GND}
 C {devices/lab_pin.sym} -730 -410 1 0 {name=l61 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} -310 -640 1 0 {name=l31 sig_type=std_logic lab=Vb}
-C {madvlsi/pmos3.sym} -280 -640 0 0 {name=M5
+C {devices/lab_pin.sym} -310 -630 1 0 {name=l31 sig_type=std_logic lab=Vb}
+C {madvlsi/pmos3.sym} -280 -630 0 0 {name=M5
 L=1
 W=5
 body=VDD
@@ -441,10 +455,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/isource.sym} -280 -580 0 0 {name=I1
+C {madvlsi/isource.sym} -280 -570 0 0 {name=I1
 value=1u}
-C {madvlsi/vdd.sym} -280 -670 0 0 {name=l32 lab=VDD}
-C {madvlsi/gnd.sym} -280 -550 0 0 {name=l62 lab=GND}
+C {madvlsi/vdd.sym} -280 -660 0 0 {name=l32 lab=VDD}
+C {madvlsi/gnd.sym} -280 -540 0 0 {name=l62 lab=GND}
 C {madvlsi/pmos3.sym} 160 -900 0 0 {name=M7
 L=1
 W=5
@@ -558,3 +572,24 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 2050 -550 0 0 {name=l68 lab=GND}
 C {devices/lab_pin.sym} 2050 -680 2 0 {name=l69 sig_type=std_logic lab=Voutn}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 2260 -410 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 2700 -440 0 0 {name=X10}
+C {madvlsi/capacitor.sym} 2580 -370 0 0 {name=C5
+value=1600f
+m=1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2520 -410 0 0 {name=X11}
+C {devices/lab_pin.sym} 2510 -390 3 0 {name=l70 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 2530 -390 3 0 {name=l71 sig_type=std_logic lab=Vnphi1}
+C {madvlsi/gnd.sym} 2580 -340 0 0 {name=l72 lab=GND}
+C {madvlsi/gnd.sym} 2370 -310 0 0 {name=l73 lab=GND}
+C {madvlsi/gnd.sym} 2810 -340 0 0 {name=l74 lab=GND}
+C {madvlsi/vdd.sym} 2370 -510 0 0 {name=l75 lab=VDD}
+C {madvlsi/vdd.sym} 2810 -540 0 0 {name=l76 lab=VDD}
+C {devices/lab_pin.sym} 2940 -440 2 0 {name=l77 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 2260 -440 0 0 {name=l78 sig_type=std_logic lab=Voutp}
+C {devices/lab_pin.sym} 2340 -330 3 0 {name=l79 sig_type=std_logic lab=Vb}
+C {devices/lab_pin.sym} 2780 -360 3 0 {name=l80 sig_type=std_logic lab=Vb}
+C {madvlsi/capacitor.sym} 2810 -280 1 0 {name=C6
+value=800f
+m=1}
+C {madvlsi/gnd.sym} 2730 -470 1 0 {name=l81 lab=GND}
