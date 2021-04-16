@@ -7,6 +7,8 @@ E {}
 N -20 -0 60 -0 { lab=Vout}
 N -420 -0 -420 130 { lab=Vin}
 N -420 -0 -140 -0 { lab=Vin}
+N -140 -0 -110 0 {}
+N -50 0 -20 -0 {}
 C {madvlsi/capacitor.sym} 60 30 0 0 {name=C1
 value=1p
 m=1}
@@ -23,8 +25,8 @@ C {madvlsi/gnd.sym} -50 200 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} -330 130 1 0 {name=l5 sig_type=std_logic lab=vCLK}
 C {devices/lab_pin.sym} -150 140 1 0 {name=l6 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -50 140 1 0 {name=l7 sig_type=std_logic lab=nCLK}
-C {devices/lab_pin.sym} -60 30 3 0 {name=l8 sig_type=std_logic lab=nCLK}
-C {devices/lab_pin.sym} -100 30 3 0 {name=l9 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} -70 20 3 0 {name=l8 sig_type=std_logic lab=nCLK}
+C {devices/lab_pin.sym} -90 20 3 0 {name=l9 sig_type=std_logic lab=CLK}
 C {madvlsi/vsource.sym} -420 160 0 0 {name=Vi
 value=1}
 C {madvlsi/gnd.sym} -420 190 0 0 {name=l10 lab=GND}

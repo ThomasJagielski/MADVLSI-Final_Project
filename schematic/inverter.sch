@@ -18,11 +18,11 @@ N 170 -500 170 -200 { lab=A}
 N 60 -240 260 -240 { lab=VN}
 N 60 -610 260 -610 { lab=VP}
 N 120 -610 120 -530 { lab=VP}
-N 120 -320 140 -320 {}
-N 120 -320 120 -240 {}
+N 120 -320 140 -320 { lab=VN}
+N 120 -320 120 -240 { lab=VN}
 C {madvlsi/pmos3.sym} 170 -530 3 0 {name=M3
-L=0.15
-W=1
+L=\{Lp\}
+W=\{Wp\}
 body=VDD
 nf=1
 mult=1
@@ -36,8 +36,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 170 -410 3 0 {name=M4
-L=0.15
-W=1
+L=\{Lp\}
+W=\{Wp\}
 body=VDD
 nf=1
 mult=1
@@ -51,8 +51,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 170 -320 1 0 {name=M5
-L=0.15
-W=1
+L=\{Lp\}
+W=\{Wp\}
 body=GND
 nf=1
 mult=1
