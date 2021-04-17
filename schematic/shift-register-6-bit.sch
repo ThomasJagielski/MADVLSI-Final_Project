@@ -45,8 +45,6 @@ N 2150 -610 2150 -560 { lab=Q5}
 N 2150 -510 2150 -460 { lab=Qn5}
 N 760 -350 2120 -350 { lab=CLK}
 N 920 -620 920 -590 { lab=VDD}
-C {/home/madvlsi/Desktop/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 840 -530 0 0 {name=X1}
-C {/home/madvlsi/Desktop/MADVLSI-Final_Project/schematic/inverter.sym} 740 -460 0 0 {name=X5}
 C {madvlsi/gnd.sym} 920 -470 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 1140 -470 0 0 {name=l2 lab=GND}
 C {madvlsi/gnd.sym} 1370 -470 0 0 {name=l3 lab=GND}
@@ -89,19 +87,21 @@ C {devices/lab_pin.sym} 340 -520 0 0 {name=l24 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 340 -390 0 0 {name=l25 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 760 -350 0 0 {name=l26 sig_type=std_logic lab=CLK}
 C {madvlsi/vdd.sym} 340 -230 0 0 {name=l27 lab=VDD}
-C {/home/madvlsi/Desktop/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1060 -530 0 0 {name=X2}
-C {/home/madvlsi/Desktop/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1290 -530 0 0 {name=X3}
-C {/home/madvlsi/Desktop/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1530 -530 0 0 {name=X4}
 C {madvlsi/gnd.sym} 1850 -470 0 0 {name=l28 lab=GND}
 C {madvlsi/vdd.sym} 1850 -620 0 0 {name=l29 lab=VDD}
-C {/home/madvlsi/Desktop/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1770 -530 0 0 {name=X6}
 C {madvlsi/gnd.sym} 2090 -470 0 0 {name=l32 lab=GND}
 C {madvlsi/vdd.sym} 2090 -620 0 0 {name=l33 lab=VDD}
 C {devices/lab_pin.sym} 2000 -610 1 0 {name=l34 sig_type=std_logic lab=Q4}
 C {devices/lab_pin.sym} 2000 -460 3 0 {name=l35 sig_type=std_logic lab=Qn4
 }
-C {/home/madvlsi/Desktop/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 2010 -530 0 0 {name=X7}
 C {devices/lab_pin.sym} 2150 -610 1 0 {name=l38 sig_type=std_logic lab=Q5}
 C {devices/lab_pin.sym} 2150 -460 3 0 {name=l39 sig_type=std_logic lab=Qn5
 }
 C {madvlsi/vdd.sym} 920 -620 0 0 {name=l7 lab=VDD}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 740 -460 0 0 {name=X1 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 840 -530 0 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1060 -530 0 0 {name=X3}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1290 -530 0 0 {name=X4}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1530 -530 0 0 {name=X5}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1770 -530 0 0 {name=X6}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 2010 -530 0 0 {name=X7}
