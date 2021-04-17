@@ -8,9 +8,9 @@ N 60 -50 100 -50 { lab=phi1}
 N 60 -30 100 -30 { lab=nphi1}
 N 60 30 100 30 { lab=phi2}
 N 60 50 100 50 { lab=nphi2}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/clk_gen.sym} 0 0 0 0 {name=X1 Wp=3 Lp=1 WW=3 LL=1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/clk_gen.sym} 0 0 0 0 {name=X1 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vsource.sym} -130 140 0 0 {name=Vclk
-value="pwl 0 0 0.1u 0 0.2u 1.8 5u 1.8 5.1u 0"}
+value="pulse(0, 1.8, 1n, 1n, 1n, 0.5u, 1u)"}
 C {madvlsi/gnd.sym} -130 170 0 0 {name=l29 lab=GND}
 C {devices/lab_pin.sym} -130 110 2 0 {name=l30 sig_type=std_logic lab=VCLK}
 C {devices/lab_pin.sym} -60 50 0 0 {name=l1 sig_type=std_logic lab=VCLK}

@@ -23,8 +23,6 @@ N 180 -110 250 -110 { lab=phi1}
 N 120 -190 120 -110 { lab=phi1}
 N 220 -190 250 -190 { lab=nphi1}
 N 220 190 250 190 { lab=nphi2}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nor2.sym} 0 -110 0 0 {name=X1 Wp=Wp Lp=Lp WW=WW LL=LL}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nor2.sym} 0 110 0 0 {name=X2 Wp=Wp Lp=Lp WW=WW LL=LL}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -210 30 1 0 {name=X3 Wp=Wp Lp=Lp WW=WW LL=LL}
 C {madvlsi/vdd.sym} -170 30 1 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} -250 30 1 0 {name=l2 lab=GND}
@@ -39,3 +37,5 @@ C {devices/opin.sym} 250 -190 0 0 {name=p2 lab=nphi1}
 C {devices/opin.sym} 250 190 0 0 {name=p3 lab=nphi2}
 C {devices/opin.sym} 250 110 0 0 {name=p4 lab=phi2}
 C {devices/ipin.sym} -340 -140 0 0 {name=p5 lab=CLK}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nor2.sym} 0 110 0 0 {name=X1 Wp=\{Wp\} Lp=\{Lp\} WW=\{WW\} LL=\{LL\}}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nor2.sym} 0 -110 0 0 {name=X2 Wp=\{Wp\} Lp=\{Lp\} WW=\{WW\} LL=\{LL\}}
