@@ -65,12 +65,6 @@ C {devices/lab_pin.sym} 1520 -460 3 0 {name=l18 sig_type=std_logic lab=Qn2
 }
 C {devices/lab_pin.sym} 1760 -610 1 0 {name=l19 sig_type=std_logic lab=Q3}
 C {devices/lab_pin.sym} 1760 -460 3 0 {name=l20 sig_type=std_logic lab=Qn3}
-C {madvlsi/tt_models.sym} 300 -740 0 0 {
-name=TT_MODELS
-only_toplevel=false
-value=".option wnflag=1
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
-}
 C {devices/code_shown.sym} 490 -710 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Q1)=0 v(Q2)=0 v(Q3)=0 v(Q4)=0 v(Q5)=0
 .tran 0.01n 100n
 .save all"}
@@ -105,3 +99,10 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1290 -
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1530 -530 0 0 {name=X5}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 1770 -530 0 0 {name=X6}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/CSRL_D_FF.sym} 2010 -530 0 0 {name=X7}
+C {madvlsi/tt_models.sym} 310 -740 0 0 {
+name=TT_MODELS
+only_toplevel=false
+value=".option wnflag=1
+.param MC_SWITCH=0.0
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
+}
