@@ -83,12 +83,13 @@ C {devices/code_shown.sym} 260 -500 0 0 {name=SPICE only_toplevel=false value=".
   let currTemp = 0
   let endTemp = 50
   let dt = 1
+  set appendwrite = FALSE
+  set wr_vecnames
   while currTemp <= endTemp
-    set appendwrite = FALSE
-    set wr_vecnames
+    option temp=$&currTemp
     save v(Vbep) v(Vben)
     op
-    wrdata ~/Documents/MADVLSI-Final_Project/schematic/data/bandgap-\{$&currTemp\}C.csv v(Vbep) v(Vben)
+    wrdata ~/Documents/MADVLSI-Final_Project/schematic/data/bandgap0-50C.csv v(Vbep) v(Vben)
     if currTemp eq 0
       set appendwrite
       set wr_vecnames = FALSE
