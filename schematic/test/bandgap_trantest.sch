@@ -8,15 +8,15 @@ N 100 310 100 340 { lab=GND}
 N 60 310 60 340 { lab=GND}
 N 60 340 100 340 { lab=GND}
 N 100 340 100 370 { lab=GND}
-N 260 250 260 280 { lab=Vben}
 N 260 180 260 250 { lab=Vben}
-N 100 180 100 280 { lab=Vbep}
-N 20 150 70 150 { lab=#net1}
-N 70 150 230 150 { lab=#net1}
+N 20 150 70 150 { lab=Vg}
+N 70 150 230 150 { lab=Vg}
 N 260 310 260 340 { lab=GND}
 N 220 310 220 340 { lab=GND}
 N 220 340 260 340 { lab=GND}
 N 260 340 260 370 { lab=GND}
+N -140 320 -110 320 { lab=Vbp}
+N -110 230 -110 320 { lab=Vbp}
 N -580 340 -580 370 { lab=GND}
 N -620 340 -620 370 { lab=GND}
 N -620 370 -580 370 { lab=GND}
@@ -25,22 +25,22 @@ N -420 340 -420 370 { lab=GND}
 N -420 370 -420 400 { lab=GND}
 N -460 400 -420 400 { lab=GND}
 N -420 400 -420 410 { lab=GND}
-N -420 180 -420 310 { lab=#net2}
-N -420 180 -160 180 { lab=#net2}
-N -580 120 -160 120 { lab=#net3}
-N -580 120 -580 250 { lab=#net3}
-N -180 -20 -180 40 { lab=#net1}
-N -180 -20 20 -20 { lab=#net1}
-N 20 -20 20 150 { lab=#net1}
-N -550 40 -390 40 { lab=#net1}
-N -390 40 -180 40 { lab=#net1}
-N -420 70 -420 180 { lab=#net2}
-N -580 70 -580 120 { lab=#net3}
-N -140 320 -110 320 { lab=#net4}
-N -110 230 -110 320 { lab=#net4}
-N -210 290 -210 320 { lab=#net4}
-N -240 320 -210 320 { lab=#net4}
-N -210 320 -140 320 { lab=#net4}
+N -180 -20 -180 40 { lab=Vg}
+N -180 -20 20 -20 { lab=Vg}
+N 20 -20 20 150 { lab=Vg}
+N -550 40 -390 40 { lab=Vg}
+N -390 40 -180 40 { lab=Vg}
+N -420 70 -420 180 { lab=#net1}
+N -580 70 -580 120 { lab=#net2}
+N -580 120 -580 240 { lab=#net2}
+N -420 180 -420 300 { lab=#net1}
+N 100 180 100 270 { lab=Vbep}
+N 260 250 260 270 { lab=Vben}
+N -210 290 -210 320 { lab=Vbp}
+N -240 320 -210 320 { lab=Vbp}
+N -210 320 -140 320 { lab=Vbp}
+N -580 120 -160 120 {}
+N -420 180 -160 180 {}
 C {sky130_fd_pr/pnp_05v5.sym} 80 310 0 0 {name=Q2
 model=pnp_05v5_W0p68L0p68
 spiceprefix=X
@@ -84,7 +84,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/tt_models.sym} -200 680 0 0 {
+C {madvlsi/isource.sym} -240 350 0 1 {name=I2
+value=\{Iref\}}
+C {madvlsi/tt_models.sym} -320 530 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
@@ -93,26 +95,15 @@ value=".option wnflag=1
 }
 C {devices/code_shown.sym} -30 520 0 0 {name=SPICE only_toplevel=false value=".param Iref=1u n=5 
 .param Wp=6 Lp=0.5 WW=6 LL=0.5
+.option temp=0
 .control
-  let startTemp = -20
-  let currTemp = startTemp
-  let endTemp = 100
-  let dt = 1
-  set appendwrite = FALSE
-  set wr_vecnames
-  while currTemp <= endTemp
-    option temp=$&currTemp
-    save v(Vbep) v(Vben)
-    op
-    wrdata ~/Documents/MADVLSI-Final_Project/schematic/data/bandgap-20-100C1u.csv v(Vbep) v(Vben) currTemp
-    if currTemp eq startTemp
-      set appendwrite
-      set wr_vecnames = FALSE
-    end
-    let currTemp = currTemp + dt
-  end
+  save all
+  tran 0.1u 50u
+  run
+  plot i(Vr2) i(Vr1)
+  plot v(Vg) v(Vbp)
 .endc"}
-C {sky130_fd_pr/pnp_05v5.sym} 240 310 0 0 {name=Q4[10:0]
+C {sky130_fd_pr/pnp_05v5.sym} 240 310 0 0 {name=Q4[7:0]
 model=pnp_05v5_W0p68L0p68
 spiceprefix=X
 }
@@ -131,10 +122,10 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} -420 410 0 0 {name=l13 lab=GND}
 C {madvlsi/resistor.sym} -580 280 0 0 {name=R1
-value=120k
+value=12k
 m=1}
 C {madvlsi/resistor.sym} -460 370 0 0 {name=R2
-value=120k
+value=12k
 m=10}
 C {madvlsi/pmos3.sym} -580 40 0 1 {name=M3
 L=Lp
@@ -168,8 +159,12 @@ spiceprefix=X
 }
 C {madvlsi/vdd.sym} -420 10 0 0 {name=l14 lab=VDD}
 C {madvlsi/vdd.sym} -580 10 0 0 {name=l15 lab=VDD}
-C {madvlsi/isource.sym} -240 350 0 1 {name=I2
-value=\{Iref\}}
+C {madvlsi/ammeter1.sym} -580 240 0 0 {name=Vr1}
+C {madvlsi/ammeter1.sym} -420 300 0 0 {name=Vr2}
+C {madvlsi/ammeter1.sym} 100 270 0 0 {name=Vibep}
+C {madvlsi/ammeter1.sym} 260 270 0 0 {name=Viben}
+C {devices/lab_pin.sym} 20 150 3 0 {name=l16 sig_type=std_logic lab=Vg}
+C {devices/lab_pin.sym} -110 320 2 0 {name=l19 sig_type=std_logic lab=Vbp}
 C {madvlsi/vdd.sym} -240 260 0 0 {name=l12 lab=VDD}
 C {madvlsi/pmos3.sym} -240 290 0 1 {name=M5
 L=Lp
