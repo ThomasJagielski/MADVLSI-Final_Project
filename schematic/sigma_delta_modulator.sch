@@ -92,6 +92,77 @@ N 1560 -620 1900 -620 { lab=#net29}
 N 1900 -690 1900 -620 { lab=#net29}
 N 1560 -560 1900 -560 { lab=#net30}
 N 1900 -560 1900 -480 { lab=#net30}
+N 3240 -780 3390 -780 { lab=#net31}
+N 3450 -780 3600 -780 { lab=#net32}
+N 3600 -780 3600 -690 { lab=#net32}
+N 3240 -400 3390 -400 { lab=#net33}
+N 3450 -400 3600 -400 { lab=#net34}
+N 3600 -480 3600 -420 { lab=#net34}
+N 3240 -910 3390 -910 { lab=#net31}
+N 3240 -910 3240 -780 { lab=#net31}
+N 3450 -910 3600 -910 { lab=#net32}
+N 3600 -910 3600 -780 { lab=#net32}
+N 3450 -240 3600 -240 { lab=#net34}
+N 3600 -420 3600 -240 { lab=#net34}
+N 3240 -420 3240 -240 { lab=#net33}
+N 3240 -240 3390 -240 { lab=#net33}
+N 3240 -780 3240 -690 { lab=#net31}
+N 3240 -480 3240 -420 { lab=#net33}
+N 500 270 2170 270 { lab=#net2}
+N 500 -0 500 270 { lab=#net2}
+N 2030 170 2060 170 { lab=#net2}
+N 2030 170 2030 270 { lab=#net2}
+N 2120 170 2170 170 { lab=#net35}
+N 2230 170 2300 170 { lab=#net36}
+N 2300 170 2300 270 { lab=#net36}
+N 2230 270 2300 270 { lab=#net36}
+N 2300 270 2600 270 { lab=#net36}
+N 2520 220 2520 270 { lab=#net36}
+N 1900 -240 2040 -240 { lab=#net30}
+N 2100 -240 2170 -240 { lab=#net37}
+N 2140 -330 2140 -240 { lab=#net37}
+N 2230 -240 2320 -240 { lab=#net38}
+N 2270 -320 2270 -240 { lab=#net38}
+N 1900 -920 2040 -920 { lab=#net29}
+N 2100 -920 2170 -920 { lab=#net39}
+N 2140 -920 2140 -830 { lab=#net39}
+N 2230 -920 2320 -920 { lab=#net40}
+N 2140 -520 2140 -390 { lab=#net41}
+N 2270 -520 2270 -380 { lab=#net41}
+N 2140 -520 2270 -520 { lab=#net41}
+N 2140 -770 2140 -680 { lab=#net41}
+N 2140 -680 2270 -680 { lab=#net41}
+N 2270 -770 2270 -680 { lab=#net41}
+N 2270 -920 2270 -830 { lab=#net40}
+N 2200 -680 2200 -520 { lab=#net41}
+N 500 -1520 2200 -1520 { lab=#net1}
+N 500 -1520 500 -1180 { lab=#net1}
+N 2020 -1420 2080 -1420 { lab=#net1}
+N 2020 -1520 2020 -1420 { lab=#net1}
+N 2140 -1420 2200 -1420 { lab=#net42}
+N 2260 -1520 2380 -1520 { lab=#net43}
+N 2380 -1520 2380 -1420 { lab=#net43}
+N 2260 -1420 2380 -1420 { lab=#net43}
+N 2480 -1520 2480 -1480 { lab=#net43}
+N 2660 -1520 2740 -1520 { lab=#net44}
+N 2660 270 2740 270 { lab=#net45}
+N 2740 -480 2740 270 { lab=#net45}
+N 2740 -480 3040 -480 { lab=#net45}
+N 2380 -240 2740 -240 { lab=#net45}
+N 2740 -690 3040 -690 { lab=#net44}
+N 2740 -1520 2740 -690 { lab=#net44}
+N 2380 -1520 2600 -1520 { lab=#net43}
+N 2380 -920 2740 -920 { lab=#net44}
+N 2740 -620 3320 -620 { lab=#net44}
+N 2740 -690 2740 -620 { lab=#net44}
+N 2740 -560 3320 -560 { lab=#net45}
+N 2740 -560 2740 -480 { lab=#net45}
+N 3500 -620 3940 -620 { lab=#net46}
+N 3500 -560 3940 -560 { lab=#net47}
+N 3800 -480 3840 -480 { lab=#net47}
+N 3840 -560 3840 -480 { lab=#net47}
+N 3840 -690 3840 -620 {}
+N 3800 -690 3840 -690 {}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/chop2.sym} 180 -580 0 0 {name=X1 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/fully_differential_sc_amp.sym} 1350 -590 0 0 {name=X2}
 C {madvlsi/capacitor.sym} 770 -1180 1 0 {name=C1
@@ -172,3 +243,46 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 990 -1180
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 990 0 0 0 {name=X26 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1480 -910 0 0 {name=X27 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1480 -240 0 0 {name=X28 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2070 -920 0 0 {name=X3 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2070 -240 0 0 {name=X21 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2350 -920 0 0 {name=X29 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2350 -240 0 0 {name=X30 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/fully_differential_sc_amp.sym} 3290 -590 0 0 {name=X31}
+C {madvlsi/capacitor.sym} 3420 -780 1 0 {name=C19
+value=1p
+m=1}
+C {madvlsi/capacitor.sym} 3420 -400 1 0 {name=C20
+value=1p
+m=1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/chop2.sym} 3700 -590 0 0 {name=X32 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/chop2.sym} 3140 -590 0 0 {name=X33 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 3420 -910 0 0 {name=X34 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 3420 -240 0 0 {name=X35 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/capacitor.sym} 2200 -920 1 0 {name=C21
+value=1p
+m=1}
+C {madvlsi/capacitor.sym} 2200 -240 1 0 {name=C22
+value=1p
+m=1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2140 -360 1 0 {name=X36 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2270 -350 3 0 {name=X37 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2140 -800 1 0 {name=X38 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2270 -800 3 0 {name=X39 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/capacitor.sym} 2230 -1520 1 0 {name=C23
+value=1p
+m=1}
+C {madvlsi/capacitor.sym} 2230 -1420 1 0 {name=C24
+value=1p
+m=1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2110 -1420 0 0 {name=X40 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2480 -1450 1 0 {name=X41 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2630 -1520 0 0 {name=X42 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/capacitor.sym} 2200 170 1 0 {name=C25
+value=1p
+m=1}
+C {madvlsi/capacitor.sym} 2200 270 1 0 {name=C26
+value=1p
+m=1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2090 170 0 0 {name=X43 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2630 270 0 0 {name=X44 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2520 190 1 0 {name=X45 Wp=1 Lp=0.15 WW=1 LL=0.15}
