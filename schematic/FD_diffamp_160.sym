@@ -1,0 +1,54 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname Wp=@Wp Lp=@Lp WW=@WW LL=@LL"
+template="name=X1 Wp=1 Lp=0.15 WW=1 LL=0.15"}
+V {}
+S {}
+E {}
+L 4 -110 -10 -90 -10 {}
+L 4 -110 -40 -90 -40 {}
+L 4 -110 10 -90 10 {}
+L 4 -110 120 -90 120 {}
+L 4 55.625 20 80 20 {}
+L 4 55.625 60 80 60 {}
+L 4 -90 -60 -90 140 {}
+L 4 -90 -60 90 40 {}
+L 4 -90 140 90 40 {}
+L 4 -110 30 -90 30 {}
+L 4 -110 50 -90 50 {}
+L 4 -110 70 -90 70 {}
+L 4 -110 90 -90 90 {}
+B 5 -112.5 -42.5 -107.5 -37.5 {name=V1
+dir=inout}
+B 5 -112.5 117.5 -107.5 122.5 {name=V2
+dir=inout}
+B 5 77.5 57.5 82.5 62.5 {name=Voutp
+dir=inout}
+B 5 77.5 17.5 82.5 22.5 {name=Voutn
+dir=inout}
+B 5 -112.5 -12.5 -107.5 -7.5 {name=Vbp
+dir=in}
+B 5 -112.5 7.5 -107.5 12.5 {name=Vref
+dir=in}
+B 5 -112.5 27.5 -107.5 32.5 {name=Vphi1
+dir=inout}
+B 5 -112.5 47.5 -107.5 52.5 {name=Vnphi1
+dir=inout}
+B 5 -112.5 67.5 -107.5 72.5 {name=Vphi2
+dir=inout}
+B 5 -112.5 87.5 -107.5 92.5 {name=Vnphi2
+dir=inout}
+T {@name} -75 -70 0 0 0.2 0.2 {}
+T {P @Wp / @Lp
+N @WW / @LL} 17.5 -25 0 0 0.2 0.2 {layer=13}
+T {V1} -85 -45 0 0 0.2 0.2 {}
+T {V2} -85 115 0 0 0.2 0.2 {}
+T {Vref} -85 5 0 0 0.2 0.2 {}
+T {Vbp} -85 -15 0 0 0.2 0.2 {}
+T {Voutn} 15 15 0 0 0.2 0.2 {}
+T {Voutp} 15 50 0 0 0.2 0.2 {}
+T {Vphi1} -85 25 0 0 0.2 0.2 {}
+T {Vnphi1} -85 45 0 0 0.2 0.2 {}
+T {Vphi2} -85 65 0 0 0.2 0.2 {}
+T {Vnphi2} -85 85 0 0 0.2 0.2 {}
