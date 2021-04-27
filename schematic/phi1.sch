@@ -91,28 +91,32 @@ N 2660 -610 2660 -560 { lab=Q7}
 N 760 -350 4400 -350 { lab=CLK}
 N 1140 -1060 1210 -1060 { lab=#net17}
 N 1460 -1060 1530 -1060 { lab=#net18}
-N 1240 -1030 1240 -970 { lab=Qout}
-N 1240 -980 1560 -980 { lab=Qout}
-N 1560 -1030 1560 -970 { lab=Qout}
+N 1240 -1030 1240 -970 { lab=Qout-pre-buffer}
+N 1240 -980 1560 -980 { lab=Qout-pre-buffer}
+N 1560 -1030 1560 -970 { lab=Qout-pre-buffer}
 N 1780 -1060 1850 -1060 { lab=#net19}
-N 1560 -980 1880 -980 { lab=Qout}
-N 1880 -1030 1880 -970 { lab=Qout}
+N 1560 -980 1880 -980 { lab=Qout-pre-buffer}
+N 1880 -1030 1880 -970 { lab=Qout-pre-buffer}
 N 2100 -1060 2170 -1060 { lab=#net20}
-N 1880 -980 2200 -980 { lab=Qout}
-N 2200 -1030 2200 -970 { lab=Qout}
+N 1880 -980 2200 -980 { lab=Qout-pre-buffer}
+N 2200 -1030 2200 -970 { lab=Qout-pre-buffer}
 N 2420 -1060 2490 -1060 { lab=#net21}
-N 2200 -980 2520 -980 { lab=Qout}
-N 2520 -1030 2520 -970 { lab=Qout}
+N 2200 -980 2520 -980 { lab=Qout-pre-buffer}
+N 2520 -1030 2520 -970 { lab=Qout-pre-buffer}
 N 2740 -1060 2810 -1060 { lab=#net22}
-N 2520 -980 2840 -980 { lab=Qout}
-N 2840 -1030 2840 -970 { lab=Qout}
+N 2520 -980 2840 -980 { lab=Qout-pre-buffer}
+N 2840 -1030 2840 -970 { lab=Qout-pre-buffer}
 N 3060 -1060 3130 -1060 { lab=#net23}
-N 2840 -980 3160 -980 { lab=Qout}
-N 3160 -1030 3160 -970 { lab=Qout}
+N 2840 -980 3160 -980 { lab=Qout-pre-buffer}
+N 3160 -1030 3160 -970 { lab=Qout-pre-buffer}
 N 3380 -1060 3450 -1060 { lab=#net24}
-N 3160 -980 3480 -980 { lab=Qout}
-N 3480 -1030 3480 -970 { lab=Qout}
-N 3480 -980 3710 -980 { lab=Qout}
+N 3160 -980 3480 -980 { lab=Qout-pre-buffer}
+N 3480 -1030 3480 -970 { lab=Qout-pre-buffer}
+N 3480 -980 3710 -980 { lab=Qout-pre-buffer}
+N 4060 -980 4140 -980 { lab=Qout}
+N 3890 -980 3960 -980 { lab=#net25}
+N 3710 -980 3790 -980 { lab=Qout-pre-buffer}
+N 610 -560 620 -560 { lab=D}
 C {madvlsi/gnd.sym} 920 -470 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 1140 -470 0 0 {name=l2 lab=GND}
 C {madvlsi/gnd.sym} 1370 -470 0 0 {name=l3 lab=GND}
@@ -123,28 +127,27 @@ C {madvlsi/vdd.sym} 920 -590 0 0 {name=l7 lab=VDD}
 C {madvlsi/vdd.sym} 1140 -620 0 0 {name=l8 lab=VDD}
 C {madvlsi/vdd.sym} 1370 -620 0 0 {name=l9 lab=VDD}
 C {madvlsi/vdd.sym} 1610 -620 0 0 {name=l10 lab=VDD}
-C {devices/lab_pin.sym} 620 -560 0 0 {name=l11 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 760 -350 0 0 {name=l12 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 1050 -610 1 0 {name=l13 sig_type=std_logic lab=Q0}
 C {devices/lab_pin.sym} 1280 -610 1 0 {name=l15 sig_type=std_logic lab=Q1}
 C {devices/lab_pin.sym} 1520 -610 1 0 {name=l16 sig_type=std_logic lab=Q2}
 C {devices/lab_pin.sym} 1760 -610 1 0 {name=l19 sig_type=std_logic lab=Q3}
-C {devices/code_shown.sym} 490 -710 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Q1)=0 v(Q2)=0 v(Q3)=0 v(Q4)=0 v(Q5)=0 v(Q6)=0 v(Q7)=0
-.tran 0.01n 100n
+C {devices/code_shown.sym} 490 -710 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Q1)=0 v(Q2)=0 v(Q3)=0 v(Q4)=0 v(Q5)=0 v(Q6)=0 v(Q7)=0 v(Q8)=0 v(Q9)=0 v(Q10)=0 v(Q11)=0 v(Q12)=0 v(Q13)=0 v(Q14)=0 v(Q15)=0
+.tran 0.01u 100u
 .save all"}
-C {madvlsi/vsource.sym} 340 -490 0 0 {name=Vin
-value="pwl(0 0 25n 0 26n 1.8 40n 1.8 41n 0)"}
-C {madvlsi/vsource.sym} 340 -360 0 0 {name=VCLK
-value="pulse(0 1.8 1n 1n 1n 4n 10n)"}
-C {madvlsi/vsource.sym} 340 -200 0 0 {name=Vdd
+C {madvlsi/vsource.sym} 340 -430 0 0 {name=Vin
+value="pulse(0 1.8 5u 1u 1u 4u 10u)"}
+C {madvlsi/vsource.sym} 340 -300 0 0 {name=VCLK
+value="pulse(0 1.8 1u 1u 1u 4u 10u)"}
+C {madvlsi/vsource.sym} 350 -130 0 0 {name=Vdd
 value=1.8}
-C {madvlsi/gnd.sym} 340 -460 0 0 {name=l21 lab=GND}
-C {madvlsi/gnd.sym} 340 -330 0 0 {name=l22 lab=GND}
-C {madvlsi/gnd.sym} 340 -170 0 0 {name=l23 lab=GND}
-C {devices/lab_pin.sym} 340 -520 0 0 {name=l24 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 340 -390 0 0 {name=l25 sig_type=std_logic lab=CLK}
+C {madvlsi/gnd.sym} 340 -400 0 0 {name=l21 lab=GND}
+C {madvlsi/gnd.sym} 340 -270 0 0 {name=l22 lab=GND}
+C {madvlsi/gnd.sym} 350 -100 0 0 {name=l23 lab=GND}
+C {devices/lab_pin.sym} 340 -460 0 0 {name=l24 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 340 -330 0 0 {name=l25 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 760 -350 0 0 {name=l26 sig_type=std_logic lab=CLK}
-C {madvlsi/vdd.sym} 340 -230 0 0 {name=l27 lab=VDD}
+C {madvlsi/vdd.sym} 350 -160 0 0 {name=l27 lab=VDD}
 C {madvlsi/gnd.sym} 1850 -470 0 0 {name=l28 lab=GND}
 C {madvlsi/vdd.sym} 1850 -620 0 0 {name=l29 lab=VDD}
 C {madvlsi/gnd.sym} 2090 -470 0 0 {name=l32 lab=GND}
@@ -486,7 +489,7 @@ C {madvlsi/gnd.sym} 3320 -1020 0 0 {name=l89 lab=GND}
 C {madvlsi/vdd.sym} 3320 -1100 0 0 {name=l90 lab=VDD}
 C {madvlsi/vdd.sym} 3480 -1090 0 0 {name=l91 lab=VDD}
 C {madvlsi/gnd.sym} 3480 -910 0 0 {name=l92 lab=GND}
-C {devices/lab_pin.sym} 3710 -980 1 0 {name=l93 sig_type=std_logic lab=Qout}
+C {devices/lab_pin.sym} 4140 -980 1 0 {name=l93 sig_type=std_logic lab=Qout}
 C {devices/lab_pin.sym} 1360 -1060 0 0 {name=l94 sig_type=std_logic lab=Q1}
 C {devices/lab_pin.sym} 1210 -940 0 0 {name=l95 sig_type=std_logic lab=Q2}
 C {devices/lab_pin.sym} 1530 -940 0 0 {name=l96 sig_type=std_logic lab=Q3}
@@ -502,3 +505,11 @@ C {devices/lab_pin.sym} 2490 -940 0 0 {name=l105 sig_type=std_logic lab=Q12}
 C {devices/lab_pin.sym} 2810 -940 0 0 {name=l106 sig_type=std_logic lab=Q13}
 C {devices/lab_pin.sym} 3130 -940 0 0 {name=l107 sig_type=std_logic lab=Q14}
 C {devices/lab_pin.sym} 3450 -940 0 0 {name=l108 sig_type=std_logic lab=Q15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 3830 -980 0 0 {name=X26 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 4000 -980 0 0 {name=X27 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/gnd.sym} 3830 -940 0 0 {name=l11 lab=GND}
+C {madvlsi/vdd.sym} 3830 -1020 0 0 {name=l110 lab=VDD}
+C {madvlsi/gnd.sym} 4000 -940 0 0 {name=l111 lab=GND}
+C {madvlsi/vdd.sym} 4000 -1020 0 0 {name=l112 lab=VDD}
+C {devices/lab_pin.sym} 3710 -980 1 0 {name=l113 sig_type=std_logic lab=Qout-pre-buffer}
+C {devices/lab_pin.sym} 610 -560 0 0 {name=l109 sig_type=std_logic lab=D}
