@@ -152,23 +152,23 @@ N 3800 -690 3840 -690 { lab=#net47}
 N 800 -560 840 -560 { lab=#net22}
 N 800 -620 840 -620 { lab=#net21}
 N 840 -620 1300 -620 { lab=#net21}
-N 1300 -670 1300 -620 { lab=#net21}
-N 1300 -670 1370 -670 { lab=#net21}
-N 1300 -510 1370 -510 { lab=#net22}
-N 1300 -560 1300 -510 { lab=#net22}
 N 840 -560 1300 -560 { lab=#net22}
-N 2740 -510 3320 -510 { lab=#net45}
-N 2740 -670 3320 -670 { lab=#net44}
-N 2740 -510 2740 -480 { lab=#net45}
-N 2740 -690 2740 -670 { lab=#net44}
 N 1560 -570 1900 -570 { lab=#net30}
 N 1900 -570 1900 -480 { lab=#net30}
 N 1560 -610 1900 -610 { lab=#net29}
 N 1900 -690 1900 -610 { lab=#net29}
-N 3510 -570 3960 -570 { lab=#net48}
-N 3510 -610 3960 -610 {}
-N 3840 -690 3840 -610 {}
-N 3840 -570 3840 -480 {}
+N 3510 -570 3960 -570 { lab=#net46}
+N 3510 -610 3960 -610 { lab=#net47}
+N 3840 -690 3840 -610 { lab=#net47}
+N 3840 -570 3840 -480 { lab=#net46}
+N 1300 -640 1430 -640 { lab=#net21}
+N 1300 -640 1300 -620 { lab=#net21}
+N 1300 -540 1430 -540 { lab=#net22}
+N 1300 -560 1300 -540 { lab=#net22}
+N 2740 -540 3380 -540 { lab=#net45}
+N 2740 -540 2740 -480 { lab=#net45}
+N 2740 -640 3380 -640 { lab=#net44}
+N 2740 -690 2740 -640 { lab=#net44}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/chop2.sym} 180 -580 0 0 {name=X1 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/capacitor.sym} 770 -1180 1 0 {name=C1
 value=1p
@@ -290,5 +290,5 @@ m=1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2090 170 0 0 {name=X43 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2630 270 0 0 {name=X44 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2520 190 1 0 {name=X45 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/FD_diffamp_160.sym} 1480 -630 0 0 {name=X2 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/FD_diffamp_160.sym} 3430 -630 0 0 {name=X31 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/fully_differential_sc_amp.sym} 1540 -630 0 0 {name=X2 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/fully_differential_sc_amp.sym} 3490 -630 0 0 {name=X31 Wp=1 Lp=0.15 WW=1 LL=0.15}
