@@ -137,7 +137,22 @@ C {devices/lab_pin.sym} 1050 -610 1 0 {name=l13 sig_type=std_logic lab=Q0}
 C {devices/lab_pin.sym} 1280 -610 1 0 {name=l15 sig_type=std_logic lab=Q1}
 C {devices/lab_pin.sym} 1520 -610 1 0 {name=l16 sig_type=std_logic lab=Q2}
 C {devices/lab_pin.sym} 1760 -610 1 0 {name=l19 sig_type=std_logic lab=Q3}
-C {devices/code_shown.sym} 490 -710 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Q1)=0 v(Q2)=0 v(Q3)=0 v(Q4)=0 v(Q5)=0 v(Q6)=0 v(Q7)=0 v(Q8)=0 v(Q9)=0 v(Q10)=0 v(Q11)=0 v(Q12)=0 v(Q13)=0 v(Q14)=0 v(Q15)=0
+C {devices/code_shown.sym} 4880 -640 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0  v(X2.Qi)=1
+.ic v(Q1)=0 v(X3.Qi)=1
+.ic v(Q2)=0 v(X4.Qi)=1
+.ic v(Q3)=0 v(X5.Qi)=1
+.ic v(Q4)=0 v(X6.Qi)=1
+.ic v(Q5)=0 v(X7.Qi)=1
+.ic v(Q6)=0 v(X8.Qi)=1
+.ic v(Q7)=0 v(X9.Qi)=1
+.ic v(Q8)=0 v(X10.Qi)=1
+.ic v(Q9)=0 v(X11.Qi)=1
+.ic v(Q10)=0 v(X12.Qi)=1
+.ic v(Q11)=0 v(X13.Qi)=1
+.ic v(Q12)=0 v(X14.Qi)=1
+.ic v(Q13)=0 v(X15.Qi)=1
+.ic v(Q14)=0 v(X16.Qi)=1
+.ic v(Q15)=0 v(X17.Qi)=1
 .tran 10u 1m
 .save all"}
 C {madvlsi/vsource.sym} 340 -490 0 0 {name=Vin
