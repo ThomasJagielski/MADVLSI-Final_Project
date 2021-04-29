@@ -612,7 +612,7 @@ C {devices/code_shown.sym} 40 -500 0 0 {name=SPICE only_toplevel=false value=".p
 .ic v(Q14)=0 v(X63.Qi)=1.8
 .ic v(Q15)=0 v(X64.Qi)=1.8
 .ic v(Q16)=1.8 v(X64.Qi)=0 v(nQ16)=0
-.tran 100n 10m
+.tran 5u 10m
 .save all"}
 C {madvlsi/vsource.sym} -380 -680 0 0 {name=Vref
 value=0.9}
