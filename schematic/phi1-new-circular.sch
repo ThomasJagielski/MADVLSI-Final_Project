@@ -112,7 +112,7 @@ C {devices/lab_pin.sym} 1280 -610 1 0 {name=l15 sig_type=std_logic lab=Q1}
 C {devices/lab_pin.sym} 1520 -610 1 0 {name=l16 sig_type=std_logic lab=Q2}
 C {devices/lab_pin.sym} 1760 -610 1 0 {name=l19 sig_type=std_logic lab=Q3}
 C {devices/code_shown.sym} 320 -920 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Q1)=0 v(Q2)=0 v(Q3)=0 v(Q4)=1 v(Q5)=1 v(Q6)=1 v(Q7)=1 v(Q8)=0 v(Q9)=0 v(Q10)=1 v(Q11)=1 v(Q12)=0 v(Q13)=0 v(Q14)=1 v(Q15)=1
-.tran 10u 1m
+.tran 0.5u 50u
 .save all"}
 C {madvlsi/vsource.sym} 340 -360 0 0 {name=VCLK
 value="pulse(0 1.8 0.5u 0.5u 0.5u 5u 10u)"}
