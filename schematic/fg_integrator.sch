@@ -65,11 +65,11 @@ value=1u}
 C {madvlsi/vdd.sym} -870 310 0 0 {name=l65 lab=VDD}
 C {madvlsi/gnd.sym} -870 430 0 0 {name=l66 lab=GND}
 C {madvlsi/capacitor.sym} 420 240 1 0 {name=C1
-value=5p
+value=4p
 m=1}
 C {devices/lab_pin.sym} 530 30 2 0 {name=l2 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} -620 170 0 0 {name=Vin
-value="pulse(0.2 0.8 20u 1n 1n 5u 10u)"}
+value="pulse(-0.2 0.2 0 1n 1n 5u 10u)"}
 C {madvlsi/gnd.sym} -620 200 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} -620 140 1 0 {name=l5 sig_type=std_logic lab=Vin}
 C {devices/code_shown.sym} -790 -50 0 0 {name=SPICE only_toplevel=false value=".param WW=6 LL=1 Wp=6 Lp=1
@@ -137,7 +137,7 @@ m=1}
 C {devices/lab_pin.sym} 150 0 0 0 {name=l3 sig_type=std_logic lab=Vin}
 C {madvlsi/gnd.sym} 280 -60 2 0 {name=l6 lab=GND}
 C {madvlsi/vsource.sym} -410 170 0 0 {name=Vref
-value="pulse(1.8 0 20u 1n 1n 5u 10u)"}
+value=0}
 C {madvlsi/gnd.sym} -410 200 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -410 140 1 0 {name=l9 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 150 60 0 0 {name=l1 sig_type=std_logic lab=Vref}
