@@ -7,8 +7,6 @@ E {}
 N -760 200 -760 230 { lab=Vbp}
 N -760 230 -730 230 { lab=Vbp}
 N 510 30 530 30 { lab=Vout}
-N 300 -20 300 0 { lab=VDD}
-N 300 0 330 -0 { lab=VDD}
 C {madvlsi/vsource.sym} -620 320 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} -620 350 0 0 {name=l59 lab=GND}
@@ -53,4 +51,8 @@ C {madvlsi/gnd.sym} 410 130 0 0 {name=l7 lab=GND}
 C {madvlsi/vdd.sym} 410 -70 0 0 {name=l18 lab=VDD}
 C {devices/lab_pin.sym} 380 110 3 0 {name=l19 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 330 60 0 0 {name=l3 sig_type=std_logic lab=Vin}
-C {madvlsi/vdd.sym} 300 -20 0 0 {name=l1 lab=VDD}
+C {madvlsi/vsource.sym} -520 170 0 0 {name=Vin1
+value=0.9}
+C {madvlsi/gnd.sym} -520 200 0 0 {name=l6 lab=GND}
+C {devices/lab_pin.sym} -520 140 1 0 {name=l8 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} 330 0 0 0 {name=l1 sig_type=std_logic lab=Vref}
