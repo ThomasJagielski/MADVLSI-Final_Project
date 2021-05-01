@@ -6,8 +6,8 @@ S {}
 E {}
 N 890 -520 970 -520 { lab=Vout}
 N 970 -520 1070 -520 { lab=Vout}
-N 1250 -550 1400 -550 { lab=#net1}
-N 1000 -580 1070 -580 { lab=Vhalf}
+N 1250 -550 1400 -550 { lab=Vout2}
+N 1000 -580 1070 -580 { lab=VDD}
 N 1850 -550 1880 -550 { lab=Q0}
 N 1880 -610 1880 -550 { lab=Q0}
 N 1890 -550 1910 -550 { lab=Qn1}
@@ -92,8 +92,8 @@ N 2810 -460 2810 -440 { lab=Qn6}
 N 2850 -500 2870 -500 { lab=Qn7}
 N 2620 -440 2660 -440 { lab=Qn5}
 N 2660 -460 2660 -440 { lab=Qn5}
-N 1820 -460 1820 -440 { lab=CLK}
-N 1540 -440 1820 -440 { lab=CLK}
+N 1820 -460 1820 -440 { lab=#net1}
+N 1540 -440 1820 -440 { lab=#net1}
 N 1910 -500 2000 -550 { lab=Q1}
 N 1760 -500 1850 -550 { lab=Q0}
 N 2040 -500 2130 -550 { lab=Q2}
@@ -113,10 +113,15 @@ N 610 -490 670 -490 { lab=#net2}
 N 510 -550 550 -550 { lab=#net3}
 N 610 -550 690 -550 { lab=#net4}
 N 470 -510 470 -470 { lab=#net5}
+N 1000 -600 1000 -580 { lab=VDD}
+N 1380 -530 1440 -530 { lab=Vout2}
+N 1380 -550 1380 -530 { lab=Vout2}
+N 1510 -520 1540 -520 { lab=#net1}
+N 1540 -520 1540 -440 { lab=#net1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1040 -550 0 0 {name=X2}
 C {madvlsi/gnd.sym} 1150 -450 0 0 {name=l3 lab=GND}
 C {madvlsi/vdd.sym} 1150 -650 0 0 {name=l6 lab=VDD}
-C {devices/lab_pin.sym} 1540 -440 0 0 {name=l10 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 1440 -510 0 0 {name=l10 sig_type=std_logic lab=CLK}
 C {madvlsi/vsource.sym} 240 -130 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} 240 -100 0 0 {name=l23 lab=GND}
@@ -129,7 +134,7 @@ C {madvlsi/vsource.sym} 40 -130 0 0 {name=Vdd1
 value=0}
 C {madvlsi/gnd.sym} 40 -100 0 0 {name=l11 lab=GND}
 C {madvlsi/vsource.sym} 130 -130 0 0 {name=Vdd2
-value=1.3}
+value=0.9}
 C {madvlsi/gnd.sym} 130 -100 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 40 -160 1 0 {name=l12 sig_type=std_logic lab=Vhalf}
 C {devices/lab_pin.sym} 130 -160 1 0 {name=l14 sig_type=std_logic lab=Vin}
@@ -167,13 +172,6 @@ C {devices/lab_pin.sym} 2310 -610 1 0 {name=l43 sig_type=std_logic lab=Q3}
 C {devices/lab_pin.sym} 2440 -610 1 0 {name=l44 sig_type=std_logic lab=Q4}
 C {devices/lab_pin.sym} 2590 -610 1 0 {name=l45 sig_type=std_logic lab=Q5}
 C {devices/lab_pin.sym} 2720 -610 1 0 {name=l46 sig_type=std_logic lab=Q6}
-C {madvlsi/tt_models.sym} 40 -720 0 0 {
-name=TT_MODELS
-only_toplevel=false
-value=".option wnflag=1
-.param MC_SWITCH=0.0
-.lib /media/qdeng/526448C32060CF5C/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
-}
 C {devices/code_shown.sym} 580 -210 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(X20.Qi)=1.8
 .ic v(Q1)=0 v(X7.Qi)=1.8
 .ic v(Q2)=0 v(X8.Qi)=1.8
@@ -227,11 +225,22 @@ C {madvlsi/gnd.sym} -40 -100 0 0 {name=l55 lab=GND}
 C {devices/lab_pin.sym} -40 -160 1 0 {name=l56 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 510 -490 3 0 {name=l8 sig_type=std_logic lab=Vhalf}
 C {devices/lab_pin.sym} 430 -530 0 0 {name=l15 sig_type=std_logic lab=Vref}
-C {devices/lab_pin.sym} 470 -270 3 0 {name=l17 sig_type=std_logic lab=Q3}
-C {devices/lab_pin.sym} 1000 -580 3 0 {name=l9 sig_type=std_logic lab=Vhalf}
+C {devices/lab_pin.sym} 470 -270 3 0 {name=l17 sig_type=std_logic lab=Q7}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 470 -310 3 0 {name=X4 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 470 -410 3 0 {name=X5 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/gnd.sym} 510 -310 3 0 {name=l57 lab=GND}
 C {madvlsi/gnd.sym} 510 -410 3 0 {name=l58 lab=GND}
 C {madvlsi/vdd.sym} 430 -410 3 0 {name=l59 lab=VDD}
 C {madvlsi/vdd.sym} 430 -310 3 0 {name=l60 lab=VDD}
+C {madvlsi/vdd.sym} 1000 -600 0 0 {name=l9 lab=VDD}
+C {devices/lab_pin.sym} 1400 -550 2 0 {name=l61 sig_type=std_logic lab=Vout2}
+C {madvlsi/tt_models.sym} 120 -620 0 0 {
+name=TT_MODELS
+only_toplevel=false
+value=".option wnflag=1
+.param MC_SWITCH=0.0
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
+}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/and2.sym} 1410 -520 0 0 {name=X6}
+C {madvlsi/vdd.sym} 1470 -550 0 0 {name=l62 lab=VDD}
+C {madvlsi/gnd.sym} 1470 -490 0 0 {name=l63 lab=GND}
