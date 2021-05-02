@@ -98,6 +98,24 @@ N 360 -390 480 -390 { lab=#net7}
 N 1050 -580 1070 -580 { lab=#net8}
 N 1010 -540 1010 -350 { lab=#net7}
 N 360 -350 1010 -350 { lab=#net7}
+N 300 90 340 90 { lab=#net9}
+N 340 160 370 160 { lab=#net9}
+N 300 230 340 230 { lab=#net10}
+N 340 180 370 180 { lab=#net10}
+N 300 370 340 370 { lab=#net11}
+N 450 170 470 170 { lab=#net12}
+N 470 210 470 270 { lab=#net12}
+N 470 270 490 270 { lab=#net12}
+N 340 370 350 370 { lab=#net11}
+N 350 320 370 320 { lab=#net11}
+N 450 310 480 310 { lab=#net13}
+N 480 290 480 310 { lab=#net13}
+N 480 290 490 290 { lab=#net13}
+N 350 320 350 370 { lab=#net11}
+N 340 90 340 160 { lab=#net9}
+N 340 180 340 230 { lab=#net10}
+N 470 170 470 210 { lab=#net12}
+N 570 280 630 280 { lab=NAND}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1040 -550 0 0 {name=X2}
 C {madvlsi/gnd.sym} 1150 -450 0 0 {name=l3 lab=GND}
 C {madvlsi/vdd.sym} 1150 -650 0 0 {name=l6 lab=VDD}
@@ -107,7 +125,7 @@ value=1.8}
 C {madvlsi/gnd.sym} 320 -750 0 0 {name=l23 lab=GND}
 C {madvlsi/vdd.sym} 320 -810 0 0 {name=l26 lab=VDD}
 C {madvlsi/vsource.sym} 420 -790 0 0 {name=VCLK
-value="pulse(0 1.8 5u 1n 1n 5u 10u)"}
+value="pulse(0 1.8 5n 1n 1n 5n 10n)"}
 C {madvlsi/gnd.sym} 420 -760 0 0 {name=l22 lab=GND}
 C {devices/lab_pin.sym} 420 -820 0 0 {name=l25 sig_type=std_logic lab=CLK}
 C {madvlsi/vsource.sym} 120 -780 0 0 {name=Vdd1
@@ -121,7 +139,7 @@ C {devices/lab_pin.sym} 210 -810 1 0 {name=l14 sig_type=std_logic lab=Vin}
 C {madvlsi/isource.sym} 1090 -470 1 0 {name=I2
 value=1u}
 C {madvlsi/gnd.sym} 1060 -470 0 0 {name=l39 lab=GND}
-C {devices/code_shown.sym} 650 -1010 0 0 {name=SPICE only_toplevel=false value=".ic v(Vout)=0.8
+C {devices/code_shown.sym} 650 -1010 0 0 {name=SPICE only_toplevel=false value=".ic v(Vout)=0
 .ic v(Q0)=0 v(Qn0)=1.8
 .ic v(Q1)=0 v(Qn1)=1.8
 .ic v(Q2)=0 v(Qn2)=1.8
@@ -131,7 +149,7 @@ C {devices/code_shown.sym} 650 -1010 0 0 {name=SPICE only_toplevel=false value="
 .ic v(Q6)=0 v(Qn6)=1.8
 .control
   save all
-  tran 1u 1000u
+  tran 1n 10u
   plot v(Q0) v(Q1)
   plot v(Q2) v(Q3)
   plot v(Q4) v(Q5)
@@ -248,5 +266,35 @@ C {devices/lab_pin.sym} 440 -470 0 0 {name=l15 sig_type=std_logic lab=Vin}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/mux2.sym} 1010 -580 0 0 {name=X13}
 C {madvlsi/gnd.sym} 320 -570 1 0 {name=l16 lab=GND}
 C {devices/lab_pin.sym} 440 -510 0 0 {name=l9 sig_type=std_logic lab=Vref}
-C {madvlsi/vdd.sym} 360 -120 2 0 {name=l17 lab=VDD}
 C {devices/lab_pin.sym} 970 -600 0 0 {name=l64 sig_type=std_logic lab=Vcomp_ref}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 180 90 0 0 {name=X14}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 180 230 0 0 {name=X17}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 180 370 0 0 {name=X18}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 330 170 0 0 {name=X20}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 450 280 0 0 {name=X21}
+C {devices/lab_pin.sym} 220 80 0 0 {name=l66 sig_type=std_logic lab=Qn0}
+C {devices/lab_pin.sym} 220 100 0 0 {name=l67 sig_type=std_logic lab=Qn1}
+C {devices/lab_pin.sym} 220 220 0 0 {name=l68 sig_type=std_logic lab=Qn2}
+C {devices/lab_pin.sym} 220 240 0 0 {name=l69 sig_type=std_logic lab=Qn3}
+C {devices/lab_pin.sym} 220 360 0 0 {name=l70 sig_type=std_logic lab=Qn4}
+C {devices/lab_pin.sym} 220 380 0 0 {name=l71 sig_type=std_logic lab=Qn5}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 330 310 0 0 {name=X22}
+C {devices/lab_pin.sym} 370 300 0 0 {name=l72 sig_type=std_logic lab=Qn6}
+C {madvlsi/vdd.sym} 250 60 0 0 {name=l73 lab=VDD}
+C {madvlsi/gnd.sym} 250 120 0 0 {name=l74 lab=GND}
+C {madvlsi/vdd.sym} 250 200 0 0 {name=l75 lab=VDD}
+C {madvlsi/gnd.sym} 250 260 0 0 {name=l76 lab=GND}
+C {madvlsi/vdd.sym} 250 340 0 0 {name=l77 lab=VDD}
+C {madvlsi/gnd.sym} 250 400 0 0 {name=l78 lab=GND}
+C {madvlsi/vdd.sym} 400 140 0 0 {name=l79 lab=VDD}
+C {madvlsi/gnd.sym} 400 200 0 0 {name=l80 lab=GND}
+C {madvlsi/vdd.sym} 400 280 0 0 {name=l81 lab=VDD}
+C {madvlsi/gnd.sym} 400 340 0 0 {name=l82 lab=GND}
+C {madvlsi/vdd.sym} 520 250 0 0 {name=l83 lab=VDD}
+C {madvlsi/gnd.sym} 520 310 0 0 {name=l84 lab=GND}
+C {devices/lab_pin.sym} 630 280 2 0 {name=l85 sig_type=std_logic lab=NAND}
+C {madvlsi/capacitor.sym} 600 310 2 0 {name=C3
+value=5p
+m=1}
+C {madvlsi/gnd.sym} 600 340 0 0 {name=l86 lab=GND}
+C {devices/lab_pin.sym} 360 -120 3 0 {name=l17 sig_type=std_logic lab=NAND}
