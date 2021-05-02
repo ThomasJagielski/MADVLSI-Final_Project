@@ -1184,7 +1184,7 @@ value=1.8}
 C {madvlsi/gnd.sym} 320 -750 0 0 {name=l23 lab=GND}
 C {madvlsi/vdd.sym} 320 -810 0 0 {name=l26 lab=VDD}
 C {madvlsi/vsource.sym} 420 -790 0 0 {name=VCLK
-value="pulse(0 1.8 0u 1u 1u 50u 100u)"}
+value="pulse(0 1.8 0u 1m 1m 5m 10m)"}
 C {madvlsi/gnd.sym} 420 -760 0 0 {name=l22 lab=GND}
 C {devices/lab_pin.sym} 420 -820 0 0 {name=l25 sig_type=std_logic lab=CLK}
 C {madvlsi/vsource.sym} 210 -780 0 0 {name=Vdd2
@@ -1198,7 +1198,7 @@ C {devices/code_shown.sym} 1130 2260 0 0 {name=SPICE only_toplevel=false value="
 .ic v(Q4)=0 v(Qn4)=1.8
 .ic v(Q5)=0 v(Qn5)=1.8
 .ic v(Q6)=0 v(Qn6)=1.8
-.tran 25u 100m
+.tran 4m 1000m
 .save all"}
 C {madvlsi/tt_models.sym} 120 -620 0 0 {
 name=TT_MODELS
@@ -4912,7 +4912,7 @@ C {madvlsi/gnd.sym} 1560 -290 0 0 {name=l77 lab=GND}
 C {madvlsi/vdd.sym} 1650 -470 0 0 {name=l78 lab=VDD}
 C {madvlsi/gnd.sym} 1650 -270 0 0 {name=l81 lab=GND}
 C {madvlsi/capacitor.sym} 1100 -310 0 0 {name=C2
-value=100f
+value=1p
 m=1}
 C {madvlsi/gnd.sym} 1100 -280 0 0 {name=l84 lab=GND}
 C {devices/lab_pin.sym} 1750 -370 2 0 {name=l90 sig_type=std_logic lab=Vout}
