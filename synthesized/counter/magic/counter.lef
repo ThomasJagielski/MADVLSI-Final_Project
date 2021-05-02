@@ -1,0 +1,172 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO counter
+  CLASS BLOCK ;
+  FOREIGN counter ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 76.455 BY 87.175 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 55.290 83.175 55.570 87.175 ;
+    END
+  END clk
+  PIN counter[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.390 0.000 2.670 4.000 ;
+    END
+  END counter[0]
+  PIN counter[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 72.455 3.440 76.455 4.040 ;
+    END
+  END counter[1]
+  PIN counter[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 72.455 57.840 76.455 58.440 ;
+    END
+  END counter[2]
+  PIN counter[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 54.440 4.000 55.040 ;
+    END
+  END counter[3]
+  PIN counter[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.490 83.175 18.770 87.175 ;
+    END
+  END counter[4]
+  PIN counter[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 39.190 0.000 39.470 4.000 ;
+    END
+  END counter[5]
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 59.155 10.640 60.755 76.400 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 37.380 10.640 38.980 76.400 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 15.605 10.640 17.205 76.400 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 64.240 70.840 65.840 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 42.480 70.840 44.080 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 20.720 70.840 22.320 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 48.265 10.640 49.865 76.400 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 26.495 10.640 28.095 76.400 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 53.360 70.840 54.960 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 31.600 70.840 33.200 ;
+    END
+  END VGND
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 70.840 76.245 ;
+      LAYER met1 ;
+        RECT 2.370 10.640 70.840 76.400 ;
+      LAYER met2 ;
+        RECT 2.400 82.895 18.210 83.175 ;
+        RECT 19.050 82.895 55.010 83.175 ;
+        RECT 55.850 82.895 67.530 83.175 ;
+        RECT 2.400 4.280 67.530 82.895 ;
+        RECT 2.950 3.555 38.910 4.280 ;
+        RECT 39.750 3.555 67.530 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 58.840 72.455 76.325 ;
+        RECT 4.000 57.440 72.055 58.840 ;
+        RECT 4.000 55.440 72.455 57.440 ;
+        RECT 4.400 54.040 72.455 55.440 ;
+        RECT 4.000 4.440 72.455 54.040 ;
+        RECT 4.000 3.575 72.055 4.440 ;
+      LAYER met4 ;
+        RECT 28.495 10.640 36.980 76.400 ;
+        RECT 39.380 10.640 47.865 76.400 ;
+        RECT 50.265 10.640 58.755 76.400 ;
+  END
+END counter
+END LIBRARY
+
