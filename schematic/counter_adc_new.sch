@@ -1171,21 +1171,20 @@ N 510 2660 510 2700 { lab=4clk}
 N 1000 2560 1000 2700 { lab=5clk}
 N 720 2700 1000 2700 { lab=5clk}
 N 880 2660 880 2700 { lab=5clk}
-N 1870 1280 1870 1290 { lab=#net41}
-N 1870 1300 1870 1310 { lab=GND}
-N 1820 1220 1900 1220 { lab=Vout_dac}
-N 1820 1220 1820 1250 { lab=Vout_dac}
-N 1820 1250 1840 1250 { lab=Vout_dac}
-N 1800 1250 1820 1250 { lab=Vout_dac}
-N 1770 1200 1770 1220 { lab=Vout_pmos}
-N 1800 1170 1800 1210 { lab=Vout_pmos}
-N 1770 1210 1800 1210 { lab=Vout_pmos}
+N 1160 -340 1200 -340 { lab=Vout_dac}
+N 1160 -340 1160 -200 { lab=Vout_dac}
+N 1160 -200 1250 -200 { lab=Vout_dac}
+N 1310 -200 1420 -200 { lab=#net41}
+N 1420 -370 1420 -200 { lab=#net41}
+N 1380 -370 1420 -370 { lab=#net41}
+N 1420 -340 1570 -340 { lab=#net41}
+N 1050 -340 1160 -340 { lab=Vout_dac}
 C {madvlsi/vsource.sym} 320 -780 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} 320 -750 0 0 {name=l23 lab=GND}
 C {madvlsi/vdd.sym} 320 -810 0 0 {name=l26 lab=VDD}
 C {madvlsi/vsource.sym} 420 -790 0 0 {name=VCLK
-value="pulse(0 1.8 0m 1u 1u 5m 10m)"}
+value="pulse(0 1.8 0u 1m 1m 5m 10m)"}
 C {madvlsi/gnd.sym} 420 -760 0 0 {name=l22 lab=GND}
 C {devices/lab_pin.sym} 420 -820 0 0 {name=l25 sig_type=std_logic lab=CLK}
 C {madvlsi/vsource.sym} 210 -780 0 0 {name=Vdd2
@@ -1199,7 +1198,7 @@ C {devices/code_shown.sym} 1130 2260 0 0 {name=SPICE only_toplevel=false value="
 .ic v(Q4)=0 v(Qn4)=1.8
 .ic v(Q5)=0 v(Qn5)=1.8
 .ic v(Q6)=0 v(Qn6)=1.8
-.tran 1m 1000m
+.tran 4m 1000m
 .save all"}
 C {madvlsi/tt_models.sym} 120 -620 0 0 {
 name=TT_MODELS
@@ -4904,66 +4903,26 @@ C {devices/lab_pin.sym} 540 2520 2 0 {name=l122 sig_type=std_logic lab=5clk}
 C {devices/lab_pin.sym} 910 2520 2 0 {name=l123 sig_type=std_logic lab=6clk}
 C {devices/lab_pin.sym} 350 2700 0 0 {name=l124 sig_type=std_logic lab=4clk}
 C {devices/lab_pin.sym} 720 2700 0 0 {name=l125 sig_type=std_logic lab=5clk}
-C {madvlsi/nmos3.sym} 1870 1250 0 0 {name=M4
-L=4
-W=64
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/ammeter1.sym} 1870 1290 0 0 {name=VIout}
-C {madvlsi/gnd.sym} 1870 1310 0 0 {name=l11 lab=GND}
-C {madvlsi/nmos3.sym} 1770 1250 2 0 {name=M6
-L=4
-W=64
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/gnd.sym} 1770 1280 0 0 {name=l12 lab=GND}
-C {madvlsi/pmos3.sym} 1770 1170 2 0 {name=M8
-L=4
-W=64
-body=VDD
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 1800 1170 2 0 {name=l144 sig_type=std_logic lab=Vout_pmos}
-C {madvlsi/vdd.sym} 1770 1140 0 0 {name=l145 lab=VDD}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1540 -370 0 0 {name=X13}
 C {devices/lab_pin.sym} 1570 -400 0 0 {name=l55 sig_type=std_logic lab=Vin}
-C {devices/lab_pin.sym} 1570 -340 0 0 {name=l56 sig_type=std_logic lab=Vout_pmos}
+C {devices/lab_pin.sym} 1050 -340 0 0 {name=l56 sig_type=std_logic lab=Vout_dac}
 C {madvlsi/isource.sym} 1590 -290 1 0 {name=I1
 value=1u}
 C {madvlsi/gnd.sym} 1560 -290 0 0 {name=l77 lab=GND}
 C {madvlsi/vdd.sym} 1650 -470 0 0 {name=l78 lab=VDD}
 C {madvlsi/gnd.sym} 1650 -270 0 0 {name=l81 lab=GND}
-C {madvlsi/capacitor.sym} 1960 1250 0 0 {name=C2
-value=100f
+C {madvlsi/capacitor.sym} 1100 -310 0 0 {name=C2
+value=1p
 m=1}
-C {madvlsi/gnd.sym} 1960 1280 0 0 {name=l84 lab=GND}
+C {madvlsi/gnd.sym} 1100 -280 0 0 {name=l84 lab=GND}
 C {devices/lab_pin.sym} 1750 -370 2 0 {name=l90 sig_type=std_logic lab=Vout}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1170 -370 0 0 {name=X14}
+C {madvlsi/vdd.sym} 1280 -470 0 0 {name=l11 lab=VDD}
+C {madvlsi/gnd.sym} 1280 -270 0 0 {name=l12 lab=GND}
+C {madvlsi/resistor.sym} 1280 -200 1 0 {name=R3
+value=1M
+m=1}
+C {madvlsi/isource.sym} 1220 -290 1 0 {name=I2
+value=1u}
+C {madvlsi/gnd.sym} 1190 -290 0 0 {name=l94 lab=GND}
+C {madvlsi/vdd.sym} 1200 -400 0 0 {name=l98 lab=VDD}
