@@ -111,12 +111,12 @@ value="pulse(0 1.8 5u 1n 1n 5u 10u)"}
 C {madvlsi/gnd.sym} 420 -760 0 0 {name=l22 lab=GND}
 C {devices/lab_pin.sym} 420 -820 0 0 {name=l25 sig_type=std_logic lab=CLK}
 C {madvlsi/vsource.sym} 120 -780 0 0 {name=Vdd1
-value=0.2}
+value=0.05}
 C {madvlsi/gnd.sym} 120 -750 0 0 {name=l11 lab=GND}
 C {madvlsi/vsource.sym} 210 -780 0 0 {name=Vin
 value=0.4}
 C {madvlsi/gnd.sym} 210 -750 0 0 {name=l13 lab=GND}
-C {devices/lab_pin.sym} 120 -810 1 0 {name=l12 sig_type=std_logic lab=Vhalf}
+C {devices/lab_pin.sym} 120 -810 1 0 {name=l12 sig_type=std_logic lab=Vcomp_ref}
 C {devices/lab_pin.sym} 210 -810 1 0 {name=l14 sig_type=std_logic lab=Vin}
 C {madvlsi/isource.sym} 1090 -470 1 0 {name=I2
 value=1u}
@@ -158,7 +158,7 @@ C {madvlsi/isource.sym} 710 -440 1 0 {name=I1
 value=1u}
 C {madvlsi/gnd.sym} 680 -440 0 0 {name=l4 lab=GND}
 C {madvlsi/vsource.sym} 40 -780 0 0 {name=Vdd3
-value=0.8}
+value=1}
 C {madvlsi/gnd.sym} 40 -750 0 0 {name=l55 lab=GND}
 C {devices/lab_pin.sym} 40 -810 1 0 {name=l56 sig_type=std_logic lab=Vref}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 360 -160 3 0 {name=X4 Wp=1 Lp=0.15 WW=1 LL=0.15}
@@ -246,7 +246,7 @@ C {devices/lab_pin.sym} 320 -530 0 0 {name=l5 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 970 -560 0 0 {name=l8 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 440 -470 0 0 {name=l15 sig_type=std_logic lab=Vin}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/mux2.sym} 1010 -580 0 0 {name=X13}
-C {madvlsi/gnd.sym} 970 -600 1 0 {name=l64 lab=GND}
-C {madvlsi/gnd.sym} 440 -510 1 0 {name=l9 lab=GND}
 C {madvlsi/gnd.sym} 320 -570 1 0 {name=l16 lab=GND}
+C {devices/lab_pin.sym} 440 -510 0 0 {name=l9 sig_type=std_logic lab=Vref}
 C {madvlsi/vdd.sym} 360 -120 2 0 {name=l17 lab=VDD}
+C {devices/lab_pin.sym} 970 -600 0 0 {name=l64 sig_type=std_logic lab=Vcomp_ref}
