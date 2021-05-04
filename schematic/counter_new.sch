@@ -40,18 +40,18 @@ N -160 -2230 -160 -2090 { lab=Qn4}
 N -460 -2230 -160 -2230 { lab=Qn4}
 N -460 -2230 -460 -2140 { lab=Qn4}
 N -460 -2140 -430 -2140 { lab=Qn4}
-N -1360 -2050 -1360 -1910 { lab=0clk}
-N -1640 -1910 -1360 -1910 { lab=0clk}
-N -1480 -1950 -1480 -1910 { lab=0clk}
-N -990 -2050 -990 -1910 { lab=1clk}
-N -1270 -1910 -990 -1910 { lab=1clk}
-N -1110 -1950 -1110 -1910 { lab=1clk}
-N -620 -2050 -620 -1910 { lab=2clk}
-N -900 -1910 -620 -1910 { lab=2clk}
-N -740 -1950 -740 -1910 { lab=2clk}
-N -250 -2050 -250 -1910 { lab=3clk}
-N -530 -1910 -250 -1910 { lab=3clk}
-N -370 -1950 -370 -1910 { lab=3clk}
+N -1360 -2050 -1360 -1910 { lab=Q0}
+N -1640 -1910 -1360 -1910 { lab=Q0}
+N -1480 -1950 -1480 -1910 { lab=Q0}
+N -990 -2050 -990 -1910 { lab=Q1}
+N -1270 -1910 -990 -1910 { lab=Q1}
+N -1110 -1950 -1110 -1910 { lab=Q1}
+N -620 -2050 -620 -1910 { lab=Q2}
+N -900 -1910 -620 -1910 { lab=Q2}
+N -740 -1950 -740 -1910 { lab=Q2}
+N -250 -2050 -250 -1910 { lab=Q3}
+N -530 -1910 -250 -1910 { lab=Q3}
+N -370 -1950 -370 -1910 { lab=Q3}
 N -1800 -2250 -1800 -2140 { lab=#net1}
 N -1440 -2250 -1440 -2140 { lab=#net3}
 N -1080 -2250 -1080 -2140 { lab=#net4}
@@ -66,12 +66,12 @@ value="pulse(0 1.8 0 0.1u 0.1u 5u 10u)"}
 C {madvlsi/gnd.sym} -1990 -2600 0 0 {name=l22 lab=GND}
 C {devices/lab_pin.sym} -1990 -2660 0 0 {name=l25 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -1800 -2350 1 0 {name=l40 sig_type=std_logic lab=Q0}
-C {devices/code_shown.sym} -1770 -2710 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Qn0)=0
+C {devices/code_shown.sym} -1770 -2710 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Qn0)=1.8
 .ic v(Q1)=0 v(Qn1)=0
 .ic v(Q2)=0 v(Qn2)=0
 .ic v(Q3)=0 v(Qn3)=0
 .ic v(Q4)=0 v(Qn4)=0
-.tran 10u 1000u
+.tran 10u 500u
 .save all"}
 C {madvlsi/tt_models.sym} -2290 -2620 0 0 {
 name=TT_MODELS
@@ -115,15 +115,6 @@ C {madvlsi/gnd.sym} -700 -1990 3 0 {name=l16 lab=GND}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -370 -1990 3 0 {name=X15 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vdd.sym} -410 -1990 3 0 {name=l20 lab=VDD}
 C {madvlsi/gnd.sym} -330 -1990 3 0 {name=l21 lab=GND}
-C {devices/lab_pin.sym} -1820 -2090 2 0 {name=l27 sig_type=std_logic lab=0clk}
-C {devices/lab_pin.sym} -1450 -2090 2 0 {name=l28 sig_type=std_logic lab=1clk}
-C {devices/lab_pin.sym} -1080 -2090 2 0 {name=l29 sig_type=std_logic lab=2clk}
-C {devices/lab_pin.sym} -710 -2090 2 0 {name=l30 sig_type=std_logic lab=3clk}
-C {devices/lab_pin.sym} -340 -2090 2 0 {name=l31 sig_type=std_logic lab=4clk}
-C {devices/lab_pin.sym} -1640 -1910 0 0 {name=l32 sig_type=std_logic lab=0clk}
-C {devices/lab_pin.sym} -1270 -1910 0 0 {name=l33 sig_type=std_logic lab=1clk}
-C {devices/lab_pin.sym} -900 -1910 0 0 {name=l34 sig_type=std_logic lab=2clk}
-C {devices/lab_pin.sym} -530 -1910 0 0 {name=l35 sig_type=std_logic lab=3clk}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -1800 -2290 3 0 {name=X16 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vdd.sym} -1840 -2290 3 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} -1760 -2290 3 0 {name=l18 lab=GND}
@@ -136,6 +127,10 @@ C {madvlsi/gnd.sym} -1040 -2290 3 0 {name=l39 lab=GND}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -710 -2290 3 0 {name=X19 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vdd.sym} -750 -2290 3 0 {name=l41 lab=VDD}
 C {madvlsi/gnd.sym} -670 -2290 3 0 {name=l42 lab=GND}
+C {devices/lab_pin.sym} -1640 -1910 0 0 {name=l27 sig_type=std_logic lab=Q0}
+C {devices/lab_pin.sym} -1270 -1910 0 0 {name=l28 sig_type=std_logic lab=Q1}
+C {devices/lab_pin.sym} -900 -1910 0 0 {name=l30 sig_type=std_logic lab=Q2}
+C {devices/lab_pin.sym} -530 -1910 0 0 {name=l31 sig_type=std_logic lab=Q3}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -340 -2290 3 0 {name=X20 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {madvlsi/vdd.sym} -380 -2290 3 0 {name=l43 lab=VDD}
-C {madvlsi/gnd.sym} -300 -2290 3 0 {name=l44 lab=GND}
+C {madvlsi/vdd.sym} -380 -2290 3 0 {name=l29 lab=VDD}
+C {madvlsi/gnd.sym} -300 -2290 3 0 {name=l32 lab=GND}
