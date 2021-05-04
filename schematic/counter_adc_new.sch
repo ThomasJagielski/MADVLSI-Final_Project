@@ -1171,14 +1171,14 @@ N 510 2660 510 2700 { lab=4clk}
 N 1000 2560 1000 2700 { lab=5clk}
 N 720 2700 1000 2700 { lab=5clk}
 N 880 2660 880 2700 { lab=5clk}
-N 1160 -340 1200 -340 { lab=Vout_dac}
-N 1160 -340 1160 -200 { lab=Vout_dac}
-N 1160 -200 1250 -200 { lab=Vout_dac}
-N 1310 -200 1420 -200 { lab=#net41}
-N 1420 -370 1420 -200 { lab=#net41}
-N 1380 -370 1420 -370 { lab=#net41}
 N 1420 -340 1570 -340 { lab=#net41}
-N 1050 -340 1160 -340 { lab=Vout_dac}
+N 1900 1190 1900 1220 {}
+N 1870 1190 1900 1190 {}
+N 1760 1220 1900 1220 {}
+N 1730 1170 1730 1190 {}
+N 1730 1180 1780 1180 {}
+N 1780 1140 1780 1180 {}
+N 1760 1140 1780 1140 {}
 C {madvlsi/vsource.sym} 320 -780 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} 320 -750 0 0 {name=l23 lab=GND}
@@ -4826,13 +4826,13 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} -170 1910 3 0 {name=l74 sig_type=std_logic lab=Q0}
-C {devices/lab_pin.sym} 40 1910 3 0 {name=l75 sig_type=std_logic lab=Q1}
-C {devices/lab_pin.sym} 250 1910 3 0 {name=l80 sig_type=std_logic lab=Q2}
-C {devices/lab_pin.sym} 440 1910 3 0 {name=l83 sig_type=std_logic lab=Q3}
-C {devices/lab_pin.sym} 630 1910 3 0 {name=l87 sig_type=std_logic lab=Q4}
-C {devices/lab_pin.sym} 820 1910 3 0 {name=l92 sig_type=std_logic lab=Q5}
-C {devices/lab_pin.sym} 1010 1910 3 0 {name=l109 sig_type=std_logic lab=Q6}
+C {devices/lab_pin.sym} -170 2010 3 0 {name=l74 sig_type=std_logic lab=Q0}
+C {devices/lab_pin.sym} 40 2010 3 0 {name=l75 sig_type=std_logic lab=Q1}
+C {devices/lab_pin.sym} 250 2010 3 0 {name=l80 sig_type=std_logic lab=Q2}
+C {devices/lab_pin.sym} 440 2010 3 0 {name=l83 sig_type=std_logic lab=Q3}
+C {devices/lab_pin.sym} 630 2010 3 0 {name=l87 sig_type=std_logic lab=Q4}
+C {devices/lab_pin.sym} 820 2010 3 0 {name=l92 sig_type=std_logic lab=Q5}
+C {devices/lab_pin.sym} 1010 2010 3 0 {name=l109 sig_type=std_logic lab=Q6}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/mux2.sym} -220 1820 3 0 {name=X1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/mux2.sym} -10 1820 3 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/mux2.sym} 200 1820 3 0 {name=X3}
@@ -4905,24 +4905,80 @@ C {devices/lab_pin.sym} 350 2700 0 0 {name=l124 sig_type=std_logic lab=4clk}
 C {devices/lab_pin.sym} 720 2700 0 0 {name=l125 sig_type=std_logic lab=5clk}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1540 -370 0 0 {name=X13}
 C {devices/lab_pin.sym} 1570 -400 0 0 {name=l55 sig_type=std_logic lab=Vin}
-C {devices/lab_pin.sym} 1050 -340 0 0 {name=l56 sig_type=std_logic lab=Vout_dac}
+C {devices/lab_pin.sym} 1420 -340 0 0 {name=l56 sig_type=std_logic lab=Vout_pmos}
 C {madvlsi/isource.sym} 1590 -290 1 0 {name=I1
 value=1u}
 C {madvlsi/gnd.sym} 1560 -290 0 0 {name=l77 lab=GND}
 C {madvlsi/vdd.sym} 1650 -470 0 0 {name=l78 lab=VDD}
 C {madvlsi/gnd.sym} 1650 -270 0 0 {name=l81 lab=GND}
-C {madvlsi/capacitor.sym} 1100 -310 0 0 {name=C2
-value=1p
-m=1}
-C {madvlsi/gnd.sym} 1100 -280 0 0 {name=l84 lab=GND}
 C {devices/lab_pin.sym} 1750 -370 2 0 {name=l90 sig_type=std_logic lab=Vout}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1170 -370 0 0 {name=X14}
-C {madvlsi/vdd.sym} 1280 -470 0 0 {name=l11 lab=VDD}
-C {madvlsi/gnd.sym} 1280 -270 0 0 {name=l12 lab=GND}
-C {madvlsi/resistor.sym} 1280 -200 1 0 {name=R3
-value=1M
-m=1}
-C {madvlsi/isource.sym} 1220 -290 1 0 {name=I2
-value=1u}
-C {madvlsi/gnd.sym} 1190 -290 0 0 {name=l94 lab=GND}
-C {madvlsi/vdd.sym} 1200 -400 0 0 {name=l98 lab=VDD}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -170 1970 3 0 {name=X17 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} -210 1970 3 0 {name=l112 lab=VDD}
+C {madvlsi/gnd.sym} -130 1970 3 0 {name=l113 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 40 1970 3 0 {name=X18 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} 0 1970 3 0 {name=l114 lab=VDD}
+C {madvlsi/gnd.sym} 80 1970 3 0 {name=l126 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 250 1970 3 0 {name=X20 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} 210 1970 3 0 {name=l127 lab=VDD}
+C {madvlsi/gnd.sym} 290 1970 3 0 {name=l128 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 440 1970 3 0 {name=X21 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} 400 1970 3 0 {name=l129 lab=VDD}
+C {madvlsi/gnd.sym} 480 1970 3 0 {name=l130 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 630 1970 3 0 {name=X22 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} 590 1970 3 0 {name=l131 lab=VDD}
+C {madvlsi/gnd.sym} 670 1970 3 0 {name=l132 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 820 1970 3 0 {name=X36 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} 780 1970 3 0 {name=l133 lab=VDD}
+C {madvlsi/gnd.sym} 860 1970 3 0 {name=l134 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 1010 1970 3 0 {name=X37 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} 970 1970 3 0 {name=l135 lab=VDD}
+C {madvlsi/gnd.sym} 1050 1970 3 0 {name=l136 lab=GND}
+C {madvlsi/nmos3.sym} 1870 1220 2 0 {name=Mdumb9
+L=4
+W=64
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/gnd.sym} 1870 1250 0 0 {name=l11 lab=GND}
+C {madvlsi/nmos3.sym} 1730 1220 2 0 {name=Mdumb10
+L=4
+W=64
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/gnd.sym} 1730 1250 0 0 {name=l12 lab=GND}
+C {madvlsi/pmos3.sym} 1730 1140 2 0 {name=M4
+L=4
+W=64
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1780 1140 2 0 {name=l84 sig_type=std_logic lab=Vout_pmos}
+C {madvlsi/vdd.sym} 1730 1110 0 0 {name=l94 lab=VDD}

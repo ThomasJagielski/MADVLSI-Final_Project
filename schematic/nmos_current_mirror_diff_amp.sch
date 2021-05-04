@@ -15,16 +15,17 @@ N 440 -350 470 -350 { lab=#net3}
 N 500 -320 500 -190 { lab=#net4}
 N 500 -190 500 -180 { lab=#net4}
 N 530 -150 720 -150 { lab=#net4}
-N 750 -410 750 -180 { lab=#net5}
+N 750 -410 750 -180 { lab=Vout}
 N 450 -350 450 -300 { lab=#net3}
 N 410 -300 450 -300 { lab=#net3}
 N 500 -200 570 -200 { lab=#net4}
 N 570 -200 570 -150 { lab=#net4}
 N 230 -380 280 -380 { lab=#net1}
 N 280 -440 280 -380 { lab=#net1}
+N 750 -300 770 -300 { lab=Vout}
 C {madvlsi/nmos3.sym} 230 -230 0 0 {name=M1
-L=0.15
-W=1
+L=0.5
+W=12
 body=GND
 nf=1
 mult=1
@@ -38,8 +39,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 410 -230 2 0 {name=M2
-L=0.15
-W=1
+L=0.5
+W=12
 body=GND
 nf=1
 mult=1
@@ -53,8 +54,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 330 -150 0 0 {name=M3
-L=0.15
-W=1
+L=0.5
+W=12
 body=GND
 nf=1
 mult=1
@@ -68,8 +69,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 500 -150 2 0 {name=M4
-L=0.15
-W=1
+L=0.5
+W=12
 body=GND
 nf=1
 mult=1
@@ -83,8 +84,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 750 -150 0 0 {name=M5
-L=0.15
-W=1
+L=0.5
+W=12
 body=GND
 nf=1
 mult=1
@@ -98,8 +99,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 230 -440 2 0 {name=M6
-L=0.15
-W=1
+L=0.5
+W=12
 body=VDD
 nf=1
 mult=1
@@ -113,8 +114,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 410 -350 2 0 {name=M7
-L=0.15
-W=1
+L=0.5
+W=12
 body=VDD
 nf=1
 mult=1
@@ -128,8 +129,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 500 -350 0 0 {name=M8
-L=0.15
-W=1
+L=0.5
+W=12
 body=VDD
 nf=1
 mult=1
@@ -143,8 +144,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 750 -440 0 0 {name=M9
-L=0.15
-W=1
+L=0.5
+W=12
 body=VDD
 nf=1
 mult=1
@@ -164,3 +165,7 @@ C {madvlsi/vdd.sym} 230 -470 0 0 {name=l4 lab=VDD}
 C {madvlsi/vdd.sym} 750 -470 0 0 {name=l5 lab=VDD}
 C {madvlsi/vdd.sym} 410 -380 0 0 {name=l6 lab=VDD}
 C {madvlsi/vdd.sym} 500 -380 0 0 {name=l7 lab=VDD}
+C {devices/ipin.sym} 200 -230 0 0 {name=p1 lab=V1}
+C {devices/ipin.sym} 440 -230 2 0 {name=p2 lab=V2}
+C {devices/ipin.sym} 300 -150 0 0 {name=p3 lab=Vb}
+C {devices/iopin.sym} 770 -300 0 0 {name=p4 lab=Vout}
