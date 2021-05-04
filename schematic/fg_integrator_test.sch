@@ -42,13 +42,13 @@ C {madvlsi/capacitor.sym} -90 370 1 0 {name=C1
 value=15p
 m=1}
 C {devices/lab_pin.sym} 20 160 2 0 {name=l2 sig_type=std_logic lab=Vout}
-C {madvlsi/vsource.sym} -620 170 0 0 {name=Vin
-value=-0.6}
-C {madvlsi/gnd.sym} -620 200 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} -620 140 1 0 {name=l5 sig_type=std_logic lab=Vin}
+C {madvlsi/vsource.sym} -720 170 0 0 {name=Vin
+value="PWL(0 0.9 30u 0.9 30.1u 0)"}
+C {madvlsi/gnd.sym} -720 200 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} -720 140 1 0 {name=l5 sig_type=std_logic lab=Vin}
 C {devices/code_shown.sym} -790 -50 0 0 {name=SPICE only_toplevel=false value=".param WW=6 LL=1 Wp=6 Lp=1
 .ic v(Vout)=0.9
-.tran 3u 60u
+.tran 3u 100u
 .save all"}
 C {madvlsi/tt_models.sym} -470 -50 0 0 {
 name=TT_MODELS
@@ -62,11 +62,11 @@ C {madvlsi/gnd.sym} -100 260 0 0 {name=l7 lab=GND}
 C {madvlsi/vdd.sym} -100 60 0 0 {name=l18 lab=VDD}
 C {devices/lab_pin.sym} -130 240 3 0 {name=l19 sig_type=std_logic lab=Vbp}
 C {madvlsi/resistor.sym} -290 190 1 0 {name=R1
-value=15M
+value=1M
 m=1}
 C {devices/lab_pin.sym} -360 190 0 0 {name=l3 sig_type=std_logic lab=Vin}
 C {madvlsi/vsource.sym} -530 170 0 0 {name=Vref
-value=0.9}
+value=0.45}
 C {madvlsi/gnd.sym} -530 200 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -530 140 1 0 {name=l6 sig_type=std_logic lab=Vref}
-C {madvlsi/gnd.sym} -180 130 1 0 {name=l9 lab=GND}
+C {devices/lab_pin.sym} -180 130 0 0 {name=l8 sig_type=std_logic lab=Vref}
