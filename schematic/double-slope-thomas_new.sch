@@ -95,26 +95,26 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 1040 -5
 C {madvlsi/gnd.sym} 1150 -450 0 0 {name=l3 lab=GND}
 C {madvlsi/vdd.sym} 1150 -650 0 0 {name=l6 lab=VDD}
 C {devices/lab_pin.sym} 1440 -510 0 0 {name=l10 sig_type=std_logic lab=CLK}
-C {madvlsi/vsource.sym} 320 -780 0 0 {name=Vdd
+C {madvlsi/vsource.sym} 570 -950 0 0 {name=Vdd
 value=1.8}
-C {madvlsi/gnd.sym} 320 -750 0 0 {name=l23 lab=GND}
-C {madvlsi/vdd.sym} 320 -810 0 0 {name=l26 lab=VDD}
-C {madvlsi/vsource.sym} 420 -790 0 0 {name=VCLK
+C {madvlsi/gnd.sym} 570 -920 0 0 {name=l23 lab=GND}
+C {madvlsi/vdd.sym} 570 -980 0 0 {name=l26 lab=VDD}
+C {madvlsi/vsource.sym} 670 -960 0 0 {name=VCLK
 value="pulse(0 1.8 5n 1n 1n 0.5u 1u)"}
-C {madvlsi/gnd.sym} 420 -760 0 0 {name=l22 lab=GND}
-C {devices/lab_pin.sym} 420 -820 0 0 {name=l25 sig_type=std_logic lab=CLK}
-C {madvlsi/vsource.sym} 120 -780 0 0 {name=Vdd1
+C {madvlsi/gnd.sym} 670 -930 0 0 {name=l22 lab=GND}
+C {devices/lab_pin.sym} 670 -990 0 0 {name=l25 sig_type=std_logic lab=CLK}
+C {madvlsi/vsource.sym} 370 -950 0 0 {name=Vdd1
 value=0.01}
-C {madvlsi/gnd.sym} 120 -750 0 0 {name=l11 lab=GND}
-C {madvlsi/vsource.sym} 210 -780 0 0 {name=Vin
+C {madvlsi/gnd.sym} 370 -920 0 0 {name=l11 lab=GND}
+C {madvlsi/vsource.sym} 460 -950 0 0 {name=Vin
 value=0.1}
-C {madvlsi/gnd.sym} 210 -750 0 0 {name=l13 lab=GND}
-C {devices/lab_pin.sym} 120 -810 1 0 {name=l12 sig_type=std_logic lab=Vcomp_ref}
-C {devices/lab_pin.sym} 210 -810 1 0 {name=l14 sig_type=std_logic lab=Vin}
+C {madvlsi/gnd.sym} 460 -920 0 0 {name=l13 lab=GND}
+C {devices/lab_pin.sym} 370 -980 1 0 {name=l12 sig_type=std_logic lab=Vcomp_ref}
+C {devices/lab_pin.sym} 460 -980 1 0 {name=l14 sig_type=std_logic lab=Vin}
 C {madvlsi/isource.sym} 1090 -470 1 0 {name=I2
 value=1u}
 C {madvlsi/gnd.sym} 1060 -470 0 0 {name=l39 lab=GND}
-C {devices/code_shown.sym} 650 -1010 0 0 {name=SPICE only_toplevel=false value=".ic v(Vout)=0
+C {devices/code_shown.sym} 900 -1180 0 0 {name=SPICE only_toplevel=false value=".ic v(Vout)=0
 .ic v(Q0)=0 v(Qn0)=1.8
 .ic v(Q1)=0 v(Qn1)=1.8
 .ic v(Q2)=0 v(Qn2)=1.8
@@ -148,16 +148,16 @@ C {madvlsi/gnd.sym} 640 -610 2 0 {name=l38 lab=GND}
 C {madvlsi/isource.sym} 710 -440 1 0 {name=I1
 value=1u}
 C {madvlsi/gnd.sym} 680 -440 0 0 {name=l4 lab=GND}
-C {madvlsi/vsource.sym} 40 -780 0 0 {name=Vdd3
+C {madvlsi/vsource.sym} 290 -950 0 0 {name=Vdd3
 value=1}
-C {madvlsi/gnd.sym} 40 -750 0 0 {name=l55 lab=GND}
-C {devices/lab_pin.sym} 40 -810 1 0 {name=l56 sig_type=std_logic lab=Vref}
+C {madvlsi/gnd.sym} 290 -920 0 0 {name=l55 lab=GND}
+C {devices/lab_pin.sym} 290 -980 1 0 {name=l56 sig_type=std_logic lab=Vref}
 C {madvlsi/gnd.sym} 400 -160 3 0 {name=l57 lab=GND}
 C {madvlsi/gnd.sym} 400 -260 3 0 {name=l58 lab=GND}
 C {madvlsi/vdd.sym} 320 -260 3 0 {name=l59 lab=VDD}
 C {madvlsi/vdd.sym} 320 -160 3 0 {name=l60 lab=VDD}
 C {devices/lab_pin.sym} 1400 -550 2 0 {name=l61 sig_type=std_logic lab=Vout2}
-C {madvlsi/tt_models.sym} 120 -620 0 0 {
+C {madvlsi/tt_models.sym} 1180 -1100 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1

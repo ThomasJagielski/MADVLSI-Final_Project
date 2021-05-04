@@ -24,11 +24,11 @@ C {devices/lab_pin.sym} -370 -30 1 0 {name=l14 sig_type=std_logic lab=Vin}
 C {devices/code_shown.sym} 70 -230 0 0 {name=SPICE only_toplevel=false value=".ic v(Vout)=0
 .control
   save all
-  tran 10u 100m
+  tran 1m 1
 .endc
 .OPTIONS ITL1=400 ITL2=100"}
 C {madvlsi/capacitor.sym} 310 470 1 0 {name=C1
-value=64p
+value=62p
 m=1}
 C {devices/lab_pin.sym} 420 260 2 0 {name=l2 sig_type=std_logic lab=Vout}
 C {madvlsi/isource.sym} 10 490 0 0 {name=I1
@@ -43,7 +43,7 @@ value=".option wnflag=1
 }
 C {devices/lab_pin.sym} 80 290 0 0 {name=l3 sig_type=std_logic lab=Vin}
 C {madvlsi/resistor.sym} 110 290 1 0 {name=R1
-value=10k
+value=100k
 m=1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nmos_current_mirror_diff_amp.sym} 190 260 0 0 {name=X1}
 C {madvlsi/nmos3.sym} 10 430 2 0 {name=M1
@@ -64,4 +64,4 @@ spiceprefix=X
 C {devices/lab_pin.sym} 40 430 2 0 {name=l1 sig_type=std_logic lab=Vb}
 C {madvlsi/vdd.sym} 10 400 0 0 {name=l6 lab=VDD}
 C {devices/lab_pin.sym} 270 340 3 0 {name=l7 sig_type=std_logic lab=Vb}
-C {madvlsi/vdd.sym} 220 230 0 0 {name=l5 lab=VDD}
+C {madvlsi/gnd.sym} 220 230 1 0 {name=l5 lab=GND}
