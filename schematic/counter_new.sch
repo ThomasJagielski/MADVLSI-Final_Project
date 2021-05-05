@@ -134,3 +134,31 @@ C {devices/lab_pin.sym} -530 -1910 0 0 {name=l31 sig_type=std_logic lab=Q3}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -340 -2290 3 0 {name=X20 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vdd.sym} -380 -2290 3 0 {name=l29 lab=VDD}
 C {madvlsi/gnd.sym} -300 -2290 3 0 {name=l32 lab=GND}
+C {madvlsi/vsource.sym} -2090 -2460 0 0 {name=Vdd1
+value=1.8}
+C {madvlsi/gnd.sym} -2090 -2430 0 0 {name=l33 lab=GND}
+C {madvlsi/vsource.sym} -1990 -2460 0 0 {name=Vdd2
+value=1.8}
+C {madvlsi/gnd.sym} -1990 -2430 0 0 {name=l35 lab=GND}
+C {devices/lab_pin.sym} -2090 -2490 0 0 {name=l34 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1990 -2490 0 0 {name=l43 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1910 -2110 0 0 {name=l44 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1910 -2080 0 0 {name=l45 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1790 -2110 0 0 {name=l46 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1790 -2080 0 0 {name=l47 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1540 -2110 0 0 {name=l48 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1540 -2080 0 0 {name=l49 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1420 -2110 0 0 {name=l50 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1420 -2080 0 0 {name=l51 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1170 -2110 0 0 {name=l52 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1170 -2080 0 0 {name=l53 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1050 -2110 0 0 {name=l54 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1050 -2080 0 0 {name=l55 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -800 -2110 0 0 {name=l56 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -800 -2080 0 0 {name=l57 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -680 -2110 0 0 {name=l58 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -680 -2080 0 0 {name=l59 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -430 -2110 0 0 {name=l60 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -430 -2080 0 0 {name=l61 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -310 -2110 0 0 {name=l62 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -310 -2080 0 0 {name=l63 sig_type=std_logic lab=C}

@@ -46,10 +46,22 @@ value=".option wnflag=1
 }
 C {devices/lab_pin.sym} -2120 -2030 0 0 {name=l1 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -1780 -2090 2 0 {name=l2 sig_type=std_logic lab=Qn0}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff_sr.sym} -1960 -2110 0 0 {name=X1}
 C {devices/lab_pin.sym} -1600 -2250 1 0 {name=l3 sig_type=std_logic lab=Q1}
 C {devices/lab_pin.sym} -1580 -2090 2 0 {name=l4 sig_type=std_logic lab=Qn1}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff_sr.sym} -1760 -2110 0 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -2020 -2030 0 0 {name=X3 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/gnd.sym} -2020 -1990 0 0 {name=l5 lab=GND}
 C {madvlsi/vdd.sym} -2020 -2070 0 0 {name=l6 lab=VDD}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff.sym} -1950 -2030 0 0 {name=X1}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff.sym} -1750 -2030 0 0 {name=X2}
+C {madvlsi/vsource.sym} -2090 -2470 0 0 {name=Vdd1
+value=1.8}
+C {madvlsi/gnd.sym} -2090 -2440 0 0 {name=l7 lab=GND}
+C {madvlsi/vsource.sym} -1980 -2470 0 0 {name=Vdd2
+value=1.8}
+C {madvlsi/gnd.sym} -1980 -2440 0 0 {name=l9 lab=GND}
+C {devices/lab_pin.sym} -2090 -2500 0 0 {name=l8 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1980 -2500 0 0 {name=l10 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1910 -2110 0 0 {name=l11 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1710 -2110 0 0 {name=l12 sig_type=std_logic lab=P}
+C {devices/lab_pin.sym} -1910 -2080 0 0 {name=l13 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} -1710 -2080 0 0 {name=l14 sig_type=std_logic lab=C}

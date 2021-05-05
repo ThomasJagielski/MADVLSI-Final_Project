@@ -4,41 +4,57 @@ K {}
 V {}
 S {}
 E {}
-N 240 -670 410 -670 { lab=CLK}
-N 240 -980 410 -980 { lab=D}
-N 780 -960 900 -960 { lab=Q}
-N 780 -690 900 -690 { lab=Qn}
-N 490 -970 700 -970 { lab=#net1}
-N 490 -680 700 -680 { lab=#net2}
-N 670 -700 700 -700 { lab=Q}
-N 670 -760 670 -700 { lab=Q}
-N 670 -760 850 -920 { lab=Q}
-N 850 -960 850 -920 { lab=Q}
-N 670 -950 700 -950 { lab=Qn}
-N 670 -950 670 -890 { lab=Qn}
-N 670 -890 850 -760 { lab=Qn}
-N 850 -760 850 -690 { lab=Qn}
-N 290 -960 410 -960 { lab=CLK}
-N 290 -960 290 -670 { lab=CLK}
-N 360 -980 360 -870 {}
-N 360 -770 360 -690 {}
-N 360 -690 410 -690 {}
-C {devices/ipin.sym} 240 -980 0 0 {name=p3 lab=D}
-C {devices/iopin.sym} 240 -670 2 0 {name=p7 lab=CLK}
-C {devices/opin.sym} 900 -690 0 0 {name=p6 lab=Qn}
-C {devices/opin.sym} 900 -960 0 0 {name=p8 lab=Q}
-C {madvlsi/vdd.sym} 440 -1000 0 0 {name=l3 lab=VDD}
-C {madvlsi/vdd.sym} 440 -710 0 0 {name=l4 lab=VDD}
-C {madvlsi/gnd.sym} 440 -940 0 0 {name=l5 lab=GND}
-C {madvlsi/gnd.sym} 440 -650 0 0 {name=l6 lab=GND}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 370 -970 0 0 {name=X2}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 370 -680 0 0 {name=X3}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 660 -690 0 0 {name=X4}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 660 -960 0 0 {name=X5}
-C {madvlsi/vdd.sym} 730 -990 0 0 {name=l7 lab=VDD}
-C {madvlsi/gnd.sym} 730 -930 0 0 {name=l8 lab=GND}
-C {madvlsi/vdd.sym} 730 -720 0 0 {name=l9 lab=VDD}
-C {madvlsi/gnd.sym} 730 -660 0 0 {name=l10 lab=GND}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 360 -830 1 0 {name=X1 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {madvlsi/vdd.sym} 400 -830 1 0 {name=l1 lab=VDD}
-C {madvlsi/gnd.sym} 320 -830 1 0 {name=l2 lab=GND}
+N 250 -130 420 -130 { lab=CLK}
+N 250 -440 420 -440 { lab=D}
+N 790 -420 910 -420 { lab=Q}
+N 790 -150 910 -150 { lab=Qn}
+N 680 -160 710 -160 { lab=Q}
+N 680 -220 680 -160 { lab=Q}
+N 680 -220 860 -380 { lab=Q}
+N 860 -420 860 -380 { lab=Q}
+N 680 -410 710 -410 { lab=Qn}
+N 680 -410 680 -350 { lab=Qn}
+N 680 -350 860 -220 { lab=Qn}
+N 860 -220 860 -150 { lab=Qn}
+N 300 -420 420 -420 { lab=CLK}
+N 300 -420 300 -130 { lab=CLK}
+N 370 -440 370 -330 { lab=D}
+N 370 -230 370 -150 { lab=#net1}
+N 370 -150 420 -150 { lab=#net1}
+N 500 -140 550 -140 { lab=#net9}
+N 650 -140 710 -140 { lab=#net10}
+N 500 -430 560 -430 { lab=#net11}
+N 650 -430 710 -430 { lab=#net12}
+N 560 -430 560 -420 { lab=#net11}
+N 560 -420 570 -420 { lab=#net11}
+N 570 -460 570 -440 { lab=Preset}
+N 550 -150 550 -140 { lab=#net9}
+N 550 -150 570 -150 { lab=#net9}
+N 570 -130 570 -110 { lab=Preset}
+C {devices/ipin.sym} 250 -440 0 0 {name=p1 lab=D}
+C {devices/iopin.sym} 250 -130 2 0 {name=p2 lab=CLK}
+C {devices/opin.sym} 910 -150 0 0 {name=p4 lab=Qn}
+C {devices/opin.sym} 910 -420 0 0 {name=p5 lab=Q}
+C {madvlsi/vdd.sym} 450 -460 0 0 {name=l11 lab=VDD}
+C {madvlsi/vdd.sym} 450 -170 0 0 {name=l12 lab=VDD}
+C {madvlsi/gnd.sym} 450 -400 0 0 {name=l13 lab=GND}
+C {madvlsi/gnd.sym} 450 -110 0 0 {name=l14 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 380 -430 0 0 {name=X6}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 380 -140 0 0 {name=X7}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 670 -150 0 0 {name=X8}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 670 -420 0 0 {name=X9}
+C {madvlsi/vdd.sym} 740 -450 0 0 {name=l15 lab=VDD}
+C {madvlsi/gnd.sym} 740 -390 0 0 {name=l16 lab=GND}
+C {madvlsi/vdd.sym} 740 -180 0 0 {name=l17 lab=VDD}
+C {madvlsi/gnd.sym} 740 -120 0 0 {name=l18 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 370 -290 1 0 {name=X10 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {madvlsi/vdd.sym} 410 -290 1 0 {name=l19 lab=VDD}
+C {madvlsi/gnd.sym} 330 -290 1 0 {name=l20 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 530 -140 0 0 {name=X11}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nand2.sym} 530 -430 0 0 {name=X12}
+C {madvlsi/vdd.sym} 600 -460 0 0 {name=l25 lab=VDD}
+C {madvlsi/gnd.sym} 600 -400 0 0 {name=l26 lab=GND}
+C {madvlsi/vdd.sym} 600 -170 0 0 {name=l27 lab=VDD}
+C {madvlsi/gnd.sym} 600 -110 0 0 {name=l28 lab=GND}
+C {devices/ipin.sym} 570 -460 1 0 {name=p15 lab=Preset}
+C {devices/ipin.sym} 570 -110 3 0 {name=p16 lab=Clear}
