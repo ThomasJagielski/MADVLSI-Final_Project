@@ -173,7 +173,7 @@ C {madvlsi/vsource.sym} 370 -950 0 0 {name=Vdd1
 value=0.05}
 C {madvlsi/gnd.sym} 370 -920 0 0 {name=l11 lab=GND}
 C {madvlsi/vsource.sym} 460 -950 0 0 {name=Vin
-value=0.5}
+value=0.9}
 C {madvlsi/gnd.sym} 460 -920 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 370 -980 1 0 {name=l12 sig_type=std_logic lab=Vcomp_ref}
 C {devices/lab_pin.sym} 460 -980 1 0 {name=l14 sig_type=std_logic lab=Vin}
@@ -258,7 +258,7 @@ C {madvlsi/gnd.sym} 750 -420 0 0 {name=l93 lab=GND}
 C {madvlsi/vdd.sym} 750 -620 0 0 {name=l94 lab=VDD}
 C {devices/lab_pin.sym} 720 -440 3 0 {name=l95 sig_type=std_logic lab=Vbp}
 C {madvlsi/resistor.sym} 600 -490 1 0 {name=R3
-value=32k
+value=320k
 m=1}
 C {madvlsi/vsource.sym} 290 -950 0 0 {name=Vref
 value=0.45}
@@ -331,7 +331,7 @@ C {devices/lab_pin.sym} 3420 -320 0 0 {name=l66 sig_type=std_logic lab=Q4}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 3610 -700 3 0 {name=X29 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vdd.sym} 3570 -700 3 0 {name=l67 lab=VDD}
 C {madvlsi/gnd.sym} 3650 -700 3 0 {name=l68 lab=GND}
-C {devices/lab_pin.sym} 360 -120 3 0 {name=l31 sig_type=std_logic lab=Q4}
+C {devices/lab_pin.sym} 360 -120 3 0 {name=l31 sig_type=std_logic lab=Q3}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 1310 -550 0 0 {name=X30 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vdd.sym} 1310 -590 0 0 {name=l17 lab=VDD}
 C {madvlsi/gnd.sym} 1310 -510 0 0 {name=l69 lab=GND}
