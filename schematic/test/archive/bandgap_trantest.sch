@@ -39,8 +39,8 @@ N 260 250 260 270 { lab=Vben}
 N -210 290 -210 320 { lab=Vbp}
 N -240 320 -210 320 { lab=Vbp}
 N -210 320 -140 320 { lab=Vbp}
-N -580 120 -160 120 {}
-N -420 180 -160 180 {}
+N -580 120 -160 120 { lab=#net2}
+N -420 180 -160 180 { lab=#net1}
 C {sky130_fd_pr/pnp_05v5.sym} 80 310 0 0 {name=Q2
 model=pnp_05v5_W0p68L0p68
 spiceprefix=X
@@ -91,7 +91,7 @@ name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .param MC_SWITCH=0.0
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
+.lib skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code_shown.sym} -30 520 0 0 {name=SPICE only_toplevel=false value=".param Iref=1u n=5 
 .param Wp=6 Lp=0.5 WW=6 LL=0.5

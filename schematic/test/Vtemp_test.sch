@@ -4,26 +4,16 @@ K {}
 V {}
 S {}
 E {}
-N 30 -70 30 -40 { lab=GND}
 N -10 -70 -10 -40 { lab=GND}
 N -10 -40 30 -40 { lab=GND}
 N 30 -40 30 -10 { lab=GND}
-N 190 -70 190 -40 { lab=GND}
 N 150 -70 150 -40 { lab=GND}
 N 150 -40 190 -40 { lab=GND}
 N 190 -40 190 -10 { lab=GND}
 N 190 -130 190 -100 { lab=Vben}
 N 190 -200 190 -130 { lab=Vben}
 N 30 -200 30 -100 { lab=Vbep}
-C {sky130_fd_pr/pnp_05v5.sym} 10 -70 0 0 {name=Q2
-model=pnp_05v5_W0p68L0p68
-spiceprefix=X
-}
 C {madvlsi/gnd.sym} 30 -10 0 0 {name=l1 lab=GND}
-C {sky130_fd_pr/pnp_05v5.sym} 170 -70 0 0 {name=Q1[7:0]
-model=pnp_05v5_W0p68L0p68
-spiceprefix=X
-}
 C {madvlsi/gnd.sym} 190 -10 0 0 {name=l2 lab=GND}
 C {madvlsi/isource.sym} 30 -230 0 0 {name=I1
 value=\{n*Iref\}}
@@ -56,7 +46,7 @@ C {devices/code_shown.sym} -220 -650 0 0 {name=SPICE only_toplevel=false value="
     option temp=$&currTemp
     save v(Vbep) v(Vben)
     op
-    wrdata ~/Documents/MADVLSI-Final_Project/schematic/data/Vtemp_test-20-100C.csv v(Vbep) v(Vben) currTemp
+    wrdata ~/Documents/MADVLSI-Final_Project/schematic/data/Vtemp_test-20-100Cndiode.csv v(Vbep) v(Vben) currTemp
     if currTemp eq startTemp
       set appendwrite
       set wr_vecnames = FALSE
@@ -64,3 +54,11 @@ C {devices/code_shown.sym} -220 -650 0 0 {name=SPICE only_toplevel=false value="
     let currTemp = currTemp + dt
   end
 .endc"}
+C {sky130_fd_pr/diode.sym} 30 -70 2 0 {name=D1
+model=diode_pd2nw_05v5
+area=1
+}
+C {sky130_fd_pr/diode.sym} 190 -70 2 0 {name=D2
+model=diode_pd2nw_05v5
+area=1
+}
