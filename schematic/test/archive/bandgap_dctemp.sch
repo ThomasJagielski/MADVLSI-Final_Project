@@ -47,6 +47,14 @@ N 430 250 470 250 { lab=Vn}
 N 430 190 470 190 { lab=Vp}
 N 430 270 430 310 { lab=Vn}
 N 440 370 660 370 { lab=Vref}
+N 800 520 820 520 { lab=#net6}
+N 820 520 820 540 { lab=#net6}
+N 820 540 820 580 { lab=#net6}
+N 800 580 820 580 { lab=#net6}
+N 820 580 820 700 { lab=#net6}
+N 1000 510 1000 700 { lab=#net7}
+N 820 700 880 700 { lab=#net6}
+N 940 700 1000 700 { lab=#net7}
 C {sky130_fd_pr/pnp_05v5.sym} 120 310 0 1 {name=Q2
 model=pnp_05v5_W0p68L0p68
 spiceprefix=X
@@ -89,7 +97,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/tt_models.sym} -200 680 0 0 {
+C {madvlsi/tt_models.sym} -170 660 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
@@ -101,7 +109,8 @@ C {devices/code_shown.sym} -10 670 0 0 {name=SPICE only_toplevel=false value=".p
 .param mult=8
 .control
   save all
-  dc temp -40 100 1
+  *dc temp -40 100 1
+  tran 1u 10u
   plot v(Vbep) v(Vben) v(Vbep)-v(Vben) 7.56*(v(Vbep)-v(Vben))+v(Vben)
   plot i(Vmeas1) i(Vmeas2)
   plot v(Vp) v(Vn) v(Vref)
@@ -181,7 +190,6 @@ C {madvlsi/gnd.sym} 180 400 0 1 {name=l25 lab=GND}
 C {madvlsi/resistor.sym} 430 340 2 0 {name=R6
 value=500k
 m=1}
-C {madvlsi/gnd.sym} 430 110 2 1 {name=l26 lab=GND}
 C {madvlsi/gnd.sym} 310 190 1 0 {name=l27 lab=GND}
 C {madvlsi/gnd.sym} 300 250 1 0 {name=l28 lab=GND}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 440 220 0 0 {name=X3 Wp=Wp Lp=Lp WW=WW LL=LL}
@@ -199,11 +207,34 @@ value=500k
 m=1}
 C {madvlsi/ammeter1.sym} 360 250 3 0 {name=Vmeas1}
 C {madvlsi/ammeter1.sym} 430 370 3 0 {name=Vmeas2}
-C {madvlsi/vsource.sym} 340 190 1 0 {name=Vdd1
-value=0.7}
-C {madvlsi/vsource.sym} 330 250 1 0 {name=Vdd2
-value=0.6}
 C {madvlsi/isource.sym} 520 540 0 0 {name=I1
-value=\{Iref\}}
+value=0.5u}
 C {madvlsi/isource.sym} -110 540 0 0 {name=I2
 value=\{Iref\}}
+C {madvlsi/gnd.sym} 900 610 0 1 {name=l31 lab=GND}
+C {madvlsi/vdd.sym} 900 410 0 0 {name=l32 lab=VDD}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/diff_amp.sym} 790 510 0 0 {name=X4 Wp=Wp Lp=Lp WW=WW LL=LL}
+C {madvlsi/gnd.sym} 870 650 0 0 {name=l34 lab=GND}
+C {madvlsi/isource.sym} 870 620 0 0 {name=I3
+value=\{Iref\}}
+C {madvlsi/gnd.sym} 820 480 1 0 {name=l33 lab=GND}
+C {madvlsi/depvsrc.sym} 330 250 1 0 {name=B1
+func=\{v(Vben)\}}
+C {madvlsi/depvsrc.sym} 340 190 1 0 {name=B2
+func=\{v(Vbep)\}}
+C {madvlsi/gnd.sym} 680 520 1 0 {name=l35 lab=GND}
+C {madvlsi/gnd.sym} 680 580 1 0 {name=l36 lab=GND}
+C {madvlsi/depvsrc.sym} 710 580 1 0 {name=B3
+func=\{v(Vben)\}}
+C {madvlsi/depvsrc.sym} 710 520 1 0 {name=B4
+func=\{v(Vbep)\}}
+C {madvlsi/resistor.sym} 770 520 1 0 {name=R8
+value=500k
+m=1}
+C {madvlsi/resistor.sym} 770 580 1 0 {name=R9
+value=500k
+m=1}
+C {madvlsi/resistor.sym} 910 700 1 0 {name=R10
+value=500k
+m=1}
+C {madvlsi/gnd.sym} 430 110 2 1 {name=l26 lab=GND}

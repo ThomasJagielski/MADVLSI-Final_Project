@@ -44,13 +44,8 @@ N 1940 -1890 1960 -1890 { lab=Vb}
 N 2350 -1760 2350 -1730 { lab=Voutp}
 N 3330 -1250 3330 -1220 { lab=Vb}
 N 3330 -1220 3360 -1220 { lab=Vb}
-N 1710 -1240 2780 -1240 { lab=Voutp}
-N 2780 -1720 2780 -1240 { lab=Voutp}
 N 1960 -1890 2320 -1890 { lab=Vb}
 N 2350 -1860 2350 -1760 { lab=Voutp}
-N 2350 -1770 2680 -1770 { lab=Voutp}
-N 2680 -1770 3090 -1770 { lab=Voutp}
-N 2780 -1770 2780 -1720 { lab=Voutp}
 N 1950 -1950 2320 -1950 { lab=Vb}
 N 2130 -1960 2130 -1950 { lab=Vb}
 N 2130 -1950 2130 -1890 { lab=Vb}
@@ -134,6 +129,10 @@ N 2660 230 2700 230 { lab=#net15}
 N 2300 -110 2700 -110 { lab=Vop}
 N 2700 -110 2700 60 { lab=Vop}
 N 2520 -110 2520 0 { lab=Vop}
+N 2350 -1790 2460 -1790 {}
+N 2460 -1790 2460 -1250 {}
+N 2460 -1250 2460 -1240 {}
+N 1710 -1240 2460 -1240 {}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1290 -1440 2 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1290 -1380 0 0 {name=X3}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1340 -1530 3 0 {name=X4}
@@ -141,7 +140,7 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1340 -128
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1580 -1140 0 0 {name=X7}
 C {devices/lab_pin.sym} 1220 -1440 0 0 {name=l7 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} 1220 -1380 0 0 {name=l8 sig_type=std_logic lab=V2}
-C {devices/lab_pin.sym} 3090 -1770 2 0 {name=l9 sig_type=std_logic lab=Voutp}
+C {devices/lab_pin.sym} 2460 -1790 2 0 {name=l9 sig_type=std_logic lab=Voutp}
 C {devices/lab_pin.sym} 1570 -1120 3 0 {name=l12 sig_type=std_logic lab=Vphi1}
 C {devices/lab_pin.sym} 1590 -1120 3 0 {name=l13 sig_type=std_logic lab=Vnphi1}
 C {devices/lab_pin.sym} 1280 -1360 3 0 {name=l14 sig_type=std_logic lab=Vphi1}
