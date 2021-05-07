@@ -1,0 +1,67 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class test2.spice:  Merged 6 devices.
+
+Subcircuit summary:
+Circuit 1: test.spice                      |Circuit 2: test2.spice                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M14 pin M14 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M14a pin M14 connections are tied together (0)
+Resolving automorphisms by property value.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M15 pin M15 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M16a pin net1 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M15 pin M15 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M15a pin net1 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M16 pin M16 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M16a pin net1 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M16 pin M16 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M15a pin net1 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__nfet_01v8M7 pin M7 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__nfet_01v8M7b pin M7 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__nfet_01v8M7 pin M7 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__nfet_01v8M8b pin net2 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__nfet_01v8M8 pin M8 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__nfet_01v8M7b pin M7 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__nfet_01v8M8 pin M8 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__nfet_01v8M8b pin net2 connections are tied together (0)
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M14 pin M14 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M14a pin M14 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M16 pin M16 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M16a pin net1 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M15 pin M15 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M15a pin net1 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__nfet_01v8M6 pin M6 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__nfet_01v8M6a pin M6 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__nfet_01v8M7 pin M7 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__nfet_01v8M7b pin M7 connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__nfet_01v8M8 pin M8 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__nfet_01v8M8b pin net2 connections are tied together (0)
+Cells have no pins;  pin matching not needed.
+Device classes test.spice and test2.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: test.spice
