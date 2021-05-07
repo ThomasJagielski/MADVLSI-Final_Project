@@ -1,0 +1,70 @@
+magic
+tech sky130A
+timestamp 1620356964
+<< psubdiff >>
+rect 270 655 320 670
+rect 270 615 285 655
+rect 305 615 320 655
+rect 270 600 320 615
+rect 455 655 505 670
+rect 455 615 470 655
+rect 490 615 505 655
+rect 455 600 505 615
+<< psubdiffcont >>
+rect 285 615 305 655
+rect 470 615 490 655
+<< xpolycontact >>
+rect 0 745 35 965
+rect 555 745 590 965
+<< locali >>
+rect 185 745 405 965
+rect 270 655 320 670
+rect 270 615 285 655
+rect 305 615 320 655
+rect 270 600 320 615
+rect 455 655 505 670
+rect 455 615 470 655
+rect 490 615 505 655
+rect 455 600 505 615
+rect 0 0 220 220
+rect 370 0 590 220
+<< viali >>
+rect 100 615 120 655
+rect 285 615 305 655
+rect 470 615 490 655
+rect 100 310 120 350
+rect 285 310 305 350
+rect 470 310 490 350
+<< metal1 >>
+rect 85 655 505 670
+rect 85 615 100 655
+rect 120 615 285 655
+rect 305 615 470 655
+rect 490 615 505 655
+rect 85 350 505 615
+rect 85 310 100 350
+rect 120 310 285 350
+rect 305 310 470 350
+rect 490 310 505 350
+rect 85 295 505 310
+use p-res30k  p-res30k_3
+timestamp 1620356190
+transform 1 0 555 0 1 395
+box -100 -395 35 570
+use p-res30k  p-res30k_2
+timestamp 1620356190
+transform 1 0 370 0 1 395
+box -100 -395 35 570
+use p-res30k  p-res30k_1
+timestamp 1620356190
+transform 1 0 185 0 -1 570
+box -100 -395 35 570
+use p-res30k  p-res30k_0
+timestamp 1620356190
+transform -1 0 35 0 1 395
+box -100 -395 35 570
+<< labels >>
+rlabel metal1 85 480 85 480 7 GND
+rlabel xpolycontact 0 855 0 855 7 1
+rlabel xpolycontact 590 855 590 855 3 2
+<< end >>

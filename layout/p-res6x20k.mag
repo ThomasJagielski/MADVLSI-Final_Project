@@ -1,0 +1,54 @@
+magic
+tech sky130A
+timestamp 1620355847
+<< psubdiff >>
+rect 185 530 235 545
+rect 185 490 200 530
+rect 220 490 235 530
+rect 185 475 235 490
+rect 0 -615 50 -600
+rect 0 -655 15 -615
+rect 35 -655 50 -615
+rect 0 -670 50 -655
+<< psubdiffcont >>
+rect 200 490 220 530
+rect 15 -655 35 -615
+<< locali >>
+rect 100 570 320 790
+rect 185 530 235 545
+rect 185 490 200 530
+rect 220 490 235 530
+rect 185 475 235 490
+rect -85 0 135 220
+rect -85 -345 135 -125
+rect 285 -150 320 55
+rect 0 -615 50 -600
+rect 0 -655 15 -615
+rect 35 -655 50 -615
+rect 0 -670 50 -655
+rect 100 -915 320 -695
+use p-res20k  p-res20k_4
+timestamp 1620355008
+transform -1 0 135 0 -1 -345
+box -100 -220 35 570
+use p-res20k  p-res20k_5
+timestamp 1620355008
+transform -1 0 -50 0 -1 -345
+box -100 -220 35 570
+use p-res20k  p-res20k_3
+timestamp 1620355008
+transform 1 0 285 0 1 -695
+box -100 -220 35 570
+use p-res20k  p-res20k_2
+timestamp 1620355008
+transform 1 0 285 0 1 220
+box -100 -220 35 570
+use p-res20k  p-res20k_1
+timestamp 1620355008
+transform -1 0 -50 0 -1 570
+box -100 -220 35 570
+use p-res20k  p-res20k_0
+timestamp 1620355008
+transform 1 0 100 0 1 220
+box -100 -220 35 570
+<< end >>
