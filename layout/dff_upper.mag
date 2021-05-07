@@ -1,0 +1,19 @@
+magic
+tech sky130A
+timestamp 1620355482
+<< locali >>
+rect 225 65 390 85
+rect 495 65 660 85
+use nand2  nand2_2 ~/Documents/MADVLSI-Final_Project/layout
+timestamp 1620350317
+transform 1 0 660 0 1 60
+box -120 -60 150 535
+use nand2  nand2_1
+timestamp 1620350317
+transform 1 0 390 0 1 60
+box -120 -60 150 535
+use nand2  nand2_0
+timestamp 1620350317
+transform 1 0 120 0 1 60
+box -120 -60 150 535
+<< end >>
