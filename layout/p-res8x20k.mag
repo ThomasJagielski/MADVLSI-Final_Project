@@ -1,0 +1,123 @@
+magic
+tech sky130A
+timestamp 1620485645
+<< psubdiff >>
+rect 270 535 320 550
+rect 270 495 285 535
+rect 305 495 320 535
+rect 270 480 320 495
+rect 455 535 505 550
+rect 455 495 470 535
+rect 490 495 505 535
+rect 455 480 505 495
+rect 270 -385 320 -370
+rect 270 -425 285 -385
+rect 305 -425 320 -385
+rect 270 -440 320 -425
+rect 455 -385 505 -370
+rect 455 -425 470 -385
+rect 490 -425 505 -385
+rect 455 -440 505 -425
+<< psubdiffcont >>
+rect 100 495 120 535
+rect 285 495 305 535
+rect 470 495 490 535
+rect 285 -425 305 -385
+rect 470 -425 490 -385
+<< locali >>
+rect 0 575 220 795
+rect 370 575 590 795
+rect 270 535 320 550
+rect 270 495 285 535
+rect 305 495 320 535
+rect 270 480 320 495
+rect 455 535 505 550
+rect 455 495 470 535
+rect 490 495 505 535
+rect 455 480 505 495
+rect 0 5 35 225
+rect 185 5 405 225
+rect 0 -345 35 -125
+rect 185 -340 405 -120
+rect 555 -130 590 10
+rect 270 -385 320 -370
+rect 270 -425 285 -385
+rect 305 -425 320 -385
+rect 270 -440 320 -425
+rect 455 -385 505 -370
+rect 455 -425 470 -385
+rect 490 -425 505 -385
+rect 455 -440 505 -425
+rect 0 -915 220 -695
+rect 370 -915 590 -695
+<< viali >>
+rect 100 495 120 535
+rect 285 495 305 535
+rect 470 495 490 535
+rect 100 265 120 305
+rect 285 265 305 305
+rect 470 265 490 305
+rect 100 -425 120 -385
+rect 285 -425 305 -385
+rect 470 -425 490 -385
+rect 100 -655 120 -615
+rect 285 -655 305 -615
+rect 470 -655 490 -615
+<< metal1 >>
+rect 85 535 505 550
+rect 85 495 100 535
+rect 120 495 285 535
+rect 305 495 470 535
+rect 490 495 505 535
+rect 85 305 505 495
+rect 85 265 100 305
+rect 120 265 285 305
+rect 305 265 470 305
+rect 490 265 505 305
+rect 85 -385 505 265
+rect 85 -425 100 -385
+rect 120 -425 285 -385
+rect 305 -425 470 -385
+rect 490 -425 505 -385
+rect 85 -615 505 -425
+rect 85 -655 100 -615
+rect 120 -655 285 -615
+rect 305 -655 470 -615
+rect 490 -655 505 -615
+rect 85 -670 505 -655
+use p-res20k  p-res20k_4
+timestamp 1620355008
+transform 1 0 555 0 1 -695
+box -100 -220 35 570
+use p-res20k  p-res20k_5
+timestamp 1620355008
+transform 1 0 370 0 1 -695
+box -100 -220 35 570
+use p-res20k  p-res20k_6
+timestamp 1620355008
+transform 1 0 185 0 1 -695
+box -100 -220 35 570
+use p-res20k  p-res20k_7
+timestamp 1620355008
+transform -1 0 35 0 -1 -345
+box -100 -220 35 570
+use p-res20k  p-res20k_3
+timestamp 1620355008
+transform 1 0 555 0 1 225
+box -100 -220 35 570
+use p-res20k  p-res20k_0
+timestamp 1620355008
+transform -1 0 35 0 1 225
+box -100 -220 35 570
+use p-res20k  p-res20k_2
+timestamp 1620355008
+transform 1 0 370 0 1 225
+box -100 -220 35 570
+use p-res20k  p-res20k_1
+timestamp 1620355008
+transform 1 0 185 0 -1 575
+box -100 -220 35 570
+<< labels >>
+rlabel locali 0 -235 0 -235 7 1
+rlabel locali 0 115 0 115 7 2
+<< end >>
