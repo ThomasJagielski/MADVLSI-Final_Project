@@ -1,0 +1,33 @@
+magic
+tech sky130A
+timestamp 1620493736
+<< error_p >>
+rect -60 0 0 150
+rect 60 0 120 150
+<< nmos >>
+rect 0 0 60 150
+<< ndiff >>
+rect -60 135 0 150
+rect -60 15 -45 135
+rect -15 15 0 135
+rect -60 0 0 15
+rect 60 135 120 150
+rect 60 15 75 135
+rect 105 15 120 135
+rect 60 0 120 15
+<< ndiffc >>
+rect -45 15 -15 135
+rect 75 15 105 135
+<< poly >>
+rect 0 150 60 165
+rect 0 -15 60 0
+<< locali >>
+rect -55 135 -5 145
+rect -55 15 -45 135
+rect -15 15 -5 135
+rect -55 5 -5 15
+rect 65 135 115 145
+rect 65 15 75 135
+rect 105 15 115 135
+rect 65 5 115 15
+<< end >>
