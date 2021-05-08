@@ -1,9 +1,8 @@
 magic
 tech sky130A
-timestamp 1620436825
+timestamp 1620437679
 << locali >>
 rect -45 -40 95 -20
-rect 180 -40 205 -20
 use inverter  inverter_0
 timestamp 1620435323
 transform 1 0 120 0 1 -120
