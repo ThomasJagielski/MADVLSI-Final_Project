@@ -1,24 +1,46 @@
 magic
 tech sky130A
-timestamp 1620435178
+timestamp 1620491527
+<< poly >>
+rect 430 685 470 695
+rect 430 665 440 685
+rect 460 665 470 685
+rect 430 655 470 665
+rect 160 620 200 630
+rect 160 600 170 620
+rect 190 600 200 620
+rect 160 590 200 600
+rect 455 590 470 655
+<< polycont >>
+rect 440 665 460 685
+rect 170 600 190 620
 << locali >>
-rect 785 85 810 105
+rect 430 685 470 695
+rect 430 675 440 685
+rect 0 665 440 675
+rect 460 675 470 685
+rect 460 665 810 675
+rect 0 655 810 665
+rect 0 620 810 630
+rect 0 610 170 620
+rect 160 600 170 610
+rect 190 610 810 620
+rect 190 600 200 610
+rect 160 590 200 600
 rect 0 65 120 85
 rect 225 65 390 85
 rect 495 65 660 85
-rect 0 0 160 20
-rect 430 -20 450 0
-rect 0 -40 450 -20
-use nand2  nand2_2
-timestamp 1620350317
-transform 1 0 660 0 1 60
+rect 765 65 810 85
+use nand2  nand2_0
+timestamp 1620490283
+transform 1 0 120 0 1 60
 box -120 -60 150 535
 use nand2  nand2_1
-timestamp 1620350317
+timestamp 1620490283
 transform 1 0 390 0 1 60
 box -120 -60 150 535
-use nand2  nand2_0
-timestamp 1620350317
-transform 1 0 120 0 1 60
+use nand2  nand2_2
+timestamp 1620490283
+transform 1 0 660 0 1 60
 box -120 -60 150 535
 << end >>

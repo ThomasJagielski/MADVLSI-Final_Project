@@ -1,30 +1,41 @@
 magic
 tech sky130A
-timestamp 1620436085
+timestamp 1620491735
 << poly >>
 rect 925 670 965 680
+rect 90 660 130 670
+rect 90 640 100 660
+rect 120 640 130 660
+rect 90 630 130 640
 rect 925 650 935 670
 rect 955 650 965 670
 rect 925 640 965 650
 rect 925 630 940 640
 << polycont >>
+rect 100 640 120 660
 rect 935 650 955 670
 << locali >>
-rect 805 785 1010 805
+rect 760 1355 1010 1375
+rect 760 1310 1010 1330
+rect 805 765 1010 785
+rect 90 670 115 765
 rect 735 700 900 720
+rect 90 660 130 670
+rect 90 640 100 660
+rect 120 640 130 660
+rect 90 630 130 640
 rect 880 610 900 700
-rect 925 680 945 785
+rect 925 680 945 765
 rect 925 670 965 680
 rect 925 650 935 670
 rect 955 650 965 670
 rect 925 640 965 650
-rect -5 105 90 125
-use dff_upper  dff_upper_0 ~/Documents/MADVLSI-Final_Project/layout
-timestamp 1620435178
-transform 1 0 -5 0 1 700
-box 0 -40 810 595
-use dff_lower  dff_lower_0 ~/Documents/MADVLSI-Final_Project/layout
-timestamp 1620436085
+use dff_lower  dff_lower_0
+timestamp 1620491637
 transform 1 0 -35 0 1 130
-box 30 -130 1045 505
+box 30 -200 1045 505
+use dff_upper  dff_upper_0
+timestamp 1620491527
+transform 1 0 -5 0 1 700
+box 0 0 810 695
 << end >>
