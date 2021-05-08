@@ -1,20 +1,30 @@
 magic
 tech sky130A
-timestamp 1620350971
-use nand2  nand2_2
-timestamp 1620350317
-transform 1 0 895 0 1 -30
-box -120 -60 150 535
-use nand2  nand2_1
-timestamp 1620350317
-transform 1 0 625 0 1 -30
-box -120 -60 150 535
-use inverter  inverter_0
-timestamp 1620350801
-transform 1 0 150 0 1 -105
-box -120 80 85 610
-use nand2  nand2_0
-timestamp 1620350317
-transform 1 0 355 0 1 -30
-box -120 -60 150 535
+timestamp 1620436085
+<< poly >>
+rect 925 670 965 680
+rect 925 650 935 670
+rect 955 650 965 670
+rect 925 640 965 650
+rect 925 630 940 640
+<< polycont >>
+rect 935 650 955 670
+<< locali >>
+rect 805 785 1010 805
+rect 735 700 900 720
+rect 880 610 900 700
+rect 925 680 945 785
+rect 925 670 965 680
+rect 925 650 935 670
+rect 955 650 965 670
+rect 925 640 965 650
+rect -5 105 90 125
+use dff_upper  dff_upper_0 ~/Documents/MADVLSI-Final_Project/layout
+timestamp 1620435178
+transform 1 0 -5 0 1 700
+box 0 -40 810 595
+use dff_lower  dff_lower_0 ~/Documents/MADVLSI-Final_Project/layout
+timestamp 1620436085
+transform 1 0 -35 0 1 130
+box 30 -130 1045 505
 << end >>

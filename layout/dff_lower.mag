@@ -1,0 +1,28 @@
+magic
+tech sky130A
+timestamp 1620436085
+<< locali >>
+rect 210 -25 355 -5
+rect 460 -25 630 -5
+rect 730 -25 925 -5
+rect 1000 -25 1045 -5
+rect 30 -90 395 -70
+rect 665 -110 685 -90
+rect 30 -130 685 -110
+use inverter  inverter_0
+timestamp 1620435323
+transform 1 0 150 0 1 -105
+box -120 80 85 610
+use nand2  nand2_0
+timestamp 1620350317
+transform 1 0 355 0 1 -30
+box -120 -60 150 535
+use nand2  nand2_1
+timestamp 1620350317
+transform 1 0 625 0 1 -30
+box -120 -60 150 535
+use nand2  nand2_2
+timestamp 1620350317
+transform 1 0 895 0 1 -30
+box -120 -60 150 535
+<< end >>
