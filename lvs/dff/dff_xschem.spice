@@ -9,7 +9,7 @@ X6 D CLK net4 VDD GND nand2
 X7 net1 CLK net2 VDD GND nand2
 X8 Q net3 Qn VDD GND nand2
 X9 net5 Qn Q VDD GND nand2
-X10 D net1 VDD GND inverter Wp=1 Lp=0.15 WW=1 LL=0.15
+X10 D net1 VDD GND inverter
 X1 VDD Preset GND net5 net4 and2
 X2 VDD net2 GND net3 Clear and2
 **.ends
@@ -42,18 +42,15 @@ XM4 net1 A VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/n
 * expanding   symbol:  /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym # of
 *+ pins=4
 
-.subckt inverter  A Y VP VN   Wp=1 Lp=0.15 WW=1 LL=0.15
-*.opin Y
+.subckt inverter  A Y VP VN
 *.ipin A
 *.iopin VP
 *.iopin VN
-XM3 Y A VP VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+*.opin Y
+XM1 Y A VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-XM4 Y A VP VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM5 Y A VN GND sky130_fd_pr__nfet_01v8 L='Lp' W='Wp' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 Y A VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 .ends
@@ -68,7 +65,7 @@ XM5 Y A VN GND sky130_fd_pr__nfet_01v8 L='Lp' W='Wp' nf=1 ad='int((nf+1)/2) * W/
 *.ipin B
 *.opin Y
 X1 A B net1 VP VN nand2
-X2 net1 Y VP VN inverter Wp=1 Lp=0.15 WW=1 LL=0.15
+X2 net1 Y VP VN inverter
 .ends
 
 .GLOBAL VDD

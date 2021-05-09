@@ -1,0 +1,70 @@
+magic
+tech sky130A
+timestamp 1620580969
+<< poly >>
+rect 480 1300 520 1310
+rect 480 1280 490 1300
+rect 510 1280 520 1300
+rect 480 1270 520 1280
+rect 215 1240 255 1250
+rect 215 1220 225 1240
+rect 245 1220 255 1240
+rect 215 1210 255 1220
+rect 490 1210 505 1270
+rect 220 1205 235 1210
+rect 155 555 170 685
+rect 235 620 430 635
+rect 415 555 430 620
+<< polycont >>
+rect 490 1280 510 1300
+rect 225 1220 245 1240
+<< locali >>
+rect 480 1300 520 1310
+rect 480 1290 490 1300
+rect 35 1280 490 1290
+rect 510 1290 520 1300
+rect 510 1280 1050 1290
+rect 35 1270 1050 1280
+rect 215 1240 255 1250
+rect 215 1230 225 1240
+rect 35 1220 225 1230
+rect 245 1230 255 1240
+rect 245 1220 1050 1230
+rect 35 1210 1050 1220
+rect 280 705 430 725
+rect 35 685 160 705
+rect 215 30 350 55
+rect 475 50 625 70
+use nand2  nand2_3
+timestamp 1620490283
+transform 1 0 900 0 1 680
+box -120 -60 150 535
+use nand2  nand2_2
+timestamp 1620490283
+transform 1 0 155 0 1 680
+box -120 -60 150 535
+use and2  and2_1
+timestamp 1620580969
+transform 1 0 575 0 1 725
+box -270 -105 205 490
+use nand2  nand2_1
+timestamp 1620490283
+transform 1 0 1085 0 1 25
+box -120 -60 150 535
+use and2  and2_0
+timestamp 1620580969
+transform 1 0 760 0 1 70
+box -270 -105 205 490
+use nand2  nand2_0
+timestamp 1620490283
+transform 1 0 350 0 1 25
+box -120 -60 150 535
+use inverter  inverter_0
+timestamp 1620435323
+transform 1 0 155 0 1 -50
+box -120 80 85 610
+<< labels >>
+rlabel locali 35 695 35 695 7 D
+rlabel locali 35 1220 35 1220 7 CLK
+rlabel locali 35 1280 35 1280 7 preset
+<< end >>

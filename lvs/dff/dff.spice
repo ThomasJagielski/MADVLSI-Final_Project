@@ -1,4 +1,4 @@
-* SPICE3 file created from dff.ext - technology: sky130A
+* NGSPICE file created from dff.ext - technology: sky130A
 
 .subckt inverter A Y VP VN
 X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
@@ -17,16 +17,15 @@ Xinverter_0 nand2_0/Y inverter_0/Y nand2_0/VP VSUBS inverter
 Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_0/VP VSUBS nand2
 .ends
 
-.subckt dff_lower VSUBS nand2_2/Y inverter_0/A nand2_2/VP nand2_2/B nand2_0/B
+.subckt dff_lower VSUBS nand2_2/Y inverter_0/A nand2_2/VP nand2_2/A nand2_0/B
 Xinverter_0 inverter_0/A nand2_0/A nand2_2/VP VSUBS inverter
-Xand2_0 VSUBS nand2_2/VP nand2_0/Y and2_0/nand2_0/B nand2_2/A and2
+Xand2_0 VSUBS nand2_2/VP nand2_0/Y and2_0/nand2_0/B nand2_2/B and2
 Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_2/VP VSUBS nand2
 Xnand2_2 nand2_2/A nand2_2/B nand2_2/Y nand2_2/VP VSUBS nand2
 .ends
 
-.subckt dff_upper VSUBS nand2_2/Y nand2_2/VP and2_0/nand2_0/B nand2_2/B nand2_0/B
-+ nand2_0/A
-Xand2_0 VSUBS nand2_2/VP nand2_0/Y and2_0/nand2_0/B nand2_2/A and2
+.subckt dff_upper VSUBS nand2_2/Y nand2_2/B nand2_0/B and2_0/nand2_0/A nand2_0/A nand2_2/VP
+Xand2_0 VSUBS nand2_2/VP and2_0/nand2_0/A nand2_0/Y nand2_2/A and2
 Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_2/VP VSUBS nand2
 Xnand2_2 nand2_2/A nand2_2/B nand2_2/Y nand2_2/VP VSUBS nand2
 .ends
@@ -34,9 +33,9 @@ Xnand2_2 nand2_2/A nand2_2/B nand2_2/Y nand2_2/VP VSUBS nand2
 
 * Top level circuit dff
 
-Xdff_lower_0 VSUBS dff_upper_0/nand2_2/B dff_upper_0/nand2_0/A dff_upper_0/nand2_2/VP
-+ Q dff_upper_0/nand2_0/B dff_lower
-Xdff_upper_0 VSUBS Q dff_upper_0/nand2_2/VP dff_upper_0/and2_0/nand2_0/B dff_upper_0/nand2_2/B
-+ dff_upper_0/nand2_0/B dff_upper_0/nand2_0/A dff_upper
+Xdff_lower_0 GND dff_upper_0/nand2_2/B dff_upper_0/nand2_0/A VDD Q dff_upper_0/nand2_0/B
++ dff_lower
+Xdff_upper_0 GND Q dff_upper_0/nand2_2/B dff_upper_0/nand2_0/B dff_upper_0/and2_0/nand2_0/A
++ dff_upper_0/nand2_0/A VDD dff_upper
 .end
 
