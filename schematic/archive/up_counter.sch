@@ -82,8 +82,6 @@ value=".option wnflag=1
 }
 C {devices/lab_pin.sym} -2130 -2270 0 0 {name=l1 sig_type=std_logic lab=CLK}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff.sym} -1960 -2350 0 0 {name=X1}
-C {madvlsi/vdd.sym} -130 2270 0 0 {name=l18 lab=VDD}
-C {madvlsi/vdd.sym} 20 2270 0 0 {name=l4 lab=VDD}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff.sym} -1840 -2350 0 0 {name=X2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} -1730 -2210 3 0 {name=X3 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {madvlsi/vdd.sym} -1770 -2210 3 0 {name=l3 lab=VDD}
