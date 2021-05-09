@@ -1,4 +1,4 @@
-timestamp 1620437679
+timestamp 1620594849
 version 8.3
 tech sky130A
 style ngspice()
@@ -8,14 +8,14 @@ use nand2 nand2_0 1 0 -300 0 1 -90
 use inverter inverter_0 1 0 240 0 1 -240
 node "li_n90_n80#" 85 186.36 -90 -80 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11200 640 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "nand2_0/VP" "nand2_0/VN" -2.84217e-14
-cap "nand2_0/B" "nand2_0/Y" 15.8652
-cap "inverter_0/Y" "nand2_0/Y" 42.973
-cap "nand2_0/VN" "inverter_0/Y" 5.68434e-14
 cap "nand2_0/VP" "inverter_0/Y" 38
 cap "nand2_0/VN" "nand2_0/Y" 117.15
-cap "nand2_0/Y" "nand2_0/A" 10.1538
+cap "nand2_0/A" "nand2_0/Y" 10.1538
 cap "nand2_0/VP" "nand2_0/Y" 54.5217
+cap "nand2_0/B" "nand2_0/Y" 15.8652
+cap "inverter_0/Y" "nand2_0/Y" 42.973
+cap "nand2_0/VN" "nand2_0/VP" -2.84217e-14
+cap "nand2_0/VN" "inverter_0/Y" 5.68434e-14
 merge "inverter_0/VN" "nand2_0/VN" -155.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760 0 0 0 0 0 0 0 0 0 0
 merge "nand2_0/VN" "VSUBS"
 merge "inverter_0/A" "nand2_0/Y" -44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 0 0 0 0 0 0 0 0

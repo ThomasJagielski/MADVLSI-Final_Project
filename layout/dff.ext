@@ -1,119 +1,122 @@
-timestamp 1620581932
+timestamp 1620594849
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use dff_upper dff_upper_0 1 0 -10 0 1 1400
 use dff_lower dff_lower_0 1 0 -70 0 1 260
-node "GND" 4 3721.96 -10 330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1854400 11280 740600 7500 0 0 0 0 0 0 0 0
-node "VDD" 3 3719.18 -10 840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1886400 11680 439600 4140 0 0 0 0 0 0 0 0
+use dff_upper dff_upper_0 1 0 -10 0 1 1400
+port "GND" 2 -10 1840 -10 1840 m1
+port "VDD" 1 -10 2350 -10 2350 m1
+port "Q" 4 2430 1550 2430 1550 li
+node "GND" 4 3721.96 -10 1840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1854400 11280 740600 7500 0 0 0 0 0 0 0 0
+node "VDD" 3 3719.18 -10 2350 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1886400 11680 439600 4140 0 0 0 0 0 0 0 0
 node "li_1880_1400#" 156 303.76 1880 1400 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20400 1100 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_1930_2620#" 153 315.5 1930 2620 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20000 1080 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_1930_2710#" 153 315.5 1930 2710 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20000 1080 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_180_1260#" 116 306.247 180 1260 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 15900 700 0 0 0 0 0 0 0 0 0 0 0 0
-node "Q" 653 675.825 2130 1260 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13300 780 0 0 30000 1500 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q" 653 675.825 2430 1550 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13300 780 0 0 30000 1500 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_360_1340#" 948 387.905 360 1340 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17700 1240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_2400_790#" 27200 43.2 2400 790 nw 0 0 0 0 14400 1020 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_1980_2160#" 2253 636 1980 2160 nw 0 0 0 0 212000 1860 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "li_1880_1400#" "GND" 116.8
-cap "VDD" "GND" 3073.53
 cap "li_1880_1400#" "VDD" 18.8
-cap "Q" "GND" 195.38
-cap "li_1930_2710#" "li_1930_2620#" 330
-cap "w_1980_2160#" "VDD" 111.15
-cap "Q" "li_1880_1400#" 183.887
+cap "GND" "Q" 195.38
 cap "w_2400_790#" "VDD" 7.41
-subcap "GND" -4198.62
-subcap "VDD" -2014.5
+cap "li_1930_2710#" "li_1930_2620#" 330
+cap "li_1880_1400#" "Q" 183.887
+cap "li_1880_1400#" "GND" 116.8
+cap "w_1980_2160#" "VDD" 111.15
+cap "GND" "VDD" 3073.53
 subcap "a_180_1260#" -300.122
 subcap "a_360_1340#" -169.348
-cap "dff_lower_0/and2_0/nand2_0/Y" "dff_upper_0/and2_0/nand2_0/Y" 4.25806
+cap "dff_lower_0/nand2_0/VN" "dff_lower_0/nand2_0/Y" 158.1
 cap "dff_lower_0/nand2_0/Y" "dff_upper_0/nand2_0/Y" 6
+cap "dff_lower_0/nand2_0/VN" "dff_lower_0/nand2_0/B" 12.3
+cap "dff_lower_0/nand2_0/VN" "dff_lower_0/and2_0/nand2_0/Y" 79.4
+cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/Y" 4.25806
+cap "dff_lower_0/inverter_0/A" "dff_lower_0/nand2_0/VP" 23.9516
+cap "dff_lower_0/nand2_0/a_80_120#" "dff_lower_0/nand2_0/VN" 20.5
+cap "dff_lower_0/inverter_0/A" "dff_lower_0/nand2_0/A" 2.12903
 cap "dff_lower_0/nand2_0/VP" "dff_upper_0/and2_0/nand2_0/A" 2.12903
 cap "dff_lower_0/nand2_0/VN" "dff_lower_0/and2_0/nand2_0/a_80_120#" 20.5
-cap "dff_lower_0/nand2_0/A" "dff_lower_0/nand2_0/VN" 68.1
+cap "dff_lower_0/nand2_0/B" "dff_lower_0/nand2_0/A" 7.97917
+cap "dff_upper_0/nand2_0/Y" "dff_lower_0/nand2_0/VP" 20.1667
 cap "dff_lower_0/nand2_0/VN" "dff_lower_0/nand2_0/VP" -484.615
-cap "dff_lower_0/nand2_0/A" "dff_upper_0/nand2_0/B" 7.97917
-cap "dff_lower_0/nand2_0/a_80_120#" "dff_lower_0/nand2_0/VN" 20.5
-cap "dff_upper_0/nand2_0/B" "dff_lower_0/nand2_0/VN" 12.3
-cap "dff_lower_0/and2_0/nand2_0/B" "dff_lower_0/nand2_0/VN" 12.3
-cap "dff_lower_0/nand2_0/VP" "dff_upper_0/and2_0/nand2_0/Y" 9.58065
-cap "dff_lower_0/nand2_0/A" "dff_upper_0/nand2_0/A" 2.12903
-cap "dff_lower_0/nand2_0/Y" "dff_lower_0/nand2_0/VN" 158.1
-cap "dff_lower_0/nand2_0/VN" "dff_upper_0/nand2_0/A" 31
-cap "dff_lower_0/nand2_0/VP" "dff_upper_0/nand2_0/Y" 20.1667
-cap "dff_upper_0/nand2_0/A" "dff_lower_0/nand2_0/VP" 23.9516
-cap "dff_lower_0/nand2_0/VN" "dff_lower_0/and2_0/nand2_0/Y" 79.4
-cap "dff_lower_0/and2_0/nand2_0/B" "dff_upper_0/and2_0/nand2_0/Y" 1.27778
-subcap "li_1880_1400#" -388.395
-subcap "Q" -724.1
-cap "GND" "dff_lower_0/nand2_2/B" 213.15
-cap "dff_upper_0/nand2_2/Y" "dff_lower_0/nand2_2/B" 3.45
-cap "dff_lower_0/nand2_2/VP" "dff_lower_0/nand2_2/VN" -360
-cap "GND" "dff_upper_0/nand2_2/Y" 31.01
-cap "dff_lower_0/nand2_2/VP" "dff_upper_0/nand2_2/B" 10.61
-cap "dff_lower_0/and2_0/nand2_0/Y" "dff_upper_0/nand2_2/A" 1.27778
-cap "GND" "dff_lower_0/nand2_2/VN" -217.252
-cap "dff_lower_0/nand2_2/B" "dff_upper_0/nand2_2/B" 3.66667
-cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/B" 2.12903
-cap "GND" "dff_upper_0/nand2_2/B" 142.25
-cap "dff_lower_0/nand2_2/VP" "dff_upper_0/nand2_2/A" 11.7097
-cap "dff_lower_0/and2_0/nand2_0/Y" "GND" -453.405
-cap "dff_lower_0/nand2_2/B" "dff_upper_0/nand2_2/A" 2.12903
-cap "dff_lower_0/nand2_2/a_80_120#" "GND" 10.2925
-cap "GND" "dff_lower_0/nand2_2/VP" 254.29
-cap "dff_upper_0/nand2_2/Y" "dff_lower_0/nand2_2/VP" 18.553
-cap "dff_upper_0/nand2_0/Y" "dff_lower_0/nand2_0/Y" 6
-cap "dff_upper_0/nand2_0/A" "dff_upper_0/nand2_0/Y" 14.1429
-cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/Y" 4.25806
-cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_0/VP" -26.4
-cap "dff_upper_0/nand2_0/A" "dff_lower_0/inverter_0/Y" 2.12903
-cap "dff_upper_0/nand2_0/A" "dff_upper_0/nand2_2/VN" 3.19355
-cap "dff_upper_0/nand2_0/B" "dff_lower_0/nand2_0/A" 4.3125
-cap "dff_lower_0/nand2_0/VP" "dff_upper_0/nand2_0/Y" 20.1667
-cap "dff_upper_0/nand2_2/VP" "dff_upper_0/nand2_2/VN" -484.615
+cap "dff_lower_0/nand2_0/VN" "dff_lower_0/and2_0/nand2_0/B" 12.3
 cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/nand2_0/VP" 9.58065
+cap "dff_lower_0/nand2_0/VN" "dff_lower_0/nand2_0/A" 68.1
 cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/B" 1.27778
-cap "dff_upper_0/nand2_0/B" "dff_upper_0/and2_0/nand2_0/A" 4.3125
-cap "dff_upper_0/nand2_0/B" "dff_lower_0/inverter_0/Y" 3.66667
-cap "dff_lower_0/nand2_0/VP" "dff_upper_0/and2_0/nand2_0/A" 2.12903
-cap "dff_upper_0/nand2_0/A" "dff_upper_0/nand2_0/B" 33
+cap "dff_lower_0/inverter_0/A" "dff_lower_0/nand2_0/VN" 31
+subcap "li_1880_1400#" -388.395
+cap "dff_lower_0/and2_0/nand2_0/Y" "GND" -453.405
+cap "dff_upper_0/nand2_2/A" "dff_lower_0/and2_0/nand2_0/Y" 1.27778
+cap "dff_lower_0/nand2_2/B" "dff_lower_0/nand2_2/A" 3.45
+cap "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_2/VP" -360
+cap "dff_lower_0/nand2_2/Y" "GND" 142.25
+cap "GND" "dff_lower_0/nand2_2/a_80_120#" 10.2925
+cap "GND" "dff_lower_0/nand2_2/VP" 254.29
+cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_2/VP" 11.7097
+cap "dff_lower_0/nand2_2/B" "dff_lower_0/nand2_2/Y" 3.66667
+cap "dff_lower_0/nand2_2/Y" "dff_lower_0/nand2_2/A" 2.12903
+cap "dff_lower_0/nand2_2/A" "dff_lower_0/nand2_2/VP" 18.553
+cap "dff_lower_0/nand2_2/VN" "GND" -217.252
+cap "dff_lower_0/nand2_2/Y" "dff_lower_0/nand2_2/VP" 10.61
+cap "dff_lower_0/nand2_2/B" "GND" 213.15
+cap "dff_lower_0/nand2_2/B" "dff_upper_0/nand2_2/A" 2.12903
+cap "dff_lower_0/nand2_2/A" "GND" 31.01
+subcap "GND" -3958.34
+subcap "VDD" -2014.61
+cap "dff_lower_0/nand2_0/Y" "dff_upper_0/nand2_0/Y" 6
+cap "dff_upper_0/nand2_0/Y" "dff_lower_0/nand2_0/VP" 20.1667
+cap "dff_upper_0/and2_0/nand2_0/A" "dff_upper_0/nand2_0/B" 4.3125
+cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/nand2_0/VP" 9.58065
+cap "dff_lower_0/inverter_0/Y" "dff_upper_0/nand2_0/B" 3.66667
+cap "dff_upper_0/and2_0/nand2_0/A" "dff_lower_0/nand2_0/VP" 2.12903
+cap "dff_lower_0/nand2_0/A" "dff_upper_0/nand2_0/B" 4.3125
+cap "dff_upper_0/nand2_0/B" "dff_upper_0/nand2_0/A" 33
+cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_0/VP" -26.4
+cap "dff_lower_0/inverter_0/Y" "dff_upper_0/nand2_0/A" 2.12903
+cap "dff_lower_0/and2_0/nand2_0/B" "dff_upper_0/and2_0/nand2_0/Y" 1.27778
+cap "dff_upper_0/nand2_2/VP" "dff_upper_0/nand2_2/VN" -484.615
+cap "dff_lower_0/and2_0/nand2_0/Y" "dff_upper_0/and2_0/nand2_0/Y" 4.25806
+cap "dff_upper_0/nand2_2/VN" "dff_upper_0/nand2_0/A" 3.19355
 cap "dff_upper_0/nand2_0/A" "dff_lower_0/nand2_0/VP" 23.9516
+cap "dff_upper_0/nand2_0/A" "dff_upper_0/nand2_0/Y" 14.1429
 subcap "li_1930_2710#" -363.6
-cap "dff_lower_0/and2_0/inverter_0/Y" "dff_upper_0/nand2_2/B" 3.66667
-cap "dff_upper_0/nand2_2/B" "dff_upper_0/nand2_2/VN" -4.4
-cap "dff_lower_0/and2_0/inverter_0/Y" "dff_upper_0/nand2_2/A" 2.12903
+cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_2/VP" 531.125
 cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/B" 14.3095
-cap "dff_upper_0/nand2_2/VP" "dff_upper_0/nand2_2/B" 29.17
-cap "li_1930_2710#" "li_1930_2620#" -29.7
-cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/VN" -1.65
-cap "dff_upper_0/nand2_2/VP" "dff_upper_0/nand2_2/VN" -2.60693
+cap "dff_upper_0/nand2_2/Y" "dff_lower_0/nand2_2/VP" 175.553
+cap "dff_lower_0/and2_0/inverter_0/A" "dff_upper_0/nand2_2/A" 1.27778
+cap "dff_upper_0/nand2_2/B" "dff_lower_0/nand2_2/VP" 29.17
+cap "dff_upper_0/nand2_2/VN" "dff_upper_0/nand2_2/Y" -1.65
+cap "dff_lower_0/and2_0/inverter_0/Y" "dff_upper_0/nand2_2/A" 2.12903
+cap "li_1930_2620#" "li_1930_2710#" -29.7
+cap "dff_upper_0/nand2_2/VN" "dff_upper_0/nand2_2/B" -4.4
+cap "dff_upper_0/nand2_2/VN" "dff_lower_0/nand2_2/VP" -2.60693
+cap "dff_upper_0/nand2_2/B" "dff_lower_0/and2_0/inverter_0/Y" 3.66667
 cap "dff_upper_0/nand2_2/Y" "dff_lower_0/nand2_2/B" 3.45
 cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/A" 10.1538
-cap "dff_lower_0/and2_0/inverter_0/A" "dff_upper_0/nand2_2/A" 1.27778
-cap "dff_upper_0/nand2_2/A" "dff_upper_0/nand2_2/VP" 531.125
-cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/VP" 175.553
+subcap "VDD" -4574.3
 subcap "li_1930_2620#" -31.975
-cap "li_1930_2710#" "li_1930_2620#" -29.7
-merge "dff_lower_0/VSUBS" "dff_upper_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/VSUBS" "VSUBS"
-merge "dff_lower_0/nand2_2/Y" "dff_upper_0/nand2_2/B" -92.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56400 -160 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_2/B" "li_1880_1400#"
+cap "li_1930_2620#" "li_1930_2710#" -29.7
+merge "dff_upper_0/VSUBS" "dff_lower_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/VSUBS" "VSUBS"
+merge "dff_upper_0/nand2_2/B" "dff_lower_0/nand2_2/Y" -92.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56400 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/nand2_2/Y" "li_1880_1400#"
 merge "dff_upper_0/a_750_1310#" "li_1930_2710#" -638.764 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11660 -2362 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_0/VN" -2864.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44700 -10460 -299100 -2760 0 0 0 0 0 0 0 0
-merge "dff_lower_0/nand2_0/VN" "dff_upper_0/nand2_2/VN"
-merge "dff_upper_0/nand2_2/VN" "GND"
-merge "dff_lower_0/nand2_0/B" "dff_upper_0/nand2_0/B" -82.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_0/B" "a_360_1340#"
-merge "dff_lower_0/inverter_0/A" "dff_upper_0/nand2_0/A" -68.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 -100 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_0/A" "a_180_1260#"
+merge "dff_lower_0/nand2_2/VN" "dff_upper_0/nand2_2/VN" -2864.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44700 -10460 -299100 -2760 0 0 0 0 0 0 0 0
+merge "dff_upper_0/nand2_2/VN" "dff_lower_0/nand2_0/VN"
+merge "dff_lower_0/nand2_0/VN" "GND"
+merge "dff_upper_0/nand2_0/A" "dff_lower_0/inverter_0/A" -68.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/inverter_0/A" "a_180_1260#"
+merge "dff_upper_0/nand2_0/B" "dff_lower_0/nand2_0/B" -82.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/nand2_0/B" "a_360_1340#"
 merge "dff_upper_0/a_320_1180#" "li_1930_2620#" -1004.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45200 -3501 0 0 0 0 0 0 0 0 0 0 0 0
 merge "dff_upper_0/nand2_2/VP" "dff_lower_0/nand2_2/VP" -778.023 0 0 0 0 37420 -1090 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380260 -1640 -5200 0 0 0 0 0 0 0 0 0
 merge "dff_lower_0/nand2_2/VP" "w_2400_790#"
 merge "w_2400_790#" "dff_lower_0/nand2_0/VP"
 merge "dff_lower_0/nand2_0/VP" "VDD"
 merge "VDD" "w_1980_2160#"
-merge "dff_lower_0/nand2_2/A" "dff_upper_0/nand2_2/Y" -55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_2/Y" "Q"
+merge "dff_upper_0/nand2_2/Y" "dff_lower_0/nand2_2/A" -55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/nand2_2/A" "Q"

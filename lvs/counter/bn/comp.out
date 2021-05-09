@@ -1,0 +1,113 @@
+Flattening unmatched subcell dff_lower in circuit dff (1)(1 instance)
+Flattening unmatched subcell dff_upper in circuit dff (1)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VN                                         |VN                                         
+VP                                         |VP                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: nand2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nand2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+VP                                         |VP                                         
+B                                          |B                                          
+A                                          |A                                          
+Y                                          |Y                                          
+VN                                         |VN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nand2 and nand2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: and2                            |Circuit 2: and2                            
+-------------------------------------------|-------------------------------------------
+nand2 (1)                                  |nand2 (1)                                  
+inverter (1)                               |inverter (1)                               
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: and2                            |Circuit 2: and2                            
+-------------------------------------------|-------------------------------------------
+VP                                         |nand2_0/VP **Mismatch**                    
+VN                                         |VSUBS **Mismatch**                         
+Y                                          |inverter_0/Y **Mismatch**                  
+A                                          |nand2_0/A **Mismatch**                     
+B                                          |nand2_0/B **Mismatch**                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes and2 and and2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: dff                             |Circuit 2: dff                             
+-------------------------------------------|-------------------------------------------
+nand2 (4)                                  |nand2 (4)                                  
+inverter (1)                               |inverter (1)                               
+and2 (2)                                   |and2 (2)                                   
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: dff                             |Circuit 2: dff                             
+-------------------------------------------|-------------------------------------------
+Clear                                      |dff_lower_0/and2_0/nand2_0/B **Mismatch**  
+Preset                                     |dff_upper_0/and2_0/nand2_0/A **Mismatch**  
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+Qn                                         |dff_upper_0/nand2_2/B **Mismatch**         
+D                                          |dff_upper_0/nand2_0/A **Mismatch**         
+Q                                          |Q                                          
+CLK                                        |dff_upper_0/nand2_0/B **Mismatch**         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dff and dff are equivalent.
+
+Subcircuit summary:
+Circuit 1: counter-bn_lvs.spice            |Circuit 2: counter_bn.spice                
+-------------------------------------------|-------------------------------------------
+dff (2)                                    |dff (2)                                    
+inverter (2)                               |inverter (2)                               
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes counter-bn_lvs.spice and counter_bn.spice are equivalent.
+Circuits match uniquely.

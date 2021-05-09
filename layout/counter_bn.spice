@@ -1,0 +1,53 @@
+* NGSPICE file created from counter_bn.ext - technology: sky130A
+
+.subckt inverter A Y VP VN
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=5e+06u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+.ends
+
+.subckt nand2 A B Y VP VN
+X0 VP B Y VP sky130_fd_pr__pfet_01v8 ad=2e+12p pd=1e+07u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+X1 Y B a_80_120# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=5e+06u as=5e+11p ps=4.5e+06u w=2e+06u l=150000u
+X2 a_80_120# A VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+X3 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt and2 VSUBS nand2_0/VP nand2_0/A nand2_0/B inverter_0/Y
+Xinverter_0 nand2_0/Y inverter_0/Y nand2_0/VP VSUBS inverter
+Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_0/VP VSUBS nand2
+.ends
+
+.subckt dff_lower VSUBS nand2_2/Y inverter_0/A nand2_2/VP and2_0/nand2_0/B nand2_2/A
++ nand2_0/B
+Xinverter_0 inverter_0/A nand2_0/A nand2_2/VP VSUBS inverter
+Xand2_0 VSUBS nand2_2/VP nand2_0/Y and2_0/nand2_0/B nand2_2/B and2
+Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_2/VP VSUBS nand2
+Xnand2_2 nand2_2/A nand2_2/B nand2_2/Y nand2_2/VP VSUBS nand2
+.ends
+
+.subckt dff_upper VSUBS and2_0/nand2_0/A nand2_2/Y nand2_2/VP nand2_2/B nand2_0/B
++ nand2_0/A
+Xand2_0 VSUBS nand2_2/VP and2_0/nand2_0/A nand2_0/Y nand2_2/A and2
+Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_2/VP VSUBS nand2
+Xnand2_2 nand2_2/A nand2_2/B nand2_2/Y nand2_2/VP VSUBS nand2
+.ends
+
+.subckt dff VDD GND Q dff_upper_0/nand2_2/B dff_upper_0/and2_0/nand2_0/A dff_upper_0/nand2_0/A
++ dff_upper_0/nand2_0/B dff_lower_0/and2_0/nand2_0/B
+Xdff_lower_0 GND dff_upper_0/nand2_2/B dff_upper_0/nand2_0/A VDD dff_lower_0/and2_0/nand2_0/B
++ Q dff_upper_0/nand2_0/B dff_lower
+Xdff_upper_0 GND dff_upper_0/and2_0/nand2_0/A Q VDD dff_upper_0/nand2_2/B dff_upper_0/nand2_0/B
++ dff_upper_0/nand2_0/A dff_upper
+.ends
+
+
+* Top level circuit counter_bn
+
+Xinverter_0 inverter_0/A inverter_0/Y dff_1/VDD VSUBS inverter
+Xinverter_1 dff_0/Q Qout dff_1/VDD VSUBS inverter
+Xdff_0 dff_1/VDD VSUBS dff_0/Q dff_0/dff_upper_0/nand2_2/B dff_1/dff_lower_0/and2_0/nand2_0/B
++ dff_1/dff_upper_0/nand2_2/B inverter_0/Y dff_1/dff_upper_0/and2_0/nand2_0/A dff
+Xdff_1 dff_1/VDD VSUBS dff_1/Q dff_1/dff_upper_0/nand2_2/B dff_1/dff_upper_0/and2_0/nand2_0/A
++ dff_0/Q inverter_0/A dff_1/dff_lower_0/and2_0/nand2_0/B dff
+.end
+

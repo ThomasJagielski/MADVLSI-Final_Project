@@ -1,0 +1,40 @@
+magic
+tech sky130A
+timestamp 1620604572
+use counter_bn  counter_bn_7
+timestamp 1620604572
+transform 1 0 22640 0 1 105
+box -200 -30 2610 1555
+use counter_bn  counter_bn_6
+timestamp 1620604572
+transform 1 0 19830 0 1 105
+box -200 -30 2610 1555
+use counter_bn  counter_bn_5
+timestamp 1620604572
+transform 1 0 17020 0 1 105
+box -200 -30 2610 1555
+use counter_bn  counter_bn_4
+timestamp 1620604572
+transform 1 0 14210 0 1 105
+box -200 -30 2610 1555
+use counter_bn  counter_bn_3
+timestamp 1620604572
+transform 1 0 11400 0 1 105
+box -200 -30 2610 1555
+use counter_bn  counter_bn_2
+timestamp 1620604572
+transform 1 0 8590 0 1 105
+box -200 -30 2610 1555
+use counter_bn  counter_bn_1
+timestamp 1620604572
+transform 1 0 5780 0 1 105
+box -200 -30 2610 1555
+use counter_bn  counter_bn_0
+timestamp 1620604572
+transform 1 0 2970 0 1 105
+box -200 -30 2610 1555
+use counter_b0  counter_b0_0
+timestamp 1620604572
+transform 1 0 90 0 1 115
+box -90 -90 2685 1505
+<< end >>
