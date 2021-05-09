@@ -1,6 +1,8 @@
 magic
 tech sky130A
-timestamp 1620491735
+timestamp 1620569472
+<< nwell >>
+rect 805 1055 1010 1295
 << poly >>
 rect 925 670 965 680
 rect 90 660 130 670
@@ -30,12 +32,15 @@ rect 925 670 965 680
 rect 925 650 935 670
 rect 955 650 965 670
 rect 925 640 965 650
-use dff_lower  dff_lower_0
-timestamp 1620491637
-transform 1 0 -35 0 1 130
-box 30 -200 1045 505
+<< metal1 >>
+rect 805 1080 1010 1270
+rect 805 825 1010 1015
 use dff_upper  dff_upper_0
 timestamp 1620491527
 transform 1 0 -5 0 1 700
 box 0 0 810 695
+use dff_lower  dff_lower_0
+timestamp 1620491637
+transform 1 0 -35 0 1 130
+box 30 -200 1045 505
 << end >>
