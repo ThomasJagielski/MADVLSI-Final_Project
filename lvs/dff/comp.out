@@ -1,6 +1,5 @@
 Flattening unmatched subcell dff_lower in circuit dff.spice (0)(1 instance)
 Flattening unmatched subcell dff_upper in circuit dff.spice (0)(1 instance)
-Flattening unmatched subcell and2 in circuit dff_xschem.spice (1)(2 instances)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Class inverter:  Merged 1 devices.
@@ -57,234 +56,134 @@ Cell pin lists are equivalent.
 Device classes nand2 and nand2 are equivalent.
 
 Subcircuit summary:
+Circuit 1: and2                            |Circuit 2: and2                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+nand2 (1)                                  |nand2 (1)                                  
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 6 **Mismatch**             |Number of nets: 8 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: and2                            |Circuit 2: and2                            
+
+---------------------------------------------------------------------------------------
+Net: nand2_0/VP                            |Net: VP                                    
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  nand2/VP = 1                             
+  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  nand2/VP = 1                             |                                           
+                                           |                                           
+Net: VSUBS                                 |Net: VN                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  nand2/VN = 1                             
+  sky130_fd_pr__nfet_01v8/4 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  nand2/VN = 1                             |                                           
+                                           |                                           
+(no matching net)                          |Net: VDD                                   
+                                           |  sky130_fd_pr__pfet_01v8/4 = 1            
+                                           |                                           
+(no matching net)                          |Net: GND                                   
+                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
+---------------------------------------------------------------------------------------
+Netlists do not match.
+  Flattening non-matched subcircuits and2 and2
+Subcircuit summary:
 Circuit 1: dff.spice                       |Circuit 2: dff_xschem.spice                
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (3) **Mismatch**   
-sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (3) **Mismatch**   
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
 nand2 (6)                                  |nand2 (6)                                  
-Number of devices: 8 **Mismatch**          |Number of devices: 12 **Mismatch**         
-Number of nets: 13 **Mismatch**            |Number of nets: 15 **Mismatch**            
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 15                         |Number of nets: 15                         
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: dff.spice                       |Circuit 2: dff_xschem.spice                
 
 ---------------------------------------------------------------------------------------
-Net: dff_upper_0/nand2_0/B                 |Net: CLK                                   
-  nand2/B = 2                              |  nand2/B = 2                              
-                                           |                                           
-Net: dff_upper_0/nand2_0/A                 |Net: net4                                  
-  sky130_fd_pr__nfet_01v8/2 = 1            |  nand2/Y = 1                              
-  sky130_fd_pr__pfet_01v8/2 = 1            |  nand2/B = 1                              
-  nand2/A = 1                              |                                           
-                                           |                                           
-Net: /dff_lower_0/nand2_0/A                |Net: net2                                  
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  nand2/Y = 1                              
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  nand2/A = 1                              
-  nand2/A = 1                              |                                           
-                                           |                                           
-(no matching net)                          |Net: Q                                     
-                                           |  nand2/A = 1                              
-                                           |  nand2/Y = 1                              
-                                           |                                           
-(no matching net)                          |Net: Qn                                    
-                                           |  nand2/Y = 1                              
-                                           |  nand2/B = 1                              
-                                           |                                           
-(no matching net)                          |Net: D                                     
-                                           |  nand2/A = 1                              
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |                                           
-(no matching net)                          |Net: net3                                  
-                                           |  nand2/B = 1                              
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: and21/net1                            
-                                           |  nand2/Y = 1                              
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |                                           
-(no matching net)                          |Net: and22/net1                            
-                                           |  nand2/Y = 1                              
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+Net: dff_upper_0/and2_0/nand2_0/B          |Net: Preset                                
+  nand2/B = 1                              |  nand2/A = 1                              
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
+Net: /dff_upper_0//and2_0/nand2_0/Y        |Net: and22/net1                            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  nand2/Y = 1                              
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  nand2/Y = 1                              |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: /dff_lower_0//and2_0/nand2_0/Y        |Net: and21/net1                            
+  sky130_fd_pr__nfet_01v8/2 = 1            |  nand2/Y = 1                              
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  nand2/Y = 1                              |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
 (no matching net)                          |Net: net5                                  
                                            |  nand2/A = 1                              
                                            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
                                            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
                                            |                                           
-(no matching net)                          |Net: net1                                  
-                                           |  nand2/A = 1                              
+(no matching net)                          |Net: net3                                  
+                                           |  nand2/B = 1                              
                                            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
                                            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: /dff_upper_0/nand2_2/A                |(no matching net)                          
-  nand2/Y = 1                              |                                           
-  nand2/A = 1                              |                                           
-                                           |                                           
 Net: /dff_lower_0/nand2_2/A                |(no matching net)                          
-  nand2/Y = 1                              |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  nand2/A = 1                              |                                           
+                                           |                                           
+Net: /dff_upper_0/nand2_2/A                |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
   nand2/A = 1                              |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: /dff_upper_0/nand2_1/A                |(no matching net)                          
-  nand2/Y = 1                              |                                           
-  nand2/A = 1                              |                                           
+Net: /dff_upper_0/nand2_0/Y                |Net: Qn                                    
+  nand2/A = 1                              |  nand2/Y = 1                              
+  nand2/Y = 1                              |  nand2/B = 1                              
                                            |                                           
-Net: /dff_lower_0/nand2_1/A                |(no matching net)                          
-  nand2/Y = 1                              |                                           
-  nand2/A = 1                              |                                           
+(no matching net)                          |Net: Q                                     
+                                           |  nand2/A = 1                              
+                                           |  nand2/Y = 1                              
+                                           |                                           
+(no matching net)                          |Net: net4                                  
+                                           |  nand2/Y = 1                              
+                                           |  nand2/B = 1                              
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: Q                                     |(no matching net)                          
-  nand2/B = 1                              |                                           
-  nand2/Y = 1                              |                                           
-                                           |                                           
 Net: dff_upper_0/nand2_2/B                 |(no matching net)                          
   nand2/Y = 1                              |                                           
   nand2/B = 1                              |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: GND                                   
-                                           |  nand2/VN = 6                             
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
-                                           |  sky130_fd_pr__nfet_01v8/4 = 3            
                                            |                                           
-(no matching net)                          |Net: VDD                                   
-                                           |  nand2/VP = 6                             
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
-                                           |  sky130_fd_pr__pfet_01v8/4 = 3            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: Clear                                 
-                                           |  nand2/B = 1                              
-                                           |                                           
-(no matching net)                          |Net: Preset                                
-                                           |  nand2/A = 1                              
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: dff_lower_0/nand2_1/B                 |(no matching net)                          
+Net: Q                                     |(no matching net)                          
   nand2/B = 1                              |                                           
-                                           |                                           
-Net: dff_upper_0/nand2_1/B                 |(no matching net)                          
-  nand2/B = 1                              |                                           
+  nand2/Y = 1                              |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: dff_upper_0/nand2_2/VP                |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__pfet_01v8/4 = 1            |                                           
-  nand2/VP = 6                             |                                           
+Net: dff_upper_0/nand2_2/VP                |Net: GND                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  nand2/VN = 6                             
+  sky130_fd_pr__pfet_01v8/4 = 3            |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+  nand2/VP = 6                             |  sky130_fd_pr__nfet_01v8/4 = 3            
                                            |                                           
-Net: VSUBS                                 |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/4 = 1            |                                           
-  nand2/VN = 6                             |                                           
+Net: VSUBS                                 |Net: VDD                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  nand2/VP = 6                             
+  sky130_fd_pr__nfet_01v8/4 = 3            |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  nand2/VN = 6                             |  sky130_fd_pr__pfet_01v8/4 = 3            
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: dff.spice                       |Circuit 2: dff_xschem.spice                
 
 ---------------------------------------------------------------------------------------
-Instance: dff_lower_0//inverter_0/sky130_f |Instance: and22/inverter2/sky130_fd_pr__nf 
-  (1,3) = (8,3)                            |  (1,3) = (12,3)                           
-  2 = 3                                    |  2 = 3                                    
-  4 = 8                                    |  4 = 12                                   
+Instance: dff_upper_0//and2_0//nand2_0     |Instance: and21/nand21                     
+  A = 2                                    |  A = 1                                    
+  B = 1                                    |  B = 2                                    
+  Y = 3                                    |  Y = 3                                    
+  VP = 12                                  |  VP = 12                                  
+  VN = 12                                  |  VN = 12                                  
                                            |                                           
-Instance: dff_lower_0//inverter_0/sky130_f |Instance: and22/inverter2/sky130_fd_pr__pf 
-  (1,3) = (8,3)                            |  (1,3) = (12,3)                           
-  2 = 3                                    |  2 = 3                                    
-  4 = 8                                    |  4 = 12                                   
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: and21/inverter2/sky130_fd_pr__pf 
-                                           |  (1,3) = (12,3)                           
-                                           |  2 = 3                                    
-                                           |  4 = 12                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: inverter10/sky130_fd_pr__pfet_01 
-                                           |  (1,3) = (12,3)                           
-                                           |  2 = 3                                    
-                                           |  4 = 12                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: and21/inverter2/sky130_fd_pr__nf 
-                                           |  (1,3) = (12,3)                           
-                                           |  2 = 3                                    
-                                           |  4 = 12                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: inverter10/sky130_fd_pr__nfet_01 
-                                           |  (1,3) = (12,3)                           
-                                           |  2 = 3                                    
-                                           |  4 = 12                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: and22/nand21                     
-                                           |  A = 2                                    
-                                           |  B = 1                                    
-                                           |  Y = 3                                    
-                                           |  VP = 12                                  
-                                           |  VN = 12                                  
-                                           |                                           
-(no matching instance)                     |Instance: and21/nand21                     
-                                           |  A = 1                                    
-                                           |  B = 2                                    
-                                           |  Y = 3                                    
-                                           |  VP = 12                                  
-                                           |  VN = 12                                  
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: dff_lower_0//nand2_0             |(no matching instance)                     
-  A = 3                                    |                                           
-  B = 2                                    |                                           
-  Y = 2                                    |                                           
-  VP = 8                                   |                                           
-  VN = 8                                   |                                           
-                                           |                                           
-Instance: dff_upper_0//nand2_0             |(no matching instance)                     
-  A = 3                                    |                                           
-  B = 2                                    |                                           
-  Y = 2                                    |                                           
-  VP = 8                                   |                                           
-  VN = 8                                   |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: dff_lower_0//nand2_2             |(no matching instance)                     
-  A = 2                                    |                                           
-  B = 2                                    |                                           
-  Y = 2                                    |                                           
-  VP = 8                                   |                                           
-  VN = 8                                   |                                           
-                                           |                                           
-Instance: dff_upper_0//nand2_2             |(no matching instance)                     
-  A = 2                                    |                                           
-  B = 2                                    |                                           
-  Y = 2                                    |                                           
-  VP = 8                                   |                                           
-  VN = 8                                   |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: nand26                           
+(no matching instance)                     |Instance: nand29                           
                                            |  A = 3                                    
                                            |  B = 2                                    
                                            |  Y = 2                                    
@@ -300,35 +199,75 @@ Instance: dff_upper_0//nand2_2             |(no matching instance)
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: nand27                           
-                                           |  A = 3                                    
-                                           |  B = 2                                    
-                                           |  Y = 2                                    
-                                           |  VP = 12                                  
-                                           |  VN = 12                                  
+Instance: dff_lower_0//nand2_2             |(no matching instance)                     
+  A = 3                                    |                                           
+  B = 2                                    |                                           
+  Y = 2                                    |                                           
+  VP = 12                                  |                                           
+  VN = 12                                  |                                           
                                            |                                           
-(no matching instance)                     |Instance: nand29                           
-                                           |  A = 3                                    
-                                           |  B = 2                                    
-                                           |  Y = 2                                    
-                                           |  VP = 12                                  
-                                           |  VN = 12                                  
+Instance: dff_upper_0//nand2_2             |(no matching instance)                     
+  A = 3                                    |                                           
+  B = 2                                    |                                           
+  Y = 2                                    |                                           
+  VP = 12                                  |                                           
+  VN = 12                                  |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: dff_lower_0//nand2_1             |(no matching instance)                     
-  A = 2                                    |                                           
-  B = 1                                    |                                           
-  Y = 2                                    |                                           
-  VP = 8                                   |                                           
-  VN = 8                                   |                                           
+Instance: dff_lower_0//and2_0//inverter_0/ |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
+  2 = 3                                    |                                           
+  4 = 12                                   |                                           
                                            |                                           
-Instance: dff_upper_0//nand2_1             |(no matching instance)                     
-  A = 2                                    |                                           
-  B = 1                                    |                                           
-  Y = 2                                    |                                           
-  VP = 8                                   |                                           
-  VN = 8                                   |                                           
+                                           |                                           
+Instance: dff_upper_0//and2_0//inverter_0/ |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
+  2 = 3                                    |                                           
+  4 = 12                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: and21/inverter2/sky130_fd_pr__pf 
+                                           |  (1,3) = (12,3)                           
+                                           |  2 = 3                                    
+                                           |  4 = 12                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: and22/inverter2/sky130_fd_pr__pf 
+                                           |  (1,3) = (12,3)                           
+                                           |  2 = 3                                    
+                                           |  4 = 12                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: dff_lower_0//and2_0//inverter_0/ |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
+  2 = 3                                    |                                           
+  4 = 12                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: dff_upper_0//and2_0//inverter_0/ |(no matching instance)                     
+  (1,3) = (12,3)                           |                                           
+  2 = 3                                    |                                           
+  4 = 12                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: and21/inverter2/sky130_fd_pr__nf 
+                                           |  (1,3) = (12,3)                           
+                                           |  2 = 3                                    
+                                           |  4 = 12                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: and22/inverter2/sky130_fd_pr__nf 
+                                           |  (1,3) = (12,3)                           
+                                           |  2 = 3                                    
+                                           |  4 = 12                                   
+                                           |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Netlists do not match.

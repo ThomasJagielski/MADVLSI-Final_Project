@@ -1,83 +1,82 @@
-timestamp 1620491637
+timestamp 1620577227
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use nand2 nand2_2 1 0 1790 0 1 -60
-use nand2 nand2_1 1 0 1250 0 1 -60
+use and2 and2_0 1 0 1550 0 1 30
+use nand2 nand2_2 1 0 2200 0 1 -60
 use nand2 nand2_0 1 0 710 0 1 -60
 use inverter inverter_0 1 0 300 0 1 -210
-node "li_60_n270#" 634 1225.35 60 -270 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83200 4240 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_2000_n50#" 27 74.83 2000 -50 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_1460_n50#" 119 250.93 1460 -50 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15600 860 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_60_n270#" 759 1466.02 60 -270 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 99600 5060 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2410_n50#" 27 74.83 2410 -50 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1870_n50#" 119 250.93 1870 -50 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15600 860 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_920_n50#" 104 221.58 920 -50 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13600 760 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_420_n50#" 88 192.23 420 -50 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11600 660 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_790_n400#" 1053 1467.85 790 -400 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13000 760 0 0 84400 4220 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_790_n400#" 1178 1708.52 790 -400 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13000 760 0 0 100800 5040 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "a_790_n400#" "li_920_n50#" 41.5556
+cap "li_2410_n50#" "li_1870_n50#" 8.8
+cap "li_1870_n50#" "a_790_n400#" 47.6667
+cap "li_2410_n50#" "a_790_n400#" 11
+cap "li_1870_n50#" "li_60_n270#" 71.5
 cap "a_790_n400#" "li_420_n50#" 35.4444
-cap "a_790_n400#" "li_2000_n50#" 11
-cap "a_790_n400#" "li_60_n270#" 1368.22
-cap "li_920_n50#" "li_1460_n50#" 6.6
-cap "li_2000_n50#" "li_1460_n50#" 8.8
-cap "li_60_n270#" "li_1460_n50#" 71.5
+cap "li_2410_n50#" "li_60_n270#" 16.5
+cap "li_60_n270#" "li_420_n50#" 53.1667
 cap "li_420_n50#" "li_920_n50#" 6.28571
+cap "a_790_n400#" "li_60_n270#" 1638.82
+cap "a_790_n400#" "li_920_n50#" 41.5556
 cap "li_60_n270#" "li_920_n50#" 62.3333
-cap "li_420_n50#" "li_60_n270#" 53.1667
-cap "a_790_n400#" "li_1460_n50#" 47.6667
-cap "li_2000_n50#" "li_60_n270#" 16.5
-subcap "li_60_n270#" -29.25
-subcap "li_1460_n50#" -484.05
-subcap "a_790_n400#" -82.36
-cap "nand2_1/B" "nand2_2/VN" 59.4
-cap "nand2_2/A" "nand2_1/B" 10.4526
-cap "inverter_0/A" "nand2_0/B" 9.77778
-cap "nand2_2/A" "nand2_1/A" 5.34449
-cap "nand2_2/VN" "nand2_1/A" 141.35
-cap "nand2_2/VN" "nand2_0/A" 141.35
-cap "nand2_1/B" "nand2_0/B" 62.2286
-cap "nand2_0/B" "nand2_1/A" 24.0454
+subcap "li_60_n270#" -269.92
+subcap "a_790_n400#" -323.03
+cap "and2_0/nand2_0/Y" "nand2_0/B" 3.38462
+cap "and2_0/nand2_0/VP" "and2_0/nand2_0/VN" 2.84217e-14
+cap "nand2_0/A" "and2_0/nand2_0/B" 26.4
+cap "and2_0/nand2_0/B" "and2_0/nand2_0/VN" 59.4
+cap "nand2_0/A" "and2_0/nand2_0/A" 57.0303
+cap "and2_0/nand2_0/A" "and2_0/nand2_0/VN" 141.35
 cap "nand2_0/A" "nand2_0/B" 18.0513
-cap "nand2_2/VP" "nand2_1/A" 54.5217
-cap "nand2_2/VP" "nand2_0/A" 125.4
-cap "nand2_2/A" "nand2_2/VN" 8.68421
-cap "nand2_1/B" "inverter_0/A" 14.6667
-cap "inverter_0/A" "nand2_0/A" 15.5789
-cap "nand2_2/A" "nand2_0/B" 3.38462
-cap "nand2_2/VN" "nand2_0/B" 45.6923
-cap "nand2_2/A" "nand2_2/VP" 65.2609
-cap "nand2_1/B" "nand2_1/A" 17.2333
-cap "nand2_1/B" "nand2_0/A" 26.4
-cap "nand2_2/VN" "nand2_2/VP" 2.84217e-14
-cap "nand2_0/A" "nand2_1/A" 57.0303
-cap "nand2_2/Y" "nand2_2/VP" 4.45946
-cap "nand2_1/B" "nand2_2/A" 9.7193
-cap "nand2_2/VN" "nand2_1/B" 19.8
-cap "nand2_2/Y" "nand2_2/A" 4.92141
+cap "nand2_0/B" "and2_0/nand2_0/VN" 45.6923
+cap "and2_0/nand2_0/B" "inverter_0/A" 14.6667
+cap "and2_0/nand2_0/VP" "and2_0/nand2_0/A" 54.5217
+cap "nand2_0/B" "inverter_0/A" 9.77778
+cap "and2_0/nand2_0/B" "and2_0/nand2_0/A" 17.2333
+cap "nand2_0/B" "and2_0/nand2_0/B" 62.2286
+cap "nand2_0/B" "and2_0/nand2_0/A" 24.0454
+cap "nand2_0/A" "and2_0/nand2_0/VN" 141.35
+cap "and2_0/nand2_0/VP" "and2_0/nand2_0/Y" 38
+cap "and2_0/nand2_0/Y" "and2_0/nand2_0/B" 4.4
+cap "nand2_0/A" "inverter_0/A" 15.5789
+cap "and2_0/nand2_0/VP" "nand2_0/A" 125.4
+cap "and2_0/nand2_0/Y" "and2_0/nand2_0/A" 3.56757
+cap "a_790_n400#" "and2_0/inverter_0/VN" 30.4615
+cap "and2_0/inverter_0/VN" "and2_0/nand2_0/B" 39.6
+cap "a_790_n400#" "and2_0/nand2_0/Y" 44
+cap "and2_0/nand2_0/Y" "and2_0/nand2_0/B" 66
+cap "a_790_n400#" "and2_0/inverter_0/Y" 5.82906
+cap "a_790_n400#" "nand2_2/Y" 3.38462
+cap "and2_0/inverter_0/Y" "and2_0/nand2_0/B" 8.06667
 cap "a_790_n400#" "nand2_2/B" 18.8571
-cap "nand2_2/VN" "nand2_2/A" 141.35
-cap "nand2_2/Y" "nand2_2/VP" 38
-cap "nand2_2/B" "nand2_1/B" 52.8
-cap "nand2_2/VP" "nand2_2/A" 27.2609
-cap "nand2_2/Y" "a_790_n400#" 3.38462
-cap "a_790_n400#" "nand2_2/A" 2.44444
-cap "nand2_1/A" "nand2_2/A" 1.77692
-cap "nand2_2/Y" "nand2_1/B" 4.4
-cap "a_790_n400#" "nand2_2/VN" 15.2308
-merge "inverter_0/VN" "nand2_0/VN" -445.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34200 -2280 0 0 0 0 0 0 0 0 0 0
-merge "nand2_0/VN" "nand2_1/VN"
-merge "nand2_1/VN" "nand2_2/VN"
-merge "nand2_2/VN" "VSUBS"
-merge "nand2_0/Y" "nand2_1/A" -42.47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 -180 0 0 0 0 0 0 0 0 0 0 0 0
-merge "nand2_1/A" "li_920_n50#"
-merge "nand2_1/B" "li_60_n270#" -22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
-merge "nand2_1/Y" "nand2_2/A" -67.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 -280 0 0 0 0 0 0 0 0 0 0 0 0
-merge "nand2_2/A" "li_1460_n50#"
-merge "nand2_2/Y" "li_2000_n50#" -22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
-merge "inverter_0/VP" "nand2_0/VP" -371.73 0 0 0 0 43200 -2880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -52200 -2280 0 0 0 0 0 0 0 0 0 0
-merge "nand2_0/VP" "nand2_1/VP"
-merge "nand2_1/VP" "nand2_2/VP"
-merge "nand2_0/B" "a_790_n400#" -455.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -220 0 0 -25200 -1300 0 0 0 0 0 0 0 0 0 0 0 0
+cap "nand2_2/Y" "and2_0/nand2_0/B" 4.4
+cap "and2_0/nand2_0/B" "nand2_2/B" 52.8
+cap "and2_0/inverter_0/VN" "and2_0/inverter_0/Y" 141.35
+cap "and2_0/inverter_0/Y" "and2_0/nand2_0/Y" 15.5789
+cap "and2_0/inverter_0/Y" "and2_0/inverter_0/VP" 125.4
+cap "and2_0/inverter_0/Y" "nand2_2/Y" 54.516
+merge "nand2_2/VN" "and2_0/inverter_0/VN" -467.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2280 0 0 0 0 0 0 0 0 0 0
+merge "and2_0/inverter_0/VN" "inverter_0/VN"
+merge "inverter_0/VN" "nand2_0/VN"
+merge "nand2_0/VN" "and2_0/nand2_0/VN"
+merge "and2_0/nand2_0/VN" "and2_0/VSUBS"
+merge "and2_0/VSUBS" "VSUBS"
+merge "nand2_0/Y" "and2_0/nand2_0/A" -42.47 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and2_0/nand2_0/A" "li_920_n50#"
+merge "nand2_2/Y" "li_2410_n50#" -22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and2_0/nand2_0/B" "li_60_n270#" -22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/VP" "nand2_0/VP" -311.6 0 0 0 0 0 -1920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1520 0 0 0 0 0 0 0 0 0 0
+merge "nand2_0/VP" "and2_0/nand2_0/VP"
+merge "nand2_0/B" "a_790_n400#" -696.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -220 0 0 -41600 -2120 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nand2_2/VP" "and2_0/inverter_0/VP" -155.8 0 0 0 0 0 -960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760 0 0 0 0 0 0 0 0 0 0
+merge "nand2_2/A" "and2_0/inverter_0/Y" -102.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4000 -360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and2_0/inverter_0/Y" "li_1870_n50#"
 merge "inverter_0/Y" "nand2_0/A" -44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 0 0 0 0 0 0 0 0
 merge "nand2_0/A" "li_420_n50#"

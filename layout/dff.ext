@@ -1,134 +1,119 @@
-timestamp 1620573865
+timestamp 1620577694
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use dff_upper dff_upper_0 1 0 -10 0 1 1400
 use dff_lower dff_lower_0 1 0 -70 0 1 260
-node "m1_2020_330#" 0 300.34 2020 330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102600 1300 0 0 0 0 0 0 0 0 0 0
-node "m1_2020_840#" 0 246 2020 840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102600 1300 0 0 0 0 0 0 0 0 0 0
-node "m1_60_590#" 2 2031.66 60 590 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 267400 2440 670900 6680 0 0 0 0 0 0 0 0
-node "m1_1020_1220#" 2 1365.45 1020 1220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 309400 2940 439600 4140 0 0 0 0 0 0 0 0
-node "li_1470_1400#" 156 321.37 1470 1400 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20400 1100 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_1520_2620#" 863 1968.65 1520 2620 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 163600 6900 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_1520_2710#" 238 479.86 1520 2710 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31200 1640 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_1970_n10#" 488 452.365 1970 -10 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16700 840 0 0 14000 700 0 0 0 0 0 0 0 0 0 0 0 0
+use dff_upper dff_upper_0 1 0 -10 0 1 1400
+node "m1_2400_330#" 2 175.51 2400 330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11400 820 0 0 0 0 0 0 0 0 0 0
+node "m1_2400_840#" 2 168.1 2400 840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11400 820 0 0 0 0 0 0 0 0 0 0
+node "m1_60_590#" 3 2069.56 60 590 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 161000 1880 740600 7500 0 0 0 0 0 0 0 0
+node "m1_1430_1220#" 2 1271.15 1430 1220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 203000 2380 439600 4140 0 0 0 0 0 0 0 0
+node "li_1880_1400#" 156 321.37 1880 1400 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20400 1100 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1930_2620#" 153 315.5 1930 2620 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20000 1080 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1930_2710#" 153 315.5 1930 2710 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20000 1080 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q" 333 590.59 2260 1260 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7000 360 0 0 33200 1660 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_180_1260#" 116 306.247 180 1260 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 15900 700 0 0 0 0 0 0 0 0 0 0 0 0
-node "Q" 918 943.145 1850 1260 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20900 1120 0 0 42000 2100 0 0 0 0 0 0 0 0 0 0 0 0
-node "w_2020_790#" 3022 388.8 2020 790 nw 0 0 0 0 129600 1500 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "w_1570_2160#" 2725 1039.2 1570 2160 nw 0 0 0 0 346400 2420 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_360_1340#" 948 387.905 360 1340 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17700 1240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2400_790#" 27200 43.2 2400 790 nw 0 0 0 0 14400 1020 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1980_2160#" 2253 636 1980 2160 nw 0 0 0 0 212000 1860 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "Q" "li_1470_1400#" 189.161
-cap "m1_60_590#" "li_1520_2620#" 216.65
-cap "m1_2020_330#" "li_1520_2620#" 216.65
-cap "Q" "li_1520_2620#" 322.025
-cap "w_1570_2160#" "li_1520_2620#" 22.2
-cap "a_1970_n10#" "li_1520_2620#" 183.425
-cap "Q" "m1_60_590#" 186.52
-cap "li_1520_2710#" "li_1520_2620#" 409.2
-cap "m1_2020_840#" "w_2020_790#" 54.34
-cap "w_2020_790#" "li_1520_2620#" 22.2
-cap "m1_1020_1220#" "li_1520_2620#" 216.65
-cap "li_1470_1400#" "li_1520_2620#" 25.0345
-cap "m1_2020_840#" "li_1520_2620#" 216.65
-cap "m1_60_590#" "m1_1020_1220#" 328.846
-cap "li_1470_1400#" "m1_60_590#" 116.8
-cap "m1_2020_840#" "m1_2020_330#" 93.4615
-cap "w_1570_2160#" "m1_1020_1220#" 167.96
-subcap "m1_60_590#" -2888.08
-subcap "li_1470_1400#" -481.225
+cap "m1_2400_840#" "m1_2400_330#" 10.3846
+cap "li_1880_1400#" "Q" 208.267
+cap "li_1880_1400#" "m1_60_590#" 116.8
+cap "m1_60_590#" "Q" 199.06
+cap "m1_1430_1220#" "w_1980_2160#" 111.15
+cap "w_2400_790#" "m1_2400_840#" 7.41
+cap "m1_1430_1220#" "m1_60_590#" 231.923
+cap "li_1930_2620#" "li_1930_2710#" 330
+subcap "m1_60_590#" -2546.22
 subcap "a_180_1260#" -300.122
-cap "dff_lower_0/nand2_0/B" "dff_lower_0/nand2_2/VN" 12.3
-cap "dff_lower_0/nand2_2/VP" "dff_upper_0/nand2_0/A" 23.9516
-cap "dff_lower_0/nand2_2/VN" "dff_upper_0/nand2_0/A" 31
-cap "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_2/A" 79.4
-cap "dff_lower_0/nand2_1/a_80_120#" "dff_lower_0/nand2_2/VN" 20.5
-cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_2/A" 4.25806
-cap "dff_lower_0/nand2_0/A" "dff_upper_0/nand2_0/A" 2.12903
-cap "dff_lower_0/nand2_0/A" "dff_upper_0/nand2_0/B" 3.66667
-cap "dff_lower_0/nand2_0/B" "dff_upper_0/nand2_1/A" 1.27778
-cap "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_1/B" 12.3
-cap "dff_lower_0/nand2_2/VP" "dff_upper_0/nand2_1/B" 3.66667
-cap "dff_lower_0/nand2_1/A" "dff_lower_0/nand2_2/VP" 11.95
-cap "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_1/A" 158.1
-cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_1/B" 1.27778
-cap "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_0/a_80_120#" 20.5
-cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_2/VP" 11.7097
-cap "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_0/A" 68.1
-cap "dff_lower_0/nand2_1/A" "dff_upper_0/nand2_1/A" 4.25806
-cap "dff_upper_0/nand2_1/A" "dff_lower_0/nand2_2/VP" 11.7097
-subcap "m1_2020_330#" -15.975
-subcap "li_1470_1400#" -406.005
-subcap "Q" -932.32
-cap "dff_lower_0/nand2_2/VN" "li_1520_2620#" 38
-cap "li_1520_2620#" "dff_upper_0/nand2_2/B" 212.677
-cap "m1_60_590#" "dff_lower_0/nand2_2/VP" 982.2
-cap "li_1520_2620#" "dff_lower_0/nand2_1/B" 2.84217e-14
-cap "li_1520_2620#" "dff_upper_0/nand2_2/Y" 12.5714
-cap "dff_lower_0/nand2_1/B" "dff_upper_0/nand2_2/B" 2.61905
+subcap "a_360_1340#" -249.295
+cap "dff_lower_0/nand2_0/B" "dff_lower_0/and2_0/nand2_0/VN" 12.3
+cap "dff_lower_0/inverter_0/A" "dff_lower_0/and2_0/nand2_0/VN" 31
+cap "dff_upper_0/and2_0/nand2_0/A" "dff_lower_0/and2_0/nand2_0/VP" 10.6147
+cap "dff_lower_0/and2_0/nand2_0/A" "dff_lower_0/and2_0/nand2_0/VN" 158.1
+cap "dff_lower_0/and2_0/nand2_0/a_80_120#" "dff_lower_0/and2_0/nand2_0/VN" 20.5
+cap "dff_lower_0/and2_0/nand2_0/VP" "dff_upper_0/and2_0/nand2_0/B" 3.66667
+cap "dff_lower_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/VN" 79.4
+cap "dff_lower_0/and2_0/nand2_0/VP" "dff_upper_0/and2_0/nand2_0/Y" 9.58065
+cap "dff_lower_0/and2_0/nand2_0/Y" "dff_upper_0/and2_0/nand2_0/Y" 4.25806
+cap "dff_lower_0/nand2_0/A" "dff_lower_0/and2_0/nand2_0/VN" 68.1
+cap "dff_lower_0/and2_0/nand2_0/VP" "dff_lower_0/inverter_0/A" 23.9516
+cap "dff_lower_0/and2_0/nand2_0/B" "dff_lower_0/and2_0/nand2_0/VN" 12.3
+cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/B" 1.27778
+cap "dff_lower_0/nand2_0/B" "dff_lower_0/nand2_0/A" 7.97917
+cap "dff_lower_0/inverter_0/A" "dff_lower_0/nand2_0/A" 2.12903
+cap "dff_lower_0/and2_0/nand2_0/VN" "dff_lower_0/nand2_0/a_80_120#" 20.5
+cap "dff_upper_0/and2_0/nand2_0/A" "dff_lower_0/and2_0/nand2_0/A" 3.77143
+subcap "li_1880_1400#" -406.005
+subcap "Q" -434.225
+cap "m1_60_590#" "dff_lower_0/and2_0/inverter_0/VP" 982.2
+cap "m1_60_590#" "dff_lower_0/and2_0/inverter_0/VN" 677.582
+cap "dff_lower_0/nand2_2/B" "dff_lower_0/nand2_2/Y" 2.12903
+cap "dff_lower_0/and2_0/inverter_0/Y" "m1_60_590#" 88.46
 cap "m1_60_590#" "dff_lower_0/nand2_2/a_80_120#" 10.2925
-cap "dff_upper_0/nand2_2/B" "dff_upper_0/nand2_2/Y" 2.12903
-cap "li_1520_2620#" "dff_lower_0/nand2_2/VP" 137.5
-cap "m1_60_590#" "dff_lower_0/nand2_2/A" -451.745
-cap "dff_lower_0/nand2_2/VN" "dff_lower_0/nand2_2/VP" -1.42109e-14
-cap "dff_upper_0/nand2_2/B" "dff_lower_0/nand2_2/VP" 33.0767
-cap "dff_lower_0/nand2_2/VN" "m1_60_590#" 169.387
-cap "dff_upper_0/nand2_2/Y" "dff_lower_0/nand2_2/VP" 20.5806
-cap "m1_60_590#" "dff_upper_0/nand2_2/B" 142.25
-cap "li_1520_2620#" "dff_lower_0/nand2_2/A" 9.10345
-cap "m1_60_590#" "dff_upper_0/nand2_2/Y" 157.35
-subcap "m1_1020_1220#" -573.02
-subcap "li_1520_2620#" -680.655
-subcap "li_1520_2710#" -279.82
-subcap "w_1570_2160#" -246.77
-cap "dff_upper_0/nand2_2/VP" "dff_upper_0/nand2_1/B" 3.66667
-cap "dff_upper_0/nand2_2/VN" "dff_upper_0/nand2_0/A" 3.19355
-cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/VP" 65.3
-cap "dff_upper_0/nand2_0/B" "dff_lower_0/inverter_0/Y" 3.66667
-cap "dff_upper_0/nand2_2/VP" "dff_upper_0/nand2_0/A" 23.9516
-cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_1/B" 1.27778
-cap "dff_lower_0/nand2_0/B" "dff_upper_0/nand2_1/A" 1.27778
-cap "dff_upper_0/nand2_2/A" "dff_upper_0/nand2_2/VP" 322.175
-cap "dff_lower_0/nand2_0/Y" "dff_upper_0/nand2_1/A" 4.25806
-cap "dff_upper_0/nand2_2/A" "dff_lower_0/nand2_1/Y" 4.25806
-cap "dff_upper_0/nand2_0/A" "dff_lower_0/inverter_0/Y" 2.12903
-cap "dff_upper_0/nand2_1/A" "dff_upper_0/nand2_2/VP" 11.7097
-cap "dff_upper_0/nand2_0/B" "dff_upper_0/nand2_0/A" 33
-cap "dff_upper_0/nand2_2/VN" "dff_upper_0/nand2_2/VP" 779.954
-subcap "li_1520_2620#" -760.805
-subcap "li_1520_2710#" -521.947
-cap "dff_upper_0/nand2_2/VP" "dff_upper_0/nand2_2/VN" 2.185
-cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/B" 44.8884
-cap "li_1520_2620#" "li_1520_2710#" -29.7
-cap "li_1520_2620#" "dff_upper_0/nand2_2/VP" -3.55271e-15
-cap "dff_upper_0/nand2_2/B" "dff_upper_0/nand2_2/VP" 32.8367
-cap "dff_upper_0/nand2_2/B" "dff_upper_0/nand2_2/VN" -4.4
-cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/VP" -718.869
-cap "dff_upper_0/nand2_2/Y" "dff_upper_0/nand2_2/VN" 12.54
-subcap "li_1520_2620#" -1616.79
-subcap "li_1520_2620#" -1797.88
-subcap "li_1520_2710#" -104.333
-cap "li_1520_2620#" "li_1520_2710#" -29.7
-merge "dff_lower_0/nand2_2/B" "dff_upper_0/nand2_2/Y" -101.805 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 -50600 -80 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_2/Y" "Q"
-merge "dff_lower_0/VSUBS" "dff_upper_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/VSUBS" "VSUBS"
-merge "dff_upper_0/a_320_1180#" "dff_upper_0/nand2_0/B" -2680.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -192400 -9391 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_0/B" "dff_lower_0/a_790_n400#"
-merge "dff_lower_0/a_790_n400#" "li_1520_2620#"
-merge "dff_lower_0/nand2_1/B" "a_1970_n10#" -51.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000 -180 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_lower_0/nand2_2/Y" "dff_upper_0/nand2_2/B" -103.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68400 -160 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_2/B" "li_1470_1400#"
-merge "dff_lower_0/inverter_0/A" "dff_upper_0/nand2_0/A" -68.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 -100 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_0/A" "a_180_1260#"
-merge "dff_upper_0/nand2_2/VP" "w_1570_2160#" -506.306 0 0 0 0 91120 -2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -354940 -1600 0 0 0 0 0 0 0 0 0 0
-merge "w_1570_2160#" "dff_lower_0/nand2_2/VP"
-merge "dff_lower_0/nand2_2/VP" "m1_1020_1220#"
-merge "m1_1020_1220#" "w_2020_790#"
-merge "w_2020_790#" "m1_2020_840#"
-merge "dff_lower_0/nand2_2/VN" "dff_upper_0/nand2_2/VN" -617.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 438500 -1520 -229400 -1940 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_2/VN" "m1_60_590#"
-merge "m1_60_590#" "m1_2020_330#"
-merge "dff_upper_0/a_860_1310#" "dff_upper_0/nand2_1/B" -405.309 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20260 -1542 0 0 0 0 0 0 0 0 0 0 0 0
-merge "dff_upper_0/nand2_1/B" "li_1520_2710#"
+cap "dff_lower_0/and2_0/nand2_0/Y" "dff_upper_0/and2_0/inverter_0/Y" 1.27778
+cap "dff_lower_0/nand2_2/B" "dff_lower_0/and2_0/inverter_0/VP" 24.8387
+cap "dff_lower_0/and2_0/inverter_0/VP" "dff_upper_0/and2_0/inverter_0/Y" 11.7097
+cap "dff_lower_0/nand2_2/B" "m1_60_590#" 157.35
+cap "dff_lower_0/and2_0/inverter_0/VP" "dff_lower_0/nand2_2/Y" 29.41
+cap "dff_lower_0/and2_0/inverter_0/Y" "dff_upper_0/and2_0/inverter_0/Y" 2.12903
+cap "m1_60_590#" "dff_lower_0/nand2_2/Y" 142.25
+cap "dff_lower_0/and2_0/inverter_0/Y" "dff_lower_0/nand2_2/Y" 3.66667
+cap "m1_60_590#" "dff_lower_0/and2_0/nand2_0/Y" -453.405
+cap "dff_lower_0/and2_0/inverter_0/VP" "dff_lower_0/and2_0/inverter_0/VN" -10.3846
+subcap "m1_1430_1220#" -2131.47
+cap "dff_upper_0/and2_0/nand2_0/A" "dff_lower_0/and2_0/nand2_0/VP" 10.6147
+cap "dff_upper_0/and2_0/nand2_0/B" "dff_lower_0/and2_0/nand2_0/VP" 3.66667
+cap "dff_upper_0/nand2_0/A" "dff_upper_0/nand2_0/B" 33
+cap "dff_lower_0/nand2_0/Y" "dff_upper_0/and2_0/nand2_0/A" 3.77143
+cap "dff_upper_0/nand2_0/A" "dff_upper_0/and2_0/nand2_0/VN" 3.19355
+cap "dff_lower_0/nand2_0/A" "dff_upper_0/nand2_0/B" 4.3125
+cap "dff_upper_0/and2_0/nand2_0/A" "dff_upper_0/nand2_0/B" 4.3125
+cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/Y" 4.25806
+cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/B" 1.27778
+cap "dff_lower_0/inverter_0/Y" "dff_upper_0/nand2_0/A" 2.12903
+cap "dff_lower_0/inverter_0/Y" "dff_upper_0/nand2_0/B" 3.66667
+cap "dff_upper_0/and2_0/nand2_0/Y" "dff_lower_0/and2_0/nand2_0/VP" 9.58065
+cap "dff_upper_0/and2_0/inverter_0/Y" "dff_lower_0/and2_0/nand2_0/VP" -26.4
+cap "dff_upper_0/nand2_0/A" "dff_lower_0/and2_0/nand2_0/VP" 23.9516
+subcap "m1_1430_1220#" -334.823
+subcap "li_1930_2710#" -363.6
+cap "dff_upper_0/nand2_2/B" "dff_lower_0/and2_0/inverter_0/Y" 3.66667
+cap "dff_upper_0/and2_0/inverter_0/VN" "dff_lower_0/and2_0/inverter_0/VP" 782.139
+cap "dff_lower_0/and2_0/inverter_0/A" "dff_upper_0/and2_0/inverter_0/Y" 1.27778
+cap "dff_upper_0/and2_0/inverter_0/Y" "dff_upper_0/nand2_2/Y" 10.1538
+cap "dff_upper_0/nand2_2/B" "dff_upper_0/nand2_2/Y" 11.8884
+cap "dff_upper_0/nand2_2/B" "dff_upper_0/and2_0/inverter_0/VN" -4.4
+cap "dff_upper_0/and2_0/inverter_0/Y" "dff_lower_0/and2_0/inverter_0/VP" 531.125
+cap "dff_upper_0/nand2_2/B" "dff_lower_0/and2_0/inverter_0/VP" 29.17
+cap "dff_upper_0/nand2_2/Y" "dff_upper_0/and2_0/inverter_0/VN" -5.68434e-14
+cap "dff_upper_0/and2_0/inverter_0/Y" "dff_lower_0/and2_0/inverter_0/Y" 2.12903
+cap "li_1930_2620#" "li_1930_2710#" -29.7
+cap "dff_upper_0/nand2_2/Y" "dff_lower_0/and2_0/inverter_0/VP" 181.839
+subcap "li_1930_2620#" -31.975
+cap "li_1930_2710#" "li_1930_2620#" -29.7
+merge "dff_upper_0/nand2_2/Y" "dff_lower_0/nand2_2/B" -55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/nand2_2/B" "Q"
+merge "dff_upper_0/VSUBS" "dff_lower_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/VSUBS" "VSUBS"
+merge "dff_upper_0/nand2_2/B" "dff_lower_0/nand2_2/Y" -92.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56400 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/nand2_2/Y" "li_1880_1400#"
+merge "dff_upper_0/a_860_1310#" "li_1930_2710#" -638.764 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11660 -2362 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_upper_0/nand2_0/A" "dff_lower_0/inverter_0/A" -68.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/inverter_0/A" "a_180_1260#"
+merge "dff_upper_0/nand2_0/B" "dff_lower_0/nand2_0/B" -82.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/nand2_0/B" "a_360_1340#"
+merge "dff_upper_0/a_320_1180#" "li_1930_2620#" -1004.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45200 -3501 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_lower_0/and2_0/inverter_0/VN" "m1_2400_330#" -175.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11400 -820 0 0 0 0 0 0 0 0 0 0
+merge "dff_upper_0/and2_0/inverter_0/VN" "dff_upper_0/and2_0/nand2_0/VN" -2018.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400400 -1060 -299100 -2760 0 0 0 0 0 0 0 0
+merge "dff_upper_0/and2_0/nand2_0/VN" "dff_lower_0/and2_0/nand2_0/VN"
+merge "dff_lower_0/and2_0/nand2_0/VN" "m1_60_590#"
+merge "dff_upper_0/and2_0/inverter_0/VP" "w_1980_2160#" -1700.67 0 0 0 0 23320 -2060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51940 -1980 -5200 0 0 0 0 0 0 0 0 0
+merge "w_1980_2160#" "dff_lower_0/and2_0/inverter_0/VP"
+merge "dff_lower_0/and2_0/inverter_0/VP" "w_2400_790#"
+merge "w_2400_790#" "dff_lower_0/and2_0/nand2_0/VP"
+merge "dff_lower_0/and2_0/nand2_0/VP" "m1_1430_1220#"
+merge "m1_1430_1220#" "m1_2400_840#"

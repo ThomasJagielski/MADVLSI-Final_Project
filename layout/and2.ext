@@ -1,0 +1,23 @@
+timestamp 1620577227
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use nand2 nand2_0 1 0 -300 0 1 -90
+use inverter inverter_0 1 0 240 0 1 -240
+node "li_n90_n80#" 85 186.36 -90 -80 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11200 640 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "nand2_0/VP" "nand2_0/VN" -2.84217e-14
+cap "inverter_0/Y" "nand2_0/VN" 5.68434e-14
+cap "nand2_0/Y" "nand2_0/VN" 117.15
+cap "nand2_0/Y" "nand2_0/B" 15.8652
+cap "nand2_0/VP" "inverter_0/Y" 38
+cap "nand2_0/VP" "nand2_0/Y" 54.5217
+cap "nand2_0/A" "nand2_0/Y" 10.1538
+cap "inverter_0/Y" "nand2_0/Y" 42.973
+merge "inverter_0/VN" "nand2_0/VN" -155.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760 0 0 0 0 0 0 0 0 0 0
+merge "nand2_0/VN" "VSUBS"
+merge "inverter_0/A" "nand2_0/Y" -44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nand2_0/Y" "li_n90_n80#"
+merge "inverter_0/VP" "nand2_0/VP" -155.8 0 0 0 0 0 -960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760 0 0 0 0 0 0 0 0 0 0
