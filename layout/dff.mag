@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620581932
+timestamp 1620593249
 << nwell >>
 rect 1010 1270 1215 1295
 rect 990 1080 1215 1270
@@ -79,20 +79,27 @@ rect 0 320 1130 350
 rect 0 290 40 320
 rect 70 290 1130 320
 rect 0 265 1130 290
-use dff_lower  dff_lower_0
-timestamp 1620581932
-transform 1 0 -35 0 1 130
-box 30 -200 1250 505
 use dff_upper  dff_upper_0
-timestamp 1620581932
+timestamp 1620593249
 transform 1 0 -5 0 1 700
 box 0 0 1015 695
+use dff_lower  dff_lower_0
+timestamp 1620593249
+transform 1 0 -35 0 1 130
+box 30 -200 1250 505
 << labels >>
 rlabel space -5 5 -5 5 7 clear
+port 7 w
 rlabel space -5 1365 -5 1365 7 preset
+port 6 w
 rlabel space -5 1320 -5 1320 7 CLK
+port 5 w
 rlabel space -5 775 -5 775 7 D
+port 3 w
 rlabel metal1 -5 1175 -5 1175 7 VDD
+port 1 w
 rlabel metal1 -5 920 -5 920 7 GND
+port 2 w
 rlabel locali 1215 775 1215 775 3 Q
+port 4 e
 << end >>
