@@ -293,7 +293,7 @@ XMdummy22 GND GND GND GND sky130_fd_pr__nfet_01v8 L=0.6 W=1.5 nf=1 ad='int((nf+1
 XM15 VDD GND GND GND sky130_fd_pr__nfet_01v8 L=0.6 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-XM16 net2 net2 VDD GND sky130_fd_pr__nfet_01v8 L=0.6 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM16 GND GND VDD GND sky130_fd_pr__nfet_01v8 L=0.6 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 XM17 VDD VDD GND VDD sky130_fd_pr__pfet_01v8 L=0.6 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620582101
+timestamp 1620615203
 << poly >>
 rect 420 -160 435 -50
 rect 395 -170 435 -160
@@ -24,10 +24,6 @@ rect 395 -190 405 -180
 rect 425 -180 1250 -170
 rect 425 -190 435 -180
 rect 395 -200 435 -190
-use and2  and2_0
-timestamp 1620581932
-transform 1 0 775 0 1 15
-box -270 -105 205 490
 use nand2  nand2_2
 timestamp 1620490283
 transform 1 0 1100 0 1 -30
@@ -36,6 +32,10 @@ use nand2  nand2_0
 timestamp 1620490283
 transform 1 0 355 0 1 -30
 box -120 -60 150 535
+use and2  and2_0
+timestamp 1620615203
+transform 1 0 775 0 1 15
+box -270 -105 205 490
 use inverter  inverter_0
 timestamp 1620435323
 transform 1 0 150 0 1 -105

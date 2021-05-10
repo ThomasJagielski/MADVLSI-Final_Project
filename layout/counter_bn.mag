@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620604183
+timestamp 1620615203
 << nwell >>
 rect -105 1370 -65 1375
 rect 1355 1135 1390 1375
@@ -140,21 +140,21 @@ rect 1220 500 1390 615
 rect -200 245 5 435
 rect 1220 245 1390 435
 use dff  dff_0
-timestamp 1620594849
+timestamp 1620615203
 transform 1 0 10 0 1 80
 box -5 -70 1215 1395
-use inverter  inverter_0
-timestamp 1620435323
-transform 1 0 -80 0 1 765
-box -120 80 85 610
+use dff  dff_1
+timestamp 1620615203
+transform 1 0 1395 0 1 80
+box -5 -70 1215 1395
 use inverter  inverter_1
 timestamp 1620435323
 transform 1 0 1270 0 1 765
 box -120 80 85 610
-use dff  dff_1
-timestamp 1620594849
-transform 1 0 1395 0 1 80
-box -5 -70 1215 1395
+use inverter  inverter_0
+timestamp 1620435323
+transform 1 0 -80 0 1 765
+box -120 80 85 610
 << labels >>
 rlabel locali -200 1445 -200 1445 7 preset
 rlabel locali -200 1400 -200 1400 7 CLK
