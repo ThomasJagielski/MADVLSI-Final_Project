@@ -1,15 +1,19 @@
+Flattening unmatched subcell inverter_large in circuit selfbiasedcascode2stage.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_BW93LE in circuit selfbiasedcascode2stage.spice (0)(1 instance)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
-Class selfbiasedcascode2stage.spice:  Merged 72 devices.
+Equate elements:  no current cell.
+Class selfbiasedcascode2stage.spice:  Merged 82 devices.
 Class selfbiasedcascode2stage_lvs.spice:  Merged 72 devices.
 
 Subcircuit summary:
 Circuit 1: selfbiasedcascode2stage.spice   |Circuit 2: selfbiasedcascode2stage_lvs.spi 
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (18)               |sky130_fd_pr__pfet_01v8 (18)               
-sky130_fd_pr__nfet_01v8 (18)               |sky130_fd_pr__nfet_01v8 (18)               
-Number of devices: 36                      |Number of devices: 36                      
-Number of nets: 16                         |Number of nets: 16                         
+sky130_fd_pr__nfet_01v8 (19)               |sky130_fd_pr__nfet_01v8 (19)               
+sky130_fd_pr__pfet_01v8 (19)               |sky130_fd_pr__pfet_01v8 (19)               
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 39                      |Number of devices: 39                      
+Number of nets: 17                         |Number of nets: 17                         
 ---------------------------------------------------------------------------------------
 Circuits match uniquely.
 Netlists match uniquely.

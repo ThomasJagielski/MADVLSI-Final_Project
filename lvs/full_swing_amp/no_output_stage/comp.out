@@ -1,0 +1,18 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class selfbiasedcascode2stage.spice:  Merged 72 devices.
+Class selfbiasedcascode2stage_lvs.spice:  Merged 72 devices.
+
+Subcircuit summary:
+Circuit 1: selfbiasedcascode2stage.spice   |Circuit 2: selfbiasedcascode2stage_lvs.spi 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (18)               |sky130_fd_pr__pfet_01v8 (18)               
+sky130_fd_pr__nfet_01v8 (18)               |sky130_fd_pr__nfet_01v8 (18)               
+Number of devices: 36                      |Number of devices: 36                      
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes selfbiasedcascode2stage.spice and selfbiasedcascode2stage_lvs.spice are equivalent.
+Circuits match uniquely.
