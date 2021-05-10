@@ -1,0 +1,124 @@
+* NGSPICE file created from adc_digital.ext - technology: sky130A
+
+.subckt inverter A Y VP VN
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=5e+06u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+.ends
+
+.subckt nand2 A B Y VP VN
+X0 VP B Y VP sky130_fd_pr__pfet_01v8 ad=2e+12p pd=1e+07u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+X1 Y B a_80_120# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=5e+06u as=5e+11p ps=4.5e+06u w=2e+06u l=150000u
+X2 a_80_120# A VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+X3 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt and2 VSUBS nand2_0/A nand2_0/B nand2_0/VP inverter_0/Y
+Xinverter_0 nand2_0/Y inverter_0/Y nand2_0/VP VSUBS inverter
+Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_0/VP VSUBS nand2
+.ends
+
+.subckt dff_lower VSUBS and2_0/nand2_0/B nand2_2/Y inverter_0/A nand2_0/B nand2_2/VP
++ nand2_2/A
+Xinverter_0 inverter_0/A nand2_0/A nand2_2/VP VSUBS inverter
+Xand2_0 VSUBS nand2_0/Y and2_0/nand2_0/B nand2_2/VP nand2_2/B and2
+Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_2/VP VSUBS nand2
+Xnand2_2 nand2_2/A nand2_2/B nand2_2/Y nand2_2/VP VSUBS nand2
+.ends
+
+.subckt dff_upper VSUBS and2_0/nand2_0/A nand2_2/Y nand2_2/VP nand2_2/B nand2_0/B
++ nand2_0/A
+Xand2_0 VSUBS and2_0/nand2_0/A nand2_0/Y nand2_2/VP nand2_2/A and2
+Xnand2_0 nand2_0/A nand2_0/B nand2_0/Y nand2_2/VP VSUBS nand2
+Xnand2_2 nand2_2/A nand2_2/B nand2_2/Y nand2_2/VP VSUBS nand2
+.ends
+
+.subckt dff VDD GND Q dff_upper_0/nand2_2/B dff_upper_0/and2_0/nand2_0/A dff_upper_0/nand2_0/B
++ dff_upper_0/nand2_0/A dff_lower_0/and2_0/nand2_0/B
+Xdff_lower_0 GND dff_lower_0/and2_0/nand2_0/B dff_upper_0/nand2_2/B dff_upper_0/nand2_0/A
++ dff_upper_0/nand2_0/B VDD Q dff_lower
+Xdff_upper_0 GND dff_upper_0/and2_0/nand2_0/A Q VDD dff_upper_0/nand2_2/B dff_upper_0/nand2_0/B
++ dff_upper_0/nand2_0/A dff_upper
+.ends
+
+.subckt output_register GND Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 CLK
+Xdff_0 VDD GND Qout0 dff_0/dff_upper_0/nand2_2/B preset CLK Q0 clear dff
+Xdff_1 VDD GND Qout1 dff_1/dff_upper_0/nand2_2/B preset CLK Q1 clear dff
+Xdff_2 VDD GND Qout2 dff_2/dff_upper_0/nand2_2/B preset CLK Q2 clear dff
+Xdff_3 VDD GND Qout3 dff_3/dff_upper_0/nand2_2/B preset CLK Q3 clear dff
+Xdff_5 VDD GND Qout5 dff_5/dff_upper_0/nand2_2/B preset CLK Q5 clear dff
+Xdff_4 VDD GND Qout4 dff_4/dff_upper_0/nand2_2/B preset CLK Q4 clear dff
+Xdff_6 VDD GND Qout6 dff_6/dff_upper_0/nand2_2/B preset CLK Q6 clear dff
+Xdff_7 VDD GND Qout7 dff_7/dff_upper_0/nand2_2/B preset CLK Q7 clear dff
+.ends
+
+.subckt inverter_large VDD GND A Y
+X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=1.5e+12p pd=9e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
+X1 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=4e+12p pd=2e+07u as=3e+12p ps=1.5e+07u w=2e+06u l=150000u
+X4 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X6 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X8 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X9 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X10 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X11 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt drive_buffer inverter_large_0/Y GND VDD
+Xinverter_0 A inverter_0/Y VDD GND inverter
+Xinverter_large_0 VDD GND inverter_0/Y inverter_large_0/Y inverter_large
+.ends
+
+.subckt counter_b0 VDD GND Qnout clk preset clear
+Xinverter_0 Qout Qnout VDD GND inverter
+Xinverter_1 clk inverter_1/Y VDD GND inverter
+Xdff_0 VDD GND Qout dff_0/dff_upper_0/nand2_2/B preset clk D clear dff
+Xdff_1 VDD GND dff_1/Q D clear inverter_1/Y Qout preset dff
+.ends
+
+.subckt counter_bn dff_1/VDD VSUBS Qnout CLK preset clear
+Xinverter_0 CLK inverter_0/Y dff_1/VDD VSUBS inverter
+Xinverter_1 Qout Qnout dff_1/VDD VSUBS inverter
+Xdff_0 dff_1/VDD VSUBS Qout dff_0/dff_upper_0/nand2_2/B preset inverter_0/Y dff_1/dff_upper_0/nand2_2/B
++ clear dff
+Xdff_1 dff_1/VDD VSUBS dff_1/Q dff_1/dff_upper_0/nand2_2/B clear CLK Qout preset dff
+.ends
+
+.subckt counter counter_b0_0/clk VSUBS counter_bn_7/CLK counter_bn_6/CLK counter_bn_5/CLK
++ counter_bn_1/CLK counter_bn_2/CLK counter_bn_3/CLK counter_bn_4/CLK counter_bn_0/CLK
+Xcounter_b0_0 counter_b0_0/VDD VSUBS counter_bn_0/CLK counter_b0_0/clk counter_bn_7/preset
++ counter_bn_7/clear counter_b0
+Xcounter_bn_0 counter_b0_0/VDD VSUBS counter_bn_1/CLK counter_bn_0/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+Xcounter_bn_1 counter_b0_0/VDD VSUBS counter_bn_2/CLK counter_bn_1/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+Xcounter_bn_2 counter_b0_0/VDD VSUBS counter_bn_3/CLK counter_bn_2/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+Xcounter_bn_4 counter_b0_0/VDD VSUBS counter_bn_5/CLK counter_bn_4/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+Xcounter_bn_3 counter_b0_0/VDD VSUBS counter_bn_4/CLK counter_bn_3/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+Xcounter_bn_5 counter_b0_0/VDD VSUBS counter_bn_6/CLK counter_bn_5/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+Xcounter_bn_6 counter_b0_0/VDD VSUBS counter_bn_7/CLK counter_bn_6/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+Xcounter_bn_7 counter_b0_0/VDD VSUBS counter_bn_7/Qnout counter_bn_7/CLK counter_bn_7/preset
++ counter_bn_7/clear counter_bn
+.ends
+
+
+* Top level circuit adc_digital
+
+Xoutput_register_0 VSUBS output_register_0/Q0 output_register_0/Q1 output_register_0/Q2
++ output_register_0/Q3 output_register_0/Q4 output_register_0/Q5 output_register_0/Q6
++ output_register_0/Q7 output_register_0/CLK output_register
+Xdrive_buffer_0 counter_0/counter_b0_0/clk VSUBS drive_buffer_0/VDD drive_buffer
+Xcounter_0 counter_0/counter_b0_0/clk VSUBS output_register_0/Q7 output_register_0/Q6
++ output_register_0/Q5 output_register_0/Q1 output_register_0/Q2 output_register_0/Q3
++ output_register_0/Q4 output_register_0/Q0 counter
+Xand2_0 VSUBS and2_0/nand2_0/A and2_0/nand2_0/B drive_buffer_0/VDD and2_0/inverter_0/Y
++ and2
+.end
+

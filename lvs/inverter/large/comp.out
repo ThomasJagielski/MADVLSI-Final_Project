@@ -1,0 +1,17 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class inverter_large.spice:  Merged 10 devices.
+
+Subcircuit summary:
+Circuit 1: inverter_large.spice            |Circuit 2: inverter_large_xschem.spice     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes inverter_large.spice and inverter_large_xschem.spice are equivalent.
+Circuits match uniquely.

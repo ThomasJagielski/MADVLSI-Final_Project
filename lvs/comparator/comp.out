@@ -1,0 +1,20 @@
+Flattening unmatched subcell inverter in circuit comparator.spice (0)(1 instance)
+Flattening unmatched subcell inverter_large in circuit comparator.spice (0)(2 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class comparator.spice:  Merged 92 devices.
+Class comparator_lvs.spice:  Merged 72 devices.
+
+Subcircuit summary:
+Circuit 1: comparator.spice                |Circuit 2: comparator_lvs.spice            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (21)               |sky130_fd_pr__nfet_01v8 (21)               
+sky130_fd_pr__pfet_01v8 (21)               |sky130_fd_pr__pfet_01v8 (21)               
+Number of devices: 42                      |Number of devices: 42                      
+Number of nets: 19                         |Number of nets: 19                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes comparator.spice and comparator_lvs.spice are equivalent.
+Circuits match uniquely.

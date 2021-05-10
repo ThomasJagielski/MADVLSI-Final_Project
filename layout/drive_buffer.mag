@@ -1,0 +1,26 @@
+magic
+tech sky130A
+timestamp 1620670737
+<< nwell >>
+rect 0 525 260 555
+rect 200 315 260 525
+<< locali >>
+rect 180 285 205 305
+rect 0 0 100 20
+<< metal1 >>
+rect 0 315 725 530
+rect 0 60 270 255
+use inverter_large  inverter_large_0 ~/Documents/MADVLSI-Final_Project/layout
+timestamp 1620670737
+transform 1 0 315 0 1 160
+box -120 -100 410 410
+use inverter  inverter_0 ~/Documents/MADVLSI-Final_Project/layout
+timestamp 1620435323
+transform 1 0 120 0 1 -80
+box -120 80 85 610
+<< labels >>
+rlabel locali 0 10 0 10 7 A
+rlabel metal1 0 180 0 180 7 GND
+rlabel metal1 0 410 0 410 7 VDD
+rlabel space 725 295 725 295 3 Y
+<< end >>

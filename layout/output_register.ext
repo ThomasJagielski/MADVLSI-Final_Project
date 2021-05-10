@@ -1,0 +1,610 @@
+timestamp 1620661380
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use dff dff_0 1 0 10 0 1 140
+use dff dff_1 1 0 2490 0 1 140
+use dff dff_2 1 0 4970 0 1 140
+use dff dff_3 1 0 7450 0 1 140
+use dff dff_4 1 0 9930 0 1 140
+use dff dff_5 1 0 12410 0 1 140
+use dff dff_6 1 0 14890 0 1 140
+use dff dff_7 1 0 17370 0 1 140
+node "m1_17320_470#" 1 188.65 17320 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_14840_470#" 1 182.08 14840 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_12350_470#" 1 195.22 12350 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22800 880 0 0 0 0 0 0 0 0 0 0
+node "m1_9880_470#" 1 188.65 9880 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_7400_470#" 1 188.65 7400 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_4920_470#" 1 188.65 4920 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_2440_470#" 1 182.08 2440 470 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_17320_980#" 1 176.3 17320 980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_14840_980#" 1 172.2 14840 980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_12360_980#" 1 176.3 12360 980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_9880_980#" 1 176.3 9880 980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_7390_980#" 1 176.3 7390 980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_4920_980#" 1 176.3 4920 980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19000 860 0 0 0 0 0 0 0 0 0 0
+node "m1_2440_980#" 1 172.2 2440 980 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_17320_1790#" 1 182.08 17320 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_14840_1790#" 1 182.08 14840 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_12360_1790#" 1 182.08 12360 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_9880_1790#" 1 182.08 9880 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_7400_1790#" 1 182.08 7400 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_4920_1790#" 1 182.08 4920 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_2440_1790#" 1 182.08 2440 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "GND" 2 175.51 0 1790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11400 820 0 0 0 0 0 0 0 0 0 0
+node "m1_17320_2300#" 1 172.2 17320 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_14840_2300#" 1 172.2 14840 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_12360_2300#" 1 172.2 12360 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_9880_2300#" 1 172.2 9880 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_7400_2300#" 1 172.2 7400 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_4920_2300#" 1 172.2 4920 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "m1_2440_2300#" 1 172.2 2440 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "VDD" 1 182.08 0 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 840 0 0 0 0 0 0 0 0 0 0
+node "li_17300_40#" 21 63.09 17300 40 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_14830_40#" 21 63.09 14830 40 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_12360_40#" 15 51.35 12360 40 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_9860_40#" 27 74.83 9860 40 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_7390_40#" 18 57.22 7390 40 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4910_40#" 18 57.22 4910 40 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2430_40#" 21 63.09 2430 40 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_17310_130#" 21 63.09 17310 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_14830_130#" 21 63.09 14830 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_12360_130#" 15 51.35 12360 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_9860_130#" 27 74.83 9860 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 260 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_7400_130#" 18 57.22 7400 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4910_130#" 18 57.22 4910 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2430_130#" 21 63.09 2430 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "clear" 16 39.61 0 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1200 140 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_17310_2760#" 21 63.09 17310 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_14830_2760#" 21 63.09 14830 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_12340_2760#" 21 63.09 12340 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_9860_2760#" 21 63.09 9860 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_7380_2760#" 21 63.09 7380 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4910_2760#" 21 63.09 4910 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2430_2760#" 21 63.09 2430 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLK" 16 39.61 0 2760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1200 140 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_17300_2850#" 31 80.7 17300 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_14800_2850#" 34 86.57 14800 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4400 300 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_12340_2850#" 31 80.7 12340 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_9850_2850#" 34 86.57 9850 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4400 300 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_7380_2850#" 24 68.96 7380 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3200 240 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4840_2850#" 43 104.18 4840 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5600 360 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2430_2850#" 21 63.09 2430 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2800 220 0 0 0 0 0 0 0 0 0 0 0 0
+node "preset" 16 39.61 0 2850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1200 140 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout7" 654 405.035 19450 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout6" 654 405.035 16970 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout5" 654 405.035 14490 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout4" 654 405.035 12010 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout3" 654 405.035 9530 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout2" 654 405.035 7050 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout1" 654 405.035 4570 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qout0" 654 405.035 2090 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16900 1020 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q7" 430 316.905 17550 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12700 740 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q6" 430 316.905 15070 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12700 740 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q5" 430 316.905 12590 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12700 740 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q4" 430 316.905 10110 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12700 740 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q3" 446 323.2 7630 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13000 760 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q2" 430 316.905 5150 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12700 740 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q1" 430 316.905 2670 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12700 740 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q0" 430 316.905 190 2930 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12700 740 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_17320_930#" 17194 69 17320 930 nw 0 0 0 0 23000 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_14840_930#" 20400 57.6 14840 930 nw 0 0 0 0 19200 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_12360_930#" 17194 69 12360 930 nw 0 0 0 0 23000 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_9880_930#" 17194 69 9880 930 nw 0 0 0 0 23000 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_7390_980#" 17194 69 7390 980 nw 0 0 0 0 23000 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_4920_930#" 17194 69 4920 930 nw 0 0 0 0 23000 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2440_930#" 16320 72 2440 930 nw 0 0 0 0 24000 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_17320_2250#" 20400 57.6 17320 2250 nw 0 0 0 0 19200 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_14840_2250#" 20400 57.6 14840 2250 nw 0 0 0 0 19200 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_12360_2250#" 20400 57.6 12360 2250 nw 0 0 0 0 19200 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_9880_2250#" 20400 57.6 9880 2250 nw 0 0 0 0 19200 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_7400_2250#" 20400 57.6 7400 2250 nw 0 0 0 0 19200 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_4920_2250#" 20400 57.6 4920 2250 nw 0 0 0 0 19200 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2440_2250#" 16320 72 2440 2250 nw 0 0 0 0 24000 1060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_17300_2850#" "li_17310_2760#" 46.2
+cap "w_2440_930#" "m1_2440_980#" 9.88
+cap "li_14830_2760#" "li_14800_2850#" 46.2
+cap "m1_17320_1790#" "m1_17320_2300#" 13.8462
+cap "w_9880_930#" "m1_9880_980#" 12.35
+cap "m1_9880_2300#" "w_9880_2250#" 9.88
+cap "GND" "VDD" 10.3846
+cap "m1_9880_2300#" "m1_9880_1790#" 13.8462
+cap "li_2430_40#" "li_2430_130#" 46.2
+cap "m1_14840_470#" "m1_14840_980#" 13.8462
+cap "w_7400_2250#" "m1_7400_2300#" 9.88
+cap "m1_4920_980#" "w_4920_930#" 12.35
+cap "li_7380_2850#" "li_7380_2760#" 46.2
+cap "m1_4920_2300#" "m1_4920_1790#" 13.8462
+cap "m1_17320_470#" "m1_17320_980#" 17.3077
+cap "m1_4920_980#" "m1_4920_470#" 17.3077
+cap "li_14830_40#" "li_14830_130#" 46.2
+cap "m1_2440_2300#" "w_2440_2250#" 9.88
+cap "li_4910_130#" "li_4910_40#" 39.6
+cap "li_4840_2850#" "li_4910_2760#" 46.2
+cap "m1_12360_2300#" "m1_12360_1790#" 13.8462
+cap "li_9860_2760#" "li_9850_2850#" 46.2
+cap "m1_2440_1790#" "m1_2440_2300#" 13.8462
+cap "m1_4920_2300#" "w_4920_2250#" 9.88
+cap "w_14840_2250#" "m1_14840_2300#" 9.88
+cap "m1_7400_470#" "m1_7390_980#" 13.8462
+cap "w_17320_930#" "m1_17320_980#" 12.35
+cap "m1_7390_980#" "w_7390_980#" 12.35
+cap "li_2430_2850#" "li_2430_2760#" 46.2
+cap "li_7400_130#" "li_7390_40#" 33
+cap "m1_14840_1790#" "m1_14840_2300#" 13.8462
+cap "m1_2440_470#" "m1_2440_980#" 13.8462
+cap "CLK" "preset" 19.8
+cap "w_14840_930#" "m1_14840_980#" 9.88
+cap "w_17320_2250#" "m1_17320_2300#" 9.88
+cap "li_17300_40#" "li_17310_130#" 39.6
+cap "li_12360_130#" "li_12360_40#" 33
+cap "m1_9880_980#" "m1_9880_470#" 17.3077
+cap "w_12360_2250#" "m1_12360_2300#" 9.88
+cap "li_12340_2850#" "li_12340_2760#" 46.2
+cap "li_9860_40#" "li_9860_130#" 59.4
+cap "m1_12350_470#" "m1_12360_980#" 17.3077
+cap "m1_7400_2300#" "m1_7400_1790#" 13.8462
+cap "w_12360_930#" "m1_12360_980#" 12.35
+subcap "Qout0" -237.945
+cap "dff_1/dff_lower_0/inverter_0/Y" "dff_0/dff_lower_0/nand2_2/VP" 30.3243
+cap "dff_1/dff_lower_0/inverter_0/Y" "dff_0/dff_upper_0/nand2_2/B" 17.8874
+cap "dff_0/dff_upper_0/nand2_2/B" "dff_0/dff_lower_0/nand2_2/VP" 41.5556
+cap "dff_0/Q" "dff_1/dff_lower_0/a_790_n400#" 94.42
+cap "dff_1/dff_lower_0/inverter_0/A" "dff_0/dff_upper_0/nand2_2/B" 10.4534
+cap "dff_0/dff_lower_0/nand2_2/VP" "dff_0/dff_lower_0/nand2_2/VN" 2.13163e-14
+cap "dff_1/dff_lower_0/li_60_n270#" "dff_1/dff_lower_0/a_790_n400#" -19.8
+cap "dff_0/dff_upper_0/nand2_2/B" "dff_0/dff_lower_0/nand2_2/VN" 42.4286
+cap "dff_0/GND" "dff_0/dff_lower_0/nand2_2/VN" 38.6364
+cap "dff_0/dff_lower_0/and2_0/inverter_0/Y" "dff_1/dff_lower_0/inverter_0/A" 4.97297
+cap "dff_1/dff_lower_0/li_60_n270#" "dff_0/Q" 48.7277
+cap "dff_0/dff_lower_0/and2_0/inverter_0/Y" "dff_0/Q" 88.72
+cap "dff_1/dff_lower_0/li_60_n270#" "dff_0/dff_lower_0/nand2_2/VN" -3.55271e-15
+cap "dff_0/dff_lower_0/and2_0/inverter_0/Y" "dff_0/dff_lower_0/nand2_2/VN" 5.68434e-14
+subcap "m1_2440_470#" -767.405
+subcap "Qout1" -566.625
+cap "dff_1/dff_lower_0/inverter_0/Y" "dff_1/dff_lower_0/inverter_0/VN" -81
+cap "dff_0/dff_lower_0/li_2410_n50#" "dff_1/dff_lower_0/inverter_0/Y" 1.83333
+cap "dff_0/dff_lower_0/nand2_2/VP" "dff_1/dff_lower_0/inverter_0/Y" -81
+subcap "Qout1" -237.945
+cap "dff_2/dff_lower_0/inverter_0/Y" "dff_1/dff_lower_0/nand2_2/VN" 5.68434e-14
+cap "dff_1/Q" "dff_2/dff_lower_0/a_790_n400#" 94.42
+cap "dff_1/Q" "dff_2/dff_lower_0/li_60_n270#" 48.7277
+cap "dff_1/dff_lower_0/nand2_2/VN" "dff_1/dff_upper_0/nand2_2/B" 42.4286
+cap "dff_1/dff_lower_0/nand2_2/VN" "dff_1/GND" 38.6364
+cap "dff_2/dff_lower_0/inverter_0/A" "dff_1/dff_upper_0/nand2_2/B" 10.4534
+cap "dff_2/dff_lower_0/inverter_0/Y" "dff_1/dff_upper_0/nand2_2/B" 19.7207
+cap "dff_1/dff_lower_0/nand2_2/VN" "dff_1/dff_lower_0/nand2_2/VP" -3.46154
+cap "dff_1/Q" "dff_1/dff_lower_0/and2_0/inverter_0/Y" 88.72
+cap "dff_1/dff_lower_0/nand2_2/VN" "dff_1/dff_lower_0/and2_0/inverter_0/Y" 5.68434e-14
+cap "dff_2/dff_lower_0/li_60_n270#" "dff_2/dff_lower_0/a_790_n400#" -13.2
+cap "dff_2/dff_lower_0/inverter_0/Y" "dff_1/dff_lower_0/nand2_2/VP" 30.3243
+cap "dff_2/dff_lower_0/inverter_0/A" "dff_1/dff_lower_0/and2_0/inverter_0/Y" 4.97297
+cap "dff_1/dff_lower_0/nand2_2/VP" "dff_1/dff_upper_0/nand2_2/B" 41.5556
+subcap "Qout2" -169.495
+cap "dff_3/dff_lower_0/a_790_n400#" "dff_3/dff_lower_0/li_60_n270#" -6.6
+cap "dff_2/dff_lower_0/nand2_2/VP" "dff_2/dff_upper_0/nand2_2/B" 41.5556
+cap "dff_2/Q" "dff_3/dff_lower_0/li_60_n270#" 48.7277
+cap "dff_3/dff_lower_0/inverter_0/A" "dff_2/dff_upper_0/nand2_2/B" 10.4534
+cap "dff_2/dff_lower_0/and2_0/inverter_0/Y" "dff_2/dff_lower_0/nand2_2/VN" -1.42109e-14
+cap "dff_3/dff_lower_0/inverter_0/Y" "dff_2/dff_lower_0/nand2_2/VN" 5.68434e-14
+cap "dff_2/dff_lower_0/and2_0/inverter_0/Y" "dff_2/Q" 88.72
+cap "dff_3/dff_lower_0/a_790_n400#" "dff_2/dff_lower_0/nand2_2/VN" -3.55271e-15
+cap "dff_2/Q" "dff_3/dff_lower_0/a_790_n400#" 94.42
+cap "dff_2/dff_upper_0/nand2_2/B" "dff_3/dff_lower_0/inverter_0/Y" 19.7207
+cap "dff_2/dff_lower_0/nand2_2/VP" "dff_3/dff_lower_0/inverter_0/Y" 30.3243
+cap "dff_2/dff_upper_0/nand2_2/B" "dff_2/dff_lower_0/nand2_2/VN" 42.4286
+cap "dff_2/dff_lower_0/nand2_2/VP" "dff_2/dff_lower_0/nand2_2/VN" -7.10543e-15
+cap "dff_3/dff_lower_0/inverter_0/A" "dff_2/dff_lower_0/and2_0/inverter_0/Y" 4.97297
+cap "dff_2/GND" "dff_2/dff_lower_0/nand2_2/VN" 38.6364
+cap "dff_3/dff_lower_0/li_60_n270#" "dff_2/dff_lower_0/nand2_2/VN" 1.77636e-15
+subcap "m1_9880_470#" -259.089
+subcap "Qout3" -212.045
+cap "dff_3/Q" "dff_4/dff_lower_0/a_790_n400#" 94.42
+cap "dff_3/dff_lower_0/and2_0/inverter_0/Y" "dff_3/dff_lower_0/nand2_2/VN" 5.68434e-14
+cap "dff_3/dff_upper_0/nand2_2/B" "dff_3/dff_lower_0/nand2_2/VP" 20.7778
+cap "dff_3/Q" "dff_3/dff_lower_0/and2_0/inverter_0/Y" 88.72
+cap "dff_3/dff_upper_0/nand2_2/B" "dff_3/dff_lower_0/nand2_2/VN" -1.36765
+cap "dff_3/GND" "dff_3/dff_lower_0/nand2_2/VN" 19.3182
+cap "dff_3/dff_lower_0/and2_0/inverter_0/Y" "dff_4/dff_lower_0/inverter_0/A" 2.48649
+cap "dff_3/Q" "dff_4/dff_lower_0/li_60_n270#" 48.7277
+cap "dff_3/dff_upper_0/nand2_2/B" "dff_4/dff_lower_0/inverter_0/A" 4.25806
+subcap "Qout3" -571.785
+cap "dff_4/dff_lower_0/inverter_0/Y" "dff_4/dff_lower_0/inverter_0/VN" 5.68434e-14
+cap "dff_3/dff_lower_0/nand2_2/Y" "dff_4/dff_lower_0/inverter_0/VN" 42.4286
+cap "dff_4/dff_lower_0/inverter_0/Y" "dff_3/dff_lower_0/nand2_2/VP" 30.3243
+cap "dff_4/dff_lower_0/inverter_0/A" "dff_3/dff_lower_0/nand2_2/B" 2.48649
+cap "dff_3/dff_lower_0/nand2_2/Y" "dff_3/dff_lower_0/nand2_2/VP" 20.7778
+cap "dff_4/dff_lower_0/inverter_0/Y" "dff_3/dff_lower_0/nand2_2/Y" 19.7207
+cap "dff_3/dff_lower_0/nand2_2/Y" "dff_4/dff_lower_0/inverter_0/A" 10.4534
+cap "dff_4/dff_lower_0/inverter_0/VN" "dff_3/dff_lower_0/nand2_2/VP" -3.46154
+cap "dff_4/dff_lower_0/inverter_0/VN" "dff_3/GND" 19.3182
+cap "dff_4/dff_lower_0/a_790_n400#" "dff_4/dff_lower_0/li_60_n270#" -33
+subcap "Qout4" -237.945
+cap "dff_4/dff_lower_0/nand2_2/VN" "dff_4/GND" 38.6364
+cap "dff_4/dff_lower_0/nand2_2/VN" "dff_4/dff_lower_0/and2_0/inverter_0/Y" 5.68434e-14
+cap "dff_5/dff_lower_0/inverter_0/A" "dff_4/dff_lower_0/and2_0/inverter_0/Y" 4.97297
+cap "dff_4/Q" "dff_5/dff_lower_0/li_60_n270#" 48.7277
+cap "dff_5/dff_lower_0/a_790_n400#" "dff_4/dff_lower_0/nand2_2/VN" -3.55271e-15
+cap "dff_4/dff_lower_0/nand2_2/VP" "dff_4/dff_lower_0/nand2_2/VN" -3.46154
+cap "dff_4/dff_upper_0/nand2_2/B" "dff_4/dff_lower_0/nand2_2/VN" 42.4286
+cap "dff_4/dff_upper_0/nand2_2/B" "dff_5/dff_lower_0/inverter_0/A" 10.4534
+cap "dff_4/dff_upper_0/nand2_2/B" "dff_4/dff_lower_0/nand2_2/VP" 41.5556
+cap "dff_4/Q" "dff_4/dff_lower_0/and2_0/inverter_0/Y" 88.72
+cap "dff_4/dff_lower_0/nand2_2/VP" "dff_5/dff_lower_0/inverter_0/Y" 15.1622
+cap "dff_4/Q" "dff_5/dff_lower_0/a_790_n400#" 94.42
+cap "dff_4/dff_upper_0/nand2_2/B" "dff_5/dff_lower_0/inverter_0/Y" 9.86036
+cap "dff_5/dff_lower_0/a_790_n400#" "dff_5/dff_lower_0/li_60_n270#" -6.6
+subcap "m1_12350_470#" -121.2
+cap "dff_4/dff_lower_0/nand2_2/VP" "dff_5/dff_lower_0/inverter_0/Y" 15.1622
+cap "dff_4/dff_lower_0/nand2_2/B" "dff_5/dff_lower_0/inverter_0/A" 2.42105
+cap "dff_5/dff_lower_0/inverter_0/A" "dff_4/dff_lower_0/nand2_2/Y" 5.02586
+cap "dff_5/dff_lower_0/inverter_0/Y" "dff_4/dff_lower_0/nand2_2/Y" 9.86036
+cap "dff_5/dff_lower_0/inverter_0/VN" "dff_4/dff_lower_0/nand2_2/Y" 2.27586
+subcap "Qout5" -237.945
+cap "dff_6/dff_lower_0/li_60_n270#" "dff_6/dff_lower_0/a_790_n400#" -19.8
+cap "dff_6/dff_lower_0/li_60_n270#" "dff_5/Q" 48.7277
+cap "dff_5/GND" "dff_5/dff_lower_0/nand2_2/VN" 38.6364
+cap "dff_5/Q" "dff_5/dff_lower_0/and2_0/inverter_0/Y" 88.72
+cap "dff_5/dff_lower_0/nand2_2/VP" "dff_5/dff_lower_0/nand2_2/VN" 2.13163e-14
+cap "dff_6/dff_lower_0/inverter_0/A" "dff_5/dff_lower_0/and2_0/inverter_0/Y" 4.97297
+cap "dff_5/dff_lower_0/nand2_2/VN" "dff_5/dff_upper_0/nand2_2/B" 42.4286
+cap "dff_6/dff_lower_0/inverter_0/Y" "dff_5/dff_lower_0/nand2_2/VN" 5.68434e-14
+cap "dff_6/dff_lower_0/li_60_n270#" "dff_5/dff_lower_0/nand2_2/VN" -3.55271e-15
+cap "dff_5/dff_lower_0/nand2_2/VN" "dff_5/dff_lower_0/and2_0/inverter_0/Y" 5.68434e-14
+cap "dff_6/dff_lower_0/a_790_n400#" "dff_5/Q" 94.42
+cap "dff_5/dff_lower_0/nand2_2/VP" "dff_5/dff_upper_0/nand2_2/B" 41.5556
+cap "dff_5/dff_lower_0/nand2_2/VP" "dff_6/dff_lower_0/inverter_0/Y" 30.3243
+cap "dff_6/dff_lower_0/inverter_0/A" "dff_5/dff_upper_0/nand2_2/B" 10.4534
+cap "dff_6/dff_lower_0/inverter_0/Y" "dff_5/dff_upper_0/nand2_2/B" 19.7207
+subcap "Qout6" -237.945
+cap "dff_7/dff_lower_0/inverter_0/Y" "dff_6/dff_lower_0/nand2_2/VP" 30.3243
+cap "dff_7/dff_lower_0/a_790_n400#" "dff_6/Q" 94.42
+cap "dff_7/dff_lower_0/inverter_0/Y" "dff_6/dff_lower_0/nand2_2/VN" 5.68434e-14
+cap "dff_6/Q" "dff_6/dff_lower_0/and2_0/inverter_0/Y" 88.72
+cap "dff_6/dff_lower_0/nand2_2/VN" "dff_6/GND" 38.6364
+cap "dff_6/dff_lower_0/nand2_2/VN" "dff_6/dff_lower_0/and2_0/inverter_0/Y" -1.42109e-14
+cap "dff_7/dff_lower_0/inverter_0/A" "dff_6/dff_lower_0/and2_0/inverter_0/Y" 4.97297
+cap "dff_7/dff_lower_0/a_790_n400#" "dff_7/dff_lower_0/li_60_n270#" -13.2
+cap "dff_6/dff_upper_0/nand2_2/B" "dff_6/dff_lower_0/nand2_2/VP" 41.5556
+cap "dff_6/dff_lower_0/nand2_2/VN" "dff_6/dff_upper_0/nand2_2/B" 42.4286
+cap "dff_7/dff_lower_0/inverter_0/A" "dff_6/dff_upper_0/nand2_2/B" 10.4534
+cap "dff_6/dff_lower_0/nand2_2/VN" "dff_6/dff_lower_0/nand2_2/VP" -3.46154
+cap "dff_6/Q" "dff_7/dff_lower_0/li_60_n270#" 48.7277
+cap "dff_7/dff_lower_0/inverter_0/Y" "dff_6/dff_upper_0/nand2_2/B" 19.7207
+cap "dff_7/dff_lower_0/nand2_2/A" "dff_7/dff_lower_0/li_60_n270#" 48.7277
+cap "dff_7/dff_lower_0/nand2_2/A" "dff_7/dff_lower_0/a_790_n400#" 94.42
+cap "dff_7/dff_lower_0/nand2_2/A" "dff_7/dff_lower_0/and2_0/inverter_0/Y" 82.97
+subcap "Qout7" -545.91
+cap "dff_7/dff_lower_0/and2_0/inverter_0/Y" "dff_7/dff_lower_0/nand2_2/A" 12.3214
+subcap "preset" -120.298
+cap "dff_0/VDD" "dff_0/GND" -10.3846
+cap "dff_0/VDD" "dff_0/dff_upper_0/nand2_0/A" 2.64
+subcap "m1_2440_980#" -139.226
+subcap "li_2430_2760#" -141.607
+subcap "li_2430_2850#" -155.803
+subcap "w_2440_930#" -39.0265
+cap "dff_0/GND" "dff_0/dff_lower_0/nand2_2/VP" -5.32907e-15
+cap "dff_0/dff_upper_0/nand2_2/VP" "dff_1/dff_upper_0/nand2_0/A" 2.64
+cap "dff_1/dff_lower_0/inverter_0/Y" "dff_0/dff_lower_0/nand2_2/VP" 3.56757
+cap "dff_0/dff_lower_0/nand2_2/Y" "dff_0/dff_lower_0/nand2_2/VP" 4.88889
+cap "dff_0/Q" "dff_1/dff_upper_0/nand2_0/A" 49.5
+cap "dff_0/dff_upper_0/nand2_2/VP" "dff_0/GND" 2.13163e-14
+subcap "m1_2440_1790#" -7.50499
+subcap "li_2430_2850#" -230.73
+subcap "Q1" -11.0525
+cap "dff_0/dff_lower_0/nand2_2/VP" "dff_1/dff_lower_0/inverter_0/Y" -40.5
+cap "dff_1/dff_upper_0/nand2_0/A" "dff_0/GND" -57.105
+cap "dff_1/dff_upper_0/and2_0/nand2_0/B" "dff_0/dff_lower_0/nand2_2/VP" -121.5
+subcap "m1_4920_980#" -629.121
+subcap "li_4840_2850#" -243.79
+subcap "w_4920_930#" -521.821
+cap "dff_1/dff_lower_0/nand2_2/VP" "dff_1/dff_lower_0/nand2_2/Y" 4.88889
+cap "dff_1/Q" "dff_2/dff_upper_0/nand2_0/A" 49.5
+cap "dff_1/dff_upper_0/nand2_2/VP" "dff_2/dff_upper_0/a_750_1310#" 8.88178e-16
+cap "dff_2/dff_lower_0/inverter_0/Y" "dff_1/dff_lower_0/nand2_2/VP" 3.56757
+cap "dff_1/dff_upper_0/nand2_2/VP" "dff_2/dff_upper_0/nand2_0/B" -2.66454e-15
+cap "dff_1/GND" "dff_1/dff_upper_0/nand2_2/VP" -3.55271e-14
+cap "dff_1/dff_upper_0/nand2_2/VP" "dff_2/dff_upper_0/nand2_0/A" 2.64
+subcap "li_7380_2760#" -296.295
+subcap "li_7380_2850#" -236.6
+subcap "m1_7390_980#" -558.248
+subcap "li_7380_2850#" -202.558
+subcap "w_7390_980#" -450.948
+cap "dff_3/dff_upper_0/nand2_0/A" "dff_2/dff_upper_0/nand2_2/VP" 2.64
+cap "dff_2/GND" "dff_2/dff_lower_0/nand2_2/VP" -1.77636e-15
+cap "dff_3/dff_upper_0/nand2_0/A" "dff_2/Q" 49.5
+cap "dff_2/GND" "dff_2/dff_upper_0/nand2_2/VP" -9.23706e-14
+cap "dff_3/dff_lower_0/inverter_0/Y" "dff_2/dff_lower_0/nand2_2/VP" 3.56757
+cap "dff_2/dff_lower_0/nand2_2/VP" "dff_2/dff_lower_0/nand2_2/Y" 4.88889
+subcap "m1_9880_1790#" -237.91
+subcap "li_9860_2760#" -114.89
+subcap "li_9850_2850#" -157.377
+cap "dff_3/dff_upper_0/and2_0/inverter_0/VP" "dff_3/dff_upper_0/nand2_2/B" 2.44444
+cap "dff_4/dff_upper_0/nand2_0/A" "dff_3/Q" 13.75
+subcap "li_9850_2850#" -181.688
+cap "dff_3/dff_lower_0/nand2_2/Y" "dff_3/dff_lower_0/nand2_2/VP" 2.44444
+cap "dff_3/dff_upper_0/nand2_2/VP" "dff_4/dff_upper_0/nand2_0/A" 2.64
+cap "dff_3/dff_upper_0/nand2_2/VP" "dff_3/GND" 7.10543e-15
+cap "dff_3/Q" "dff_4/dff_upper_0/nand2_0/A" 41.25
+cap "dff_3/dff_lower_0/nand2_2/VP" "dff_4/dff_lower_0/inverter_0/Y" 3.56757
+subcap "m1_12360_980#" -26.9565
+subcap "li_12340_2760#" -309.292
+subcap "li_12340_2850#" -160.185
+subcap "Q5" -91.07
+cap "dff_5/dff_lower_0/inverter_0/Y" "dff_4/dff_lower_0/nand2_2/VP" 1.78378
+cap "dff_4/GND" "dff_4/dff_upper_0/nand2_2/VP" -7.10543e-15
+cap "dff_5/dff_upper_0/nand2_0/A" "dff_4/dff_upper_0/nand2_2/VP" 0.66
+cap "dff_4/GND" "dff_4/dff_lower_0/nand2_2/VP" -1.42109e-14
+cap "dff_5/dff_upper_0/nand2_0/A" "dff_4/Q" 49.5
+cap "dff_4/dff_lower_0/nand2_2/VP" "dff_4/dff_lower_0/nand2_2/Y" 4.88889
+subcap "li_12340_2850#" -248.34
+subcap "Q5" -11.2225
+cap "dff_5/dff_lower_0/inverter_0/Y" "dff_4/dff_lower_0/nand2_2/VP" 1.78378
+cap "dff_5/dff_upper_0/nand2_0/A" "dff_4/Q" 10.7635
+cap "dff_5/dff_upper_0/nand2_0/A" "dff_4/VDD" 1.98
+subcap "m1_14840_980#" -438.661
+subcap "li_14800_2850#" -206.94
+subcap "w_14840_930#" -324.061
+cap "dff_5/dff_lower_0/nand2_2/Y" "dff_5/dff_lower_0/nand2_2/VP" 4.88889
+cap "dff_6/dff_lower_0/inverter_0/Y" "dff_5/dff_lower_0/nand2_2/VP" 3.56757
+cap "dff_5/dff_upper_0/nand2_2/VP" "dff_5/GND" -7.10543e-15
+cap "dff_6/dff_upper_0/nand2_0/A" "dff_5/Q" 49.5
+cap "dff_6/dff_upper_0/nand2_0/A" "dff_5/dff_upper_0/nand2_2/VP" 2.64
+subcap "m1_17320_980#" -582.654
+subcap "li_17300_2850#" -216.823
+subcap "w_17320_930#" -475.354
+cap "dff_7/dff_upper_0/nand2_0/A" "dff_6/Q" 49.5
+cap "dff_6/dff_lower_0/nand2_2/VP" "dff_7/dff_lower_0/inverter_0/Y" 3.56757
+cap "dff_6/dff_upper_0/nand2_2/VP" "dff_7/dff_upper_0/nand2_0/A" 2.64
+cap "dff_6/dff_lower_0/nand2_2/VP" "dff_6/dff_lower_0/nand2_2/Y" 4.88889
+cap "dff_6/dff_lower_0/nand2_2/VP" "dff_6/GND" -1.42109e-14
+cap "dff_6/dff_upper_0/nand2_2/VP" "dff_6/GND" -3.55271e-14
+subcap "Q0" -8.25
+cap "Q0" "dff_0/dff_upper_0/a_750_1310#" 94.42
+cap "dff_0/dff_upper_0/a_320_1180#" "dff_0/dff_upper_0/a_750_1310#" -19.8
+cap "dff_0/dff_upper_0/a_320_1180#" "Q0" 85.5277
+cap "dff_0/VDD" "Q0" 2.64
+subcap "Q1" -8.25
+cap "dff_1/dff_upper_0/a_320_1180#" "Q1" 67.1277
+cap "dff_1/dff_upper_0/a_320_1180#" "dff_1/dff_upper_0/a_750_1310#" -19.8
+cap "dff_0/dff_upper_0/nand2_2/VP" "Q1" 2.64
+cap "Q1" "dff_1/dff_upper_0/a_750_1310#" 94.42
+subcap "Q1" -384.77
+cap "Q1" "dff_1/li_1930_2620#" 18.4
+subcap "Q2" -8.25
+cap "dff_2/dff_upper_0/a_320_1180#" "dff_1/dff_upper_0/nand2_2/VP" -2.66454e-15
+cap "Q2" "dff_1/dff_upper_0/nand2_2/VP" 2.64
+cap "Q2" "dff_2/dff_upper_0/a_320_1180#" 85.5277
+cap "dff_2/dff_upper_0/a_750_1310#" "dff_1/dff_upper_0/nand2_2/VP" 8.88178e-16
+cap "dff_2/dff_upper_0/a_750_1310#" "dff_2/dff_upper_0/a_320_1180#" -19.8
+cap "dff_2/dff_upper_0/a_750_1310#" "Q2" 94.42
+subcap "Q3" -14.545
+cap "Q3" "dff_2/dff_upper_0/nand2_2/VP" 2.64
+cap "Q3" "dff_3/dff_upper_0/a_750_1310#" 94.42
+cap "Q3" "dff_3/dff_upper_0/a_320_1180#" 85.5277
+cap "dff_3/dff_upper_0/a_750_1310#" "dff_3/dff_upper_0/a_320_1180#" -19.8
+subcap "Q4" -706.005
+subcap "Q4" -8.25
+cap "dff_4/dff_upper_0/a_750_1310#" "dff_4/dff_upper_0/a_320_1180#" -19.8
+cap "dff_4/dff_upper_0/a_320_1180#" "Q4" 85.5277
+cap "dff_4/dff_upper_0/a_750_1310#" "Q4" 94.42
+cap "Q4" "dff_3/dff_upper_0/nand2_2/VP" 2.64
+subcap "Q5" -290.625
+cap "dff_5/dff_upper_0/a_320_1180#" "Q5" 2.53846
+cap "Q5" "dff_4/dff_upper_0/nand2_2/VP" 0.66
+cap "dff_5/dff_upper_0/a_750_1310#" "Q5" 8.25
+cap "dff_5/dff_upper_0/a_750_1310#" "dff_5/dff_upper_0/a_320_1180#" -19.8
+subcap "Q5" -57.12
+cap "dff_5/dff_upper_0/a_750_1310#" "Q5" 86.17
+cap "Q5" "dff_4/VDD" 1.98
+cap "Q5" "dff_5/li_1930_2620#" 82.9892
+subcap "Q6" -8.25
+cap "Q6" "dff_6/dff_upper_0/a_750_1310#" 94.42
+cap "Q6" "dff_5/dff_upper_0/nand2_2/VP" 2.64
+cap "dff_6/dff_upper_0/a_750_1310#" "dff_6/dff_upper_0/a_320_1180#" -19.8
+cap "Q6" "dff_6/dff_upper_0/a_320_1180#" 85.5277
+subcap "Q6" -610.47
+subcap "Q7" -8.25
+cap "dff_6/dff_upper_0/nand2_2/VP" "Q7" 2.64
+cap "dff_7/dff_upper_0/a_320_1180#" "dff_7/dff_upper_0/a_750_1310#" -19.8
+cap "dff_7/dff_upper_0/a_320_1180#" "Q7" 85.5277
+cap "Q7" "dff_7/dff_upper_0/a_750_1310#" 94.42
+merge "dff_7/dff_lower_0/inverter_0/VN" "dff_6/dff_lower_0/nand2_2/VN" -318.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3800 -1540 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/dff_lower_0/nand2_2/VN" "m1_17320_470#"
+merge "dff_7/VSUBS" "dff_6/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/VSUBS" "dff_5/VSUBS"
+merge "dff_5/VSUBS" "dff_4/VSUBS"
+merge "dff_4/VSUBS" "dff_3/VSUBS"
+merge "dff_3/VSUBS" "dff_2/VSUBS"
+merge "dff_2/VSUBS" "dff_1/VSUBS"
+merge "dff_1/VSUBS" "dff_0/VSUBS"
+merge "dff_0/VSUBS" "VSUBS"
+merge "dff_6/dff_upper_0/a_320_1180#" "dff_6/dff_upper_0/nand2_0/B" -382.095 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9140 -1100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/dff_upper_0/nand2_0/B" "dff_5/li_1930_2620#"
+merge "dff_5/li_1930_2620#" "li_14830_2760#"
+merge "li_14830_2760#" "dff_5/dff_upper_0/a_320_1180#"
+merge "dff_5/dff_upper_0/a_320_1180#" "dff_3/dff_upper_0/a_320_1180#"
+merge "dff_3/dff_upper_0/a_320_1180#" "dff_2/dff_upper_0/a_320_1180#"
+merge "dff_2/dff_upper_0/a_320_1180#" "dff_1/dff_upper_0/a_320_1180#"
+merge "dff_1/dff_upper_0/a_320_1180#" "dff_3/dff_upper_0/nand2_0/B"
+merge "dff_3/dff_upper_0/nand2_0/B" "dff_2/li_1930_2620#"
+merge "dff_2/li_1930_2620#" "dff_7/dff_lower_0/a_790_n400#"
+merge "dff_7/dff_lower_0/a_790_n400#" "dff_6/dff_lower_0/a_790_n400#"
+merge "dff_6/dff_lower_0/a_790_n400#" "dff_5/dff_upper_0/nand2_0/B"
+merge "dff_5/dff_upper_0/nand2_0/B" "dff_5/dff_lower_0/a_790_n400#"
+merge "dff_5/dff_lower_0/a_790_n400#" "dff_4/dff_lower_0/a_790_n400#"
+merge "dff_4/dff_lower_0/a_790_n400#" "dff_3/dff_lower_0/a_790_n400#"
+merge "dff_3/dff_lower_0/a_790_n400#" "dff_2/dff_lower_0/a_790_n400#"
+merge "dff_2/dff_lower_0/a_790_n400#" "dff_1/dff_upper_0/nand2_0/B"
+merge "dff_1/dff_upper_0/nand2_0/B" "dff_1/dff_lower_0/a_790_n400#"
+merge "dff_1/dff_lower_0/a_790_n400#" "dff_0/dff_lower_0/a_790_n400#"
+merge "dff_0/dff_lower_0/a_790_n400#" "li_2430_40#"
+merge "li_2430_40#" "li_4910_40#"
+merge "li_4910_40#" "dff_2/dff_upper_0/nand2_0/B"
+merge "dff_2/dff_upper_0/nand2_0/B" "li_7390_40#"
+merge "li_7390_40#" "li_9860_40#"
+merge "li_9860_40#" "li_12360_40#"
+merge "li_12360_40#" "li_14830_40#"
+merge "li_14830_40#" "li_17300_40#"
+merge "li_17300_40#" "dff_0/li_1930_2620#"
+merge "dff_0/li_1930_2620#" "li_2430_2760#"
+merge "li_2430_2760#" "dff_1/li_1930_2620#"
+merge "dff_1/li_1930_2620#" "li_4910_2760#"
+merge "li_4910_2760#" "li_7380_2760#"
+merge "li_7380_2760#" "dff_4/li_1930_2620#"
+merge "dff_4/li_1930_2620#" "li_12340_2760#"
+merge "dff_4/w_1980_2160#" "dff_5/VDD" -432.679 0 0 0 0 10400 -160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -713660 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_5/VDD" "dff_4/dff_upper_0/nand2_2/VP"
+merge "dff_4/dff_upper_0/nand2_2/VP" "w_12360_2250#"
+merge "w_12360_2250#" "dff_3/VDD"
+merge "dff_3/VDD" "dff_2/VDD"
+merge "dff_2/VDD" "dff_1/dff_upper_0/nand2_2/VP"
+merge "dff_1/dff_upper_0/nand2_2/VP" "w_4920_2250#"
+merge "w_4920_2250#" "dff_2/dff_upper_0/nand2_2/VP"
+merge "dff_2/dff_upper_0/nand2_2/VP" "dff_2/dff_upper_0/and2_0/inverter_0/VP"
+merge "dff_2/dff_upper_0/and2_0/inverter_0/VP" "w_7400_2250#"
+merge "w_7400_2250#" "dff_3/dff_lower_0/inverter_0/VP"
+merge "dff_3/dff_lower_0/inverter_0/VP" "dff_2/dff_lower_0/nand2_2/VP"
+merge "dff_2/dff_lower_0/nand2_2/VP" "dff_2/dff_lower_0/and2_0/inverter_0/VP"
+merge "dff_2/dff_lower_0/and2_0/inverter_0/VP" "w_7390_980#"
+merge "w_7390_980#" "m1_7390_980#"
+merge "m1_7390_980#" "m1_7400_2300#"
+merge "m1_7400_2300#" "dff_3/dff_upper_0/nand2_2/VP"
+merge "dff_3/dff_upper_0/nand2_2/VP" "dff_4/VDD"
+merge "dff_4/VDD" "dff_5/dff_lower_0/inverter_0/VP"
+merge "dff_5/dff_lower_0/inverter_0/VP" "dff_4/dff_lower_0/nand2_2/VP"
+merge "dff_4/dff_lower_0/nand2_2/VP" "w_12360_930#"
+merge "w_12360_930#" "m1_12360_980#"
+merge "m1_12360_980#" "dff_3/dff_upper_0/and2_0/inverter_0/VP"
+merge "dff_3/dff_upper_0/and2_0/inverter_0/VP" "w_9880_2250#"
+merge "w_9880_2250#" "dff_4/dff_lower_0/inverter_0/VP"
+merge "dff_4/dff_lower_0/inverter_0/VP" "dff_3/dff_lower_0/nand2_2/VP"
+merge "dff_3/dff_lower_0/nand2_2/VP" "w_9880_930#"
+merge "w_9880_930#" "m1_9880_980#"
+merge "m1_9880_980#" "m1_9880_2300#"
+merge "m1_9880_2300#" "m1_12360_2300#"
+merge "m1_12360_2300#" "m1_14840_2300#"
+merge "dff_2/dff_upper_0/a_750_1310#" "dff_1/li_1930_2710#" -108.285 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9000 -360 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_1/li_1930_2710#" "li_4840_2850#"
+merge "dff_2/dff_lower_0/inverter_0/VP" "dff_1/dff_lower_0/nand2_2/VP" -298.14 0 0 0 0 11400 -1940 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29400 -1540 0 0 0 0 0 0 0 0 0 0
+merge "dff_1/dff_lower_0/nand2_2/VP" "w_4920_930#"
+merge "w_4920_930#" "m1_4920_980#"
+merge "dff_5/Q" "Qout5" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_7/GND" "dff_6/GND" -311.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1520 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/GND" "dff_5/GND"
+merge "dff_5/GND" "dff_3/GND"
+merge "dff_3/GND" "dff_4/dff_lower_0/inverter_0/VN"
+merge "dff_4/dff_lower_0/inverter_0/VN" "dff_3/dff_lower_0/nand2_2/VN"
+merge "dff_3/dff_lower_0/nand2_2/VN" "m1_9880_470#"
+merge "m1_9880_470#" "dff_2/GND"
+merge "dff_2/GND" "dff_1/GND"
+merge "dff_1/GND" "dff_0/GND"
+merge "dff_0/GND" "dff_1/dff_lower_0/inverter_0/VN"
+merge "dff_1/dff_lower_0/inverter_0/VN" "dff_0/dff_lower_0/nand2_2/VN"
+merge "dff_0/dff_lower_0/nand2_2/VN" "m1_2440_470#"
+merge "m1_2440_470#" "GND"
+merge "GND" "m1_2440_1790#"
+merge "m1_2440_1790#" "m1_4920_1790#"
+merge "m1_4920_1790#" "dff_2/dff_upper_0/and2_0/inverter_0/VN"
+merge "dff_2/dff_upper_0/and2_0/inverter_0/VN" "m1_7400_1790#"
+merge "m1_7400_1790#" "dff_4/GND"
+merge "dff_4/GND" "dff_5/dff_lower_0/inverter_0/VN"
+merge "dff_5/dff_lower_0/inverter_0/VN" "dff_4/dff_lower_0/nand2_2/VN"
+merge "dff_4/dff_lower_0/nand2_2/VN" "m1_12350_470#"
+merge "m1_12350_470#" "dff_3/dff_upper_0/and2_0/inverter_0/VN"
+merge "dff_3/dff_upper_0/and2_0/inverter_0/VN" "m1_9880_1790#"
+merge "m1_9880_1790#" "m1_12360_1790#"
+merge "m1_12360_1790#" "m1_14840_1790#"
+merge "m1_14840_1790#" "m1_17320_1790#"
+merge "dff_0/dff_lower_0/and2_0/nand2_0/B" "clear" -39.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -140 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_0/dff_upper_0/nand2_0/A" "Q0" -333.405 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12700 -800 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_0/w_1980_2160#" "dff_1/VDD" -143.649 0 0 0 0 6600 -50 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -251460 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_1/VDD" "dff_0/dff_upper_0/nand2_2/VP"
+merge "dff_0/dff_upper_0/nand2_2/VP" "w_2440_2250#"
+merge "w_2440_2250#" "dff_0/VDD"
+merge "dff_0/VDD" "dff_1/dff_lower_0/inverter_0/VP"
+merge "dff_1/dff_lower_0/inverter_0/VP" "dff_0/dff_lower_0/nand2_2/VP"
+merge "dff_0/dff_lower_0/nand2_2/VP" "w_2440_930#"
+merge "w_2440_930#" "m1_2440_980#"
+merge "m1_2440_980#" "VDD"
+merge "VDD" "m1_2440_2300#"
+merge "m1_2440_2300#" "m1_4920_2300#"
+merge "dff_3/dff_upper_0/a_750_1310#" "dff_2/li_1930_2710#" -111.915 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_2/li_1930_2710#" "dff_2/dff_upper_0/and2_0/nand2_0/A"
+merge "dff_2/dff_upper_0/and2_0/nand2_0/A" "li_7380_2850#"
+merge "dff_1/dff_upper_0/nand2_0/A" "Q1" -265.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9000 -800 0 0 4800 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_7/VDD" "dff_6/dff_upper_0/nand2_2/VP" -461.399 0 0 0 0 0 -1920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -230460 -1520 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/dff_upper_0/nand2_2/VP" "w_17320_2250#"
+merge "dff_3/Q" "Qout3" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_7/dff_lower_0/li_60_n270#" "dff_6/dff_lower_0/li_60_n270#" -79.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1200 -220 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/dff_lower_0/li_60_n270#" "dff_5/dff_lower_0/and2_0/nand2_0/B"
+merge "dff_5/dff_lower_0/and2_0/nand2_0/B" "dff_5/dff_lower_0/li_60_n270#"
+merge "dff_5/dff_lower_0/li_60_n270#" "dff_4/dff_lower_0/li_60_n270#"
+merge "dff_4/dff_lower_0/li_60_n270#" "dff_3/dff_lower_0/li_60_n270#"
+merge "dff_3/dff_lower_0/li_60_n270#" "dff_2/dff_lower_0/li_60_n270#"
+merge "dff_2/dff_lower_0/li_60_n270#" "dff_1/dff_lower_0/and2_0/nand2_0/B"
+merge "dff_1/dff_lower_0/and2_0/nand2_0/B" "dff_1/dff_lower_0/li_60_n270#"
+merge "dff_1/dff_lower_0/li_60_n270#" "dff_0/dff_lower_0/li_60_n270#"
+merge "dff_0/dff_lower_0/li_60_n270#" "li_2430_130#"
+merge "li_2430_130#" "li_4910_130#"
+merge "li_4910_130#" "dff_2/dff_lower_0/and2_0/nand2_0/B"
+merge "dff_2/dff_lower_0/and2_0/nand2_0/B" "li_7400_130#"
+merge "li_7400_130#" "li_9860_130#"
+merge "li_9860_130#" "li_12360_130#"
+merge "li_12360_130#" "li_14830_130#"
+merge "li_14830_130#" "li_17310_130#"
+merge "dff_7/dff_upper_0/a_750_1310#" "dff_6/li_1930_2710#" -89.615 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5400 -280 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/li_1930_2710#" "li_17300_2850#"
+merge "dff_0/dff_upper_0/a_320_1180#" "dff_0/dff_upper_0/nand2_0/B" -56.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -140 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_0/dff_upper_0/nand2_0/B" "CLK"
+merge "dff_2/dff_upper_0/nand2_0/A" "Q2" 34.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 110200 -800 0 0 38800 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_5/dff_upper_0/nand2_0/A" "Q5" -310.815 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1900 -800 0 0 -4000 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/VDD" "dff_5/dff_upper_0/nand2_2/VP" -453.919 0 0 0 0 11400 -1980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -269060 -1540 0 0 0 0 0 0 0 0 0 0
+merge "dff_5/dff_upper_0/nand2_2/VP" "w_14840_2250#"
+merge "w_14840_2250#" "m1_17320_2300#"
+merge "m1_17320_2300#" "dff_7/dff_lower_0/inverter_0/VP"
+merge "dff_7/dff_lower_0/inverter_0/VP" "dff_6/dff_lower_0/nand2_2/VP"
+merge "dff_6/dff_lower_0/nand2_2/VP" "w_17320_930#"
+merge "w_17320_930#" "m1_17320_980#"
+merge "dff_3/dff_upper_0/nand2_0/A" "Q3" -331.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13000 -790 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4/dff_upper_0/nand2_0/A" "Q4" -1306.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -265400 -800 0 0 -334700 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/dff_upper_0/a_750_1310#" "dff_5/li_1930_2710#" -94.2825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6300 -300 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_5/li_1930_2710#" "li_14800_2850#"
+merge "dff_1/Q" "Qout1" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_1/dff_upper_0/and2_0/nand2_0/A" "dff_1/dff_upper_0/a_750_1310#" -130.557 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56700 -220 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_1/dff_upper_0/a_750_1310#" "dff_0/li_1930_2710#"
+merge "dff_0/li_1930_2710#" "li_2430_2850#"
+merge "dff_5/dff_upper_0/and2_0/nand2_0/A" "dff_5/dff_upper_0/a_750_1310#" -122.915 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30600 -280 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_5/dff_upper_0/a_750_1310#" "dff_4/li_1930_2710#"
+merge "dff_4/li_1930_2710#" "li_12340_2850#"
+merge "dff_3/li_1930_2710#" "dff_4/dff_upper_0/a_750_1310#" -108.435 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9000 -300 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4/dff_upper_0/a_750_1310#" "dff_3/dff_upper_0/and2_0/nand2_0/A"
+merge "dff_3/dff_upper_0/and2_0/nand2_0/A" "li_9850_2850#"
+merge "dff_2/dff_lower_0/inverter_0/VN" "dff_1/dff_lower_0/nand2_2/VN" -318.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3800 -1540 0 0 0 0 0 0 0 0 0 0
+merge "dff_1/dff_lower_0/nand2_2/VN" "m1_4920_470#"
+merge "dff_7/dff_upper_0/a_320_1180#" "dff_7/dff_upper_0/nand2_0/B" -103.695 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27660 -220 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_7/dff_upper_0/nand2_0/B" "dff_6/li_1930_2620#"
+merge "dff_6/li_1930_2620#" "li_17310_2760#"
+merge "dff_6/dff_upper_0/nand2_0/A" "Q6" -39.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83000 -800 0 0 36800 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_7/dff_upper_0/nand2_0/A" "Q7" -333.405 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12700 -800 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_0/Q" "Qout0" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_2/Q" "Qout2" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4/dff_upper_0/nand2_0/B" "dff_4/dff_upper_0/a_320_1180#" -84.77 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7200 -220 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_4/dff_upper_0/a_320_1180#" "dff_3/li_1930_2620#"
+merge "dff_3/li_1930_2620#" "li_9860_2760#"
+merge "dff_3/dff_lower_0/inverter_0/VN" "dff_2/dff_lower_0/nand2_2/VN" -219.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148200 -1540 0 0 0 0 0 0 0 0 0 0
+merge "dff_2/dff_lower_0/nand2_2/VN" "dff_2/dff_lower_0/and2_0/inverter_0/VN"
+merge "dff_2/dff_lower_0/and2_0/inverter_0/VN" "m1_7400_470#"
+merge "dff_4/Q" "Qout4" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/Q" "dff_6/dff_lower_0/nand2_2/A" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/dff_lower_0/nand2_2/A" "Qout6"
+merge "dff_7/dff_lower_0/nand2_2/A" "Qout7" -24.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_0/dff_upper_0/a_750_1310#" "preset" -53.6125 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2700 -140 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dff_6/dff_lower_0/inverter_0/VP" "dff_5/dff_lower_0/nand2_2/VP" -328.24 0 0 0 0 0 -1920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25600 -1520 0 0 0 0 0 0 0 0 0 0
+merge "dff_5/dff_lower_0/nand2_2/VP" "w_14840_930#"
+merge "w_14840_930#" "m1_14840_980#"
+merge "dff_6/dff_lower_0/inverter_0/VN" "dff_5/dff_lower_0/nand2_2/VN" -311.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1520 0 0 0 0 0 0 0 0 0 0
+merge "dff_5/dff_lower_0/nand2_2/VN" "m1_14840_470#"

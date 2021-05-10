@@ -1,0 +1,35 @@
+timestamp 1620670737
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use inverter_large inverter_large_0 1 0 630 0 1 320
+use inverter inverter_0 1 0 240 0 1 -160
+node "GND" 0 518.19 0 120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 210600 1860 0 0 0 0 0 0 0 0 0 0
+node "VDD" 0 1139.93 0 630 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 623500 3760 0 0 0 0 0 0 0 0 0 0
+node "A" 61 139.4 0 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 480 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_360_570#" 15 51.35 360 570 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_0_1050#" 17266 244.8 0 1050 nw 0 0 0 0 81600 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_0_1050#" "VDD" 36.14
+cap "VDD" "GND" 202.5
+cap "inverter_0/A" "inverter_large_0/GND" 59.7875
+cap "inverter_large_0/VDD" "inverter_0/A" 1.95
+cap "inverter_large_0/A" "inverter_large_0/GND" 93.5567
+cap "inverter_large_0/VDD" "inverter_large_0/A" 409.787
+cap "inverter_large_0/VDD" "inverter_large_0/GND" -86.776
+cap "inverter_large_0/A" "inverter_large_0/Y" 68.129
+cap "inverter_large_0/VDD" "inverter_large_0/Y" 198.05
+cap "inverter_large_0/A" "inverter_0/A" 9.87374
+cap "inverter_large_0/VDD" "inverter_large_0/VDD" 1.56
+cap "inverter_large_0/VDD" "inverter_large_0/GND" 5.51471
+merge "inverter_0/VN" "inverter_large_0/GND" -685.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -214300 -2660 0 0 0 0 0 0 0 0 0 0
+merge "inverter_large_0/GND" "GND"
+merge "GND" "VSUBS"
+merge "inverter_0/VP" "inverter_large_0/VDD" -1485.28 0 0 0 0 -70700 -2900 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -558600 -4460 0 0 0 0 0 0 0 0 0 0
+merge "inverter_large_0/VDD" "w_0_1050#"
+merge "w_0_1050#" "VDD"
+merge "inverter_0/A" "A" -27.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/Y" "inverter_large_0/A" -57.1275 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_large_0/A" "li_360_570#"

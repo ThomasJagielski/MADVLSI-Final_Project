@@ -1,0 +1,65 @@
+magic
+tech sky130A
+timestamp 1620673931
+<< nwell >>
+rect 65 -125 560 -100
+rect 65 -150 710 -125
+<< poly >>
+rect 455 -15 495 105
+rect 455 -60 1335 -15
+rect 1295 -340 1335 -60
+rect 1295 -360 1305 -340
+rect 1325 -360 1335 -340
+rect 1295 -370 1335 -360
+<< polycont >>
+rect 1305 -360 1325 -340
+<< locali >>
+rect 2835 -100 2855 40
+rect 5715 -60 5735 50
+rect 8545 -20 8565 45
+rect 11375 20 11395 35
+rect 11375 0 12405 20
+rect 14885 0 15615 20
+rect 17230 0 18440 20
+rect 8545 -40 11165 -20
+rect 5715 -80 9925 -60
+rect 2835 -120 8685 -100
+rect 8665 -140 8685 -120
+rect 8665 -160 8705 -140
+rect 9905 -150 9925 -80
+rect 11145 -150 11165 -40
+rect 12385 -150 12405 0
+rect 13625 -150 13645 0
+rect 14885 -150 14905 0
+rect 17230 -20 17250 0
+rect 16125 -40 17250 -20
+rect 16125 -150 16145 -40
+rect 21265 -60 21285 5
+rect 17365 -80 21285 -60
+rect 17365 -150 17385 -80
+rect 8475 -245 8585 -225
+rect 1295 -340 1335 -330
+rect 1295 -345 1305 -340
+rect 1265 -360 1305 -345
+rect 1325 -360 1335 -340
+rect 1265 -370 1335 -360
+<< metal1 >>
+rect 65 -150 710 -125
+rect 65 -415 550 -400
+use output_register  output_register_0
+timestamp 1620661380
+transform 1 0 8570 0 1 -1625
+box 0 -40 9900 1505
+use and2  and2_0
+timestamp 1620615203
+transform 1 0 335 0 1 -615
+box -270 -105 205 490
+use drive_buffer  drive_buffer_0
+timestamp 1620670737
+transform 1 0 540 0 1 -655
+box 0 0 725 570
+use counter  counter_0
+timestamp 1620621831
+transform 1 0 -3515 0 1 -470
+box 3515 470 28925 2115
+<< end >>

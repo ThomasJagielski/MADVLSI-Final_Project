@@ -1,0 +1,138 @@
+* NGSPICE file created from comparator.ext - technology: sky130A
+
+.subckt inverter A Y VP VN
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=5e+06u as=1e+12p ps=5e+06u w=2e+06u l=150000u
+.ends
+
+.subckt inverter_large VDD GND A Y
+X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=1.5e+12p pd=9e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
+X1 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=4e+12p pd=2e+07u as=3e+12p ps=1.5e+07u w=2e+06u l=150000u
+X4 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X6 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X8 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X9 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X10 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X11 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit comparator
+
+Xinverter_0 inverter_0/A inverter_0/Y inverter_0/VP inverter_0/VN inverter
+Xinverter_large_0 inverter_0/VP inverter_0/VN inverter_large_0/A inverter_0/A inverter_large
+Xinverter_large_1 inverter_0/VP inverter_0/VN inverter_0/Y vout inverter_large
+X0 a_840_7800# a_0_5820# inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=3.6e+12p pd=1.68e+07u as=1.82821e+13p ps=9.539e+07u w=1.5e+06u l=600000u
+X1 inverter_0/VP a_n440_7350# a_120_4860# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=7.7655e+12p pd=3.017e+07u as=5.4e+12p ps=2.52e+07u w=1.5e+06u l=600000u
+X2 a_840_6920# inverter_0/VN a_0_5820# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=3.6e+12p pd=1.68e+07u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X3 inverter_0/VN a_n440_7350# a_1320_9350# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=2.78559e+13p pd=8.693e+07u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X4 inverter_0/VP a_0_5820# a_1320_8690# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X5 inverter_0/VN inverter_0/VN a_840_7800# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X6 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X7 a_120_5930# inverter_0/VP a_n440_7350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=5.4e+12p pd=2.52e+07u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X8 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X9 a_1080_8690# VN a_840_7800# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=3.6e+12p pd=1.68e+07u as=0p ps=0u w=1.5e+06u l=600000u
+X10 a_1320_8690# VP a_1080_8690# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X11 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X12 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X13 inverter_0/VP a_n440_7350# a_120_4860# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X14 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X15 a_120_5930# a_0_5820# a_n440_7350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X16 a_1320_9350# a_960_6890# inverter_large_0/A inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=9e+11p ps=4.2e+06u w=1.5e+06u l=600000u
+X17 inverter_0/VP a_0_5820# a_120_5930# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X18 a_1320_8690# a_960_6890# inverter_large_0/A inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=9e+11p ps=4.2e+06u w=1.5e+06u l=600000u
+X19 a_120_5930# a_0_5820# inverter_0/VN inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=9.005e+12p ps=2.989e+07u w=1.5e+06u l=600000u
+X20 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X21 inverter_0/VP inverter_0/VP a_840_6920# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X22 a_120_5930# a_0_5820# inverter_0/VN inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X23 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X24 a_1320_9350# a_n440_7350# inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X25 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X26 a_1320_8690# a_0_5820# inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X27 a_1080_9350# VN a_840_6920# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=3.6e+12p pd=1.68e+07u as=0p ps=0u w=1.5e+06u l=600000u
+X28 a_1320_9350# inverter_0/VP a_1080_9350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X29 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X30 a_120_4860# a_n440_7350# a_0_5820# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X31 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X32 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X33 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X34 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X35 inverter_0/VN a_n440_7350# a_1080_8690# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X36 inverter_0/VP inverter_0/VP inverter_0/VN inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X37 a_0_5820# a_0_5820# a_840_7800# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=9e+11p pd=4.2e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X38 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X39 a_120_5930# a_0_5820# inverter_0/VN inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X40 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X41 inverter_0/VP a_0_5820# a_1080_9350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X42 a_960_6890# inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X43 a_960_6890# inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X44 a_120_4860# inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X45 a_120_4860# a_n440_7350# inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X46 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X47 a_0_5820# a_n440_7350# a_120_4860# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X48 a_120_4860# a_n440_7350# inverter_0/VP inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X49 a_840_7800# VN a_1080_8690# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X50 a_840_7800# inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X51 a_n440_7350# a_0_5820# a_120_5930# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X52 a_120_4860# a_n440_7350# inverter_0/VP inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X53 a_n440_7350# inverter_0/VP a_120_5930# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X54 a_1320_8690# inverter_0/VN a_1080_8690# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X55 inverter_0/VN a_n440_7350# a_840_6920# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X56 inverter_0/VP inverter_0/VP a_840_7800# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X57 inverter_0/VP a_0_5820# a_840_7800# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X58 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X59 a_840_6920# VN a_1080_9350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X60 a_960_6890# a_960_6890# a_840_6920# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X61 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X62 inverter_0/VN a_0_5820# a_120_5930# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X63 a_960_6890# a_960_6890# a_840_7800# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X64 inverter_0/VN inverter_0/VN a_960_6890# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X65 a_1080_8690# a_n440_7350# inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X66 a_840_6920# inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X67 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X68 inverter_0/VP inverter_0/VP a_960_6890# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X69 inverter_0/VN inverter_0/VN inverter_0/VP inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X70 a_n440_7350# a_n440_7350# a_840_6920# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=9e+11p pd=4.2e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X71 inverter_0/VN inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X72 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X73 a_840_7800# a_0_5820# a_0_5820# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X74 a_1320_9350# VP a_1080_9350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X75 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X76 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X77 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X78 a_1080_8690# inverter_0/VN a_1320_8690# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X79 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X80 a_120_4860# a_n440_7350# inverter_0/VP inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X81 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X82 inverter_0/VN a_0_5820# a_120_5930# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X83 a_840_7800# inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X84 a_1080_9350# a_0_5820# inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X85 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X86 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X87 inverter_large_0/A a_960_6890# a_1320_9350# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X88 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X89 inverter_0/VN a_0_5820# a_120_5930# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X90 inverter_large_0/A a_960_6890# a_1320_8690# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X91 a_1080_9350# VP a_1320_9350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X92 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X93 inverter_0/VN a_n440_7350# a_120_4860# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X94 inverter_0/VN inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X95 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X96 inverter_0/VN inverter_0/VN a_120_4860# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X97 inverter_0/VP inverter_0/VP inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X98 a_1080_8690# VP a_1320_8690# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X99 a_0_5820# inverter_0/VN a_840_6920# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X100 a_120_5930# a_0_5820# inverter_0/VP inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X101 inverter_0/VP a_n440_7350# a_120_4860# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X102 inverter_0/VP inverter_0/VN inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X103 a_840_6920# a_n440_7350# a_n440_7350# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X104 a_840_6920# a_960_6890# a_960_6890# inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X105 a_840_7800# a_960_6890# a_960_6890# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X106 a_1080_9350# inverter_0/VP a_1320_9350# inverter_0/VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X107 a_840_6920# a_n440_7350# inverter_0/VN inverter_0/VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+.end
+

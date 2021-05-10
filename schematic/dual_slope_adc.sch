@@ -124,15 +124,6 @@ N 270 470 290 470 { lab=Vneg}
 N 820 -390 880 -390 { lab=NP}
 N 650 -390 720 -390 { lab=P}
 N 380 470 410 470 { lab=Vout}
-N 260 850 300 850 { lab=#net13}
-N 400 850 460 850 { lab=#net14}
-N 460 850 480 850 { lab=#net14}
-N 480 810 480 850 { lab=#net14}
-N 480 810 560 810 { lab=#net14}
-N -20 750 560 750 { lab=#net15}
-N 120 850 160 850 { lab=#net16}
-N 0 850 20 850 { lab=#net15}
-N 0 750 0 850 { lab=#net15}
 C {madvlsi/vsource.sym} -460 -120 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} -460 -90 0 0 {name=l23 lab=GND}
@@ -180,7 +171,7 @@ C {devices/lab_pin.sym} -160 -150 1 0 {name=l25 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 50 310 3 0 {name=l8 sig_type=std_logic lab=Q8}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff.sym} 850 700 0 0 {name=X33}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff.sym} 1050 700 0 0 {name=X34}
-C {devices/lab_pin.sym} -20 750 0 0 {name=l64 sig_type=std_logic lab=Vflag}
+C {devices/lab_pin.sym} 740 780 0 0 {name=l64 sig_type=std_logic lab=Vflag}
 C {devices/lab_pin.sym} 900 670 0 0 {name=l69 sig_type=std_logic lab=Q0}
 C {devices/lab_pin.sym} 1100 670 0 0 {name=l70 sig_type=std_logic lab=Q1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/dff.sym} 1260 700 0 0 {name=X47}
@@ -375,13 +366,3 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 440 470 0
 C {devices/lab_pin.sym} 470 470 2 0 {name=l149 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 450 490 3 0 {name=l150 sig_type=std_logic lab=P}
 C {devices/lab_pin.sym} 430 490 3 0 {name=l157 sig_type=std_logic lab=NP}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 200 850 0 0 {name=X28 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 340 850 0 0 {name=X29 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {madvlsi/vdd.sym} 340 810 0 0 {name=l167 lab=VDD}
-C {madvlsi/gnd.sym} 340 890 0 0 {name=l168 lab=GND}
-C {madvlsi/vdd.sym} 200 810 0 0 {name=l169 lab=VDD}
-C {madvlsi/gnd.sym} 200 890 0 0 {name=l170 lab=GND}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/nor2.sym} 640 780 0 0 {name=X30 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 60 850 0 0 {name=X31 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {madvlsi/vdd.sym} 60 810 0 0 {name=l171 lab=VDD}
-C {madvlsi/gnd.sym} 60 890 0 0 {name=l172 lab=GND}
