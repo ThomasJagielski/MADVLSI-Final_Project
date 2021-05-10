@@ -1,19 +1,19 @@
-Flattening unmatched subcell dff_lower in circuit dff (1)(1 instance)
-Flattening unmatched subcell dff_upper in circuit dff (1)(1 instance)
-Flattening unmatched subcell inverter_large in circuit drive_buffer (1)(1 instance)
-Flattening unmatched subcell counter_b0 in circuit counter (1)(1 instance)
-Flattening unmatched subcell counter_bn in circuit counter (1)(8 instances)
-Flattening unmatched subcell output_register in circuit adc_digital.spice (1)(1 instance)
-Flattening unmatched subcell drive_buffer in circuit adc_digital.spice (1)(1 instance)
-Flattening unmatched subcell counter in circuit adc_digital.spice (1)(1 instance)
+Flattening unmatched subcell dff_lower in circuit dff (0)(1 instance)
+Flattening unmatched subcell dff_upper in circuit dff (0)(1 instance)
+Flattening unmatched subcell inverter_large in circuit drive_buffer (0)(1 instance)
+Flattening unmatched subcell counter_b0 in circuit counter (0)(1 instance)
+Flattening unmatched subcell counter_bn in circuit counter (0)(8 instances)
+Flattening unmatched subcell output_register in circuit adc_digital.spice (0)(1 instance)
+Flattening unmatched subcell drive_buffer in circuit adc_digital.spice (0)(1 instance)
+Flattening unmatched subcell counter in circuit adc_digital.spice (0)(1 instance)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 
 Subcircuit summary:
 Circuit 1: inverter                        |Circuit 2: inverter                        
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
 sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
@@ -25,8 +25,8 @@ Circuit 1: inverter                        |Circuit 2: inverter
 -------------------------------------------|-------------------------------------------
 Y                                          |Y                                          
 A                                          |A                                          
-VN                                         |VN                                         
 VP                                         |VP                                         
+VN                                         |VN                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes inverter and inverter are equivalent.
@@ -45,11 +45,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: nand2                           |Circuit 2: nand2                           
 -------------------------------------------|-------------------------------------------
-VP                                         |VP                                         
-B                                          |B                                          
-A                                          |A                                          
 Y                                          |Y                                          
 VN                                         |VN                                         
+A                                          |A                                          
+B                                          |B                                          
+VP                                         |VP                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nand2 and nand2 are equivalent.
@@ -57,8 +57,8 @@ Device classes nand2 and nand2 are equivalent.
 Subcircuit summary:
 Circuit 1: and2                            |Circuit 2: and2                            
 -------------------------------------------|-------------------------------------------
-nand2 (1)                                  |nand2 (1)                                  
 inverter (1)                               |inverter (1)                               
+nand2 (1)                                  |nand2 (1)                                  
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
@@ -68,11 +68,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: and2                            |Circuit 2: and2                            
 -------------------------------------------|-------------------------------------------
-VP                                         |nand2_0/VP **Mismatch**                    
-VN                                         |VSUBS **Mismatch**                         
-Y                                          |inverter_0/Y **Mismatch**                  
-A                                          |nand2_0/A **Mismatch**                     
-B                                          |nand2_0/B **Mismatch**                     
+nand2_0/A                                  |A **Mismatch**                             
+nand2_0/B                                  |B **Mismatch**                             
+inverter_0/Y                               |Y **Mismatch**                             
+nand2_0/VP                                 |VP **Mismatch**                            
+VSUBS                                      |VN **Mismatch**                            
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes and2 and and2 are equivalent.
@@ -80,9 +80,9 @@ Device classes and2 and and2 are equivalent.
 Subcircuit summary:
 Circuit 1: dff                             |Circuit 2: dff                             
 -------------------------------------------|-------------------------------------------
-nand2 (4)                                  |nand2 (4)                                  
 inverter (1)                               |inverter (1)                               
 and2 (2)                                   |and2 (2)                                   
+nand2 (4)                                  |nand2 (4)                                  
 Number of devices: 7                       |Number of devices: 7                       
 Number of nets: 13                         |Number of nets: 13                         
 ---------------------------------------------------------------------------------------
@@ -92,688 +92,46 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: dff                             |Circuit 2: dff                             
 -------------------------------------------|-------------------------------------------
-Clear                                      |dff_lower_0/and2_0/nand2_0/B **Mismatch**  
-Preset                                     |dff_upper_0/and2_0/nand2_0/A **Mismatch**  
-GND                                        |GND                                        
-VDD                                        |VDD                                        
-Qn                                         |dff_upper_0/nand2_2/B **Mismatch**         
-D                                          |dff_upper_0/nand2_0/A **Mismatch**         
-CLK                                        |dff_upper_0/nand2_0/B **Mismatch**         
+dff_upper_0/nand2_0/A                      |D **Mismatch**                             
+dff_upper_0/nand2_0/B                      |CLK **Mismatch**                           
 Q                                          |Q                                          
+dff_upper_0/nand2_2/B                      |Qn **Mismatch**                            
+dff_upper_0/and2_0/nand2_0/A               |Preset **Mismatch**                        
+dff_lower_0/and2_0/nand2_0/B               |Clear **Mismatch**                         
+VDD                                        |VDD                                        
+GND                                        |GND                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes dff and dff are equivalent.
 Class adc_digital.spice:  Merged 10 devices.
 
 Subcircuit summary:
-Circuit 1: adc_digital_lvs.spice           |Circuit 2: adc_digital.spice               
+Circuit 1: adc_digital.spice               |Circuit 2: adc_digital_lvs.spice           
 -------------------------------------------|-------------------------------------------
-and2 (1)                                   |and2 (1)                                   
 dff (26)                                   |dff (26)                                   
-inverter (18)                              |inverter (19) **Mismatch**                 
-sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (1) **Mismatch**   
-sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (1) **Mismatch**   
-Number of devices: 49 **Mismatch**         |Number of devices: 48 **Mismatch**         
-Number of nets: 80 **Mismatch**            |Number of nets: 85 **Mismatch**            
+inverter (19)                              |inverter (18) **Mismatch**                 
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (2) **Mismatch**   
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (2) **Mismatch**   
+and2 (1)                                   |and2 (1)                                   
+Number of devices: 48 **Mismatch**         |Number of devices: 49 **Mismatch**         
+Number of nets: 80                         |Number of nets: 80                         
 ---------------------------------------------------------------------------------------
-Flattening instances of inverter in cell adc_digital_lvs.spice makes a better match
 Flattening instances of inverter in cell adc_digital.spice makes a better match
+Flattening instances of inverter in cell adc_digital_lvs.spice makes a better match
 Making another compare attempt.
 
 Subcircuit summary:
-Circuit 1: adc_digital_lvs.spice           |Circuit 2: adc_digital.spice               
+Circuit 1: adc_digital.spice               |Circuit 2: adc_digital_lvs.spice           
 -------------------------------------------|-------------------------------------------
-and2 (1)                                   |and2 (1)                                   
 dff (26)                                   |dff (26)                                   
-sky130_fd_pr__pfet_01v8 (20)               |sky130_fd_pr__pfet_01v8 (20)               
 sky130_fd_pr__nfet_01v8 (20)               |sky130_fd_pr__nfet_01v8 (20)               
+sky130_fd_pr__pfet_01v8 (20)               |sky130_fd_pr__pfet_01v8 (20)               
+and2 (1)                                   |and2 (1)                                   
 Number of devices: 67                      |Number of devices: 67                      
-Number of nets: 80 **Mismatch**            |Number of nets: 85 **Mismatch**            
+Number of nets: 80                         |Number of nets: 80                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: adc_digital_lvs.spice           |Circuit 2: adc_digital.spice               
-
----------------------------------------------------------------------------------------
-Net: VDD                                   |Net: VSUBS                                 
-  and2/VP = 1                              |  dff/GND = 26                             
-  dff/VDD = 26                             |  sky130_fd_pr__nfet_01v8/(1|3) = 20       
-  sky130_fd_pr__pfet_01v8/(1|3) = 20       |  sky130_fd_pr__nfet_01v8/4 = 20           
-  sky130_fd_pr__pfet_01v8/4 = 20           |  and2/VSUBS = 1                           
-                                           |                                           
-Net: GND                                   |Net: and2_0/inverter_0/Y                   
-  and2/VN = 1                              |  and2/inverter_0/Y = 1                    
-  dff/GND = 26                             |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 20       |                                           
-  sky130_fd_pr__nfet_01v8/4 = 20           |                                           
-                                           |                                           
-Net: __UNCONNECTED_PIN__1                  |Net: /output_register_0/Qout0              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__2                  |Net: /output_register_0/Qout1              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__3                  |Net: /output_register_0/Qout2              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__4                  |Net: /output_register_0/Qout3              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__5                  |Net: /output_register_0/Qout5              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__6                  |Net: /output_register_0/Qout4              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__7                  |Net: /output_register_0/Qout6              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__8                  |Net: /output_register_0/Qout7              
-  dff/Qn = 1                               |  dff/Q = 1                                
-                                           |                                           
-Net: Qout0                                 |Net: /output_register_0/dff_0/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qout1                                 |Net: /output_register_0/dff_1/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qout2                                 |Net: /output_register_0/dff_2/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qout3                                 |Net: /output_register_0/dff_3/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qout4                                 |Net: /output_register_0/dff_5/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qout5                                 |Net: /output_register_0/dff_4/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qout6                                 |Net: /output_register_0/dff_6/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qout7                                 |Net: /output_register_0/dff_7/dff_upper_0/ 
-  dff/Q = 1                                |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__9                  |Net: /counter_0//counter_b0_0/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__11                 |Net: /counter_0//counter_bn_0/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__13                 |Net: /counter_0//counter_bn_1/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__15                 |Net: /counter_0//counter_bn_2/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__17                 |Net: /counter_0//counter_bn_4/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__19                 |Net: /counter_0//counter_bn_3/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__21                 |Net: /counter_0//counter_bn_5/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__23                 |Net: /counter_0//counter_bn_6/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__25                 |Net: /counter_0//counter_bn_7/dff_0/dff_up 
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: __UNCONNECTED_PIN__10                 |Net: /counter_0//counter_b0_0/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__12                 |Net: /counter_0//counter_bn_0/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__14                 |Net: /counter_0//counter_bn_1/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__16                 |Net: /counter_0//counter_bn_2/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__18                 |Net: /counter_0//counter_bn_4/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__20                 |Net: /counter_0//counter_bn_3/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__22                 |Net: /counter_0//counter_bn_5/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__24                 |Net: /counter_0//counter_bn_6/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: __UNCONNECTED_PIN__26                 |Net: /counter_0//counter_bn_7/dff_1/Q      
-  dff/Q = 1                                |  dff/Q = 1                                
-                                           |                                           
-Net: net13                                 |Net: /counter_0//counter_b0_0/inverter_1/Y 
-  and2/Y = 1                               |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net3                                  |Net: /counter_0//counter_bn_0/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net14                                 |Net: /counter_0//counter_bn_1/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net15                                 |Net: /counter_0//counter_bn_2/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net16                                 |Net: /counter_0//counter_bn_4/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net17                                 |Net: /counter_0//counter_bn_3/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net18                                 |Net: /counter_0//counter_bn_5/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net19                                 |Net: /counter_0//counter_bn_6/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net20                                 |Net: /counter_0//counter_bn_7/inverter_0/Y 
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: net21                                 |Net: output_register_0/CLK                 
-  dff/CLK = 1                              |  dff/dff_upper_0/nand2_0/B = 8            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-                                           |                                           
-Net: Vflag                                 |Net: /output_register_0/VDD                
-  dff/CLK = 8                              |  dff/VDD = 8                              
-                                           |                                           
-Net: Qn0                                   |Net: /output_register_0/preset             
-  dff/D = 1                                |  dff/dff_upper_0/and2_0/nand2_0/A = 8     
-  dff/Qn = 1                               |                                           
-                                           |                                           
-Net: Qn1                                   |Net: /output_register_0/clear              
-  dff/D = 1                                |  dff/dff_lower_0/and2_0/nand2_0/B = 8     
-  dff/Qn = 1                               |                                           
-                                           |                                           
-Net: Qn2                                   |Net: /drive_buffer_0/A                     
-  dff/D = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/Qn = 1                               |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |                                           
-Net: Qn3                                   |Net: /counter_0//counter_b0_0/D            
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qn4                                   |Net: /counter_0//counter_bn_0/dff_1/dff_up 
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qn5                                   |Net: /counter_0//counter_bn_1/dff_1/dff_up 
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qn6                                   |Net: /counter_0//counter_bn_2/dff_1/dff_up 
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qn7                                   |Net: /counter_0//counter_bn_4/dff_1/dff_up 
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: Qn8                                   |Net: /counter_0//counter_bn_3/dff_1/dff_up 
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/Qn = 1                               |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-Net: net1                                  |Net: /counter_0//counter_bn_5/dff_1/dff_up 
-  dff/CLK = 1                              |  dff/dff_upper_0/nand2_0/A = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_2/B = 1            
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-                                           |                                           
-(no matching net)                          |Net: /counter_0//counter_bn_6/dff_1/dff_up 
-                                           |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-(no matching net)                          |Net: /counter_0//counter_bn_7/dff_1/dff_up 
-                                           |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |  dff/dff_upper_0/nand2_2/B = 1            
-                                           |                                           
-(no matching net)                          |Net: counter_0/counter_b0_0/clk            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-(no matching net)                          |Net: drive_buffer_0/VDD                    
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
-                                           |  and2/nand2_0/VP = 1                      
-                                           |                                           
-(no matching net)                          |Net: /counter_0/counter_b0_0/VDD           
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 18       
-                                           |  sky130_fd_pr__pfet_01v8/4 = 18           
-                                           |  dff/VDD = 18                             
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /counter_0/counter_bn_7/clear         
-                                           |  dff/dff_lower_0/and2_0/nand2_0/B = 9     
-                                           |  dff/dff_upper_0/and2_0/nand2_0/A = 9     
-                                           |                                           
-(no matching net)                          |Net: /counter_0/counter_bn_7/preset        
-                                           |  dff/dff_upper_0/and2_0/nand2_0/A = 9     
-                                           |  dff/dff_lower_0/and2_0/nand2_0/B = 9     
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: net11                                 |Net: /counter_0//counter_bn_7/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net10                                 |Net: /counter_0//counter_bn_6/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net9                                  |Net: /counter_0//counter_bn_5/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net8                                  |Net: /counter_0//counter_bn_3/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net7                                  |Net: /counter_0//counter_bn_4/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net6                                  |Net: /counter_0//counter_bn_2/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net5                                  |Net: /counter_0//counter_bn_1/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net4                                  |Net: /counter_0//counter_bn_0/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
-                                           |                                           
-Net: net2                                  |Net: /counter_0//counter_b0_0/Qout         
-  dff/Q = 1                                |  sky130_fd_pr__nfet_01v8/2 = 1            
-  dff/D = 1                                |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  dff/Q = 1                                
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/A = 1            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: C                                     |(no matching net)                          
-  dff/Clear = 17                           |                                           
-  dff/Preset = 9                           |                                           
-                                           |                                           
-Net: P                                     |(no matching net)                          
-  dff/Preset = 17                          |                                           
-  dff/Clear = 9                            |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Q7                                    |Net: output_register_0/Q7                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: Q6                                    |Net: output_register_0/Q6                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: Q5                                    |Net: output_register_0/Q5                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: Q4                                    |Net: output_register_0/Q4                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
-  dff/CLK = 1                              |  dff/dff_upper_0/nand2_0/B = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-Net: Q3                                    |Net: output_register_0/Q3                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/2 = 1            |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: Q2                                    |Net: output_register_0/Q2                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: Q1                                    |Net: output_register_0/Q1                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
-                                           |                                           
-Net: Q0                                    |Net: output_register_0/Q0                  
-  dff/D = 1                                |  dff/dff_upper_0/nand2_0/A = 1            
-  dff/CLK = 1                              |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  dff/dff_upper_0/nand2_0/B = 1            
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: adc_digital_lvs.spice           |Circuit 2: adc_digital.spice               
-
----------------------------------------------------------------------------------------
-Instance: dff17                            |Instance: counter_0//counter_bn_7//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff15                            |Instance: counter_0//counter_bn_6//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff13                            |Instance: counter_0//counter_bn_5//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff10                            |Instance: counter_0//counter_bn_3//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff5                             |Instance: counter_0//counter_bn_4//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff58                            |Instance: counter_0//counter_bn_2//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff56                            |Instance: counter_0//counter_bn_1//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff53                            |Instance: counter_0//counter_bn_0//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 6                                  |  dff_upper_0/nand2_0/B = 6                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff16                            |Instance: counter_0//counter_bn_7//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff14                            |Instance: counter_0//counter_bn_6//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff12                            |Instance: counter_0//counter_bn_5//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff9                             |Instance: counter_0//counter_bn_3//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff4                             |Instance: counter_0//counter_bn_4//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff57                            |Instance: counter_0//counter_bn_2//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff55                            |Instance: counter_0//counter_bn_1//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff46                            |Instance: counter_0//counter_bn_0//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff43                            |Instance: counter_0//counter_b0_0//dff_0   
-  D = 2                                    |  dff_upper_0/nand2_0/A = 2                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 4                                    |  Q = 4                                    
-  CLK = 5                                  |  dff_upper_0/nand2_0/B = 5                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff44                            |Instance: counter_0//counter_b0_0//dff_1   
-  D = 4                                    |  dff_upper_0/nand2_0/A = 4                
-  Qn = 2                                   |  dff_upper_0/nand2_2/B = 2                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 3                                  |  dff_upper_0/nand2_0/B = 3                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 18        
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 18        
-  VDD = 67                                 |  VDD = 54                                 
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff52                            |Instance: output_register_0//dff_7         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff51                            |Instance: output_register_0//dff_6         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff50                            |Instance: output_register_0//dff_4         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff49                            |Instance: output_register_0//dff_5         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff48                            |Instance: output_register_0//dff_3         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff47                            |Instance: output_register_0//dff_2         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff34                            |Instance: output_register_0//dff_1         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
-                                           |                                           
-Instance: dff33                            |Instance: output_register_0//dff_0         
-  D = 6                                    |  dff_upper_0/nand2_0/A = 6                
-  Qn = 1                                   |  dff_upper_0/nand2_2/B = 1                
-  Q = 1                                    |  Q = 1                                    
-  CLK = 8                                  |  dff_upper_0/nand2_0/B = 8                
-  Preset = 26                              |  dff_upper_0/and2_0/nand2_0/A = 8         
-  Clear = 26                               |  dff_lower_0/and2_0/nand2_0/B = 8         
-  VDD = 67                                 |  VDD = 8                                  
-  GND = 67                                 |  GND = 67                                 
----------------------------------------------------------------------------------------
-Netlists do not match.
-Netlists do not match.
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes adc_digital.spice and adc_digital_lvs.spice are equivalent.
+Circuits match uniquely.

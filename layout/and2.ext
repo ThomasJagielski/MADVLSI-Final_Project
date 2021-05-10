@@ -8,14 +8,14 @@ use inverter inverter_0 1 0 240 0 1 -240
 use nand2 nand2_0 1 0 -300 0 1 -90
 node "li_n90_n80#" 85 186.36 -90 -80 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11200 640 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "inverter_0/A" "inverter_0/VP" 54.5217
-cap "inverter_0/A" "inverter_0/Y" 42.973
 cap "inverter_0/VN" "inverter_0/VP" -2.84217e-14
-cap "inverter_0/Y" "inverter_0/VN" 5.68434e-14
-cap "inverter_0/A" "inverter_0/VN" 117.15
-cap "inverter_0/Y" "inverter_0/VP" 38
-cap "inverter_0/A" "nand2_0/A" 10.1538
 cap "nand2_0/B" "inverter_0/A" 15.8652
+cap "inverter_0/VP" "inverter_0/A" 54.5217
+cap "inverter_0/VN" "inverter_0/A" 117.15
+cap "nand2_0/A" "inverter_0/A" 10.1538
+cap "inverter_0/Y" "inverter_0/VP" 38
+cap "inverter_0/Y" "inverter_0/VN" 5.68434e-14
+cap "inverter_0/Y" "inverter_0/A" 42.973
 merge "nand2_0/VN" "inverter_0/VN" -155.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760 0 0 0 0 0 0 0 0 0 0
 merge "inverter_0/VN" "VSUBS"
 merge "nand2_0/Y" "inverter_0/A" -44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 0 0 0 0 0 0 0 0
