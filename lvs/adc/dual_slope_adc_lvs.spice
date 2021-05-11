@@ -1,5 +1,5 @@
 **.subckt dual_slope_adc_lvs
-X6 VDD Vflag GND net13 CLK and2
+X6 VDD Vflag GND net14 CLK and2
 X33 Q0 __UNCONNECTED_PIN__0 Qout0 Vflag P C dff
 X34 Q1 __UNCONNECTED_PIN__1 Qout1 Vflag P C dff
 X47 Q2 __UNCONNECTED_PIN__2 Qout2 Vflag P C dff
@@ -8,58 +8,58 @@ X49 Q4 __UNCONNECTED_PIN__4 Qout4 Vflag P C dff
 X50 Q5 __UNCONNECTED_PIN__5 Qout5 Vflag P C dff
 X51 Q6 __UNCONNECTED_PIN__6 Qout6 Vflag P C dff
 X52 Q7 __UNCONNECTED_PIN__7 Qout7 Vflag P C dff
-X43 Qn0 __UNCONNECTED_PIN__8 net2 net1 P C dff
-X44 net2 Qn0 __UNCONNECTED_PIN__9 net3 C P dff
-X45 net1 net3 VDD GND inverter
-X46 Qn1 __UNCONNECTED_PIN__10 net4 net14 P C dff
-X53 net4 Qn1 __UNCONNECTED_PIN__11 Q0 C P dff
-X54 Q0 net14 VDD GND inverter
-X55 Qn2 __UNCONNECTED_PIN__12 net5 net15 P C dff
-X56 net5 Qn2 __UNCONNECTED_PIN__13 Q1 C P dff
-X57 Qn3 __UNCONNECTED_PIN__14 net6 net16 P C dff
-X58 net6 Qn3 __UNCONNECTED_PIN__15 Q2 C P dff
-X61 Q1 net15 VDD GND inverter
-X62 Q2 net16 VDD GND inverter
-X64 net2 Q0 VDD GND inverter
-X65 net4 Q1 VDD GND inverter
-X66 net5 Q2 VDD GND inverter
-X67 net6 Q3 VDD GND inverter
-X4 Qn4 __UNCONNECTED_PIN__16 net7 net17 P C dff
-X5 net7 Qn4 __UNCONNECTED_PIN__17 Q3 C P dff
-X7 Q3 net17 VDD GND inverter
-X8 net7 Q4 VDD GND inverter
-X9 Qn5 __UNCONNECTED_PIN__18 net8 net18 P C dff
-X10 net8 Qn5 __UNCONNECTED_PIN__19 Q4 C P dff
-X11 Q4 net18 VDD GND inverter
-X12 Qn6 __UNCONNECTED_PIN__20 net9 net19 P C dff
-X13 net9 Qn6 __UNCONNECTED_PIN__21 Q5 C P dff
-X14 Qn7 __UNCONNECTED_PIN__22 net10 net20 P C dff
-X15 net10 Qn7 __UNCONNECTED_PIN__23 Q6 C P dff
-X18 Q5 net19 VDD GND inverter
-X19 Q6 net20 VDD GND inverter
-X21 net8 Q5 VDD GND inverter
-X22 net9 Q6 VDD GND inverter
-X23 net10 Q7 VDD GND inverter
-X16 Qn8 __UNCONNECTED_PIN__24 net11 net21 P C dff
-X17 net11 Qn8 __UNCONNECTED_PIN__25 Q7 C P dff
-X20 Q7 net21 VDD GND inverter
-X24 net11 Q8 VDD GND inverter
-X25 Vout Vneg NP P switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X43 Qn0 __UNCONNECTED_PIN__8 net3 net2 P C dff
+X44 net3 Qn0 __UNCONNECTED_PIN__9 net4 C P dff
+X45 net2 net4 VDD GND inverter
+X46 Qn1 __UNCONNECTED_PIN__10 net5 net15 P C dff
+X53 net5 Qn1 __UNCONNECTED_PIN__11 Q0 C P dff
+X54 Q0 net15 VDD GND inverter
+X55 Qn2 __UNCONNECTED_PIN__12 net6 net16 P C dff
+X56 net6 Qn2 __UNCONNECTED_PIN__13 Q1 C P dff
+X57 Qn3 __UNCONNECTED_PIN__14 net7 net17 P C dff
+X58 net7 Qn3 __UNCONNECTED_PIN__15 Q2 C P dff
+X61 Q1 net16 VDD GND inverter
+X62 Q2 net17 VDD GND inverter
+X64 net3 Q0 VDD GND inverter
+X65 net5 Q1 VDD GND inverter
+X66 net6 Q2 VDD GND inverter
+X67 net7 Q3 VDD GND inverter
+X4 Qn4 __UNCONNECTED_PIN__16 net8 net18 P C dff
+X5 net8 Qn4 __UNCONNECTED_PIN__17 Q3 C P dff
+X7 Q3 net18 VDD GND inverter
+X8 net8 Q4 VDD GND inverter
+X9 Qn5 __UNCONNECTED_PIN__18 net9 net19 P C dff
+X10 net9 Qn5 __UNCONNECTED_PIN__19 Q4 C P dff
+X11 Q4 net19 VDD GND inverter
+X12 Qn6 __UNCONNECTED_PIN__20 net10 net20 P C dff
+X13 net10 Qn6 __UNCONNECTED_PIN__21 Q5 C P dff
+X14 Qn7 __UNCONNECTED_PIN__22 net11 net21 P C dff
+X15 net11 Qn7 __UNCONNECTED_PIN__23 Q6 C P dff
+X18 Q5 net20 VDD GND inverter
+X19 Q6 net21 VDD GND inverter
+X21 net9 Q5 VDD GND inverter
+X22 net10 Q6 VDD GND inverter
+X23 net11 Q7 VDD GND inverter
+X16 Qn8 __UNCONNECTED_PIN__24 net12 net22 P C dff
+X17 net12 Qn8 __UNCONNECTED_PIN__25 Q7 C P dff
+X20 Q7 net22 VDD GND inverter
+X24 net12 Q8 VDD GND inverter
+X25 Vout net1 NP P switch Wp=1 Lp=0.15 WW=1 LL=0.15
 X27 Vref Vout NP P switch Wp=1 Lp=0.15 WW=1 LL=0.15
-XM25 net12 net13 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM26 net12 net13 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM27 net1 net12 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM28 net1 net12 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-X1 Vref Vneg Vout selfbiasedcascode2stage_lvs
+X1 Vref net1 Vout selfbiasedcascode2stage_lvs
 X2 Vref Vout Vflag comparator_lvs
+XM25 net13 net14 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM26 net13 net14 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM27 net2 net13 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM28 net2 net13 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
 **.ends
 
 * expanding   symbol:  /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/and2.sym # of pins=5
