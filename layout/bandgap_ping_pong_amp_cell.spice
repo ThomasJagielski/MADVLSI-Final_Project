@@ -1,4 +1,38 @@
-* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/selfbiasedcascode2stage.ext - technology: sky130A
+* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell.ext - technology: sky130A
+
+.subckt switch a_270_430# CLK w_n220_690# A B nCLK
+X0 A CLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X1 B nCLK B a_270_430# sky130_fd_pr__nfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X2 B CLK B w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 A nCLK A a_270_430# sky130_fd_pr__nfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 B nCLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X5 B CLK A a_270_430# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt m3cap50f VSUBS 1 2
+X0 1 2 sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5e+06u
+.ends
+
+.subckt cap8to1 VSUBS m3cap50f_2/1 m3cap50f_9/2 m3cap50f_2/2 m3cap50f_9/1
+Xm3cap50f_10 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_11 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_12 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_13 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_14 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_15 VSUBS m3cap50f_2/1 m3cap50f_2/2 m3cap50f
+Xm3cap50f_0 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_16 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_1 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_17 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_2 VSUBS m3cap50f_2/1 m3cap50f_2/2 m3cap50f
+Xm3cap50f_3 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_4 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_5 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_6 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_7 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_9 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_8 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+.ends
 
 .subckt inverter_large VDD GND A Y
 X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=1.5e+12p pd=9e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
@@ -19,9 +53,7 @@ X11 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=15000
 X0 1 2 sky130_fd_pr__cap_mim_m3_1 l=2.2e+07u w=2.2e+07u
 .ends
 
-
-* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/selfbiasedcascode2stage
-
+.subckt selfbiasedcascode2stage m3cap500f_0/VSUBS inverter_large_0/VDD Vout VN VP
 Xinverter_large_0 inverter_large_0/VDD m3cap500f_0/VSUBS m3cap500f_0/1 Vout inverter_large
 Xm3cap500f_0 m3cap500f_0/VSUBS m3cap500f_0/1 Vout m3cap500f
 X0 a_840_7800# a_0_5820# inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=3.6e+12p pd=1.68e+07u as=2.0595e+13p ps=9.937e+07u w=1.5e+06u l=600000u
@@ -132,5 +164,28 @@ X104 a_840_6920# a_960_6890# a_960_6890# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01
 X105 a_840_7800# a_960_6890# a_960_6890# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
 X106 a_1080_9350# inverter_large_0/VDD a_1320_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
 X107 a_840_6920# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+.ends
+
+
+* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell
+
+Xswitch_0 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_0/A switch_1/A switch_6/nCLK switch
+Xswitch_1 cap8to1_1/VSUBS switch_5/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_1/A switch_1/B switch_5/nCLK switch
+Xswitch_3 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_3/A switch_3/B switch_6/nCLK switch
+Xswitch_2 cap8to1_1/VSUBS switch_5/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_2/A switch_3/B switch_5/nCLK switch
+Xswitch_4 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_6/A switch_4/B switch_6/nCLK switch
+Xswitch_5 cap8to1_1/VSUBS switch_5/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_6/A switch_6/B switch_5/nCLK switch
+Xswitch_6 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_6/A switch_6/B switch_6/nCLK switch
+Xcap8to1_0 cap8to1_1/VSUBS switch_1/A switch_3/B switch_0/A switch_1/A cap8to1
+Xcap8to1_1 cap8to1_1/VSUBS switch_4/B switch_6/B switch_6/A switch_4/B cap8to1
+Xselfbiasedcascode2stage_0 cap8to1_1/VSUBS selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_1/A switch_0/A switch_4/B selfbiasedcascode2stage
 .end
 

@@ -1,5 +1,5 @@
 Flattening unmatched subcell inverter_large in circuit selfbiasedcascode2stage.spice (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_BW93LE in circuit selfbiasedcascode2stage.spice (0)(1 instance)
+Flattening unmatched subcell m3cap500f in circuit selfbiasedcascode2stage.spice (0)(1 instance)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.

@@ -1,4 +1,55 @@
-* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/selfbiasedcascode2stage.ext - technology: sky130A
+* NGSPICE file created from bandgap.ext - technology: sky130A
+
+.subckt p-res20k GND 1 2
+X0 2 1 GND sky130_fd_pr__res_xhigh_po w=350000u l=3.5e+06u
+.ends
+
+.subckt p-res8x20k 1 2 p-res20k_7/GND
+Xp-res20k_0 p-res20k_7/GND p-res20k_1/2 2 p-res20k
+Xp-res20k_1 p-res20k_7/GND p-res20k_2/2 p-res20k_1/2 p-res20k
+Xp-res20k_2 p-res20k_7/GND p-res20k_3/1 p-res20k_2/2 p-res20k
+Xp-res20k_3 p-res20k_7/GND p-res20k_3/1 p-res20k_4/1 p-res20k
+Xp-res20k_4 p-res20k_7/GND p-res20k_4/1 p-res20k_5/2 p-res20k
+Xp-res20k_5 p-res20k_7/GND p-res20k_6/1 p-res20k_5/2 p-res20k
+Xp-res20k_6 p-res20k_7/GND p-res20k_6/1 p-res20k_7/1 p-res20k
+Xp-res20k_7 p-res20k_7/GND p-res20k_7/1 1 p-res20k
+.ends
+
+.subckt bandgap_pnp_thomas p-res20k_0/2 a_330_n1670# w_0_n1000# p-res20k_0/1 a_330_330#
++ p-res8x20k_0/2 a_330_n670# w_153_153# w_1000_1000# a_n2670_n1670# w_n3000_n2000#
+Xp-res20k_0 p-res20k_0/2 p-res20k_0/1 p-res20k_0/2 p-res20k
+Xp-res8x20k_0 p-res8x20k_0/1 p-res8x20k_0/2 p-res20k_0/2 p-res8x20k
+X0 a_330_330# w_153_153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X1 a_n2670_1330# w_n2847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X2 a_1330_n670# w_1153_n847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X3 a_330_1330# w_153_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X4 a_n1670_1330# w_n1847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X5 a_n3670_n670# w_n3847_n847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X6 a_n1670_n2670# w_n1847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X7 a_330_n2670# w_153_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X8 a_1330_330# w_1153_153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X9 a_n2670_n2670# w_n2847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X10 a_n670_n2670# w_n847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X11 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=3.6992e+12p
+X12 a_n3670_n2670# w_n3847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X13 a_330_n670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X14 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X15 a_n670_1330# w_n847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X16 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X17 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X18 a_330_n1670# p-res20k_0/1 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X19 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X20 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X21 p-res8x20k_0/1 p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X22 a_1330_n2670# w_1153_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X23 a_n3670_n1670# w_n3847_n1847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X24 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X25 a_1330_1330# w_1153_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X26 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X27 a_n3670_1330# w_n3847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X28 a_n3670_330# w_n3847_153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X29 a_1330_n1670# w_1153_n1847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+.ends
 
 .subckt inverter_large VDD GND A Y
 X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=1.5e+12p pd=9e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
@@ -19,9 +70,7 @@ X11 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=15000
 X0 1 2 sky130_fd_pr__cap_mim_m3_1 l=2.2e+07u w=2.2e+07u
 .ends
 
-
-* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/selfbiasedcascode2stage
-
+.subckt selfbiasedcascode2stage m3cap500f_0/VSUBS inverter_large_0/VDD Vout VN VP
 Xinverter_large_0 inverter_large_0/VDD m3cap500f_0/VSUBS m3cap500f_0/1 Vout inverter_large
 Xm3cap500f_0 m3cap500f_0/VSUBS m3cap500f_0/1 Vout m3cap500f
 X0 a_840_7800# a_0_5820# inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=3.6e+12p pd=1.68e+07u as=2.0595e+13p ps=9.937e+07u w=1.5e+06u l=600000u
@@ -132,5 +181,45 @@ X104 a_840_6920# a_960_6890# a_960_6890# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01
 X105 a_840_7800# a_960_6890# a_960_6890# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
 X106 a_1080_9350# inverter_large_0/VDD a_1320_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
 X107 a_840_6920# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+.ends
+
+
+* Top level circuit bandgap
+
+Xbandgap_pnp_thomas_0 bandgap_pnp_thomas_0/p-res20k_0/2 selfbiasedcascode2stage_0/VN
++ bandgap_pnp_thomas_0/p-res20k_0/2 bandgap_pnp_thomas_0/p-res20k_0/1 selfbiasedcascode2stage_2/VP
++ selfbiasedcascode2stage_0/VP selfbiasedcascode2stage_3/VP bandgap_pnp_thomas_0/p-res20k_0/2
++ bandgap_pnp_thomas_0/p-res20k_0/2 selfbiasedcascode2stage_2/VP bandgap_pnp_thomas_0/p-res20k_0/2
++ bandgap_pnp_thomas
+Xselfbiasedcascode2stage_0 bandgap_pnp_thomas_0/p-res20k_0/2 bandgap_pnp_thomas_0/p-res20k_0/2
++ selfbiasedcascode2stage_0/Vout selfbiasedcascode2stage_0/VN selfbiasedcascode2stage_0/VP
++ selfbiasedcascode2stage
+Xselfbiasedcascode2stage_1 bandgap_pnp_thomas_0/p-res20k_0/2 selfbiasedcascode2stage_1/inverter_large_0/VDD
++ selfbiasedcascode2stage_1/VN selfbiasedcascode2stage_1/VN selfbiasedcascode2stage_2/VP
++ selfbiasedcascode2stage
+Xselfbiasedcascode2stage_2 bandgap_pnp_thomas_0/p-res20k_0/2 selfbiasedcascode2stage_2/inverter_large_0/VDD
++ selfbiasedcascode2stage_2/VN selfbiasedcascode2stage_2/VN selfbiasedcascode2stage_2/VP
++ selfbiasedcascode2stage
+Xselfbiasedcascode2stage_3 bandgap_pnp_thomas_0/p-res20k_0/2 selfbiasedcascode2stage_3/inverter_large_0/VDD
++ selfbiasedcascode2stage_3/VN selfbiasedcascode2stage_3/VN selfbiasedcascode2stage_3/VP
++ selfbiasedcascode2stage
+X0 a_4950_n2320# selfbiasedcascode2stage_0/Vout a_4950_n2560# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X1 a_4950_n2800# selfbiasedcascode2stage_0/Vout a_4950_n3040# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X2 a_4950_n3040# selfbiasedcascode2stage_0/Vout a_4950_n3280# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X3 a_4950_n1110# selfbiasedcascode2stage_0/Vout a_4950_n1370# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=2.1e+12p ps=7.4e+06u w=3e+06u l=600000u
+X4 a_4950_n4240# selfbiasedcascode2stage_0/Vout a_4950_n4480# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X5 a_4950_n4720# selfbiasedcascode2stage_0/Vout a_4950_n4960# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X6 a_4950_n4960# selfbiasedcascode2stage_0/Vout a_4950_n5200# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X7 a_4950_n1840# selfbiasedcascode2stage_0/Vout a_4950_n2080# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X8 a_4950_n5440# selfbiasedcascode2stage_0/Vout a_4950_n5690# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=1.95e+12p ps=7.3e+06u w=3e+06u l=600000u
+X9 a_4950_n2080# selfbiasedcascode2stage_0/Vout a_4950_n2320# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X10 a_4950_n2560# selfbiasedcascode2stage_0/Vout a_4950_n2800# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X11 a_4950_n3280# selfbiasedcascode2stage_0/Vout a_4950_n3520# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X12 a_4950_n3760# selfbiasedcascode2stage_0/Vout a_4950_n4000# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X13 a_4950_n4480# selfbiasedcascode2stage_0/Vout a_4950_n4720# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X14 a_4950_n5930# selfbiasedcascode2stage_0/Vout a_4950_n6170# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.95e+12p pd=7.3e+06u as=1.8e+12p ps=7.2e+06u w=3e+06u l=600000u
+X15 a_4950_n4000# selfbiasedcascode2stage_0/Vout a_4950_n4240# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X16 a_4950_n1600# selfbiasedcascode2stage_0/Vout a_4950_n1840# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=7.2e+06u as=0p ps=0u w=3e+06u l=600000u
+X17 a_4950_n5200# selfbiasedcascode2stage_0/Vout a_4950_n5440# bandgap_pnp_thomas_0/p-res20k_0/2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
 .end
 

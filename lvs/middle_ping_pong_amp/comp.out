@@ -1,0 +1,47 @@
+Flattening unmatched subcell p-res20k in circuit p-res8x20k (0)(8 instances)
+Flattening unmatched subcell inverter_large in circuit selfbiasedcascode2stage (0)(1 instance)
+Flattening unmatched subcell m3cap500f in circuit selfbiasedcascode2stage (0)(1 instance)
+Flattening unmatched subcell p-res20k in circuit p-res6x20k (0)(6 instances)
+Flattening unmatched subcell m3cap50f in circuit middle_ping_pong_amplifier.spice (0)(2 instances)
+Flattening unmatched subcell p-res8x20k in circuit middle_ping_pong_amplifier.spice (0)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit middle_ping_pong_amplifier.spice (0)(1 instance)
+Flattening unmatched subcell p-res6x20k in circuit middle_ping_pong_amplifier.spice (0)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage_lvs in circuit middle_ping_pong_amp_lvs.spice (1)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class middle_ping_pong_amplifier.spice:  Merged 83 devices.
+Class middle_ping_pong_amp_lvs.spice:  Merged 73 devices.
+
+Subcircuit summary:
+Circuit 1: middle_ping_pong_amplifier.spic |Circuit 2: middle_ping_pong_amp_lvs.spice  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (2)             |sky130_fd_pr__cap_mim_m3_1 (2)             
+sky130_fd_pr__res_xhigh_po (4)             |sky130_fd_pr__res_xhigh_po (4)             
+sky130_fd_pr__nfet_01v8 (19)               |sky130_fd_pr__nfet_01v8 (19)               
+sky130_fd_pr__pfet_01v8 (19)               |sky130_fd_pr__pfet_01v8 (19)               
+Number of devices: 44                      |Number of devices: 44                      
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance /p-res8x20k_0//p-res20k_0/sky130_fd_pr__res_xhigh_po0 pin p-res8x20k_0/2 connections are tied together (0)
+    Circuit2 instance sky130_fd_pr__res_xhigh_poR3 pin __UNCONNECTED_PIN__0 connections are no connects (1)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance /p-res8x20k_0//p-res20k_0/sky130_fd_pr__res_xhigh_po0 pin p-res8x20k_0/1 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__res_xhigh_poR3 pin net2 connections are tied together (0)
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance /p-res8x20k_0//p-res20k_0/sky130_fd_pr__res_xhigh_po0 pin p-res8x20k_0/2 connections are tied together (0)
+    Circuit2 instance sky130_fd_pr__res_xhigh_poR3 pin __UNCONNECTED_PIN__0 connections are no connects (1)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance /p-res8x20k_0//p-res20k_0/sky130_fd_pr__res_xhigh_po0 pin p-res8x20k_0/1 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__res_xhigh_poR3 pin net2 connections are tied together (0)
+Cells have no pins;  pin matching not needed.
+Device classes middle_ping_pong_amplifier.spice and middle_ping_pong_amp_lvs.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: middle_ping_pong_amplifier.spice

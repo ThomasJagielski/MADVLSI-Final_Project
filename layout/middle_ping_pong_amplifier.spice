@@ -1,4 +1,23 @@
-* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/selfbiasedcascode2stage.ext - technology: sky130A
+* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/middle_ping_pong_amplifier.ext - technology: sky130A
+
+.subckt m3cap50f VSUBS 1 2
+X0 1 2 sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5e+06u
+.ends
+
+.subckt p-res20k GND 1 2
+X0 2 1 GND sky130_fd_pr__res_xhigh_po w=350000u l=3.5e+06u
+.ends
+
+.subckt p-res8x20k 1 2 p-res20k_7/GND
+Xp-res20k_0 p-res20k_7/GND p-res20k_1/2 2 p-res20k
+Xp-res20k_1 p-res20k_7/GND p-res20k_2/2 p-res20k_1/2 p-res20k
+Xp-res20k_2 p-res20k_7/GND p-res20k_3/1 p-res20k_2/2 p-res20k
+Xp-res20k_3 p-res20k_7/GND p-res20k_3/1 p-res20k_4/1 p-res20k
+Xp-res20k_4 p-res20k_7/GND p-res20k_4/1 p-res20k_5/2 p-res20k
+Xp-res20k_5 p-res20k_7/GND p-res20k_6/1 p-res20k_5/2 p-res20k
+Xp-res20k_6 p-res20k_7/GND p-res20k_6/1 p-res20k_7/1 p-res20k
+Xp-res20k_7 p-res20k_7/GND p-res20k_7/1 1 p-res20k
+.ends
 
 .subckt inverter_large VDD GND A Y
 X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=1.5e+12p pd=9e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
@@ -19,9 +38,7 @@ X11 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=15000
 X0 1 2 sky130_fd_pr__cap_mim_m3_1 l=2.2e+07u w=2.2e+07u
 .ends
 
-
-* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/selfbiasedcascode2stage
-
+.subckt selfbiasedcascode2stage m3cap500f_0/VSUBS Vout VN VP
 Xinverter_large_0 inverter_large_0/VDD m3cap500f_0/VSUBS m3cap500f_0/1 Vout inverter_large
 Xm3cap500f_0 m3cap500f_0/VSUBS m3cap500f_0/1 Vout m3cap500f
 X0 a_840_7800# a_0_5820# inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=3.6e+12p pd=1.68e+07u as=2.0595e+13p ps=9.937e+07u w=1.5e+06u l=600000u
@@ -132,5 +149,27 @@ X104 a_840_6920# a_960_6890# a_960_6890# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01
 X105 a_840_7800# a_960_6890# a_960_6890# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
 X106 a_1080_9350# inverter_large_0/VDD a_1320_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
 X107 a_840_6920# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+.ends
+
+.subckt p-res6x20k p-res20k_5/1 p-res20k_5/GND p-res20k_1/2
+Xp-res20k_0 p-res20k_5/GND p-res20k_2/1 p-res20k_1/1 p-res20k
+Xp-res20k_2 p-res20k_5/GND p-res20k_2/1 p-res20k_3/1 p-res20k
+Xp-res20k_1 p-res20k_5/GND p-res20k_1/1 p-res20k_1/2 p-res20k
+Xp-res20k_3 p-res20k_5/GND p-res20k_3/1 p-res20k_4/1 p-res20k
+Xp-res20k_4 p-res20k_5/GND p-res20k_4/1 p-res20k_5/2 p-res20k
+Xp-res20k_5 p-res20k_5/GND p-res20k_5/1 p-res20k_5/2 p-res20k
+.ends
+
+
+* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/middle_ping_pong_amplifier
+
+Xm3cap50f_0 VSUBS m3cap50f_1/1 VSUBS m3cap50f
+Xm3cap50f_1 VSUBS m3cap50f_1/1 VSUBS m3cap50f
+Xp-res8x20k_0 p-res8x20k_0/1 p-res8x20k_0/2 VSUBS p-res8x20k
+Xp-res8x20k_1 m3cap50f_1/1 VSUBS VSUBS p-res8x20k
+Xselfbiasedcascode2stage_0 VSUBS selfbiasedcascode2stage_0/Vout m3cap50f_1/1 p-res8x20k_0/2
++ selfbiasedcascode2stage
+Xp-res6x20k_0 p-res8x20k_0/2 VSUBS VSUBS p-res6x20k
+Xp-res6x20k_1 m3cap50f_1/1 VSUBS selfbiasedcascode2stage_0/Vout p-res6x20k
 .end
 

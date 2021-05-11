@@ -1,0 +1,154 @@
+* SPICE3 file created from bandgap_simple.ext - technology: sky130A
+
+.option scale=5000u
+
+X0 selfbiasedcascode2stage_0/m3cap500f_0/1 selfbiasedcascode2stage_0/Vout sky130_fd_pr__cap_mim_m3_1 l=4400 w=4400
+X1 selfbiasedcascode2stage_0/a_840_7800# selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=4.80755e+06 ps=0 w=300 l=120
+X2 VDD selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=8.38861e+06 ps=0 w=300 l=120
+X3 selfbiasedcascode2stage_0/a_840_6920# VSUBS selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X4 VSUBS selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=97 pd=0 as=0 ps=0 w=300 l=120
+X5 VDD selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X6 VSUBS VSUBS selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X7 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X8 selfbiasedcascode2stage_0/a_120_5930# VDD selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=113 ps=0 w=300 l=120
+X9 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X10 selfbiasedcascode2stage_0/a_1080_8690# selfbiasedcascode2stage_0/VN selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X11 selfbiasedcascode2stage_0/a_1320_8690# selfbiasedcascode2stage_0/VP selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X12 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X13 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X14 VDD selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X15 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X16 selfbiasedcascode2stage_0/a_120_5930# selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X17 selfbiasedcascode2stage_0/a_1320_9350# selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X18 VDD selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X19 selfbiasedcascode2stage_0/a_1320_8690# selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/m3cap500f_0/1 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X20 selfbiasedcascode2stage_0/a_120_5930# selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X21 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X22 VDD VDD selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X23 selfbiasedcascode2stage_0/a_120_5930# selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X24 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X25 selfbiasedcascode2stage_0/a_1320_9350# selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X26 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X27 selfbiasedcascode2stage_0/a_1320_8690# selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X28 selfbiasedcascode2stage_0/a_1080_9350# selfbiasedcascode2stage_0/VN selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=26305 pd=0 as=0 ps=0 w=300 l=120
+X29 selfbiasedcascode2stage_0/a_1320_9350# VDD selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X30 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X31 selfbiasedcascode2stage_0/a_120_4860# selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X32 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X33 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X34 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X35 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X36 VSUBS selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X37 VDD VDD VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X38 selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X39 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X40 selfbiasedcascode2stage_0/a_120_5930# selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X41 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X42 VDD selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X43 selfbiasedcascode2stage_0/a_960_6890# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X44 selfbiasedcascode2stage_0/a_960_6890# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X45 selfbiasedcascode2stage_0/a_120_4860# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X46 selfbiasedcascode2stage_0/a_120_4860# selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X47 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X48 selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X49 selfbiasedcascode2stage_0/a_120_4860# selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X50 selfbiasedcascode2stage_0/a_840_7800# selfbiasedcascode2stage_0/VN selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X51 selfbiasedcascode2stage_0/a_840_7800# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X52 selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X53 selfbiasedcascode2stage_0/a_120_4860# selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X54 selfbiasedcascode2stage_0/a_n440_7350# VDD selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X55 selfbiasedcascode2stage_0/a_1320_8690# VSUBS selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X56 VSUBS selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X57 VDD VDD selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X58 VDD selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X59 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X60 selfbiasedcascode2stage_0/a_840_6920# selfbiasedcascode2stage_0/VN selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X61 selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X62 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X63 VSUBS selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X64 selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X65 VSUBS VSUBS selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X66 selfbiasedcascode2stage_0/a_1080_8690# selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X67 selfbiasedcascode2stage_0/a_840_6920# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X68 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X69 VDD VDD selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X70 VSUBS VSUBS VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X71 selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X72 VSUBS VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X73 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X74 selfbiasedcascode2stage_0/a_840_7800# selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_0_5820# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X75 selfbiasedcascode2stage_0/a_1320_9350# selfbiasedcascode2stage_0/VP selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X76 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X77 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X78 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X79 selfbiasedcascode2stage_0/a_1080_8690# VSUBS selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X80 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X81 selfbiasedcascode2stage_0/a_120_4860# selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X82 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X83 VSUBS selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X84 selfbiasedcascode2stage_0/a_840_7800# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X85 selfbiasedcascode2stage_0/a_1080_9350# selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X86 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X87 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X88 selfbiasedcascode2stage_0/m3cap500f_0/1 selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X89 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X90 VSUBS selfbiasedcascode2stage_0/a_0_5820# selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X91 selfbiasedcascode2stage_0/m3cap500f_0/1 selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X92 selfbiasedcascode2stage_0/a_1080_9350# selfbiasedcascode2stage_0/VP selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X93 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X94 VSUBS selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X95 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X96 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X97 VSUBS VSUBS selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X98 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X99 selfbiasedcascode2stage_0/a_1080_8690# selfbiasedcascode2stage_0/VP selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X100 selfbiasedcascode2stage_0/a_0_5820# VSUBS selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X101 selfbiasedcascode2stage_0/a_120_5930# selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X102 VDD selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X103 VDD VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X104 selfbiasedcascode2stage_0/a_840_6920# selfbiasedcascode2stage_0/a_n440_7350# selfbiasedcascode2stage_0/a_n440_7350# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X105 selfbiasedcascode2stage_0/a_840_6920# selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X106 selfbiasedcascode2stage_0/a_840_7800# selfbiasedcascode2stage_0/a_960_6890# selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X107 selfbiasedcascode2stage_0/a_1080_9350# VDD selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X108 selfbiasedcascode2stage_0/a_840_6920# selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X109 a_4950_n3760# selfbiasedcascode2stage_0/Vout a_4950_n4000# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=120
+X110 a_4950_n4480# selfbiasedcascode2stage_0/Vout a_4950_n4720# VDD sky130_fd_pr__pfet_01v8 ad=8 pd=63 as=-1 ps=-1 w=600 l=120
+X111 a_4950_n5930# selfbiasedcascode2stage_0/Vout a_4950_n6170# VDD sky130_fd_pr__pfet_01v8 ad=-6.73153e+08 pd=22066 as=0 ps=0 w=600 l=120
+X112 a_4950_n4000# selfbiasedcascode2stage_0/Vout a_4950_n4240# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=120
+X113 a_4950_n1600# selfbiasedcascode2stage_0/Vout a_4950_n1840# VDD sky130_fd_pr__pfet_01v8 ad=4.80755e+06 pd=0 as=0 ps=0 w=600 l=120
+X114 a_4950_n5200# selfbiasedcascode2stage_0/Vout a_4950_n5440# VDD sky130_fd_pr__pfet_01v8 ad=8.38861e+06 pd=0 as=86544 ps=0 w=600 l=120
+X115 a_4950_n2320# selfbiasedcascode2stage_0/Vout a_4950_n2560# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-1 ps=-1 w=600 l=120
+X116 a_4950_n2800# selfbiasedcascode2stage_0/Vout a_4950_n3040# VDD sky130_fd_pr__pfet_01v8 ad=-1 pd=-1 as=8.38861e+06 ps=0 w=600 l=120
+X117 a_4950_n3040# selfbiasedcascode2stage_0/Vout a_4950_n3280# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=86544 ps=0 w=600 l=120
+X118 a_4950_n1110# selfbiasedcascode2stage_0/Vout a_4950_n1370# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=120
+X119 a_4950_n4240# selfbiasedcascode2stage_0/Vout a_4950_n4480# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=120
+X120 a_4950_n4720# selfbiasedcascode2stage_0/Vout a_4950_n4960# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-1 ps=-1 w=600 l=120
+X121 a_4950_n4960# selfbiasedcascode2stage_0/Vout a_4950_n5200# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=600 l=120
+X122 a_4950_n1840# selfbiasedcascode2stage_0/Vout a_4950_n2080# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=120
+X123 a_4950_n5440# selfbiasedcascode2stage_0/Vout a_4950_n5690# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=8.38861e+06 ps=0 w=600 l=120
+X124 a_4950_n2080# selfbiasedcascode2stage_0/Vout a_4950_n2320# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=120
+X125 a_4950_n2560# selfbiasedcascode2stage_0/Vout a_4950_n2800# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=600 l=120
+X126 a_4950_n3280# selfbiasedcascode2stage_0/Vout a_4950_n3520# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=120
+C0 VDD selfbiasedcascode2stage_0/Vout 4.36fF
+C1 selfbiasedcascode2stage_0/a_0_5820# VDD 2.44fF
+C2 selfbiasedcascode2stage_0/m3cap500f_0/1 selfbiasedcascode2stage_0/Vout 46.73fF
+C3 VDD selfbiasedcascode2stage_0/VN 3.79fF
+C4 selfbiasedcascode2stage_0/a_840_7800# VDD 2.14fF
+C5 selfbiasedcascode2stage_0/a_120_4860# selfbiasedcascode2stage_0/Vout 2.60fF
+Xselfbiasedcascode2stage_0/inverter_large_0 VDD VSUBS selfbiasedcascode2stage_0/m3cap500f_0/1
++ selfbiasedcascode2stage_0/Vout inverter_large
+C6 li_4960_n1350# VSUBS 3.20fF **FLOATING
+C7 li_2570_n1990# VSUBS 3.69fF **FLOATING
+C8 selfbiasedcascode2stage_0/a_120_4860# VSUBS 3.50fF
+C9 selfbiasedcascode2stage_0/a_120_5930# VSUBS 3.90fF
+C10 selfbiasedcascode2stage_0/a_960_6890# VSUBS 4.87fF
+C11 selfbiasedcascode2stage_0/a_1320_8690# VSUBS 2.34fF
+C12 selfbiasedcascode2stage_0/a_1080_8690# VSUBS 2.45fF
+C13 selfbiasedcascode2stage_0/a_840_7800# VSUBS 9.03fF
+C14 selfbiasedcascode2stage_0/a_n440_7350# VSUBS 13.74fF
+C15 selfbiasedcascode2stage_0/a_1320_9350# VSUBS 2.04fF
+C16 selfbiasedcascode2stage_0/a_840_6920# VSUBS 9.58fF
+C17 selfbiasedcascode2stage_0/a_0_5820# VSUBS 13.73fF
+C18 selfbiasedcascode2stage_0/Vout VSUBS 20.34fF
+C19 selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS 8.00fF
+C20 VDD VSUBS 58.74fF

@@ -1,4 +1,4 @@
-timestamp 1620697026
+timestamp 1620720600
 version 8.3
 tech sky130A
 style ngspice()
@@ -12,15 +12,15 @@ node "nCLK" 3275 970.755 -180 40 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "CLK" 2955 844.855 -180 1170 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64700 4040 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_n220_690#" 2623 1058.05 -220 690 nw 0 0 0 0 347900 2400 0 0 12000 440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "a_270_430#" 0 0 270 430 ppd 0 0 0 0 0 0 0 0 0 0 12000 440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0
-cap "w_n220_690#" "B" 99.4262
-cap "nCLK" "A" 180.07
-cap "nCLK" "B" 28.29
-cap "nCLK" "CLK" 114.213
+cap "B" "nCLK" 28.29
 cap "A" "B" 640.2
-cap "A" "CLK" 86.04
-cap "B" "CLK" 111.195
-cap "w_n220_690#" "A" 14.22
-device msubckt sky130_fd_pr__nfet_01v8 220 150 221 151 l=30 w=200 "a_270_430#" "nCLK" 60 0 "B" 0 0 "B" 400 0
+cap "A" "nCLK" 180.07
+cap "w_n220_690#" "B" 99.4262
+cap "A" "w_n220_690#" 14.22
+cap "CLK" "B" 111.195
+cap "CLK" "nCLK" 114.213
+cap "CLK" "A" 86.04
+device msubckt sky130_fd_pr__nfet_01v8 220 150 221 151 l=30 w=200 "a_270_430#" "nCLK" 60 0 "B" 400 0 "B" 0 0
 device msubckt sky130_fd_pr__nfet_01v8 70 150 71 151 l=30 w=400 "a_270_430#" "CLK" 60 0 "A" 400 0 "B" 400 0
 device msubckt sky130_fd_pr__nfet_01v8 -80 150 -79 151 l=30 w=200 "a_270_430#" "nCLK" 60 0 "A" 400 0 "A" 0 0
 device msubckt sky130_fd_pr__pfet_01v8 220 940 221 941 l=30 w=200 "w_n220_690#" "CLK" 60 0 "B" 0 0 "B" 400 0

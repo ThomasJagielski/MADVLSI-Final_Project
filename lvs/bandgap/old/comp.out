@@ -1,0 +1,247 @@
+Flattening unmatched subcell p-res20k in circuit p-res8x20k (1)(8 instances)
+Flattening unmatched subcell p-res20k in circuit bandgap_pnp_thomas.spice (1)(1 instance)
+Flattening unmatched subcell p-res8x20k in circuit bandgap_pnp_thomas.spice (1)(1 instance)
+Equate elements:  no current cell.
+Class bandgap_pnp_lvs.spice:  Merged 23 devices.
+Class bandgap_pnp_thomas.spice:  Merged 23 devices.
+
+Subcircuit summary:
+Circuit 1: bandgap_pnp_lvs.spice           |Circuit 2: bandgap_pnp_thomas.spice        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pnp_05v5_W0p68L0p68 (5)      |(no matching element)                      
+sky130_fd_pr__res_xhigh_po (9)             |sky130_fd_pr__res_xhigh_po (9)             
+(no matching element)                      |sky130_fd_pr__pnp_05v0 (5)                 
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: bandgap_pnp_lvs.spice           |Circuit 2: bandgap_pnp_thomas.spice        
+
+---------------------------------------------------------------------------------------
+Net: GND                                   |Net: p-res20k_0/2                          
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/1 = 5  |  sky130_fd_pr__res_xhigh_po/1 = 1         
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/2 = 3  |  sky130_fd_pr__res_xhigh_po/3 = 9         
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/4 = 5  |  sky130_fd_pr__pnp_05v0/3 = 5             
+  sky130_fd_pr__res_xhigh_po/3 = 9         |  sky130_fd_pr__pnp_05v0/2 = 3             
+  sky130_fd_pr__res_xhigh_po/1 = 1         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net9                                  |Net: /p-res8x20k_0/p-res20k_4/1            
+  sky130_fd_pr__res_xhigh_po/1 = 1         |  sky130_fd_pr__res_xhigh_po/1 = 1         
+  sky130_fd_pr__res_xhigh_po/2 = 1         |  sky130_fd_pr__res_xhigh_po/2 = 1         
+                                           |                                           
+Net: net6                                  |Net: /p-res8x20k_0/p-res20k_1/2            
+  sky130_fd_pr__res_xhigh_po/1 = 1         |  sky130_fd_pr__res_xhigh_po/2 = 1         
+  sky130_fd_pr__res_xhigh_po/2 = 1         |  sky130_fd_pr__res_xhigh_po/1 = 1         
+                                           |                                           
+Net: net5                                  |Net: p-res8x20k_0/1                        
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/2 = 1  |  sky130_fd_pr__res_xhigh_po/1 = 1         
+  sky130_fd_pr__res_xhigh_po/2 = 1         |  sky130_fd_pr__pnp_05v0/1 = 1             
+                                           |                                           
+Net: net4                                  |Net: p-res20k_0/1                          
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/3 = 1  |  sky130_fd_pr__res_xhigh_po/2 = 1         
+  sky130_fd_pr__res_xhigh_po/2 = 1         |  sky130_fd_pr__pnp_05v0/2 = 1             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net7                                  |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/1 = 1         |                                           
+  sky130_fd_pr__res_xhigh_po/2 = 1         |                                           
+                                           |                                           
+Net: net10                                 |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/1 = 1         |                                           
+  sky130_fd_pr__res_xhigh_po/2 = 1         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net8                                  |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/1 = 1         |                                           
+  sky130_fd_pr__res_xhigh_po/2 = 1         |                                           
+                                           |                                           
+Net: net11                                 |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/1 = 1         |                                           
+  sky130_fd_pr__res_xhigh_po/2 = 1         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: /p-res8x20k_0/p-res20k_2/2            
+                                           |  sky130_fd_pr__res_xhigh_po/1 = 1         
+                                           |  sky130_fd_pr__res_xhigh_po/2 = 1         
+                                           |                                           
+(no matching net)                          |Net: /p-res8x20k_0/p-res20k_7/1            
+                                           |  sky130_fd_pr__res_xhigh_po/1 = 1         
+                                           |  sky130_fd_pr__res_xhigh_po/2 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: /p-res8x20k_0/p-res20k_3/1            
+                                           |  sky130_fd_pr__res_xhigh_po/2 = 2         
+                                           |                                           
+(no matching net)                          |Net: /p-res8x20k_0/p-res20k_6/1            
+                                           |  sky130_fd_pr__res_xhigh_po/2 = 2         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: __UNCONNECTED_PIN__1                  |Net: a_330_n1670#                          
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/3 = 1  |  sky130_fd_pr__pnp_05v0/1 = 1             
+                                           |                                           
+Net: __UNCONNECTED_PIN__0                  |Net: w_153_153#                            
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/2 = 1  |  sky130_fd_pr__pnp_05v0/2 = 1             
+                                           |                                           
+Net: net2                                  |Net: a_330_330#                            
+  sky130_fd_pr__res_xhigh_po/2 = 1         |  sky130_fd_pr__pnp_05v0/1 = 1             
+                                           |                                           
+Net: net1                                  |Net: p-res8x20k_0/2                        
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/3 = 1  |  sky130_fd_pr__res_xhigh_po/1 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: Vbep                                  |(no matching net)                          
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/3 = 1  |                                           
+                                           |                                           
+Net: Vben                                  |(no matching net)                          
+  sky130_fd_pr__pnp_05v5_W0p68L0p68/3 = 1  |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: a_n2670_n1670#                        
+                                           |  sky130_fd_pr__pnp_05v0/1 = 1             
+                                           |                                           
+(no matching net)                          |Net: a_330_n670#                           
+                                           |  sky130_fd_pr__pnp_05v0/1 = 1             
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: bandgap_pnp_lvs.spice           |Circuit 2: bandgap_pnp_thomas.spice        
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pnp_05v5_W0p68L0p6 |Instance: sky130_fd_pr__pnp_05v00          
+  1 = 23                                   |  1 = 1                                    
+  2 = 23                                   |  2 = 1                                    
+  3 = 2                                    |  3 = 18                                   
+  4 = 23                                   |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pnp_05v5_W0p68L0p6 |Instance: sky130_fd_pr__pnp_05v017         
+  1 = 23                                   |  1 = 1                                    
+  2 = 2                                    |  2 = 2                                    
+  3 = 1                                    |  3 = 18                                   
+  4 = 23                                   |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pnp_05v5_W0p68L0p6 |Instance: sky130_fd_pr__pnp_05v020         
+  1 = 23                                   |  1 = 2                                    
+  2 = 1                                    |  2 = 18                                   
+  3 = 1                                    |  3 = 18                                   
+  4 = 23                                   |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: sky130_fd_pr__pnp_05v012         
+                                           |  1 = 1                                    
+                                           |  2 = 18                                   
+                                           |  3 = 18                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pnp_05v010         
+                                           |  1 = 1                                    
+                                           |  2 = 18                                   
+                                           |  3 = 18                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pnp_05v5_W0p68L0p6 |(no matching instance)                     
+  1 = 23                                   |                                           
+  2 = 23                                   |                                           
+  3 = 1                                    |                                           
+  4 = 23                                   |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pnp_05v5_W0p68L0p6 |(no matching instance)                     
+  1 = 23                                   |                                           
+  2 = 23                                   |                                           
+  3 = 1                                    |                                           
+  4 = 23                                   |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_xhigh_poR3     |Instance: p-res8x20k_0//p-res20k_0/sky130_ 
+  1 = 2                                    |  1 = 1                                    
+  2 = 1                                    |  2 = 2                                    
+  3 = 23                                   |  3 = 18                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_xhigh_poR6     |Instance: p-res8x20k_0//p-res20k_4/sky130_ 
+  1 = 2                                    |  1 = 2                                    
+  2 = 2                                    |  2 = 2                                    
+  3 = 23                                   |  3 = 18                                   
+                                           |                                           
+(no matching instance)                     |Instance: p-res8x20k_0//p-res20k_3/sky130_ 
+                                           |  1 = 2                                    
+                                           |  2 = 2                                    
+                                           |  3 = 18                                   
+                                           |                                           
+(no matching instance)                     |Instance: p-res8x20k_0//p-res20k_5/sky130_ 
+                                           |  1 = 2                                    
+                                           |  2 = 2                                    
+                                           |  3 = 18                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_xhigh_poR7     |(no matching instance)                     
+  1 = 2                                    |                                           
+  2 = 2                                    |                                           
+  3 = 23                                   |                                           
+                                           |                                           
+Instance: sky130_fd_pr__res_xhigh_poR1     |(no matching instance)                     
+  1 = 2                                    |                                           
+  2 = 2                                    |                                           
+  3 = 23                                   |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: p-res8x20k_0//p-res20k_6/sky130_ 
+                                           |  1 = 2                                    
+                                           |  2 = 2                                    
+                                           |  3 = 18                                   
+                                           |                                           
+(no matching instance)                     |Instance: p-res8x20k_0//p-res20k_2/sky130_ 
+                                           |  1 = 2                                    
+                                           |  2 = 2                                    
+                                           |  3 = 18                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_xhigh_poR9     |(no matching instance)                     
+  1 = 2                                    |                                           
+  2 = 2                                    |                                           
+  3 = 23                                   |                                           
+                                           |                                           
+Instance: sky130_fd_pr__res_xhigh_poR5     |(no matching instance)                     
+  1 = 2                                    |                                           
+  2 = 2                                    |                                           
+  3 = 23                                   |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: p-res8x20k_0//p-res20k_7/sky130_ 
+                                           |  1 = 2                                    
+                                           |  2 = 2                                    
+                                           |  3 = 18                                   
+                                           |                                           
+(no matching instance)                     |Instance: p-res8x20k_0//p-res20k_1/sky130_ 
+                                           |  1 = 2                                    
+                                           |  2 = 2                                    
+                                           |  3 = 18                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__res_xhigh_poR8     |(no matching instance)                     
+  1 = 2                                    |                                           
+  2 = 2                                    |                                           
+  3 = 23                                   |                                           
+                                           |                                           
+Instance: sky130_fd_pr__res_xhigh_poR4     |(no matching instance)                     
+  1 = 2                                    |                                           
+  2 = 2                                    |                                           
+  3 = 23                                   |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+The top level cell failed pin matching.

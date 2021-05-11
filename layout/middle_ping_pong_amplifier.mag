@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620707025
+timestamp 1620710927
 << poly >>
 rect -60 2575 -15 2585
 rect -60 2555 -50 2575
@@ -95,6 +95,7 @@ rect -460 1365 -420 1370
 rect -1255 1715 -1225 1745
 rect -455 1370 -425 1400
 << metal3 >>
+rect -625 1895 -460 2430
 rect -1265 1750 -1215 1755
 rect -1265 1710 -1260 1750
 rect -1220 1710 -1215 1750
@@ -110,37 +111,38 @@ rect -1255 1715 -1225 1745
 rect -1225 1715 -1220 1745
 rect -1260 1710 -1220 1715
 << metal4 >>
+rect -775 1755 -675 2745
 rect -1265 1750 -675 1755
 rect -1265 1710 -1260 1750
 rect -1220 1710 -675 1750
 rect -1265 1705 -675 1710
 rect -775 1670 -675 1705
-use p-res6x20k  p-res6x20k_0
-timestamp 1620705930
-transform 0 1 -875 -1 0 1195
-box -85 -915 320 790
-use p-res8x20k  p-res8x20k_0 ~/Documents/MADVLSI-Final_Project/layout
-timestamp 1620705930
-transform 0 1 -2770 -1 0 1465
-box 0 -915 590 795
-use p-res8x20k  p-res8x20k_1
-timestamp 1620705930
-transform 0 -1 -2875 1 0 1755
-box 0 -915 590 795
-use p-res6x20k  p-res6x20k_1
-timestamp 1620705930
-transform 0 -1 -1025 1 0 2020
-box -85 -915 320 790
+use m3cap50f  m3cap50f_1
+timestamp 1620687492
+transform 1 0 -875 0 1 2445
+box -115 -15 415 515
 use m3cap50f  m3cap50f_0
 timestamp 1620687492
 transform 1 0 -875 0 1 1380
 box -115 -15 415 515
-use selfbiasedcascode2stage  selfbiasedcascode2stage_0 ~/Documents/MADVLSI-Final_Project/layout
+use selfbiasedcascode2stage  selfbiasedcascode2stage_0
 timestamp 1620692581
 transform 1 0 235 0 1 -2345
 box -255 2315 4445 5470
-<< labels >>
-rlabel locali -2655 1465 -2655 1465 1 1
-rlabel locali -2640 1755 -2640 1755 5 1
-rlabel locali -2640 1755 -2640 1755 5 2
+use p-res8x20k  p-res8x20k_1
+timestamp 1620701388
+transform 0 -1 -2875 1 0 1755
+box 0 -915 590 795
+use p-res8x20k  p-res8x20k_0
+timestamp 1620701388
+transform 0 1 -2770 -1 0 1465
+box 0 -915 590 795
+use p-res6x20k  p-res6x20k_1
+timestamp 1620355847
+transform 0 -1 -1025 1 0 2020
+box -85 -915 320 790
+use p-res6x20k  p-res6x20k_0
+timestamp 1620355847
+transform 0 1 -875 -1 0 1195
+box -85 -915 320 790
 << end >>

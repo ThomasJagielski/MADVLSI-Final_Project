@@ -39,20 +39,9 @@ N -480 -130 -380 -130 { lab=#net2}
 N -900 -170 -900 -130 { lab=#net3}
 N -1140 -130 -1140 -30 { lab=#net4}
 N -900 -30 -900 20 { lab=#net5}
-N -250 290 -250 320 { lab=Vref}
-N -250 320 -170 320 { lab=Vref}
-N -170 280 -170 320 { lab=Vref}
-N -370 280 -330 280 { lab=Vn}
-N 40 290 80 290 { lab=Vp}
-N -450 290 -450 320 { lab=Vn}
-N -450 320 -370 320 { lab=Vn}
-N -370 280 -370 320 { lab=Vn}
-N -40 300 -40 330 { lab=Vp}
-N -40 330 40 330 { lab=Vp}
-N 40 290 40 330 { lab=Vp}
-N -740 290 -740 340 { lab=GND}
+N -740 270 -740 300 { lab=GND}
 C {sky130_fd_pr/pnp_05v5.sym} -200 20 0 1 {name=Q2
-model=pnp_05v0
+model=pnp_05v5_W0p68L0p68
 spiceprefix=X
 }
 C {madvlsi/vdd.sym} -220 -170 0 0 {name=l2 lab=VDD}
@@ -90,16 +79,16 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pnp_05v5.sym} -80 20 0 0 {name=Q4[8:0]
-model=pnp_05v0
+model=pnp_05v5_W0p68L0p68
 spiceprefix=X
 }
 C {sky130_fd_pr/pnp_05v5.sym} -920 50 0 0 {name=Q1
-model=pnp_05v0
+model=pnp_05v5_W0p68L0p68
 spiceprefix=X
 }
 C {madvlsi/gnd.sym} -900 110 0 0 {name=l19 lab=GND}
 C {sky130_fd_pr/pnp_05v5.sym} -760 50 0 0 {name=Q3
-model=pnp_05v0
+model=pnp_05v5_W0p68L0p68
 spiceprefix=X
 }
 C {madvlsi/gnd.sym} -740 120 0 0 {name=l20 lab=GND}
@@ -202,20 +191,10 @@ L=3.5
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
-C {madvlsi/gnd.sym} -800 80 0 0 {name=l14 lab=GND}
-C {devices/lab_pin.sym} -170 280 2 0 {name=l56 sig_type=std_logic lab=Vref}
-C {devices/lab_pin.sym} -250 270 0 0 {name=l15 sig_type=std_logic lab=Vben}
-C {devices/lab_pin.sym} 40 290 1 0 {name=l91 sig_type=std_logic lab=Vp}
-C {devices/lab_pin.sym} -370 280 1 0 {name=l92 sig_type=std_logic lab=Vn}
-C {devices/lab_pin.sym} -450 270 0 0 {name=l111 sig_type=std_logic lab=Vbep}
-C {devices/lab_pin.sym} -40 280 0 0 {name=l112 sig_type=std_logic lab=Vben}
-C {devices/lab_pin.sym} -40 280 0 0 {name=l113 sig_type=std_logic lab=Vben}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} -340 -140 0 0 {name=X1}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} -410 280 0 0 {name=X2}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} -210 280 0 0 {name=X3}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} 0 290 0 0 {name=X4}
-C {sky130_fd_pr/pnp_05v5.sym} -760 290 0 0 {name=Q4[0:17]
-model=pnp_05v0
+C {sky130_fd_pr/pnp_05v5.sym} -760 270 0 0 {name=Q4[17:0]
+model=pnp_05v5_W0p68L0p68
 spiceprefix=X
 }
-C {madvlsi/gnd.sym} -740 340 0 0 {name=l13 lab=GND}
+C {madvlsi/gnd.sym} -740 300 0 0 {name=l13 lab=GND}
+C {madvlsi/gnd.sym} -800 80 0 0 {name=l14 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lds.sym} -340 -140 0 0 {name=X1}

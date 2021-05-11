@@ -1,60 +1,82 @@
-**.subckt bandgap_lvs
-XQ2 GND GND Vbep GND sky130_fd_pr__pnp_05v0
-XM1 Vbep net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=mult m=mult 
-XM2 Vben net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XQ4[8] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[7] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[6] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[5] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[4] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[3] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[2] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[1] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ4[0] GND GND Vben GND sky130_fd_pr__pnp_05v0
-XQ1 GND GND net5 GND sky130_fd_pr__pnp_05v0
-XQ3 GND net6 net2 GND sky130_fd_pr__pnp_05v0
-XM3 net3 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM4 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=mult m=mult 
-XR3 net7 net3 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR1 net8 net7 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR4 net9 net8 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR5 net4 net9 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR6 net10 net5 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR7 net11 net10 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR8 net12 net11 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR9 net4 net12 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR2 GND net6 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-X1 net3 net2 net1 selfbiasedcascode2stage_lvs
-X2 Vbep Vn Vn selfbiasedcascode2stage_lvs
-X3 Vben Vref Vref selfbiasedcascode2stage_lvs
-X4 Vben Vp Vp selfbiasedcascode2stage_lvs
-XQ4[0] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[1] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[2] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[3] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[4] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[5] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[6] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[7] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[8] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[9] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[10] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[11] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[12] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[13] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[14] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[15] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[16] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ4[17] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
+**.subckt bandgap_ping_pong_amp_cell_lvs
+X10 net2 Vn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X11 net2 Vref Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X12 net1 Vnn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X5 Vp net3 Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X7 Vref net3 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X9 Vpp Vref Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+XC1 Vref Vpp sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X1 Vpp Vnn net1 selfbiasedcascode2stage_lvs
+XC3 Vref Vpp sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC4 net1 Vnn sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC6 net1 Vnn sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC5 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC7 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC8 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC9 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC10 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC11 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC12 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC13 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC14 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC15 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC16 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC17 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC18 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC19 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC20 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC21 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC22 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC23 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC24 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC25 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC26 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC27 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC28 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC29 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC30 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC31 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC32 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC33 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC34 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC35 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC36 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC37 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X20 net1 net4 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
 **.ends
+
+* expanding   symbol:  /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym # of
+*+ pins=4
+
+.subckt switch  B A CLK nCLK   Wp=1 Lp=0.15 WW=1 LL=0.15
+*.iopin B
+*.iopin A
+*.ipin CLK
+*.ipin nCLK
+*.ipin CLK
+*.ipin CLK
+*.ipin nCLK
+*.ipin nCLK
+XM1 A CLK B GND sky130_fd_pr__nfet_01v8 L='LL' W='WW' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 A nCLK B VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 B CLK B VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 A CLK A VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 B nCLK B GND sky130_fd_pr__nfet_01v8 L='LL' W='WW/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM6 A nCLK A GND sky130_fd_pr__nfet_01v8 L='LL' W='WW/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
 
 * expanding   symbol:
 *+  /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym # of pins=3
