@@ -320,6 +320,8 @@ N 2800 410 2800 530 { lab=Vout}
 N 2690 410 2690 530 { lab=Vneg}
 N 2690 530 2710 530 { lab=Vneg}
 N 2800 530 2830 530 { lab=Vout}
+N 3160 -210 3220 -210 { lab=NP}
+N 2990 -210 3060 -210 { lab=P}
 C {madvlsi/vsource.sym} -650 430 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/vdd.sym} -650 400 0 0 {name=l3 lab=VDD}
@@ -670,10 +672,6 @@ value=120k
 m=1}
 C {madvlsi/gnd.sym} 970 690 2 1 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} 890 790 1 1 {name=l14 lab=GND}
-C {madvlsi/vsource.sym} -980 900 0 0 {name=Vdd1
-value=1.8}
-C {madvlsi/gnd.sym} -980 930 0 0 {name=l121 lab=GND}
-C {madvlsi/vdd.sym} -980 870 0 0 {name=l122 lab=VDD}
 C {devices/lab_pin.sym} 2800 320 1 0 {name=l125 sig_type=std_logic lab=Vout}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage.sym} 2740 320 0 0 {name=X15}
 C {madvlsi/vsource.sym} -870 900 0 0 {name=Vref
@@ -852,3 +850,8 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2860 530 
 C {devices/lab_pin.sym} 2890 530 2 0 {name=l247 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 2870 550 3 0 {name=l248 sig_type=std_logic lab=P}
 C {devices/lab_pin.sym} 2850 550 3 0 {name=l249 sig_type=std_logic lab=NP}
+C {madvlsi/gnd.sym} 3100 -170 0 0 {name=l121 lab=GND}
+C {devices/lab_pin.sym} 2990 -210 0 0 {name=l122 sig_type=std_logic lab=P}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 3100 -210 0 0 {name=X81 Wp=1 Lp=0.15 WW=1 LL=0.15}
+C {devices/lab_pin.sym} 3220 -210 2 0 {name=l123 sig_type=std_logic lab=NP}
+C {madvlsi/vdd.sym} 3100 -250 0 0 {name=l124 lab=VDD}
