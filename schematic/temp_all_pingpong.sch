@@ -211,11 +211,11 @@ N 890 790 890 870 { lab=GND}
 N 950 870 970 870 { lab=#net22}
 N 970 830 970 870 { lab=#net22}
 N 1760 310 2430 310 { lab=Vptat}
-N 2820 320 2840 320 { lab=Vout}
-N 2780 320 2820 320 { lab=Vout}
+N 2820 320 2840 320 { lab=Voutint}
+N 2780 320 2820 320 { lab=Voutint}
 N 2640 330 2700 330 { lab=Vneg}
-N 2770 410 2800 410 { lab=Vout}
-N 2800 320 2800 410 { lab=Vout}
+N 2770 410 2800 410 { lab=Voutint}
+N 2800 320 2800 410 { lab=Voutint}
 N 2690 410 2710 410 { lab=Vneg}
 N 2690 330 2690 410 { lab=Vneg}
 N 2510 330 2580 330 { lab=#net24}
@@ -315,11 +315,11 @@ N 6450 180 6450 320 { lab=Q7}
 N 6170 320 6450 320 { lab=Q7}
 N 6330 280 6330 320 { lab=Q7}
 N 6360 -20 6360 90 { lab=#net35}
-N 2770 530 2800 530 { lab=Vout}
-N 2800 410 2800 530 { lab=Vout}
+N 2770 530 2800 530 { lab=Voutint}
+N 2800 410 2800 530 { lab=Voutint}
 N 2690 410 2690 530 { lab=Vneg}
 N 2690 530 2710 530 { lab=Vneg}
-N 2800 530 2830 530 { lab=Vout}
+N 2800 530 2830 530 { lab=Voutint}
 N 3160 -210 3220 -210 { lab=NP}
 N 2990 -210 3060 -210 { lab=P}
 C {madvlsi/vsource.sym} -650 430 0 0 {name=Vdd
@@ -341,10 +341,10 @@ C {devices/code_shown.sym} -2110 320 0 0 {name=SPICE only_toplevel=false value="
   while currTemp <= endTemp
     destroy all
     option temp=$&currTemp
-    tran 10u 50u
-    wrdata /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/data/SCbandgap\{$&currTemp\}ptat.csv v(vbep) v(vben) v(vout) v(vphi1) v(vphi2) v(vref) v(vouts) v(vptat) currTemp
+    tran 10u 10m
+*wrdata /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/data/SCbandgap\{$&currTemp\}ptat.csv v(vbep) v(vben) v(vout) v(vphi1) v(vphi2) v(vref) v(vouts) v(vptat) currTemp
     let currTemp = currTemp + dt
-    reset
+*reset
   end
 *plot v(Vout) 8.0*(v(Vbep)-v(Vben))+v(Vben)
 *plot v(Vout) v(Vouts)
@@ -479,9 +479,6 @@ C {devices/lab_pin.sym} 330 -350 2 0 {name=l52 sig_type=std_logic lab=Vphi2}
 C {devices/lab_pin.sym} 330 -370 2 0 {name=l53 sig_type=std_logic lab=Vnphi2}
 C {devices/lab_pin.sym} 610 -440 2 0 {name=l54 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} -100 330 2 0 {name=l56 sig_type=std_logic lab=Vref}
-C {madvlsi/vsource.sym} -470 900 0 0 {name=Vphi1
-value="pulse(0, 1.8, 0, 1n, 1n, 6u, 12u)"}
-C {madvlsi/gnd.sym} -470 930 0 0 {name=l30 lab=GND}
 C {devices/lab_pin.sym} -160 830 2 0 {name=l58 sig_type=std_logic lab=Vphi1}
 C {devices/lab_pin.sym} -160 850 2 0 {name=l62 sig_type=std_logic lab=Vnphi1}
 C {devices/lab_pin.sym} -160 930 2 0 {name=l68 sig_type=std_logic lab=Vnphi2}
@@ -503,8 +500,7 @@ value=".option wnflag=1
 }
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/clk_gen.sym} -220 880 0 0 {name=X6 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {devices/lab_pin.sym} -160 910 2 0 {name=l7 sig_type=std_logic lab=Vphi2}
-C {devices/lab_pin.sym} -470 870 1 0 {name=l16 sig_type=std_logic lab=VCLK}
-C {devices/lab_pin.sym} -280 930 0 0 {name=l17 sig_type=std_logic lab=VCLK}
+C {devices/lab_pin.sym} -280 930 0 0 {name=l17 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 810 770 2 0 {name=l18 sig_type=std_logic lab=Vout}
 C {madvlsi/capacitor.sym} 340 1180 1 0 {name=C1
 value=800f
@@ -558,7 +554,7 @@ value=800f
 m=1}
 C {madvlsi/gnd.sym} 750 550 1 1 {name=l23 lab=GND}
 C {madvlsi/capacitor.sym} 1290 1180 1 0 {name=C11
-value=300f
+value=800f
 m=1}
 C {madvlsi/capacitor.sym} 1470 1320 1 0 {name=C12
 value=100f
@@ -572,7 +568,7 @@ C {devices/lab_pin.sym} 1180 1200 3 0 {name=l76 sig_type=std_logic lab=Vphi2}
 C {devices/lab_pin.sym} 1200 1200 3 0 {name=l77 sig_type=std_logic lab=Vnphi2}
 C {devices/lab_pin.sym} 1260 1290 2 0 {name=l78 sig_type=std_logic lab=Vphi1}
 C {madvlsi/capacitor.sym} 1310 810 1 0 {name=C13
-value=300f
+value=800f
 m=1}
 C {madvlsi/capacitor.sym} 1470 640 1 0 {name=C14
 value=100f
@@ -595,7 +591,7 @@ C {devices/lab_pin.sym} 1560 640 2 0 {name=l79 sig_type=std_logic lab=Vouts}
 C {devices/lab_pin.sym} 1360 510 1 0 {name=l80 sig_type=std_logic lab=Vouts}
 C {devices/lab_pin.sym} 1260 650 1 0 {name=l85 sig_type=std_logic lab=Vouts}
 C {madvlsi/capacitor.sym} 1290 100 1 0 {name=C15
-value=300f
+value=800f
 m=1}
 C {madvlsi/capacitor.sym} 1470 240 1 0 {name=C16
 value=100f
@@ -609,7 +605,7 @@ C {devices/lab_pin.sym} 1180 120 3 0 {name=l96 sig_type=std_logic lab=Vphi1}
 C {devices/lab_pin.sym} 1200 120 3 0 {name=l97 sig_type=std_logic lab=Vnphi1}
 C {devices/lab_pin.sym} 1260 210 2 0 {name=l98 sig_type=std_logic lab=Vphi2}
 C {madvlsi/capacitor.sym} 1310 -270 1 0 {name=C17
-value=300f
+value=800f
 m=1}
 C {madvlsi/capacitor.sym} 1470 -440 1 0 {name=C18
 value=100f
@@ -672,13 +668,13 @@ value=120k
 m=1}
 C {madvlsi/gnd.sym} 970 690 2 1 {name=l8 lab=GND}
 C {madvlsi/gnd.sym} 890 790 1 1 {name=l14 lab=GND}
-C {devices/lab_pin.sym} 2800 320 1 0 {name=l125 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 2800 320 1 0 {name=l125 sig_type=std_logic lab=Voutint}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage.sym} 2740 320 0 0 {name=X15}
-C {madvlsi/vsource.sym} -870 900 0 0 {name=Vref
+C {madvlsi/vsource.sym} 3010 560 0 0 {name=Vreff
 value=0.9}
-C {madvlsi/gnd.sym} -870 930 0 0 {name=l127 lab=GND}
-C {devices/lab_pin.sym} -870 870 1 0 {name=l128 sig_type=std_logic lab=Vref}
-C {devices/lab_pin.sym} 2700 310 0 0 {name=l129 sig_type=std_logic lab=Vref}
+C {madvlsi/gnd.sym} 3010 590 0 0 {name=l127 lab=GND}
+C {devices/lab_pin.sym} 3010 530 1 0 {name=l128 sig_type=std_logic lab=Vreff}
+C {devices/lab_pin.sym} 2700 310 0 0 {name=l129 sig_type=std_logic lab=Vreff}
 C {madvlsi/resistor.sym} 2610 330 1 0 {name=R7
 value=1meg
 m=1}
@@ -688,7 +684,7 @@ m=1}
 C {devices/lab_pin.sym} 2670 330 3 0 {name=l130 sig_type=std_logic lab=Vneg}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/transmission_gate.sym} 2470 330 0 0 {name=X40}
 C {madvlsi/gnd.sym} 2430 350 1 0 {name=l131 lab=GND}
-C {devices/lab_pin.sym} 2840 300 1 0 {name=l132 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} 2840 300 1 0 {name=l132 sig_type=std_logic lab=Vreff}
 C {devices/lab_pin.sym} 2950 310 1 0 {name=l133 sig_type=std_logic lab=Vflag}
 C {devices/lab_pin.sym} 3000 330 0 0 {name=l134 sig_type=std_logic lab=CLK}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/and2.sym} 2970 320 0 0 {name=X41}
@@ -847,7 +843,7 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2740 530 
 C {devices/lab_pin.sym} 2750 550 3 0 {name=l245 sig_type=std_logic lab=P}
 C {devices/lab_pin.sym} 2730 550 3 0 {name=l246 sig_type=std_logic lab=NP}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 2860 530 0 0 {name=X80 Wp=1 Lp=0.15 WW=1 LL=0.15}
-C {devices/lab_pin.sym} 2890 530 2 0 {name=l247 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} 2890 530 2 0 {name=l247 sig_type=std_logic lab=Vreff}
 C {devices/lab_pin.sym} 2870 550 3 0 {name=l248 sig_type=std_logic lab=P}
 C {devices/lab_pin.sym} 2850 550 3 0 {name=l249 sig_type=std_logic lab=NP}
 C {madvlsi/gnd.sym} 3100 -170 0 0 {name=l121 lab=GND}
