@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620485645
+timestamp 1620701388
 << psubdiff >>
 rect 270 535 320 550
 rect 270 495 285 535
@@ -38,7 +38,7 @@ rect 455 480 505 495
 rect 0 5 35 225
 rect 185 5 405 225
 rect 0 -345 35 -125
-rect 185 -340 405 -120
+rect 185 -345 405 -125
 rect 555 -130 590 10
 rect 270 -385 320 -370
 rect 270 -425 285 -385
@@ -85,37 +85,37 @@ rect 120 -655 285 -615
 rect 305 -655 470 -615
 rect 490 -655 505 -615
 rect 85 -670 505 -655
-use p-res20k  p-res20k_4
+use p-res20k  p-res20k_1
 timestamp 1620355008
-transform 1 0 555 0 1 -695
-box -100 -220 35 570
-use p-res20k  p-res20k_5
-timestamp 1620355008
-transform 1 0 370 0 1 -695
-box -100 -220 35 570
-use p-res20k  p-res20k_6
-timestamp 1620355008
-transform 1 0 185 0 1 -695
-box -100 -220 35 570
-use p-res20k  p-res20k_7
-timestamp 1620355008
-transform -1 0 35 0 -1 -345
-box -100 -220 35 570
-use p-res20k  p-res20k_3
-timestamp 1620355008
-transform 1 0 555 0 1 225
-box -100 -220 35 570
-use p-res20k  p-res20k_0
-timestamp 1620355008
-transform -1 0 35 0 1 225
+transform 1 0 185 0 -1 575
 box -100 -220 35 570
 use p-res20k  p-res20k_2
 timestamp 1620355008
 transform 1 0 370 0 1 225
 box -100 -220 35 570
-use p-res20k  p-res20k_1
+use p-res20k  p-res20k_0
 timestamp 1620355008
-transform 1 0 185 0 -1 575
+transform -1 0 35 0 1 225
+box -100 -220 35 570
+use p-res20k  p-res20k_3
+timestamp 1620355008
+transform 1 0 555 0 1 225
+box -100 -220 35 570
+use p-res20k  p-res20k_7
+timestamp 1620355008
+transform -1 0 35 0 -1 -345
+box -100 -220 35 570
+use p-res20k  p-res20k_6
+timestamp 1620355008
+transform 1 0 185 0 1 -695
+box -100 -220 35 570
+use p-res20k  p-res20k_5
+timestamp 1620355008
+transform 1 0 370 0 1 -695
+box -100 -220 35 570
+use p-res20k  p-res20k_4
+timestamp 1620355008
+transform 1 0 555 0 1 -695
 box -100 -220 35 570
 << labels >>
 rlabel locali 0 -235 0 -235 7 1
