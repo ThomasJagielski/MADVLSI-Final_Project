@@ -1,0 +1,42 @@
+**.subckt bandgap_pnp_lvs
+XQ2 GND GND Vbep GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[8] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[7] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[6] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[5] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[4] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[3] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[2] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[1] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[0] GND GND Vben GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ1 GND GND net4 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ3 GND net5 net1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XR3 net6 net2 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR1 net7 net6 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR4 net8 net7 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR5 net3 net8 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR6 net9 net4 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR7 net10 net9 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR8 net11 net10 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR9 net3 net11 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR2 GND net5 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XQ4[15] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[14] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[13] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[12] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[11] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[10] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[9] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[8] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[7] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[6] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[5] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[4] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[3] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[2] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[1] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ4[0] GND __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v5_W0p68L0p68
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end
