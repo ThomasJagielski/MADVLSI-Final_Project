@@ -1,4 +1,4 @@
-* NGSPICE file created from bandgap.ext - technology: sky130A
+* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_thomas.ext - technology: sky130A
 
 .subckt bandgap_current_mirror VSUBS w_n270_70# a_130_110# a_10_60# a_550_110#
 X0 w_n270_70# a_10_60# a_550_110# w_n270_70# sky130_fd_pr__pfet_01v8 ad=1.08e+13p pd=4.32e+07u as=7.2e+12p ps=2.88e+07u w=3e+06u l=600000u
@@ -194,8 +194,9 @@ X106 a_1080_9350# inverter_large_0/VDD a_1320_9350# inverter_large_0/VDD sky130_
 X107 a_840_6920# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
 .ends
 
-.subckt bandgap_thomas VSUBS li_9700_5360# selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ li_9280_6160#
+
+* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_thomas
+
 Xbandgap_current_mirror_0 VSUBS selfbiasedcascode2stage_0/inverter_large_0/VDD selfbiasedcascode2stage_0/VP
 + selfbiasedcascode2stage_0/Vout selfbiasedcascode2stage_0/VN bandgap_current_mirror
 Xbandgap_current_mirror_1 VSUBS selfbiasedcascode2stage_0/inverter_large_0/VDD li_9280_6160#
@@ -204,18 +205,5 @@ Xbandgap_pnp_thomas_0 selfbiasedcascode2stage_0/VN VSUBS selfbiasedcascode2stage
 + li_9700_5360# li_9280_6160# bandgap_pnp_thomas
 Xselfbiasedcascode2stage_0 selfbiasedcascode2stage_0/Vout VSUBS selfbiasedcascode2stage_0/inverter_large_0/VDD
 + selfbiasedcascode2stage_0/VN selfbiasedcascode2stage_0/VP selfbiasedcascode2stage
-.ends
-
-
-* Top level circuit bandgap
-
-Xbandgap_thomas_0 VSUBS selfbiasedcascode2stage_3/VP selfbiasedcascode2stage_3/inverter_large_0/VDD
-+ selfbiasedcascode2stage_2/VP bandgap_thomas
-Xselfbiasedcascode2stage_1 selfbiasedcascode2stage_1/VN VSUBS selfbiasedcascode2stage_3/inverter_large_0/VDD
-+ selfbiasedcascode2stage_1/VN selfbiasedcascode2stage_2/VP selfbiasedcascode2stage
-Xselfbiasedcascode2stage_3 selfbiasedcascode2stage_3/VN VSUBS selfbiasedcascode2stage_3/inverter_large_0/VDD
-+ selfbiasedcascode2stage_3/VN selfbiasedcascode2stage_3/VP selfbiasedcascode2stage
-Xselfbiasedcascode2stage_2 selfbiasedcascode2stage_2/VN VSUBS selfbiasedcascode2stage_3/inverter_large_0/VDD
-+ selfbiasedcascode2stage_2/VN selfbiasedcascode2stage_2/VP selfbiasedcascode2stage
 .end
 

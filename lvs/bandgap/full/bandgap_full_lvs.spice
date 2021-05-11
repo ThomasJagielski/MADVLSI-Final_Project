@@ -1,4 +1,4 @@
-**.subckt bandgap_lvs
+**.subckt bandgap_full_lvs
 XM1 Vbep net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.6 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
@@ -93,6 +93,9 @@ XM17 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.6 W=3 nf=1 ad='int((nf+1)/2) 
 XM18 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.6 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
+X2 Vbep Vn Vn selfbiasedcascode2stage_lvs
+X3 Vben Vref Vref selfbiasedcascode2stage_lvs
+X4 Vben Vp Vp selfbiasedcascode2stage_lvs
 **.ends
 
 * expanding   symbol:

@@ -48,6 +48,17 @@ N -250 -170 -100 -170 { lab=VDD}
 N -250 -110 -100 -110 { lab=Vbep}
 N -780 -280 -630 -280 { lab=VDD}
 N -780 -220 -630 -220 { lab=#net2}
+N -270 280 -270 310 { lab=Vref}
+N -270 310 -190 310 { lab=Vref}
+N -190 270 -190 310 { lab=Vref}
+N -390 270 -350 270 { lab=Vn}
+N 20 280 60 280 { lab=Vp}
+N -470 280 -470 310 { lab=Vn}
+N -470 310 -390 310 { lab=Vn}
+N -390 270 -390 310 { lab=Vn}
+N -60 290 -60 320 { lab=Vp}
+N -60 320 20 320 { lab=Vp}
+N 20 280 20 320 { lab=Vp}
 C {madvlsi/vdd.sym} -220 -170 0 0 {name=l2 lab=VDD}
 C {madvlsi/vdd.sym} -60 -170 0 0 {name=l5 lab=VDD}
 C {madvlsi/pmos3.sym} -220 -140 0 0 {name=M1
@@ -472,3 +483,13 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/lab_pin.sym} -190 270 2 0 {name=l56 sig_type=std_logic lab=Vref}
+C {devices/lab_pin.sym} -270 260 0 0 {name=l15 sig_type=std_logic lab=Vben}
+C {devices/lab_pin.sym} 20 280 1 0 {name=l91 sig_type=std_logic lab=Vp}
+C {devices/lab_pin.sym} -390 270 1 0 {name=l92 sig_type=std_logic lab=Vn}
+C {devices/lab_pin.sym} -470 260 0 0 {name=l111 sig_type=std_logic lab=Vbep}
+C {devices/lab_pin.sym} -60 270 0 0 {name=l112 sig_type=std_logic lab=Vben}
+C {devices/lab_pin.sym} -60 270 0 0 {name=l113 sig_type=std_logic lab=Vben}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} -430 270 0 0 {name=X2}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} -230 270 0 0 {name=X3}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} -20 280 0 0 {name=X4}

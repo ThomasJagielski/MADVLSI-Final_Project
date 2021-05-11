@@ -3,1854 +3,896 @@ Flattening unmatched subcell p-res20k in circuit bandgap_pnp_thomas (1)(1 instan
 Flattening unmatched subcell p-res8x20k in circuit bandgap_pnp_thomas (1)(1 instance)
 Flattening unmatched subcell inverter_large in circuit selfbiasedcascode2stage (1)(1 instance)
 Flattening unmatched subcell m3cap500f in circuit selfbiasedcascode2stage (1)(1 instance)
-Flattening unmatched subcell selfbiasedcascode2stage_lvs in circuit bandgap_lvs.spice (0)(4 instances)
-Flattening unmatched subcell bandgap_pnp_thomas in circuit bandgap.spice (1)(1 instance)
-Flattening unmatched subcell selfbiasedcascode2stage in circuit bandgap.spice (1)(4 instances)
+Flattening unmatched subcell selfbiasedcascode2stage_lvs in circuit bandgap_lvs.spice (0)(1 instance)
+Flattening unmatched subcell bandgap_current_mirror in circuit bandgap_thomas.spice (1)(2 instances)
+Flattening unmatched subcell bandgap_pnp_thomas in circuit bandgap_thomas.spice (1)(1 instance)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit bandgap_thomas.spice (1)(1 instance)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
-Class bandgap_lvs.spice:  Merged 300 devices.
-Class bandgap.spice:  Merged 332 devices.
+Class bandgap_lvs.spice:  Merged 86 devices.
+Class bandgap_thomas.spice:  Merged 96 devices.
 
 Subcircuit summary:
-Circuit 1: bandgap_lvs.spice               |Circuit 2: bandgap.spice                   
+Circuit 1: bandgap_lvs.spice               |Circuit 2: bandgap_thomas.spice            
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (74)               |sky130_fd_pr__pfet_01v8 (93) **Mismatch**  
+sky130_fd_pr__pfet_01v8 (23)               |sky130_fd_pr__pfet_01v8 (23)               
 sky130_fd_pr__res_xhigh_po (2)             |sky130_fd_pr__res_xhigh_po (2)             
-sky130_fd_pr__nfet_01v8 (70)               |sky130_fd_pr__nfet_01v8 (73) **Mismatch**  
-sky130_fd_pr__cap_mim_m3_1 (4)             |sky130_fd_pr__cap_mim_m3_1 (4)             
+sky130_fd_pr__nfet_01v8 (19)               |sky130_fd_pr__nfet_01v8 (19)               
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
 sky130_fd_pr__pnp_05v0 (30)                |sky130_fd_pr__pnp_05v0 (30)                
-Number of devices: 180 **Mismatch**        |Number of devices: 202 **Mismatch**        
-Number of nets: 98 **Mismatch**            |Number of nets: 119 **Mismatch**           
----------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: bandgap_lvs.spice               |Circuit 2: bandgap.spice                   
-
----------------------------------------------------------------------------------------
-Net: Vbep                                  |Net: a_4950_n4000#                         
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__pnp_05v0/1 = 1             |                                           
-                                           |                                           
-Net: net3                                  |Net: a_4950_n4480#                         
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-                                           |                                           
-Net: net2                                  |Net: a_4950_n4720#                         
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__pnp_05v0/1 = 1             |                                           
-                                           |                                           
-Net: net1                                  |Net: a_4950_n4240#                         
-  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
-                                           |                                           
-Net: VDD                                   |Net: a_4950_n1840#                         
-  sky130_fd_pr__pfet_01v8/(1|3) = 39       |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/4 = 74           |                                           
-  sky130_fd_pr__pfet_01v8/2 = 22           |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 5        |                                           
-                                           |                                           
-Net: GND                                   |Net: a_4950_n5200#                         
-  sky130_fd_pr__res_xhigh_po/3 = 2         |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__nfet_01v8/2 = 22           |                                           
-  sky130_fd_pr__nfet_01v8/4 = 70           |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 35       |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 5        |                                           
-  sky130_fd_pr__pnp_05v0/2 = 10            |                                           
-  sky130_fd_pr__pnp_05v0/3 = 30            |                                           
-  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
-                                           |                                           
-Net: __UNCONNECTED_PIN__0                  |Net: a_4950_n5440#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__2                  |Net: a_4950_n2320#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__4                  |Net: a_4950_n2560#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__6                  |Net: a_4950_n2800#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__8                  |Net: a_4950_n3040#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__10                 |Net: a_4950_n3280#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__12                 |Net: a_4950_n4960#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__14                 |Net: a_4950_n2080#                         
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: __UNCONNECTED_PIN__16                 |Net: /bandgap_pnp_thomas_0/a_n2670_1330#   
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__18                 |Net: /bandgap_pnp_thomas_0/a_1330_n670#    
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__20                 |Net: /bandgap_pnp_thomas_0/a_330_1330#     
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__22                 |Net: /bandgap_pnp_thomas_0/a_n1670_1330#   
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__24                 |Net: /bandgap_pnp_thomas_0/a_n3670_n670#   
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__26                 |Net: /bandgap_pnp_thomas_0/a_n1670_n2670#  
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__28                 |Net: /bandgap_pnp_thomas_0/a_330_n2670#    
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__30                 |Net: /bandgap_pnp_thomas_0/a_1330_330#     
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__32                 |Net: /bandgap_pnp_thomas_0/a_n2670_n2670#  
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__34                 |Net: /bandgap_pnp_thomas_0/a_n670_n2670#   
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__36                 |Net: /bandgap_pnp_thomas_0/a_n3670_n2670#  
-  sky130_fd_pr__pnp_05v0/1 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__1                  |Net: /bandgap_pnp_thomas_0/a_n670_1330#    
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__3                  |Net: /bandgap_pnp_thomas_0/a_1330_n2670#   
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__5                  |Net: /bandgap_pnp_thomas_0/a_n3670_n1670#  
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__7                  |Net: /bandgap_pnp_thomas_0/a_1330_1330#    
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__9                  |Net: /bandgap_pnp_thomas_0/a_n3670_1330#   
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__11                 |Net: /bandgap_pnp_thomas_0/a_n3670_330#    
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__13                 |Net: /bandgap_pnp_thomas_0/a_1330_n1670#   
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__15                 |Net: /bandgap_pnp_thomas_0/w_n2847_1153#   
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__17                 |Net: /bandgap_pnp_thomas_0/w_1153_n847#    
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__19                 |Net: /bandgap_pnp_thomas_0/w_153_1153#     
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__21                 |Net: /bandgap_pnp_thomas_0/w_n1847_1153#   
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__23                 |Net: /bandgap_pnp_thomas_0/w_n3847_n847#   
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__25                 |Net: /bandgap_pnp_thomas_0/w_n1847_n2847#  
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__27                 |Net: /bandgap_pnp_thomas_0/w_153_n2847#    
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__29                 |Net: /bandgap_pnp_thomas_0/w_1153_153#     
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__31                 |Net: /bandgap_pnp_thomas_0/w_n2847_n2847#  
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__33                 |Net: /bandgap_pnp_thomas_0/w_n847_n2847#   
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__35                 |Net: /bandgap_pnp_thomas_0/w_n3847_n2847#  
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-Net: __UNCONNECTED_PIN__37                 |Net: /bandgap_pnp_thomas_0/w_n847_1153#    
-  sky130_fd_pr__pnp_05v0/2 = 1             |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-(no matching net)                          |Net: /bandgap_pnp_thomas_0/w_1153_n2847#   
-                                           |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-(no matching net)                          |Net: /bandgap_pnp_thomas_0/w_n3847_n1847#  
-                                           |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-(no matching net)                          |Net: /bandgap_pnp_thomas_0/w_1153_1153#    
-                                           |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-(no matching net)                          |Net: /bandgap_pnp_thomas_0/w_n3847_1153#   
-                                           |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-(no matching net)                          |Net: /bandgap_pnp_thomas_0/w_n3847_153#    
-                                           |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-(no matching net)                          |Net: /bandgap_pnp_thomas_0/w_1153_n1847#   
-                                           |  sky130_fd_pr__pnp_05v0/2 = 1             
-                                           |                                           
-(no matching net)                          |Net: a_4950_n3760#                         
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: a_4950_n5930#                         
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: a_4950_n6170#                         
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: a_4950_n1600#                         
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: a_4950_n5690#                         
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: a_4950_n3520#                         
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: VSUBS                                 
-                                           |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
-                                           |  sky130_fd_pr__res_xhigh_po/3 = 2         
-                                           |  sky130_fd_pr__pnp_05v0/2 = 11            
-                                           |  sky130_fd_pr__pnp_05v0/3 = 30            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 38       
-                                           |  sky130_fd_pr__nfet_01v8/4 = 73           
-                                           |  sky130_fd_pr__nfet_01v8/2 = 25           
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 8        
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_0/VN          
-                                           |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_0/VP          
-                                           |  sky130_fd_pr__res_xhigh_po/(1|2) = 1     
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_3/VP          
-                                           |  sky130_fd_pr__pnp_05v0/1 = 1             
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_0/inverter_la 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 11       
-                                           |  sky130_fd_pr__pfet_01v8/4 = 36           
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/2 = 7            
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_0/Vout        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
-                                           |  sky130_fd_pr__pfet_01v8/2 = 17           
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_3/inverter_la 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 11       
-                                           |  sky130_fd_pr__pfet_01v8/4 = 19           
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/2 = 7            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: selfbiasedcascode2stage_2/inverter_la 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 11       
-                                           |  sky130_fd_pr__pfet_01v8/4 = 19           
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/2 = 7            
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_1/inverter_la 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 11       
-                                           |  sky130_fd_pr__pfet_01v8/4 = 19           
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/2 = 7            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs3/net3     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs4/net3     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_1320_869 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_1320_869 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_1080_869 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_1080_869 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs4/net1     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs3/net1     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs3/net5     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs4/net5     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_1320_935 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_1320_935 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs3/net4     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs4/net4     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_1080_935 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_1080_935 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs3/net12    |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs4/net12    |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_120_4860 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_120_4860 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs3/net11    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs4/net11    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_120_5930 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_120_5930 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_960_6890 
-                                           |  sky130_fd_pr__nfet_01v8/2 = 2            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 2            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_960_6890 
-                                           |  sky130_fd_pr__nfet_01v8/2 = 2            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 2            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs4/net9     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs3/net9     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_840_7800 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_840_7800 
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 4        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs4/net7     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs3/net7     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_840_6920 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_840_6920 
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 4        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs4/net8     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs3/net8     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_0_5820#  
-                                           |  sky130_fd_pr__pfet_01v8/2 = 7            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_0_5820#  
-                                           |  sky130_fd_pr__pfet_01v8/2 = 7            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs4/net6     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs3/net6     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/a_n440_735 
-                                           |  sky130_fd_pr__nfet_01v8/2 = 7            
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/a_n440_735 
-                                           |  sky130_fd_pr__nfet_01v8/2 = 7            
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs4/net2     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 7            |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs3/net2     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/2 = 7            |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: selfbiasedcascode2stage_2/VN          
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |                                           
-(no matching net)                          |Net: selfbiasedcascode2stage_1/VN          
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Vp                                    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
-                                           |                                           
-Net: Vref                                  |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: /selfbiasedcascode2stage_2/m3cap500f_ 
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |                                           
-(no matching net)                          |Net: /selfbiasedcascode2stage_1/m3cap500f_ 
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
-                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: selfbiasedcascode2stage_lvs4/net10    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
-                                           |                                           
-Net: selfbiasedcascode2stage_lvs3/net10    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: bandgap_lvs.spice               |Circuit 2: bandgap.spice                   
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8M1        |Instance: selfbiasedcascode2stage_0/sky130 
-  (1,3) = (140,4)                          |  (1,3) = (56,56)                          
-  2 = 7                                    |  2 = 56                                   
-  4 = 140                                  |  4 = 56                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M3        |Instance: selfbiasedcascode2stage_0/sky130 
-  (1,3) = (140,4)                          |  (1,3) = (188,56)                         
-  2 = 7                                    |  2 = 56                                   
-  4 = 140                                  |  4 = 56                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M4        |Instance: selfbiasedcascode2stage_3/sky130 
-  (1,3) = (140,4)                          |  (1,3) = (39,39)                          
-  2 = 7                                    |  2 = 39                                   
-  4 = 140                                  |  4 = 39                                   
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs1/sky |Instance: selfbiasedcascode2stage_3/sky130 
-  (1,3) = (140,140)                        |  (1,3) = (188,39)                         
-  2 = 140                                  |  2 = 39                                   
-  4 = 140                                  |  4 = 39                                   
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs1/sky |Instance: sky130_fd_pr__pfet_01v80         
-  (1,3) = (175,140)                        |  (1,3) = (2,1)                            
-  2 = 140                                  |  2 = 20                                   
-  4 = 140                                  |  4 = 56                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M2        |Instance: sky130_fd_pr__pfet_01v81         
-  (1,3) = (140,13)                         |  (1,3) = (2,2)                            
-  2 = 7                                    |  2 = 20                                   
-  4 = 140                                  |  4 = 56                                   
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs1/sky |Instance: sky130_fd_pr__pfet_01v82         
-  (1,3) = (175,175)                        |  (1,3) = (1,1)                            
-  2 = 175                                  |  2 = 20                                   
-  4 = 175                                  |  4 = 56                                   
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs1/sky |Instance: sky130_fd_pr__pfet_01v83         
-  (1,3) = (175,140)                        |  (1,3) = (2,2)                            
-  2 = 175                                  |  2 = 20                                   
-  4 = 175                                  |  4 = 56                                   
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v84         
-                                           |  (1,3) = (2,1)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v85         
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v86         
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v87         
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v88         
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v810        
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v811        
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v812        
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v813        
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v814        
-                                           |  (1,3) = (2,1)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v815        
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v816        
-                                           |  (1,3) = (2,2)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v817        
-                                           |  (1,3) = (2,1)                            
-                                           |  2 = 20                                   
-                                           |  4 = 56                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_0/sky130 
-                                           |  (1,3) = (188,188)                        
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_0/sky130 
-                                           |  (1,3) = (188,56)                         
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_3/sky130 
-                                           |  (1,3) = (188,39)                         
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,39)                         
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,39)                         
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,39)                         
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,39)                         
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,39)                          
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,39)                          
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 13                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 13                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 13                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 13                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2//inver 
-                                           |  (1,3) = (188,5)                          
-                                           |  2 = 5                                    
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1//inver 
-                                           |  (1,3) = (188,5)                          
-                                           |  2 = 5                                    
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,5)                          |                                           
-  2 = 5                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,5)                          |                                           
-  2 = 5                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (6,4)                            
-                                           |  2 = 5                                    
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (6,4)                            
-                                           |  2 = 5                                    
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (6,4)                            |                                           
-  2 = 5                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (6,4)                            |                                           
-  2 = 5                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (10,6)                           
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (10,6)                           
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (10,6)                           |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (10,6)                           |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (10,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (10,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (10,6)                           
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (10,6)                           
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (10,6)                           |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (10,6)                           |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (5,4)                            
-                                           |  2 = 8                                    
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (5,4)                            
-                                           |  2 = 8                                    
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (5,4)                            |                                           
-  2 = 8                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (5,4)                            |                                           
-  2 = 8                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,8)                          
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,8)                          
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,8)                          |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,8)                          |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (8,6)                            
-                                           |  2 = 8                                    
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (8,6)                            
-                                           |  2 = 8                                    
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (8,6)                            |                                           
-  2 = 8                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (8,6)                            |                                           
-  2 = 8                                    |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,6)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,6)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,6)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,6)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,6)                          
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,6)                          
-                                           |  2 = 188                                  
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,6)                          |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,6)                          |                                           
-  2 = 175                                  |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 188                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 175                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 13                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (4,4)                            |                                           
-  2 = 13                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 13                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (4,4)                            
-                                           |  2 = 13                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,5)                          |                                           
-  2 = 5                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,5)                          |                                           
-  2 = 5                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1//inver 
-                                           |  (1,3) = (39,5)                           
-                                           |  2 = 5                                    
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2//inver 
-                                           |  (1,3) = (39,5)                           
-                                           |  2 = 5                                    
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (6,4)                            |                                           
-  2 = 5                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (6,4)                            |                                           
-  2 = 5                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (6,4)                            
-                                           |  2 = 5                                    
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (6,4)                            
-                                           |  2 = 5                                    
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (10,4)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (10,4)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (10,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (10,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (10,6)                           |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (10,6)                           |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (10,6)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (10,6)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,8)                          |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,8)                          |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,8)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,8)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (5,4)                            |                                           
-  2 = 8                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (5,4)                            |                                           
-  2 = 8                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (5,4)                            
-                                           |  2 = 8                                    
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (5,4)                            
-                                           |  2 = 8                                    
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (8,6)                            |                                           
-  2 = 8                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (8,6)                            |                                           
-  2 = 8                                    |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (8,6)                            
-                                           |  2 = 8                                    
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (8,6)                            
-                                           |  2 = 8                                    
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,6)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,6)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,6)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,6)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,6)                          |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,6)                          |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,6)                          |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,6)                          |                                           
-  2 = 140                                  |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,6)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,6)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,6)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,6)                           
-                                           |  2 = 39                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (175,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  (1,3) = (140,4)                          |                                           
-  2 = 10                                   |                                           
-  4 = 140                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (188,4)                          
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2/sky130 
-                                           |  (1,3) = (39,4)                           
-                                           |  2 = 10                                   
-                                           |  4 = 39                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pnp_05v0Q31        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q30        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q29        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q28        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q27        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q26        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q25        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q24        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 3                                    
-  2 = 1                                    |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q23        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q22        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q21        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q20        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q19        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q18        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q17        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q16        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q15        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q14        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q13        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 1                                    |  1 = 1                                    
-  2 = 1                                    |  2 = 1                                    
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q3         |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 4                                    |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q11        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q10        |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q9         |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q8         |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q7         |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q6         |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q5         |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
-                                           |                                           
-Instance: sky130_fd_pr__pnp_05v0Q4         |Instance: bandgap_pnp_thomas_0/sky130_fd_p 
-  1 = 13                                   |  1 = 13                                   
-  2 = 175                                  |  2 = 188                                  
-  3 = 175                                  |  3 = 188                                  
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: selfbiasedcascode2stage_lvs3/sky |(no matching instance)                     
-  1 = 5                                    |                                           
-  2 = 5                                    |                                           
-                                           |                                           
-Instance: selfbiasedcascode2stage_lvs4/sky |(no matching instance)                     
-  1 = 5                                    |                                           
-  2 = 5                                    |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: selfbiasedcascode2stage_1//m3cap 
-                                           |  1 = 5                                    
-                                           |  2 = 5                                    
-                                           |                                           
-(no matching instance)                     |Instance: selfbiasedcascode2stage_2//m3cap 
-                                           |  1 = 5                                    
-                                           |  2 = 5                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
-The top level cell failed pin matching.
+Number of devices: 75                      |Number of devices: 75                      
+Number of nets: 59                         |Number of nets: 59                         
+---------------------------------------------------------------------------------------
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v0Q2 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v0Q2 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v0Q2 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v0Q2 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v0Q2 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v0Q2 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 network:
+  area = 0.4624
+Circuit 1 parallel/series network does not match Circuit 2
+Circuit 1 instance sky130_fd_pr__pnp_05v0Q2 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 3
+  L = 0.6
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v021 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v021 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v021 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v021 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v021 network:
+  area = 0.4624
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 2 instance /bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v021 network:
+  area = 0.4624
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 4 symmetries.
+Circuits match correctly.
+There were property errors.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v018 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v021 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v013 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v011 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v014 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v016 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v017 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v019 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v020 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v024 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v026 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v00 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v029 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v01 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v028 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v02 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v027 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v03 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v025 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v04 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v023 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v05 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v022 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v06 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v015 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v07 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v012 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v08 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v010 property "area" has no match in circuit 1.
+Circuit 2 bandgap_thomas.spice instance bandgap_pnp_thomas_0/sky130_fd_pr__pnp_05v09 property "area" has no match in circuit 1.
+Cells have no pins;  pin matching not needed.
+Device classes bandgap_lvs.spice and bandgap_thomas.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: bandgap_lvs.spice

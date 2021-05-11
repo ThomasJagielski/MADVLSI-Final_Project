@@ -1,0 +1,45 @@
+Equate elements:  no current cell.
+Class bandgap_current_mirror.spice:  Merged 7 devices.
+Class bandgap_current_mirror_lvs.spice:  Merged 7 devices.
+
+Subcircuit summary:
+Circuit 1: bandgap_current_mirror.spice    |Circuit 2: bandgap_current_mirror_lvs.spic 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M2 pin VDD connections are tied together (0)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M1 pin V1 connections are no connects (1)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M2 pin V2 connections are tied together (0)
+    Circuit2 instance sky130_fd_pr__pfet_01v83 pin a_130_110# connections are no connects (1)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M1 pin VDD connections are tied together (0)
+    Circuit2 instance sky130_fd_pr__pfet_01v83 pin a_130_110# connections are no connects (1)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v8M1 pin V1 connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v83 pin w_n270_70# connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v83 pin a_130_110# connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M1 pin VDD connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v83 pin w_n270_70# connections are tied together (0)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M1 pin V1 connections are no connects (1)
+Netlists match uniquely.
+Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v83 pin a_130_110# connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M1 pin VDD connections are tied together (0)
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__pfet_01v83 pin w_n270_70# connections are tied together (0)
+    Circuit2 instance sky130_fd_pr__pfet_01v8M1 pin V1 connections are no connects (1)
+Cells have no pins;  pin matching not needed.
+Device classes bandgap_current_mirror.spice and bandgap_current_mirror_lvs.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: bandgap_current_mirror.spice

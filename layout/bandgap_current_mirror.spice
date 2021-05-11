@@ -1,0 +1,16 @@
+* NGSPICE file created from bandgap_current_mirror.ext - technology: sky130A
+
+
+* Top level circuit bandgap_current_mirror
+
+X0 w_n270_70# a_10_60# a_550_110# w_n270_70# sky130_fd_pr__pfet_01v8 ad=1.08e+13p pd=4.32e+07u as=7.2e+12p ps=2.88e+07u w=3e+06u l=600000u
+X1 a_550_110# a_10_60# w_n270_70# w_n270_70# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X2 w_n270_70# a_10_60# a_550_110# w_n270_70# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X3 a_130_110# a_10_60# w_n270_70# w_n270_70# sky130_fd_pr__pfet_01v8 ad=1.8e+12p pd=7.2e+06u as=0p ps=0u w=3e+06u l=600000u
+X4 a_550_110# a_10_60# w_n270_70# w_n270_70# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X5 a_550_110# a_10_60# w_n270_70# w_n270_70# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X6 w_n270_70# a_10_60# a_550_110# w_n270_70# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X7 w_n270_70# a_10_60# a_550_110# w_n270_70# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+X8 a_550_110# a_10_60# w_n270_70# w_n270_70# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=600000u
+.end
+
