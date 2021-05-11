@@ -1,0 +1,52 @@
+* NGSPICE file created from bandgap_pnp_thomas.ext - technology: sky130A
+
+.subckt p-res20k GND 1 2
+X0 2 1 GND sky130_fd_pr__res_xhigh_po w=350000u l=3.5e+06u
+.ends
+
+.subckt p-res8x20k 1 2 p-res20k_7/GND
+Xp-res20k_0 p-res20k_7/GND p-res20k_1/2 2 p-res20k
+Xp-res20k_2 p-res20k_7/GND p-res20k_3/1 p-res20k_2/2 p-res20k
+Xp-res20k_1 p-res20k_7/GND p-res20k_2/2 p-res20k_1/2 p-res20k
+Xp-res20k_3 p-res20k_7/GND p-res20k_3/1 p-res20k_4/1 p-res20k
+Xp-res20k_4 p-res20k_7/GND p-res20k_4/1 p-res20k_5/2 p-res20k
+Xp-res20k_5 p-res20k_7/GND p-res20k_6/1 p-res20k_5/2 p-res20k
+Xp-res20k_6 p-res20k_7/GND p-res20k_6/1 p-res20k_7/1 p-res20k
+Xp-res20k_7 p-res20k_7/GND p-res20k_7/1 1 p-res20k
+.ends
+
+
+* Top level circuit bandgap_pnp_thomas
+
+Xp-res20k_0 p-res20k_0/2 p-res20k_0/1 p-res20k_0/2 p-res20k
+Xp-res8x20k_0 p-res8x20k_0/1 p-res8x20k_0/2 p-res20k_0/2 p-res8x20k
+X0 a_330_330# w_153_153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X1 a_n2670_1330# w_n2847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X2 a_1330_n670# w_1153_n847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X3 a_330_1330# w_153_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X4 a_n1670_1330# w_n1847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X5 a_n3670_n670# w_n3847_n847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X6 a_n1670_n2670# w_n1847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X7 a_330_n2670# w_153_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X8 a_n2670_n2670# w_n2847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X9 a_n670_n2670# w_n847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X10 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=3.6992e+12p
+X11 a_n3670_n2670# w_n3847_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X12 a_330_n670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X13 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X14 a_n670_1330# w_n847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X15 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X16 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X17 a_330_n1670# p-res20k_0/1 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X18 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X19 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X20 p-res8x20k_0/1 p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X21 a_1330_n2670# w_1153_n2847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X22 a_n3670_n1670# w_n3847_n1847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X23 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X24 a_n2670_n1670# p-res20k_0/2 p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=0p
+X25 a_n3670_1330# w_n3847_1153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X26 a_n3670_330# w_n3847_153# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X27 a_1330_n1670# w_1153_n1847# p-res20k_0/2 sky130_fd_pr__pnp_05v0 area=4.624e+11p
+.end
+

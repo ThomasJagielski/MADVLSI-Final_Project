@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620699047
+timestamp 1620699264
 << nwell >>
 rect -7185 2865 -7125 3110
 << poly >>
@@ -149,24 +149,24 @@ rect -4545 455 -4540 635
 rect -4435 615 -190 635
 rect -4435 455 -200 615
 rect -4545 450 -200 455
-use adc_digital  adc_digital_0
-timestamp 1620697130
-transform 1 0 0 0 1 1665
-box 0 -1665 25410 1645
-use selfbiasedcascode2stage  selfbiasedcascode2stage_0
-timestamp 1620697130
-transform 1 0 -7585 0 1 -2490
-box -255 2315 4445 5470
 use comparator  comparator_0
-timestamp 1620697130
+timestamp 1620699264
 transform 1 0 -2775 0 1 -1730
 box -255 2315 2625 4970
-use switch  switch_0
-timestamp 1620697026
-transform 1 0 -7425 0 1 2520
-box -110 20 245 625
+use selfbiasedcascode2stage  selfbiasedcascode2stage_0
+timestamp 1620699264
+transform 1 0 -7585 0 1 -2490
+box -255 2315 4445 5470
+use adc_digital  adc_digital_0
+timestamp 1620699264
+transform 1 0 0 0 1 1665
+box 0 -1665 25410 1645
 use switch  switch_1
 timestamp 1620697026
 transform 1 0 -7040 0 1 2520
+box -110 20 245 625
+use switch  switch_0
+timestamp 1620697026
+transform 1 0 -7425 0 1 2520
 box -110 20 245 625
 << end >>

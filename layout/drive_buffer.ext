@@ -1,4 +1,4 @@
-timestamp 1620697130
+timestamp 1620699264
 version 8.3
 tech sky130A
 style ngspice()
@@ -12,18 +12,18 @@ node "A" 61 139.4 0 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_360_570#" 15 51.35 360 570 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_0_1050#" 17266 244.8 0 1050 nw 0 0 0 0 81600 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VDD" "GND" 202.5
 cap "VDD" "w_0_1050#" 36.14
+cap "VDD" "GND" 202.5
+cap "inverter_large_0/Y" "inverter_large_0/A" 68.129
+cap "inverter_large_0/A" "inverter_large_0/GND" 93.5567
 cap "inverter_0/A" "inverter_large_0/VDD" 1.95
-cap "inverter_0/A" "inverter_large_0/GND" 59.7875
-cap "inverter_large_0/VDD" "inverter_large_0/A" 409.787
-cap "inverter_large_0/A" "inverter_large_0/Y" 68.129
-cap "inverter_large_0/GND" "inverter_large_0/A" 93.5567
 cap "inverter_large_0/VDD" "inverter_large_0/Y" 198.05
-cap "inverter_large_0/VDD" "inverter_large_0/GND" -86.776
+cap "inverter_large_0/VDD" "inverter_large_0/A" 409.787
 cap "inverter_0/A" "inverter_large_0/A" 9.87374
-cap "inverter_large_0/VDD" "inverter_large_0/GND" 5.51471
+cap "inverter_large_0/VDD" "inverter_large_0/GND" -86.776
+cap "inverter_0/A" "inverter_large_0/GND" 59.7875
 cap "inverter_large_0/VDD" "inverter_large_0/VDD" 1.56
+cap "inverter_large_0/VDD" "inverter_large_0/GND" 5.51471
 merge "inverter_0/VN" "inverter_large_0/GND" -685.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -214300 -2660 0 0 0 0 0 0 0 0 0 0
 merge "inverter_large_0/GND" "GND"
 merge "GND" "VSUBS"
