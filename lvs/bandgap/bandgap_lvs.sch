@@ -129,7 +129,6 @@ C {madvlsi/gnd.sym} -60 20 3 1 {name=l26 lab=GND}
 C {madvlsi/gnd.sym} -60 110 0 1 {name=l27 lab=GND}
 C {madvlsi/gnd.sym} -220 110 0 1 {name=l28 lab=GND}
 C {madvlsi/gnd.sym} -140 110 0 1 {name=l29 lab=GND}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage.sym} -340 -140 0 0 {name=X2}
 C {/home/madvlsi/skywater/xschem_sky130/sky130_fd_pr/res_xhigh_po.sym} -930 -130 1 0 {name=R3
 W=0.35
 L=3.5
@@ -198,3 +197,4 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} -740 300 0 0 {name=l13 lab=GND}
 C {madvlsi/gnd.sym} -800 80 0 0 {name=l14 lab=GND}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lds.sym} -340 -140 0 0 {name=X1}
