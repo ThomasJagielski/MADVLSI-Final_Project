@@ -491,13 +491,6 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2sta
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage.sym} 550 -70 0 0 {name=X1}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage.sym} -140 330 0 0 {name=X16}
 C {devices/lab_pin.sym} -180 320 0 0 {name=l15 sig_type=std_logic lab=Vben}
-C {madvlsi/tt_models.sym} 770 -830 0 0 {
-name=TT_MODELS
-only_toplevel=false
-value=".option wnflag=1
-.param MC_SWITCH=0.0
-.lib /media/qdeng/526448C32060CF5C/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
-}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/clk_gen.sym} -220 880 0 0 {name=X6 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {devices/lab_pin.sym} -160 910 2 0 {name=l7 sig_type=std_logic lab=Vphi2}
 C {devices/lab_pin.sym} -280 930 0 0 {name=l17 sig_type=std_logic lab=CLK}
@@ -630,13 +623,9 @@ C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1760 950 
 C {devices/lab_pin.sym} 1780 960 2 0 {name=l116 sig_type=std_logic lab=Vphi1}
 C {devices/lab_pin.sym} 1780 940 2 0 {name=l117 sig_type=std_logic lab=Vnphi1}
 C {madvlsi/capacitor.sym} 1730 500 1 0 {name=C19
-value=800f
+value=1u
 m=1}
 C {madvlsi/gnd.sym} 1700 500 1 1 {name=l118 lab=GND}
-C {madvlsi/capacitor.sym} 1730 570 1 0 {name=C20
-value=800f
-m=1}
-C {madvlsi/gnd.sym} 1700 570 1 1 {name=l119 lab=GND}
 C {devices/lab_pin.sym} 1760 540 2 0 {name=l120 sig_type=std_logic lab=Vptat}
 C {devices/lab_pin.sym} 1260 -430 1 0 {name=l93 sig_type=std_logic lab=Vouts}
 C {devices/lab_pin.sym} 1360 -570 1 0 {name=l99 sig_type=std_logic lab=Vouts}
@@ -851,3 +840,10 @@ C {devices/lab_pin.sym} 2990 -210 0 0 {name=l122 sig_type=std_logic lab=P}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/inverter.sym} 3100 -210 0 0 {name=X81 Wp=1 Lp=0.15 WW=1 LL=0.15}
 C {devices/lab_pin.sym} 3220 -210 2 0 {name=l123 sig_type=std_logic lab=NP}
 C {madvlsi/vdd.sym} 3100 -250 0 0 {name=l124 lab=VDD}
+C {madvlsi/tt_models.sym} 850 -750 0 0 {
+name=TT_MODELS
+only_toplevel=false
+value=".option wnflag=1
+.param MC_SWITCH=0.0
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
+}
