@@ -1,4 +1,4 @@
-timestamp 1620721666
+timestamp 1620741313
 version 8.3
 tech sky130A
 style ngspice()
@@ -16,284 +16,308 @@ use cap8to1 cap8to1_1 1 0 -7780 0 1 5750
 use selfbiasedcascode2stage selfbiasedcascode2stage_0 1 0 510 0 1 -4630
 node "m3_n5150_6240#" 0 486.2 -5150 6240 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
 node "m3_n6040_6240#" 0 368.7 -6040 6240 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 122000 1620 0 0 0 0 0 0
-node "li_1550_n280#" 20 415.84 1550 -280 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 44800 1800 0 0 0 0 0 0 0 0 0 0
+node "li_1550_n280#" 20 392.71 1550 -280 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 44800 1800 0 0 0 0 0 0 0 0 0 0
 node "li_6640_1000#" 22 548.86 6640 1000 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 200 49600 2440 0 0 0 0 0 0 0 0 0 0
-node "li_1450_n130#" 1439 8051.19 1450 -130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 435400 14440 30600 700 30600 700 30600 700 2531200 23140 0 0 0 0
+node "li_n20_n730#" 1639 5440.01 -20 -730 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 497600 16460 7200 340 7200 340 302900 7680 0 0 0 0 0 0
 node "li_n5970_3740#" 121 82.5 -5970 3740 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5200 500 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n6100_3740#" 121 82.5 -6100 3740 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5200 500 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vp" 399 1473.36 -7830 5640 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 165800 4800 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n120_3700#" 1376 5823.36 -120 3700 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7900 420 0 0 429200 13220 30600 700 30600 700 30600 700 528500 5600 0 0 0 0
-node "a_n7050_2880#" 352 2030.32 -7050 2880 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 340 0 0 195000 4540 7200 340 7200 340 51400 1220 0 0 0 0 0 0
-node "a_n6260_3040#" 154 9988.26 -6260 3040 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 9600 640 19200 960 992800 46360 0 0 0 0 0 0 0 0
+node "a_n7050_2880#" 352 2012.6 -7050 2880 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 340 0 0 195000 4540 7200 340 7200 340 51400 1220 0 0 0 0 0 0
+node "a_n6260_3040#" 154 9904.21 -6260 3040 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 9600 640 19200 960 992800 46360 0 0 0 0 0 0 0 0
 node "a_n5860_3740#" 161 79.45 -5860 3740 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3000 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n5980_3740#" 1576 0 -5980 3740 pdif 0 0 0 0 0 0 0 0 0 0 7200 540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n6010_3740#" 161 0 -6010 3740 pmos 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3000 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n6110_3740#" 1576 0 -6110 3740 pdif 0 0 0 0 0 0 0 0 0 0 7200 540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_n6240_4190#" 153 11299.8 -6240 4190 pc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 9600 640 1083200 50880 0 0 0 0 0 0 0 0 0 0
-node "a_n7780_4300#" 834 7014.47 -7780 4300 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 1140 0 0 25600 1280 25600 1280 583400 25780 324400 7980 0 0 0 0 0 0
-node "a_n200_n700#" 10496 5592.84 -200 -700 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195900 12920 0 0 107600 3500 7200 340 7200 340 302900 7680 0 0 0 0 0 0
-node "a_n3380_5360#" 1081 4821.01 -3380 5360 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 340 0 0 214300 8580 17200 740 17200 740 426700 8600 0 0 0 0 0 0
-node "a_n7780_5430#" 959 7127.54 -7780 5430 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27200 1320 0 0 28800 1600 712400 30120 17800 760 45800 1540 0 0 0 0 0 0
+node "Vnphi2" 153 11088.1 -6240 4190 pc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 9600 640 1083200 50880 0 0 0 0 0 0 0 0 0 0
+equiv "Vnphi2" "Vphi2"
+node "Vnphi1" 834 6995.33 -7780 4300 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 1140 0 0 25600 1280 25600 1280 583400 25780 324400 7980 0 0 0 0 0 0
+node "a_n200_n1070#" 11776 7339.37 -200 -1070 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 283800 16700 0 0 51800 1000 30600 700 30600 700 30600 700 1565400 14360 0 0 0 0
+node "a_n3380_5360#" 1400 5979.38 -3380 5360 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 340 0 0 272000 11040 17200 740 17200 740 552700 11120 0 0 0 0 0 0
+node "Vphi1" 959 7232.02 -7780 5430 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27200 1320 0 0 28800 1600 712400 30120 17800 760 45800 1540 0 0 0 0 0 0
 node "a_n5590_5750#" 360 2467.7 -5590 5750 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7200 340 0 0 202300 4680 7200 340 7200 340 33000 820 0 0 0 0 0 0
-node "w_1220_n300#" 2293 719.44 1220 -300 nw 0 0 0 0 8000 360 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 8000 360 60800 2440 0 0 0 0 0 0 0 0
+node "w_1220_n300#" 2293 626.625 1220 -300 nw 0 0 0 0 8000 360 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 8000 360 60800 2440 0 0 0 0 0 0 0 0
 node "w_6620_1290#" 2302 1818.04 6620 1290 nw 0 0 0 0 8000 360 0 0 8000 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 360 8000 360 165200 8020 0 0 0 0 0 0 0 0
-node "w_n7330_3740#" 41927 5584.19 -7330 3740 nw 0 0 0 0 101400 3220 0 0 48000 1760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35600 1680 40000 1800 482000 23580 0 0 0 0 0 0 0 0
+node "w_n7330_3740#" 41927 5571.38 -7330 3740 nw 0 0 0 0 101400 3220 0 0 48000 1760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35600 1680 40000 1800 482000 23580 0 0 0 0 0 0 0 0
 node "w_n6260_5430#" 13600 2.4 -6260 5430 nw 0 0 0 0 800 180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_n7820_5430#" 20400 3.6 -7820 5430 nw 0 0 0 0 1200 260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-substrate "a_n7320_3440#" 0 0 -7320 3440 ppd 0 0 0 0 0 0 0 0 0 0 32000 1440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1640 508400 24980 0 0 0 0 0 0 0 0 0 0
-cap "li_1450_n130#" "a_n6260_3040#" 145.549
-cap "a_n7780_5430#" "a_n5590_5750#" 144.162
-cap "li_1450_n130#" "a_n200_n700#" 2690.24
-cap "a_n6240_4190#" "a_n7050_2880#" 101.62
-cap "a_n7780_5430#" "a_n7780_4300#" 979.949
-cap "a_n120_3700#" "m3_n6040_6240#" 299.2
-cap "a_n7780_5430#" "a_n200_n700#" 1818.38
-cap "w_n7330_3740#" "a_n3380_5360#" 164.876
-cap "li_1450_n130#" "li_1550_n280#" 103.827
-cap "li_6640_1000#" "a_n6240_4190#" 24
-cap "a_n7780_4300#" "a_n6260_3040#" 257.375
-cap "a_n200_n700#" "a_n6260_3040#" 1790.24
-cap "a_n7780_5430#" "a_n3380_5360#" 180.005
-cap "a_n7780_4300#" "a_n5590_5750#" 62.025
-cap "li_n5970_3740#" "a_n5980_3740#" 59.81
-cap "w_n7330_3740#" "li_n6100_3740#" 70.1914
-cap "w_n7330_3740#" "a_n6240_4190#" 13.2353
-cap "a_n200_n700#" "a_n7780_4300#" 1184.18
-cap "w_n7330_3740#" "li_n5970_3740#" 93.6533
-cap "m3_n6040_6240#" "m3_n5150_6240#" 45
-cap "w_n7330_3740#" "a_n6010_3740#" 13.02
-cap "a_n6260_3040#" "a_n3380_5360#" 129.554
-cap "a_n5860_3740#" "w_n7330_3740#" 17.42
-cap "a_n6240_4190#" "w_6620_1290#" 36.5
-cap "a_n3380_5360#" "a_n5590_5750#" 82.3327
-cap "li_1450_n130#" "a_n6240_4190#" 127.5
-cap "w_n7330_3740#" "a_n120_3700#" 67.555
-cap "w_n7330_3740#" "a_n7050_2880#" 69.1494
-cap "a_n7780_5430#" "a_n6240_4190#" 133.269
-cap "a_n120_3700#" "m3_n5150_6240#" 449.35
-cap "a_n7780_4300#" "a_n3380_5360#" 93.2543
-cap "a_n6110_3740#" "li_n6100_3740#" 59.81
-cap "a_n6240_4190#" "a_n6260_3040#" 2926.1
-cap "w_n7820_5430#" "a_n7780_5430#" 0.26
-cap "w_n7330_3740#" "a_n5980_3740#" 33.14
-cap "m3_n6040_6240#" "a_n5590_5750#" 36.4737
+substrate "a_n7320_3440#" 0 0 -7320 3440 ppd 0 0 0 0 0 0 0 0 0 0 32000 1440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34400 1640 510000 24980 0 0 0 0 0 0 0 0 0 0
+cap "Vphi1" "w_n7820_5430#" 0.26
+cap "a_n7050_2880#" "Vnphi2" 101.62
 cap "li_n5970_3740#" "a_n5590_5750#" 17.4167
-cap "a_n6240_4190#" "a_n7780_4300#" 205.143
-cap "a_n6240_4190#" "a_n200_n700#" 1289.86
+cap "Vnphi1" "a_n120_3700#" 255.435
+cap "Vnphi2" "w_n7330_3740#" 13.2353
+cap "Vphi1" "Vp" 114.671
+cap "a_n3380_5360#" "Vnphi2" 491.41
+cap "Vphi1" "a_n200_n1070#" 1422.02
+cap "Vnphi2" "w_6620_1290#" 36.5
 cap "li_6640_1000#" "w_6620_1290#" 78.8452
-cap "li_6640_1000#" "li_1450_n130#" 77.36
-cap "a_n7050_2880#" "a_n6260_3040#" 233.17
-cap "a_n120_3700#" "a_n7780_4300#" 255.435
-cap "a_n120_3700#" "a_n200_n700#" 68.425
-cap "a_n7050_2880#" "a_n7780_4300#" 65.84
-cap "a_n7780_5430#" "w_n7330_3740#" 368.005
-cap "li_n6100_3740#" "a_n3380_5360#" 22.3133
-cap "a_n6240_4190#" "a_n3380_5360#" 75.3867
-cap "li_6640_1000#" "a_n6260_3040#" 10.5882
+cap "a_n120_3700#" "m3_n6040_6240#" 299.2
+cap "Vphi1" "w_n7330_3740#" 368.005
+cap "Vnphi1" "Vnphi2" 205.143
+cap "a_n6110_3740#" "w_n7330_3740#" 33.14
+cap "Vp" "a_n7050_2880#" 7.76471
+cap "Vphi1" "a_n3380_5360#" 180.005
+cap "li_n20_n730#" "Vnphi2" 1289.86
 cap "li_1550_n280#" "w_1220_n300#" 27.4852
-cap "li_n5970_3740#" "a_n3380_5360#" 9.16667
-cap "w_n7330_3740#" "a_n6110_3740#" 33.14
-cap "li_1450_n130#" "w_6620_1290#" 102.26
-cap "li_1450_n130#" "a_n7780_5430#" 227.15
-cap "a_n120_3700#" "a_n3380_5360#" 144.41
-cap "w_n7330_3740#" "a_n5590_5750#" 146.471
-cap "w_n7330_3740#" "a_n7780_4300#" 80.6
-cap "w_n7330_3740#" "a_n200_n700#" 17.42
+cap "li_n20_n730#" "li_6640_1000#" 77.36
 cap "li_n5970_3740#" "li_n6100_3740#" 121.588
+cap "li_n5970_3740#" "a_n5980_3740#" 59.81
+cap "Vp" "w_n7330_3740#" 43.66
+cap "Vnphi2" "a_n6260_3040#" 2926.1
+cap "a_n6260_3040#" "li_6640_1000#" 10.5882
+cap "a_n3380_5360#" "Vp" 56.8
+cap "a_n200_n1070#" "w_n7330_3740#" 17.42
+cap "a_n7050_2880#" "w_n7330_3740#" 69.1494
+cap "Vnphi1" "Vphi1" 979.949
+cap "li_n20_n730#" "Vphi1" 268.61
+cap "a_n3380_5360#" "a_n7050_2880#" 97.01
+cap "Vphi1" "a_n5590_5750#" 144.162
+cap "a_n3380_5360#" "w_n7330_3740#" 216.756
+cap "a_n6010_3740#" "w_n7330_3740#" 13.02
+cap "li_n20_n730#" "w_1220_n300#" 149.01
+cap "w_n7330_3740#" "a_n5860_3740#" 17.42
+cap "Vnphi1" "a_n200_n1070#" 1037.06
+cap "Vnphi1" "a_n7050_2880#" 65.84
+cap "li_n20_n730#" "a_n200_n1070#" 2336.17
+cap "li_n20_n730#" "li_1550_n280#" 133.23
+cap "Vnphi1" "w_n7330_3740#" 80.6
+cap "a_n6260_3040#" "a_n200_n1070#" 141.667
+cap "a_n7050_2880#" "a_n6260_3040#" 233.17
+cap "Vnphi1" "a_n3380_5360#" 196.7
+cap "a_n5590_5750#" "w_n7330_3740#" 146.471
+cap "Vnphi2" "li_6640_1000#" 24
+cap "a_n3380_5360#" "a_n5590_5750#" 82.3327
+cap "li_n20_n730#" "w_6620_1290#" 102.26
+cap "a_n6110_3740#" "li_n6100_3740#" 59.81
+cap "a_n3380_5360#" "a_n6260_3040#" 264.793
+cap "a_n120_3700#" "a_n200_n1070#" 68.425
+cap "m3_n5150_6240#" "m3_n6040_6240#" 45
 cap "a_n6260_3040#" "w_6620_1290#" 28.5714
-cap "cap8to1_0/m3cap50f_0/2" "a_n6240_4190#" 430.5
-cap "cap8to1_0/m3cap50f_0/2" "a_n6260_3040#" 598.5
-cap "cap8to1_0/m3cap50f_2/1" "cap8to1_0/m3cap50f_2/2" 262.7
-cap "cap8to1_0/m3cap50f_15/2" "cap8to1_0/m3cap50f_16/2" 94.5
-cap "cap8to1_0/m3cap50f_15/2" "cap8to1_0/m3cap50f_15/1" 1012
-cap "cap8to1_0/m3cap50f_15/1" "cap8to1_0/m3cap50f_16/2" 375.98
-cap "a_n200_n700#" "cap8to1_0/m3cap50f_16/2" 304.5
-cap "cap8to1_0/m3cap50f_16/1" "cap8to1_0/m3cap50f_16/2" -842
-subcap "a_n200_n700#" -4071.83
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "a_n200_n700#" 5.57576
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "switch_0/CLK" 1.28571
-cap "cap8to1_0/m3cap50f_17/2" "a_n200_n700#" 196.875
-subcap "li_1550_n280#" -1092.37
-subcap "li_1450_n130#" -7395.83
-cap "switch_0/B" "switch_0/A" 78.4808
-cap "selfbiasedcascode2stage_0/a_120_4860#" "switch_0/w_n220_690#" 47.08
-cap "switch_0/B" "selfbiasedcascode2stage_0/a_0_5820#" 10
-cap "selfbiasedcascode2stage_0/a_n440_7350#" "switch_0/w_n220_690#" 19.98
-cap "switch_0/B" "selfbiasedcascode2stage_0/a_120_4860#" 305.498
-cap "switch_0/a_270_430#" "switch_0/w_n220_690#" -7.92
-cap "switch_0/nCLK" "switch_0/w_n220_690#" 10.64
-cap "switch_0/a_270_430#" "switch_0/B" 64.9476
-cap "switch_0/A" "switch_0/nCLK" 410.2
-cap "switch_0/a_270_430#" "selfbiasedcascode2stage_0/a_120_4860#" 64.64
-cap "switch_0/CLK" "switch_0/w_n220_690#" 0.26
-cap "switch_0/CLK" "switch_0/nCLK" 74
-cap "switch_0/CLK" "switch_0/A" 23.0476
+cap "li_n5970_3740#" "w_n7330_3740#" 93.6533
+cap "li_n20_n730#" "Vnphi1" 262.7
+cap "Vphi1" "Vnphi2" 133.269
+cap "Vnphi1" "a_n5590_5750#" 62.025
+cap "a_n120_3700#" "w_n7330_3740#" 67.555
+cap "Vnphi1" "a_n6260_3040#" 257.375
+cap "a_n120_3700#" "m3_n5150_6240#" 449.35
+cap "li_n20_n730#" "a_n6260_3040#" 1794.12
+cap "a_n3380_5360#" "a_n120_3700#" 144.41
+cap "w_n7330_3740#" "a_n5980_3740#" 33.14
+cap "li_n6100_3740#" "w_n7330_3740#" 70.1914
+cap "a_n5590_5750#" "m3_n6040_6240#" 36.4737
+cap "Vnphi2" "a_n200_n1070#" 127.5
+cap "a_n6260_3040#" "cap8to1_0/m3cap50f_0/2" 598.5
+cap "Vnphi2" "cap8to1_0/m3cap50f_0/2" 430.5
+cap "cap8to1_0/m3cap50f_2/1" "cap8to1_0/m3cap50f_2/2" 269.8
+cap "cap8to1_0/m3cap50f_16/2" "cap8to1_0/m3cap50f_15/2" 91.875
+cap "cap8to1_0/m3cap50f_15/1" "cap8to1_0/m3cap50f_15/2" 1012
+cap "cap8to1_0/m3cap50f_15/1" "cap8to1_0/m3cap50f_16/2" 360.5
+cap "cap8to1_0/m3cap50f_16/2" "cap8to1_0/m3cap50f_16/1" -821.47
+cap "cap8to1_0/m3cap50f_16/2" "li_n20_n730#" 304.5
+subcap "li_n20_n730#" -4427.69
+subcap "a_n200_n1070#" -6067.78
+cap "selfbiasedcascode2stage_0/w_n410_5880#" "li_n20_n730#" 11.3793
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "a_n200_n1070#" 5.57576
+cap "switch_0/CLK" "selfbiasedcascode2stage_0/a_n360_4860#" 1.28571
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "li_n20_n730#" 44.6471
+cap "cap8to1_0/m3cap50f_17/2" "li_n20_n730#" 199.5
+subcap "li_1550_n280#" -1018.78
+cap "switch_0/B" "switch_0/w_n220_690#" 15.9118
 cap "selfbiasedcascode2stage_0/a_n440_7350#" "switch_0/a_270_430#" 26.325
-subcap "li_1550_n280#" -696.472
-cap "selfbiasedcascode2stage_0/a_0_5820#" "li_1450_n130#" 10
-cap "selfbiasedcascode2stage_0/a_n440_7350#" "li_1450_n130#" 17.5294
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/a_120_4860#" 513.333
-cap "selfbiasedcascode2stage_0/a_840_6920#" "li_1450_n130#" 10
-cap "li_1450_n130#" "switch_0/a_270_430#" 6
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/a_840_6920#" 10
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/a_n360_4860#" 36.1429
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/w_n410_5880#" 20
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/a_120_4860#" 278.667
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/a_n360_4860#" 4
-cap "a_n6260_3040#" "cap8to1_0/m3cap50f_0/2" 5.7
-cap "cap8to1_0/m3cap50f_0/2" "a_n6240_4190#" 4.1
+cap "selfbiasedcascode2stage_0/a_120_4860#" "switch_0/w_n220_690#" 47.08
+cap "switch_0/CLK" "switch_0/w_n220_690#" 0.26
+cap "switch_0/B" "switch_0/A" 11.2895
+cap "switch_0/B" "switch_0/a_270_430#" 26.7793
+cap "switch_0/CLK" "switch_0/A" 10.8795
+cap "switch_0/B" "selfbiasedcascode2stage_0/a_0_5820#" 10.2414
+cap "selfbiasedcascode2stage_0/a_120_4860#" "switch_0/a_270_430#" 64.64
+cap "switch_0/nCLK" "switch_0/CLK" 74
+cap "switch_0/nCLK" "switch_0/w_n220_690#" 10.64
+cap "switch_0/w_n220_690#" "switch_0/a_270_430#" -7.92
+cap "selfbiasedcascode2stage_0/a_n440_7350#" "switch_0/w_n220_690#" 19.98
+cap "switch_0/B" "selfbiasedcascode2stage_0/a_120_4860#" 947.898
+cap "switch_0/nCLK" "switch_0/A" 425.545
+subcap "li_1550_n280#" -604.537
+cap "selfbiasedcascode2stage_0/a_0_5820#" "li_n20_n730#" 11.3793
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/a_120_4860#" 924
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/a_n440_7350#" 22.5836
+cap "selfbiasedcascode2stage_0/a_0_5820#" "li_n20_n730#" 1.13793
+cap "switch_0/a_270_430#" "li_n20_n730#" 5.68966
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/a_840_6920#" 11.3793
+cap "selfbiasedcascode2stage_0/a_840_6920#" "li_n20_n730#" 11.3793
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/w_n410_5880#" 22.7586
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/a_120_4860#" 508.2
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/a_n360_4860#" 44.6471
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "li_n20_n730#" 5.68966
+cap "Vnphi2" "cap8to1_0/m3cap50f_7/2" 434.6
+cap "cap8to1_0/m3cap50f_0/2" "Vnphi2" 4.1
 cap "a_n6260_3040#" "cap8to1_0/m3cap50f_7/2" 604.2
-cap "cap8to1_0/m3cap50f_7/2" "a_n6240_4190#" 434.6
-cap "a_n7780_5430#" "selfbiasedcascode2stage_0/a_n360_4860#" 64.2857
-cap "a_n200_n700#" "selfbiasedcascode2stage_0/w_n410_5880#" 5.57576
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "a_n7780_4300#" 107.143
-cap "a_n7780_5430#" "selfbiasedcascode2stage_0/w_n410_5880#" 36
-subcap "li_1450_n130#" -8258.58
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "switch_0/B" 4.36765
-cap "selfbiasedcascode2stage_0/a_0_5820#" "switch_0/B" 4.85294
-cap "selfbiasedcascode2stage_0/a_0_5820#" "li_1450_n130#" 4.85294
-cap "selfbiasedcascode2stage_0/a_840_6920#" "li_1450_n130#" 9.70588
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "li_1450_n130#" 2.91176
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/a_n440_7350#" 0.970588
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/a_n360_4860#" 1.94118
-cap "li_1450_n130#" "selfbiasedcascode2stage_0/w_n410_5880#" 9.70588
-cap "switch_1/nCLK" "switch_1/A" 2.18382
-cap "selfbiasedcascode2stage_0/inverter_large_0/GND" "switch_1/A" 90.6053
-cap "w_6620_1290#" "switch_1/w_n220_690#" 0.76
-subcap "li_6640_1000#" -535.98
-subcap "w_6620_1290#" -973.53
-cap "switch_1/a_270_430#" "switch_1/B" 111.84
-cap "switch_1/A" "switch_1/a_270_430#" 111.84
-cap "switch_1/CLK" "switch_1/nCLK" -1.42109e-14
-cap "switch_1/CLK" "switch_1/w_n220_690#" 17.42
-cap "switch_1/a_270_430#" "switch_1/w_n220_690#" -7.92
-cap "switch_1/a_270_430#" "switch_1/nCLK" 44.5
-cap "switch_1/B" "switch_1/w_n220_690#" 89.98
-cap "switch_1/A" "switch_1/w_n220_690#" 89.98
+cap "cap8to1_0/m3cap50f_0/2" "a_n6260_3040#" 5.7
+cap "a_n200_n1070#" "selfbiasedcascode2stage_0/w_n410_5880#" 5.57576
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "Vphi1" 64.2857
+cap "selfbiasedcascode2stage_0/w_n410_5880#" "Vphi1" 36
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/w_n410_5880#" 5.5
+cap "Vnphi1" "selfbiasedcascode2stage_0/w_n410_5880#" 107.143
+cap "switch_0/B" "selfbiasedcascode2stage_0/w_n410_5880#" 5.5
+cap "switch_0/B" "selfbiasedcascode2stage_0/a_n360_4860#" 5.5
+cap "selfbiasedcascode2stage_0/a_0_5820#" "switch_0/B" 4.95
+cap "selfbiasedcascode2stage_0/a_840_6920#" "li_n20_n730#" 11
+cap "selfbiasedcascode2stage_0/a_0_5820#" "li_n20_n730#" 5.5
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "li_n20_n730#" 2.75
+cap "li_n20_n730#" "selfbiasedcascode2stage_0/a_0_5820#" 0.55
+cap "selfbiasedcascode2stage_0/a_n440_7350#" "li_n20_n730#" 1.1
+cap "selfbiasedcascode2stage_0/w_n410_5880#" "li_n20_n730#" 11
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "li_n20_n730#" 2.75
 cap "switch_1/A" "switch_1/nCLK" 2.18382
-cap "switch_1/nCLK" "switch_1/w_n220_690#" 13.02
+cap "w_6620_1290#" "switch_1/w_n220_690#" 0.38
+cap "switch_1/A" "selfbiasedcascode2stage_0/inverter_large_0/GND" 90.6053
+subcap "li_6640_1000#" -531.62
+subcap "w_6620_1290#" -953.047
+cap "switch_1/a_270_430#" "switch_1/A" 111.84
+cap "switch_1/a_270_430#" "switch_1/B" 111.84
 cap "switch_1/CLK" "switch_1/a_270_430#" 15.45
-subcap "a_n7050_2880#" -587.121
-subcap "a_n6260_3040#" -8670.78
-subcap "a_n7320_3440#" -5207.59
+cap "switch_1/nCLK" "switch_1/A" 2.18382
+cap "switch_1/a_270_430#" "switch_1/nCLK" 44.5
+cap "switch_1/w_n220_690#" "switch_1/A" 89.98
+cap "switch_1/a_270_430#" "switch_1/w_n220_690#" -7.92
+cap "switch_1/CLK" "switch_1/nCLK" -1.42109e-14
+cap "switch_1/B" "switch_1/w_n220_690#" 89.98
+cap "switch_1/w_n220_690#" "switch_1/nCLK" 13.02
+cap "switch_1/CLK" "switch_1/w_n220_690#" 17.42
+subcap "a_n7050_2880#" -620.751
+subcap "a_n6260_3040#" -8634.33
+subcap "a_n7320_3440#" -5225.03
+cap "switch_2/B" "a_n3380_5360#" 12
 cap "switch_2/nCLK" "cap8to1_0/m3cap50f_6/2" 604.2
-cap "a_n6240_4190#" "cap8to1_0/m3cap50f_6/2" 434.6
-subcap "a_n6260_3040#" -9864.26
-cap "cap8to1_0/m3cap50f_6/2" "switch_4/nCLK" 40.5588
-cap "switch_5/A" "a_n3380_5360#" 22.3235
-cap "switch_5/B" "a_n3380_5360#" 23.2941
-cap "switch_4/nCLK" "cap8to1_0/m3cap50f_4/2" 238
-cap "a_n7780_5430#" "selfbiasedcascode2stage_0/a_n360_4860#" 37.0588
-cap "a_n7780_5430#" "selfbiasedcascode2stage_0/a_n360_4860#" 45
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "a_n7780_4300#" 200
-cap "a_n200_n700#" "selfbiasedcascode2stage_0/a_n360_4860#" 5.57576
-cap "a_n200_n700#" "selfbiasedcascode2stage_0/a_n440_7350#" 31.625
+cap "Vnphi2" "cap8to1_0/m3cap50f_6/2" 434.6
+cap "cap8to1_0/m3cap50f_6/2" "a_n3380_5360#" 179.2
+cap "switch_2/A" "a_n3380_5360#" 11.5
+cap "switch_2/nCLK" "a_n3380_5360#" 17.9519
+subcap "a_n6260_3040#" -9778.37
+cap "switch_4/nCLK" "cap8to1_0/m3cap50f_6/2" 37.0588
+cap "a_n3380_5360#" "switch_5/B" 23.2941
+cap "a_n3380_5360#" "cap8to1_0/m3cap50f_6/2" -3.355
+cap "a_n3380_5360#" "switch_5/A" 22.3235
+cap "switch_4/nCLK" "cap8to1_0/m3cap50f_4/2" 241.5
+cap "a_n200_n1070#" "selfbiasedcascode2stage_0/a_n360_4860#" 5.57576
+cap "selfbiasedcascode2stage_0/a_n440_7350#" "a_n200_n1070#" 31.625
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "Vphi1" 37.0588
+cap "Vnphi1" "selfbiasedcascode2stage_0/w_n410_5880#" 200
+cap "Vphi1" "selfbiasedcascode2stage_0/a_n360_4860#" 45
 cap "switch_1/A" "selfbiasedcascode2stage_0/Vout" 1
-cap "switch_1/CLK" "selfbiasedcascode2stage_0/Vout" 9.93145
-subcap "w_6620_1290#" -1941.96
-cap "switch_1/CLK" "selfbiasedcascode2stage_0/Vout" 9.93145
+cap "selfbiasedcascode2stage_0/Vout" "switch_1/CLK" 9.93145
+subcap "w_6620_1290#" -1942.58
 cap "switch_1/A" "selfbiasedcascode2stage_0/Vout" 1
-subcap "li_n6100_3740#" -812.602
-subcap "a_n7050_2880#" -986.184
-subcap "a_n6260_3040#" -9283.72
-subcap "a_n6110_3740#" -730.102
-subcap "a_n6240_4190#" -9476.45
-subcap "a_n7780_4300#" -6080.07
-subcap "w_n7330_3740#" -4252.17
-subcap "a_n7320_3440#" -5165.48
-cap "switch_2/A" "switch_3/nCLK" 13.5882
-cap "switch_3/A" "switch_2/A" 26.1724
-cap "switch_3/CLK" "switch_3/nCLK" 7.8
+cap "selfbiasedcascode2stage_0/Vout" "switch_1/CLK" 9.93145
+subcap "li_n6100_3740#" -261.28
+subcap "a_n7050_2880#" -968.464
+subcap "a_n6260_3040#" -9240.48
+subcap "a_n6110_3740#" -178.78
+subcap "Vnphi2" -9418.62
+subcap "Vnphi1" -6071.48
+subcap "w_n7330_3740#" -4243.63
+subcap "a_n7320_3440#" -5203.98
+cap "switch_2/w_n220_690#" "switch_2/B" -2.84217e-14
+cap "switch_3/nCLK" "switch_2/CLK" 231.743
+cap "switch_2/nCLK" "switch_2/A" 38.8804
 cap "switch_2/nCLK" "switch_2/B" 2.84217e-14
-cap "switch_2/nCLK" "switch_2/CLK" 17.4
-cap "switch_2/CLK" "switch_2/w_n220_690#" 3.575
-cap "switch_2/B" "switch_2/w_n220_690#" -2.84217e-14
-cap "switch_2/nCLK" "switch_3/CLK" 3.28571
-cap "switch_2/nCLK" "switch_3/nCLK" 5.30769
-cap "switch_2/CLK" "switch_2/A" 37.6
-cap "switch_2/a_270_430#" "switch_2/w_n220_690#" -14.3478
+cap "switch_3/nCLK" "switch_3/CLK" 7.8
+cap "switch_3/A" "switch_2/A" 26.1724
+cap "switch_3/B" "switch_2/B" 32.2603
+cap "switch_3/nCLK" "switch_2/A" 13.5882
 cap "switch_3/CLK" "switch_2/CLK" 5.30769
-cap "switch_2/CLK" "switch_3/nCLK" 231.743
-cap "switch_2/B" "switch_2/a_270_430#" -4.26326e-14
-cap "switch_2/B" "switch_3/B" 32.2603
+cap "switch_2/A" "switch_2/CLK" -5.68434e-14
+cap "switch_2/w_n220_690#" "switch_2/CLK" 3.575
+cap "switch_2/w_n220_690#" "switch_2/a_270_430#" -14.3478
+cap "switch_3/nCLK" "switch_2/nCLK" 5.30769
+cap "switch_2/a_270_430#" "switch_2/B" -4.26326e-14
+cap "switch_2/nCLK" "switch_2/CLK" 17.4
+cap "switch_2/B" "switch_2/A" 56
 cap "switch_3/A" "switch_2/CLK" 13.5882
-subcap "a_n6260_3040#" -9092.69
-subcap "a_n6240_4190#" -10348.5
-cap "switch_6/A" "switch_5/CLK" 13.5882
-cap "switch_4/a_270_430#" "switch_5/B" 111.84
-cap "switch_4/A" "switch_6/A" 38.5474
+cap "switch_3/CLK" "switch_2/nCLK" 3.28571
+subcap "a_n6260_3040#" -9006.29
+subcap "Vnphi2" -10113.7
+cap "switch_5/CLK" "switch_6/A" 13.5882
+cap "switch_6/CLK" "switch_5/nCLK" 3.28571
+cap "switch_5/B" "switch_4/A" -24.4894
+cap "switch_5/CLK" "switch_4/w_n220_690#" 0.26
+cap "switch_4/A" "switch_4/a_270_430#" 111.84
+cap "switch_4/A" "switch_6/nCLK" 13.5882
+cap "switch_5/CLK" "switch_4/a_270_430#" 15.45
+cap "switch_5/nCLK" "switch_4/a_270_430#" 44.5
 cap "switch_5/B" "switch_4/CLK" 4.09804
-cap "switch_4/a_270_430#" "switch_4/w_n220_690#" -14.3478
-cap "switch_6/nCLK" "switch_6/CLK" 8.97
-cap "switch_4/A" "switch_5/nCLK" -2.84217e-14
-cap "switch_4/a_270_430#" "switch_5/CLK" 15.45
-cap "switch_4/a_270_430#" "switch_4/A" 111.84
-cap "switch_4/nCLK" "cap8to1_0/m3cap50f_4/2" 1.65789
-cap "switch_6/nCLK" "switch_5/CLK" 218.6
-cap "switch_6/CLK" "switch_5/CLK" 5.30769
-cap "switch_6/nCLK" "switch_4/A" 13.5882
-cap "switch_4/w_n220_690#" "switch_5/B" -36.8133
 cap "switch_5/B" "switch_6/B" 34.3818
-cap "switch_4/w_n220_690#" "switch_5/CLK" 0.26
-cap "switch_5/B" "switch_4/A" 7.59398
-cap "switch_4/w_n220_690#" "switch_4/A" -13.3514
-cap "switch_4/A" "switch_5/CLK" 23.0476
-cap "switch_4/A" "switch_6/B" 2.75
-cap "switch_4/a_270_430#" "switch_5/nCLK" 44.5
-cap "switch_6/nCLK" "switch_5/nCLK" 5.30769
-cap "switch_5/nCLK" "switch_6/CLK" 3.28571
-cap "switch_4/a_270_430#" "switch_4/w_n220_690#" -7.92
-cap "switch_4/A" "switch_4/w_n220_690#" 89.98
-cap "switch_4/w_n220_690#" "switch_4/CLK" 17.42
-cap "switch_4/nCLK" "switch_4/w_n220_690#" 13.02
-cap "switch_4/nCLK" "cap8to1_0/m3cap50f_4/2" 112.737
-cap "switch_4/w_n220_690#" "switch_4/B" 89.98
+cap "switch_4/A" "switch_5/nCLK" -2.84217e-14
+cap "switch_5/CLK" "switch_6/nCLK" 218.6
+cap "switch_5/B" "switch_4/w_n220_690#" -36.8133
+cap "switch_5/nCLK" "switch_6/nCLK" 5.30769
+cap "switch_4/w_n220_690#" "switch_4/a_270_430#" -14.3478
+cap "switch_4/A" "switch_6/A" 26.1724
+cap "switch_6/CLK" "switch_6/nCLK" 8.97
+cap "switch_4/A" "switch_4/w_n220_690#" -13.3514
+cap "switch_5/B" "switch_4/a_270_430#" 111.84
+cap "switch_5/CLK" "switch_6/CLK" 5.30769
+cap "switch_4/w_n220_690#" "switch_4/A" 89.98
 cap "switch_4/nCLK" "switch_4/CLK" 7.95
-subcap "a_n120_3700#" -4872.2
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "a_n200_n700#" 5.57576
-cap "selfbiasedcascode2stage_0/VP" "selfbiasedcascode2stage_0/a_n360_4860#" 6.5375
-cap "selfbiasedcascode2stage_0/a_840_6920#" "selfbiasedcascode2stage_0/VP" 26.4
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "a_n7780_4300#" 7.14286
-cap "selfbiasedcascode2stage_0/a_840_6920#" "selfbiasedcascode2stage_0/a_n360_4860#" 1.13687e-13
-cap "selfbiasedcascode2stage_0/a_n440_7350#" "a_n200_n700#" 62.2917
-cap "a_n200_n700#" "selfbiasedcascode2stage_0/a_n360_4860#" 5.57576
-subcap "a_n6240_4190#" -11314.2
-subcap "a_n7780_4300#" -6648.04
-subcap "a_n7780_5430#" -5889.91
-subcap "w_n6260_5430#" -237.6
-cap "switch_3/w_n220_690#" "switch_3/a_270_430#" -14.3478
+cap "switch_4/w_n220_690#" "switch_4/CLK" 17.42
+cap "switch_4/w_n220_690#" "switch_4/a_270_430#" -7.92
+cap "switch_4/nCLK" "cap8to1_0/m3cap50f_4/2" 114.395
+cap "switch_4/w_n220_690#" "switch_4/B" 89.98
+cap "switch_4/w_n220_690#" "switch_4/nCLK" 13.02
+subcap "a_n120_3700#" -4872.53
+cap "a_n200_n1070#" "selfbiasedcascode2stage_0/w_n410_5880#" 5.57576
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/VP" 6.5375
+cap "selfbiasedcascode2stage_0/VP" "selfbiasedcascode2stage_0/a_840_6920#" 26.4
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "a_n200_n1070#" 5.57576
+cap "Vnphi1" "selfbiasedcascode2stage_0/w_n410_5880#" 7.14286
+cap "a_n200_n1070#" "selfbiasedcascode2stage_0/a_n440_7350#" 62.2917
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/a_840_6920#" 1.13687e-13
+subcap "Vp" -758.645
+subcap "Vnphi2" -11041.6
+subcap "Vnphi1" -6606.91
+subcap "Vphi1" -6039.18
+subcap "w_n6260_5430#" -252.3
+cap "switch_3/w_n220_690#" "switch_3/CLK" 3.315
+cap "switch_6/A" "switch_3/B" 31.68
+cap "switch_6/A" "switch_3/A" 30.36
 cap "switch_3/nCLK" "switch_3/CLK" 9.6
 cap "switch_3/B" "switch_3/a_270_430#" -4.26326e-14
-cap "switch_3/CLK" "switch_3/w_n220_690#" 3.315
-subcap "m3_n5150_6240#" -454.13
-subcap "a_n6240_4190#" -12125.3
-subcap "a_n5590_5750#" -920.117
-cap "switch_6/a_270_430#" "switch_6/B" 111.84
-cap "switch_6/w_n220_690#" "switch_6/A" 96.82
-cap "switch_6/nCLK" "switch_4/CLK" 9.6
-cap "switch_6/w_n220_690#" "switch_4/CLK" 20.995
-cap "switch_6/a_270_430#" "switch_6/nCLK" 44.5
-cap "switch_4/CLK" "switch_6/A" 42.96
-cap "switch_6/w_n220_690#" "switch_6/a_270_430#" -8.25
+cap "switch_3/a_270_430#" "switch_3/w_n220_690#" -14.3478
+subcap "m3_n5150_6240#" -456.3
+subcap "Vnphi2" -11918
+subcap "a_n5590_5750#" -910.797
+cap "switch_4/CLK" "switch_6/A" 1.15463e-14
+cap "switch_4/CLK" "switch_6/nCLK" 9.6
+cap "switch_6/a_270_430#" "switch_6/w_n220_690#" -8.25
 cap "switch_6/a_270_430#" "switch_6/A" 111.84
-cap "switch_6/w_n220_690#" "switch_6/B" 98.7492
-cap "switch_6/A" "switch_6/B" 216.213
-cap "switch_6/a_270_430#" "switch_4/CLK" 15.45
-cap "switch_6/w_n220_690#" "switch_6/nCLK" 13.02
-cap "switch_6/nCLK" "switch_6/A" 26.4
-subcap "m3_n5150_6240#" -116.045
-subcap "a_n3380_5360#" -4450.85
-cap "cap8to1_1/m3cap50f_2/1" "cap8to1_1/m3cap50f_2/2" 139.872
+cap "switch_6/a_270_430#" "switch_6/nCLK" 44.5
+cap "a_n3380_5360#" "switch_6/w_n220_690#" 6.84
+cap "switch_4/CLK" "switch_6/a_270_430#" 15.45
+cap "switch_6/a_270_430#" "switch_6/B" 111.84
+cap "a_n3380_5360#" "switch_6/A" 175.372
+cap "a_n3380_5360#" "switch_6/nCLK" 26.4
+cap "switch_6/w_n220_690#" "switch_6/A" 89.98
+cap "switch_6/nCLK" "switch_6/w_n220_690#" 13.02
+cap "switch_4/CLK" "a_n3380_5360#" 42.96
+cap "switch_4/CLK" "switch_6/w_n220_690#" 20.995
+cap "switch_6/B" "a_n3380_5360#" 178.63
+cap "switch_6/B" "switch_6/w_n220_690#" 98.7492
+subcap "m3_n5150_6240#" -126.385
+subcap "a_n3380_5360#" -5619.56
+cap "cap8to1_1/m3cap50f_2/2" "cap8to1_1/m3cap50f_2/1" 139.872
+cap "selfbiasedcascode2stage_0/VN" "selfbiasedcascode2stage_0/w_n410_5880#" 5.57576
 cap "selfbiasedcascode2stage_0/w_n410_5880#" "selfbiasedcascode2stage_0/w_n410_5880#" 1.9
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "selfbiasedcascode2stage_0/VN" 5.57576
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "selfbiasedcascode2stage_0/a_840_6920#" 28.72
-subcap "m3_n5150_6240#" -227.792
-subcap "a_n5590_5750#" -1873.4
-cap "cap8to1_1/m3cap50f_0/2" "cap8to1_1/m3cap50f_2/2" -45
-cap "cap8to1_1/m3cap50f_1/1" "cap8to1_1/m3cap50f_2/2" 86.5
+cap "selfbiasedcascode2stage_0/a_840_6920#" "selfbiasedcascode2stage_0/w_n410_5880#" 28.72
+subcap "Vp" -1652.72
+subcap "m3_n5150_6240#" -232.815
+subcap "a_n5590_5750#" -1703.94
 cap "cap8to1_1/m3cap50f_1/1" "cap8to1_1/m3cap50f_0/2" 158.7
-cap "cap8to1_1/m3cap50f_1/2" "cap8to1_1/m3cap50f_2/2" -17.027
-cap "cap8to1_1/m3cap50f_2/2" "cap8to1_1/m3cap50f_2/1" 25.8262
-merge "cap8to1_1/VSUBS" "switch_6/a_270_430#" -1673.78 0 0 0 0 0 0 0 0 0 0 212000 -1440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 222400 -1840 202200 -3100 0 0 0 0 0 0 0 0 0 0
+cap "cap8to1_1/m3cap50f_2/2" "cap8to1_1/m3cap50f_0/2" -45
+cap "cap8to1_1/m3cap50f_1/1" "cap8to1_1/m3cap50f_2/2" 79.4
+cap "cap8to1_1/m3cap50f_2/1" "cap8to1_1/m3cap50f_2/2" 37.2262
+cap "cap8to1_1/m3cap50f_2/2" "cap8to1_1/m3cap50f_1/2" -17.5
+merge "cap8to1_1/VSUBS" "switch_6/a_270_430#" -1646.46 0 0 0 0 0 0 0 0 0 0 212000 -1440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 222800 -1840 193200 -2900 0 0 0 0 0 0 0 0 0 0
 merge "switch_6/a_270_430#" "switch_3/a_270_430#"
 merge "switch_3/a_270_430#" "switch_4/a_270_430#"
 merge "switch_4/a_270_430#" "switch_5/a_270_430#"
@@ -306,50 +330,46 @@ merge "cap8to1_0/VSUBS" "a_n7320_3440#"
 merge "a_n7320_3440#" "li_1550_n280#"
 merge "li_1550_n280#" "selfbiasedcascode2stage_0/inverter_large_0/GND"
 merge "selfbiasedcascode2stage_0/inverter_large_0/GND" "li_6640_1000#"
-merge "cap8to1_1/m3cap50f_2/1" "cap8to1_1/m3cap50f_1/1" -759.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 -160 0 0 0 0 0 0 -505300 -2100 0 0 0 0
+merge "cap8to1_1/m3cap50f_2/1" "cap8to1_1/m3cap50f_1/1" -760.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 0 0 0 -160 0 0 0 0 0 0 -511200 -2100 0 0 0 0
 merge "cap8to1_1/m3cap50f_1/1" "selfbiasedcascode2stage_0/VP"
 merge "selfbiasedcascode2stage_0/VP" "switch_4/B"
 merge "switch_4/B" "a_n120_3700#"
-merge "selfbiasedcascode2stage_0/Vout" "switch_1/A" -3995.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 905210 -10012 0 0 0 0 0 0 -733900 -12880 0 0 0 0
+merge "selfbiasedcascode2stage_0/Vout" "switch_1/A" -1897.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 909700 -9520 0 0 0 0 -101800 -3220 0 0 0 0 0 0
 merge "switch_1/A" "switch_0/B"
-merge "switch_0/B" "cap8to1_0/m3cap50f_16/1"
-merge "cap8to1_0/m3cap50f_16/1" "cap8to1_0/m3cap50f_15/1"
-merge "cap8to1_0/m3cap50f_15/1" "cap8to1_0/m3cap50f_2/1"
-merge "cap8to1_0/m3cap50f_2/1" "li_1450_n130#"
-merge "cap8to1_1/m3cap50f_1/2" "cap8to1_1/m3cap50f_0/2" -661.667 0 0 0 0 0 0 0 0 0 0 -7200 -540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6700 -860 0 0 0 0 -10600 -2320 0 0 0 0 0 0
+merge "switch_0/B" "cap8to1_0/m3cap50f_15/2"
+merge "cap8to1_0/m3cap50f_15/2" "li_n20_n730#"
+merge "cap8to1_1/m3cap50f_1/2" "cap8to1_1/m3cap50f_0/2" -661.187 0 0 0 0 0 0 0 0 0 0 -7200 -540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6700 -860 0 0 0 0 -9000 -2320 0 0 0 0 0 0
 merge "cap8to1_1/m3cap50f_0/2" "m3_n6040_6240#"
 merge "m3_n6040_6240#" "switch_6/B"
 merge "switch_6/B" "switch_5/B"
 merge "switch_5/B" "a_n5980_3740#"
 merge "a_n5980_3740#" "li_n5970_3740#"
 merge "li_n5970_3740#" "a_n5590_5750#"
-merge "switch_6/CLK" "switch_3/CLK" -3884.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -194400 -640 0 0 -184800 -960 -66400 -15620 0 0 0 0 0 0 0 0 0 0
+merge "switch_6/CLK" "switch_3/CLK" -3939.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211000 -640 0 0 -199200 -960 -63000 -15620 0 0 0 0 0 0 0 0 0 0
 merge "switch_3/CLK" "switch_4/CLK"
 merge "switch_4/CLK" "switch_0/CLK"
-merge "switch_0/CLK" "a_n7780_5430#"
-merge "switch_5/CLK" "switch_2/CLK" -324.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -44200 -420 0 0 -32400 -160 0 0 0 0 0 0 0 0 0 0 0 0
-merge "switch_2/CLK" "switch_1/CLK"
-merge "switch_1/CLK" "a_n6240_4190#"
-merge "a_n6240_4190#" "a_n5860_3740#"
+merge "switch_0/CLK" "Vphi1"
 merge "switch_5/nCLK" "switch_2/nCLK" -164.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8600 -480 0 0 -5600 -220 0 0 0 0 0 0 0 0 0 0 0 0
 merge "switch_2/nCLK" "switch_1/nCLK"
 merge "switch_1/nCLK" "a_n6260_3040#"
 merge "a_n6260_3040#" "a_n6010_3740#"
-merge "switch_3/B" "switch_2/B" -665.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -320 0 0 0 0 -24200 -660 0 0 0 0 0 0
+merge "switch_3/B" "switch_2/B" -691.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -320 0 0 0 0 -24200 -660 0 0 0 0 0 0
 merge "switch_2/B" "cap8to1_0/m3cap50f_6/2"
 merge "cap8to1_0/m3cap50f_6/2" "a_n7050_2880#"
-merge "cap8to1_1/m3cap50f_15/2" "cap8to1_1/m3cap50f_2/2" -962.655 0 0 0 0 0 0 0 0 0 0 27800 -540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55600 -1160 39000 0 39000 0 196100 -2620 0 0 0 0 0 0
+merge "cap8to1_1/m3cap50f_15/2" "cap8to1_1/m3cap50f_2/2" -1705.4 0 0 0 0 0 0 0 0 0 0 28800 -540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41400 -1220 0 0 0 0 -50200 -7710 0 0 0 0 0 0
 merge "cap8to1_1/m3cap50f_2/2" "m3_n5150_6240#"
-merge "m3_n5150_6240#" "switch_6/A"
-merge "switch_6/A" "switch_4/A"
+merge "m3_n5150_6240#" "switch_4/A"
 merge "switch_4/A" "switch_5/A"
 merge "switch_5/A" "a_n6110_3740#"
 merge "a_n6110_3740#" "li_n6100_3740#"
-merge "li_n6100_3740#" "a_n3380_5360#"
-merge "selfbiasedcascode2stage_0/VN" "switch_0/A" -2846.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -126900 -8520 0 0 -800 -180 0 0 0 0 -101800 -3220 0 0 0 0 0 0
-merge "switch_0/A" "cap8to1_0/m3cap50f_15/2"
-merge "cap8to1_0/m3cap50f_15/2" "a_n200_n700#"
-merge "switch_6/w_n220_690#" "w_n6260_5430#" -1301.77 0 0 0 0 -52400 -3660 0 0 2200 -1760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8400 -1680 0 0 -143400 -3100 0 0 0 0 0 0 0 0
+merge "li_n6100_3740#" "switch_2/A"
+merge "switch_2/A" "a_n3380_5360#"
+merge "selfbiasedcascode2stage_0/VN" "switch_0/A" -3920.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -126900 -8520 0 0 -1600 -200 0 0 0 0 0 0 -117800 -7280 0 0 0 0
+merge "switch_0/A" "cap8to1_0/m3cap50f_16/1"
+merge "cap8to1_0/m3cap50f_16/1" "cap8to1_0/m3cap50f_15/1"
+merge "cap8to1_0/m3cap50f_15/1" "cap8to1_0/m3cap50f_2/1"
+merge "cap8to1_0/m3cap50f_2/1" "a_n200_n1070#"
+merge "switch_6/w_n220_690#" "w_n6260_5430#" -1292.47 0 0 0 0 -50400 -3660 0 0 3600 -1760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9600 -1680 0 0 -153000 -3100 0 0 0 0 0 0 0 0
 merge "w_n6260_5430#" "switch_3/w_n220_690#"
 merge "switch_3/w_n220_690#" "w_n7820_5430#"
 merge "w_n7820_5430#" "switch_1/w_n220_690#"
@@ -361,7 +381,12 @@ merge "w_6620_1290#" "switch_4/w_n220_690#"
 merge "switch_4/w_n220_690#" "switch_5/w_n220_690#"
 merge "switch_5/w_n220_690#" "switch_2/w_n220_690#"
 merge "switch_2/w_n220_690#" "w_n7330_3740#"
-merge "switch_6/nCLK" "switch_3/nCLK" -3409.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -31600 -1140 0 0 -34000 -1280 0 0 -216500 -12560 50400 0 0 0 0 0 0 0
+merge "switch_5/CLK" "switch_2/CLK" -332.765 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -46400 -420 0 0 -34600 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "switch_2/CLK" "switch_1/CLK"
+merge "switch_1/CLK" "Vnphi2"
+merge "Vnphi2" "a_n5860_3740#"
+merge "switch_6/nCLK" "switch_3/nCLK" -3478.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35100 -1220 0 0 -37100 -1360 0 0 -216800 -12580 51000 0 0 0 0 0 0 0
 merge "switch_3/nCLK" "switch_4/nCLK"
 merge "switch_4/nCLK" "switch_0/nCLK"
-merge "switch_0/nCLK" "a_n7780_4300#"
+merge "switch_0/nCLK" "Vnphi1"
+merge "switch_6/A" "Vp" 109.557 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 177900 -200 0 0 0 0 0 0 0 0 0 0 0 0

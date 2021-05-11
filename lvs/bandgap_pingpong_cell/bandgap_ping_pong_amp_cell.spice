@@ -1,4 +1,4 @@
-* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell.ext - technology: sky130A
+* NGSPICE file created from bandgap_ping_pong_amp_cell.ext - technology: sky130A
 
 .subckt switch a_270_430# CLK w_n220_690# A B nCLK
 X0 A CLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
@@ -167,24 +167,24 @@ X107 a_840_6920# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__
 .ends
 
 
-* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell
+* Top level circuit bandgap_ping_pong_amp_cell
 
-Xswitch_0 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ switch_0/A switch_1/A switch_6/nCLK switch
-Xswitch_1 cap8to1_1/VSUBS switch_5/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ switch_1/A switch_1/B switch_5/nCLK switch
-Xswitch_3 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ switch_3/A switch_3/B switch_6/nCLK switch
-Xswitch_2 cap8to1_1/VSUBS switch_5/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ switch_2/A switch_3/B switch_5/nCLK switch
-Xswitch_4 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ switch_6/A switch_4/B switch_6/nCLK switch
-Xswitch_5 cap8to1_1/VSUBS switch_5/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ switch_6/A switch_6/B switch_5/nCLK switch
-Xswitch_6 cap8to1_1/VSUBS switch_6/CLK selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ switch_6/A switch_6/B switch_6/nCLK switch
-Xcap8to1_0 cap8to1_1/VSUBS switch_1/A switch_3/B switch_0/A switch_1/A cap8to1
-Xcap8to1_1 cap8to1_1/VSUBS switch_4/B switch_6/B switch_6/A switch_4/B cap8to1
+Xswitch_0 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_0/A
++ switch_1/A Vnphi1 switch
+Xswitch_1 cap8to1_1/VSUBS Vphi2 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_1/A
++ switch_1/B switch_5/nCLK switch
+Xswitch_3 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_3/A
++ switch_3/B Vnphi1 switch
+Xswitch_2 cap8to1_1/VSUBS Vphi2 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_5/A
++ switch_3/B switch_5/nCLK switch
+Xswitch_4 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_5/A
++ switch_4/B Vnphi1 switch
+Xswitch_5 cap8to1_1/VSUBS Vphi2 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_5/A
++ switch_6/B switch_5/nCLK switch
+Xswitch_6 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD Vp
++ switch_6/B Vnphi1 switch
+Xcap8to1_0 cap8to1_1/VSUBS switch_0/A switch_3/B switch_1/A switch_0/A cap8to1
+Xcap8to1_1 cap8to1_1/VSUBS switch_4/B switch_6/B switch_5/A switch_4/B cap8to1
 Xselfbiasedcascode2stage_0 cap8to1_1/VSUBS selfbiasedcascode2stage_0/inverter_large_0/VDD
 + switch_1/A switch_0/A switch_4/B selfbiasedcascode2stage
 .end

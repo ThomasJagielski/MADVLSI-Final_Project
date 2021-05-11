@@ -65,26 +65,26 @@ C {devices/lab_pin.sym} 630 410 3 0 {name=l32 sig_type=std_logic lab=Vnphi1}
 C {devices/lab_pin.sym} 140 170 3 0 {name=l33 sig_type=std_logic lab=Vphi1}
 C {devices/lab_pin.sym} 160 170 3 0 {name=l50 sig_type=std_logic lab=Vnphi1}
 C {devices/lab_pin.sym} 220 260 2 0 {name=l51 sig_type=std_logic lab=Vphi2}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 90 -230 2 0 {name=X5}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 140 -320 3 0 {name=X7}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 90 -230 0 0 {name=X5}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 140 -320 1 0 {name=X7}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 500 -450 1 0 {name=X9}
 C {devices/lab_pin.sym} 500 -520 1 0 {name=l36 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 140 -390 1 0 {name=l38 sig_type=std_logic lab=Vref}
-C {devices/lab_pin.sym} 100 -250 1 0 {name=l44 sig_type=std_logic lab=Vphi1}
-C {devices/lab_pin.sym} 80 -250 1 0 {name=l49 sig_type=std_logic lab=Vnphi1}
-C {devices/lab_pin.sym} 160 -310 2 0 {name=l52 sig_type=std_logic lab=Vphi2}
-C {devices/lab_pin.sym} 160 -330 2 0 {name=l53 sig_type=std_logic lab=Vnphi2}
+C {devices/lab_pin.sym} 80 -210 3 0 {name=l44 sig_type=std_logic lab=Vphi1}
+C {devices/lab_pin.sym} 100 -210 3 0 {name=l49 sig_type=std_logic lab=Vnphi1}
+C {devices/lab_pin.sym} 120 -330 0 0 {name=l52 sig_type=std_logic lab=Vphi2}
+C {devices/lab_pin.sym} 120 -310 0 0 {name=l53 sig_type=std_logic lab=Vnphi2}
 C {devices/lab_pin.sym} 700 -390 2 0 {name=l54 sig_type=std_logic lab=Vref}
 C {devices/lab_pin.sym} 220 240 2 0 {name=l34 sig_type=std_logic lab=Vnphi2}
 C {devices/lab_pin.sym} 20 -230 1 0 {name=l35 sig_type=std_logic lab=Vp}
 C {devices/lab_pin.sym} 80 150 1 0 {name=l37 sig_type=std_logic lab=Vn}
 C {devices/lab_pin.sym} 480 -460 0 0 {name=l39 sig_type=std_logic lab=Vphi1}
 C {devices/lab_pin.sym} 480 -440 0 0 {name=l40 sig_type=std_logic lab=Vnphi1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 610 -330 1 0 {name=C1 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 610 -330 3 0 {name=C1 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym} 640 -20 0 0 {name=X1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 610 -390 1 0 {name=C3 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 610 120 1 0 {name=C4 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 610 230 1 0 {name=C6 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 610 -390 3 0 {name=C3 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 610 120 3 0 {name=C4 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 610 230 3 0 {name=C6 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 370 150 1 0 {name=C5 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 370 120 1 0 {name=C7 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 370 220 1 0 {name=C8 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
@@ -117,6 +117,6 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 300 -290 1 0 {name=C34 model=cap_mim_m3_1 W=5 
 C {sky130_fd_pr/cap_mim_m3_1.sym} 300 -320 1 0 {name=C35 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 300 -230 1 0 {name=C36 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 300 -260 1 0 {name=C37 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
-C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 900 100 3 0 {name=X20}
-C {devices/lab_pin.sym} 920 110 2 0 {name=l70 sig_type=std_logic lab=Vphi2}
-C {devices/lab_pin.sym} 920 90 2 0 {name=l71 sig_type=std_logic lab=Vnphi2}
+C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 900 100 1 0 {name=X20}
+C {devices/lab_pin.sym} 880 90 0 0 {name=l70 sig_type=std_logic lab=Vphi2}
+C {devices/lab_pin.sym} 880 110 0 0 {name=l71 sig_type=std_logic lab=Vnphi2}

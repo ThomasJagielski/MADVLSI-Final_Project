@@ -2,14 +2,14 @@
 X10 net2 Vn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
 X11 net2 Vref Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
 X12 net1 Vnn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
-X5 Vp net3 Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
-X7 Vref net3 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X5 net3 Vp Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X7 net3 Vref Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
 X9 Vpp Vref Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
-XC1 Vref Vpp sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC1 Vpp Vref sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 X1 Vpp Vnn net1 selfbiasedcascode2stage_lvs
-XC3 Vref Vpp sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
-XC4 net1 Vnn sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
-XC6 net1 Vnn sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC3 Vpp Vref sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC4 Vnn net1 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC6 Vnn net1 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 XC5 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 XC7 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 XC8 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
@@ -42,7 +42,7 @@ XC34 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 XC35 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 XC36 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 XC37 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
-X20 net1 net4 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X20 net4 net1 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
 **.ends
 
 * expanding   symbol:  /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym # of
