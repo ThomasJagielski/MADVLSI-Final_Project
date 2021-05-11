@@ -14,43 +14,43 @@ node "li_0_130#" 73 162.88 0 130 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "a_320_1180#" 667 1320 320 1180 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 84400 4220 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_750_1310#" 908 1411.19 750 1310 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10300 580 0 0 84400 4220 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "a_750_1310#" "a_320_1180#" 1373.06
 cap "li_780_170#" "li_450_40#" 4.8046
-cap "li_450_40#" "li_0_130#" 6.28571
+cap "a_320_1180#" "a_750_1310#" 1373.06
+cap "li_0_130#" "li_450_40#" 6.28571
 subcap "li_1430_130#" -370.4
 subcap "a_320_1180#" -32
 subcap "a_750_1310#" -74.11
-cap "and2_0/inverter_0/VP" "and2_0/inverter_0/A" 38
-cap "and2_0/inverter_0/Y" "nand2_2/Y" 4.45946
-cap "nand2_0/A" "and2_0/nand2_0/B" 3.86813
-cap "and2_0/inverter_0/VN" "nand2_0/A" 57.75
-cap "and2_0/inverter_0/VN" "and2_0/nand2_0/B" 118.541
-cap "and2_0/inverter_0/VN" "and2_0/inverter_0/Y" 3.47368
-cap "nand2_0/B" "and2_0/nand2_0/B" 75.9
-cap "and2_0/nand2_0/A" "and2_0/nand2_0/B" 72.6283
-cap "and2_0/inverter_0/Y" "nand2_0/B" 16.5
-cap "and2_0/nand2_0/A" "and2_0/inverter_0/Y" 7.76471
-cap "and2_0/inverter_0/A" "and2_0/nand2_0/B" 3.56757
-cap "and2_0/nand2_0/A" "nand2_0/B" 12.1053
+cap "nand2_0/B" "and2_0/nand2_0/A" 12.1053
+cap "and2_0/inverter_0/A" "and2_0/inverter_0/VP" 38
+cap "nand2_2/Y" "and2_0/inverter_0/Y" 4.45946
 cap "and2_0/inverter_0/A" "and2_0/inverter_0/Y" 7.78947
-cap "and2_0/inverter_0/A" "nand2_0/B" 33
 cap "and2_0/inverter_0/VP" "and2_0/nand2_0/B" 54.5217
-cap "and2_0/nand2_0/A" "and2_0/inverter_0/A" 15.5294
+cap "and2_0/inverter_0/A" "and2_0/nand2_0/A" 15.5294
+cap "nand2_0/A" "and2_0/inverter_0/VN" 57.75
 cap "and2_0/inverter_0/VP" "and2_0/inverter_0/Y" 11.7857
-cap "and2_0/inverter_0/VN" "and2_0/inverter_0/VP" 5.68434e-14
-cap "and2_0/inverter_0/VP" "nand2_0/B" 288.75
-cap "and2_0/inverter_0/VP" "and2_0/nand2_0/A" 135.882
-cap "and2_0/inverter_0/A" "and2_0/inverter_0/Y" 7.78947
-cap "and2_0/inverter_0/VN" "and2_0/inverter_0/Y" 141.35
-cap "a_750_1310#" "and2_0/inverter_0/VP" 50.4706
+cap "and2_0/inverter_0/A" "nand2_0/B" 33
+cap "and2_0/nand2_0/B" "and2_0/inverter_0/VN" 118.541
+cap "and2_0/nand2_0/A" "and2_0/nand2_0/B" 72.6283
+cap "nand2_0/B" "and2_0/nand2_0/B" 75.9
+cap "and2_0/nand2_0/A" "and2_0/inverter_0/VP" 135.882
+cap "and2_0/inverter_0/VP" "and2_0/inverter_0/VN" 5.68434e-14
+cap "and2_0/nand2_0/A" "and2_0/inverter_0/Y" 7.76471
+cap "and2_0/inverter_0/Y" "and2_0/inverter_0/VN" 3.47368
+cap "nand2_0/B" "and2_0/inverter_0/VP" 288.75
+cap "nand2_0/B" "and2_0/inverter_0/Y" 16.5
+cap "nand2_0/A" "and2_0/nand2_0/B" 3.86813
+cap "and2_0/inverter_0/A" "and2_0/nand2_0/B" 3.56757
+cap "and2_0/inverter_0/VP" "a_320_1180#" 107.25
+cap "and2_0/inverter_0/Y" "nand2_2/Y" 53.1622
 cap "a_750_1310#" "nand2_2/Y" 15.5294
-cap "a_750_1310#" "and2_0/inverter_0/Y" 7.76471
-cap "a_320_1180#" "and2_0/inverter_0/VP" 107.25
-cap "a_320_1180#" "nand2_2/Y" 33
+cap "and2_0/inverter_0/VP" "and2_0/inverter_0/Y" 125.4
 cap "a_320_1180#" "and2_0/inverter_0/Y" 16.5
-cap "and2_0/inverter_0/Y" "and2_0/inverter_0/VP" 125.4
-cap "nand2_2/Y" "and2_0/inverter_0/Y" 53.1622
-cap "and2_0/inverter_0/VN" "and2_0/inverter_0/VP" 7.10543e-15
+cap "a_750_1310#" "and2_0/inverter_0/VP" 50.4706
+cap "and2_0/inverter_0/A" "and2_0/inverter_0/Y" 7.78947
+cap "and2_0/inverter_0/VP" "and2_0/inverter_0/VN" 7.10543e-15
+cap "a_750_1310#" "and2_0/inverter_0/Y" 7.76471
+cap "and2_0/inverter_0/VN" "and2_0/inverter_0/Y" 141.35
+cap "a_320_1180#" "nand2_2/Y" 33
 merge "nand2_2/VN" "nand2_0/VN" -289.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34200 -1520 0 0 0 0 0 0 0 0 0 0
 merge "nand2_0/VN" "and2_0/inverter_0/VN"
 merge "and2_0/inverter_0/VN" "and2_0/VSUBS"

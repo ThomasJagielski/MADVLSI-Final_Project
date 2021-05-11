@@ -1,0 +1,13 @@
+* NGSPICE file created from switch.ext - technology: sky130A
+
+
+* Top level circuit switch
+
+X0 A CLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X1 B nCLK B a_270_430# sky130_fd_pr__nfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X2 B CLK B w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 A nCLK A a_270_430# sky130_fd_pr__nfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 B nCLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X5 B CLK A a_270_430# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.end
+
