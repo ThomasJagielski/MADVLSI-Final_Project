@@ -1,0 +1,86 @@
+Flattening unmatched subcell m3cap50f in circuit cap8to1 (0)(18 instances)
+Flattening unmatched subcell inverter_large in circuit selfbiasedcascode2stage (0)(1 instance)
+Flattening unmatched subcell m3cap500f in circuit selfbiasedcascode2stage (0)(1 instance)
+Flattening unmatched subcell cap8to1 in circuit bandgap_ping_pong_amp_cell (0)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit bandgap_ping_pong_amp_cell (0)(1 instance)
+Flattening unmatched subcell bandgap_ping_pong_amp_cell in circuit bandgap_ping_pong.spice (0)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage_lvs in circuit bandgap_ping_pong_amp_lvs.spice (1)(2 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: switch                          |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__nfet_01v85 vs. sky130_fd_pr__nfet_01v8M1:
+ w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v83 vs. sky130_fd_pr__nfet_01v8M6:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v81 vs. sky130_fd_pr__nfet_01v8M5:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v84 vs. sky130_fd_pr__pfet_01v8M2:
+ w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v82 vs. sky130_fd_pr__pfet_01v8M3:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v80 vs. sky130_fd_pr__pfet_01v8M4:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: switch                          |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+a_270_430#                                 |GND **Mismatch**                           
+nCLK                                       |nCLK                                       
+w_n220_690#                                |VDD **Mismatch**                           
+A                                          |A                                          
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes switch and switch are equivalent.
+Class bandgap_ping_pong.spice:  Merged 232 devices.
+Class bandgap_ping_pong_amp_lvs.spice:  Merged 212 devices.
+
+Subcircuit summary:
+Circuit 1: bandgap_ping_pong.spice         |Circuit 2: bandgap_ping_pong_amp_lvs.spice 
+-------------------------------------------|-------------------------------------------
+switch (14)                                |switch (14)                                
+sky130_fd_pr__cap_mim_m3_1 (10)            |sky130_fd_pr__cap_mim_m3_1 (10)            
+sky130_fd_pr__nfet_01v8 (36)               |sky130_fd_pr__nfet_01v8 (36)               
+sky130_fd_pr__pfet_01v8 (36)               |sky130_fd_pr__pfet_01v8 (36)               
+Number of devices: 96                      |Number of devices: 96                      
+Number of nets: 45                         |Number of nets: 45                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 66 symmetries.
+Circuits match correctly.
+There were property errors.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch12 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch4 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch2 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch10 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch6 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch5 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch3 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch11 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch8 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch7 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch9 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch13 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch15 property "LL" has no match in circuit 1.
+Circuit 2 bandgap_ping_pong_amp_lvs.spice instance switch20 property "LL" has no match in circuit 1.
+Cells have no pins;  pin matching not needed.
+Device classes bandgap_ping_pong.spice and bandgap_ping_pong_amp_lvs.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: switch bandgap_ping_pong.spice
