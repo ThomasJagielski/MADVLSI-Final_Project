@@ -1,0 +1,37 @@
+* NGSPICE file created from bandgap_pnp_thomas_test.ext - technology: sky130A
+
+
+* Top level circuit bandgap_pnp_thomas_test
+
+X0 a_330_330# w_153_153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X1 a_n2670_1330# w_n2847_1153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X2 a_1330_n670# w_1153_n847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X3 a_330_1330# w_153_1153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X4 a_n1670_1330# w_n1847_1153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X5 a_n3670_n670# w_n3847_n847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X6 a_n1670_n2670# w_n1847_n2847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X7 a_330_n2670# w_153_n2847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X8 a_1330_330# w_1153_153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X9 a_n2670_n2670# w_n2847_n2847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X10 a_n670_n2670# w_n847_n2847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X11 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=3.6992e+12p
+X12 a_n3670_n2670# w_n3847_n2847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X13 a_330_n670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X14 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=0p
+X15 a_n670_1330# w_n847_1153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X16 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=0p
+X17 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=0p
+X18 a_330_n1670# w_153_n1847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X19 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=0p
+X20 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=0p
+X21 a_n670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X22 a_1330_n2670# w_1153_n2847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X23 a_n3670_n1670# w_n3847_n1847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X24 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=0p
+X25 a_1330_1330# w_1153_1153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X26 a_n2670_n1670# w_n4000_n3000# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=0p
+X27 a_n3670_1330# w_n3847_1153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X28 a_n3670_330# w_n3847_153# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+X29 a_1330_n1670# w_1153_n1847# w_n4000_n3000# sky130_fd_pr__pnp_05v0 area=4.624e+11p
+.end
+

@@ -622,10 +622,6 @@ C {devices/lab_pin.sym} 1780 180 2 0 {name=l115 sig_type=std_logic lab=Vnphi2}
 C {/home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym} 1760 950 3 0 {name=X39}
 C {devices/lab_pin.sym} 1780 960 2 0 {name=l116 sig_type=std_logic lab=Vphi1}
 C {devices/lab_pin.sym} 1780 940 2 0 {name=l117 sig_type=std_logic lab=Vnphi1}
-C {madvlsi/capacitor.sym} 1730 500 1 0 {name=C19
-value=1u
-m=1}
-C {madvlsi/gnd.sym} 1700 500 1 1 {name=l118 lab=GND}
 C {devices/lab_pin.sym} 1760 540 2 0 {name=l120 sig_type=std_logic lab=Vptat}
 C {devices/lab_pin.sym} 1260 -430 1 0 {name=l93 sig_type=std_logic lab=Vouts}
 C {devices/lab_pin.sym} 1360 -570 1 0 {name=l99 sig_type=std_logic lab=Vouts}
@@ -847,3 +843,11 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
+C {madvlsi/capacitor.sym} 1730 490 1 0 {name=C19
+value=800f
+m=1}
+C {madvlsi/gnd.sym} 1700 490 1 1 {name=l16 lab=GND}
+C {madvlsi/capacitor.sym} 1730 560 1 0 {name=C20
+value=800f
+m=1}
+C {madvlsi/gnd.sym} 1700 560 1 1 {name=l30 lab=GND}

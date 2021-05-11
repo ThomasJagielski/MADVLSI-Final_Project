@@ -1,16 +1,16 @@
-timestamp 1620710799
+timestamp 1620752477
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use selfbiasedcascode2stage selfbiasedcascode2stage_0 1 0 470 0 1 -4690
 use m3cap50f m3cap50f_1 1 0 -1750 0 1 4890
 use m3cap50f m3cap50f_0 1 0 -1750 0 1 2760
-use selfbiasedcascode2stage selfbiasedcascode2stage_0 1 0 470 0 1 -4690
-use p-res8x20k p-res8x20k_1 0 -1 -5750 1 0 3510
-use p-res8x20k p-res8x20k_0 0 1 -5540 -1 0 2930
-use p-res6x20k p-res6x20k_1 0 -1 -2050 1 0 4040
 use p-res6x20k p-res6x20k_0 0 1 -1750 -1 0 2390
+use p-res6x20k p-res6x20k_1 0 -1 -2050 1 0 4040
+use p-res8x20k p-res8x20k_0 0 1 -5540 -1 0 2930
+use p-res8x20k p-res8x20k_1 0 -1 -5750 1 0 3510
 node "m3_n1250_3790#" 0 659.57 -1250 3790 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 353100 2800 0 0 0 0 0 0
 node "li_n7400_2970#" 310 1072.34 -7400 2970 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112800 3520 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n3800_3870#" 5339 10481.7 -3800 3870 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 724000 35680 0 0 0 0 0 0 0 0 0 0 0 0
@@ -18,85 +18,85 @@ node "a_n590_2500#" 360 4116.99 -590 2500 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "a_n750_3640#" 2294 4569.59 -750 3640 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25600 1600 0 0 446400 13320 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n120_5090#" 2078 5914.09 -120 5090 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6700 340 0 0 327600 14720 6400 320 6400 320 10000 400 528000 6660 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "a_n120_5090#" "m3_n1250_3790#" 50.48
-cap "a_n750_3640#" "li_n7400_2970#" 10.1538
-cap "a_n750_3640#" "a_n120_5090#" 37.7143
-cap "a_n750_3640#" "a_n590_2500#" 638.445
+cap "a_n120_5090#" "a_n750_3640#" 37.7143
+cap "li_n7400_2970#" "a_n750_3640#" 10.1538
+cap "m3_n1250_3790#" "a_n120_5090#" 50.48
+cap "a_n590_2500#" "a_n750_3640#" 638.445
 cap "selfbiasedcascode2stage_0/inverter_large_0/VDD" "selfbiasedcascode2stage_0/Vout" 16.5
 subcap "li_n7400_2970#" -1461.67
 cap "p-res8x20k_0/p-res20k_6/GND" "p-res8x20k_0/1" 20.087
-cap "p-res8x20k_0/2" "p-res8x20k_0/p-res20k_7/GND" 10.0435
-cap "p-res6x20k_0/p-res20k_3/2" "p-res8x20k_0/p-res20k_3/1" 51.7297
-cap "p-res6x20k_0/p-res20k_5/1" "p-res8x20k_0/p-res20k_0/1" 28.5405
-cap "p-res8x20k_0/p-res20k_3/GND" "p-res6x20k_0/p-res20k_5/1" 10.0435
+cap "p-res8x20k_0/p-res20k_7/GND" "p-res8x20k_0/2" 10.0435
+cap "p-res8x20k_0/p-res20k_3/1" "p-res6x20k_0/p-res20k_3/2" 51.7297
+cap "p-res6x20k_0/p-res20k_3/GND" "p-res6x20k_0/p-res20k_5/1" 10.0435
+cap "p-res8x20k_0/p-res20k_0/1" "p-res6x20k_0/p-res20k_5/1" 28.5405
+cap "p-res6x20k_0/p-res20k_5/2" "p-res6x20k_0/p-res20k_5/1" 22.8462
 cap "p-res6x20k_0/p-res20k_5/1" "m3cap50f_0/2" 55.8
-cap "p-res6x20k_0/p-res20k_5/1" "p-res6x20k_0/p-res20k_5/2" 22.8462
 subcap "a_n590_2500#" -3209.06
 cap "p-res6x20k_0/p-res20k_0/GND" "a_n750_3640#" 29.7
-cap "p-res6x20k_0/p-res20k_0/2" "a_n750_3640#" 111.692
-cap "a_n750_3640#" "m3cap50f_0/2" 272.8
+cap "m3cap50f_0/2" "a_n750_3640#" 272.8
+cap "a_n750_3640#" "p-res6x20k_0/p-res20k_0/2" 111.692
 subcap "a_n590_2500#" -1945.69
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/a_840_6920#" 58.9579
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "p-res6x20k_0/p-res20k_0/1" 7.96552
 cap "p-res6x20k_0/p-res20k_0/1" "selfbiasedcascode2stage_0/a_840_6920#" 45.1579
-cap "p-res6x20k_0/p-res20k_0/1" "selfbiasedcascode2stage_0/a_n360_4860#" 7.96552
-cap "selfbiasedcascode2stage_0/a_840_6920#" "selfbiasedcascode2stage_0/a_n360_4860#" 58.9579
-cap "selfbiasedcascode2stage_0/Vout" "selfbiasedcascode2stage_0/m3cap500f_0/1" 98
-cap "selfbiasedcascode2stage_0/Vout" "selfbiasedcascode2stage_0/inverter_large_0/VDD" 34.1
+cap "selfbiasedcascode2stage_0/m3cap500f_0/1" "selfbiasedcascode2stage_0/Vout" 98
+cap "selfbiasedcascode2stage_0/inverter_large_0/VDD" "selfbiasedcascode2stage_0/Vout" 34.1
 subcap "li_n7400_2970#" -59.3875
-cap "p-res8x20k_1/2" "p-res8x20k_1/p-res20k_0/GND" 90
-cap "p-res8x20k_0/p-res20k_6/2" "p-res8x20k_0/1" 363
-cap "p-res8x20k_1/p-res20k_0/GND" "p-res8x20k_0/1" 44
-cap "p-res8x20k_1/p-res20k_4/GND" "p-res8x20k_0/2" 22
-cap "p-res8x20k_1/2" "p-res8x20k_1/p-res20k_4/GND" 288
-cap "p-res8x20k_1/1" "p-res8x20k_1/p-res20k_4/GND" 22
+cap "p-res8x20k_0/1" "p-res8x20k_0/p-res20k_6/2" 363
+cap "p-res8x20k_1/2" "p-res8x20k_0/p-res20k_6/GND" 90
+cap "p-res8x20k_0/1" "p-res8x20k_0/p-res20k_6/GND" 44
+cap "p-res8x20k_1/1" "p-res8x20k_0/p-res20k_7/GND" 22
+cap "p-res8x20k_0/p-res20k_7/GND" "p-res8x20k_0/2" 22
 cap "p-res8x20k_0/1" "p-res8x20k_0/2" 3.55271e-15
+cap "p-res8x20k_0/p-res20k_7/GND" "p-res8x20k_1/2" 288
 subcap "li_n3800_3870#" -9731.45
-cap "a_n590_2500#" "p-res8x20k_1/p-res20k_4/GND" 29.4828
-cap "p-res8x20k_1/p-res20k_6/2" "p-res6x20k_1/p-res20k_1/2" 28.8276
-cap "p-res8x20k_1/p-res20k_6/2" "a_n120_5090#" 363
+cap "a_n590_2500#" "p-res6x20k_1/p-res20k_1/GND" 29.4828
+cap "p-res6x20k_0/p-res20k_5/1" "p-res6x20k_1/p-res20k_1/GND" 22
+cap "a_n120_5090#" "p-res6x20k_1/p-res20k_1/GND" 22
 cap "p-res6x20k_0/p-res20k_5/1" "p-res8x20k_0/p-res20k_0/1" 379.946
-cap "p-res6x20k_0/p-res20k_5/1" "p-res8x20k_1/p-res20k_4/GND" 22
-cap "a_n120_5090#" "p-res8x20k_1/p-res20k_4/GND" 22
-cap "p-res6x20k_1/p-res20k_0/2" "m3cap50f_0/1" 37.4595
+cap "p-res8x20k_1/p-res20k_6/2" "a_n120_5090#" 363
+cap "p-res8x20k_1/p-res20k_6/2" "p-res6x20k_1/p-res20k_1/2" 28.8276
 cap "m3cap50f_0/2" "m3cap50f_0/1" 242.9
+cap "m3cap50f_0/1" "p-res6x20k_1/p-res20k_0/2" 37.4595
 subcap "m3_n1250_3790#" -208.84
 subcap "a_n590_2500#" -3666.26
 subcap "a_n750_3640#" -3778.75
-cap "p-res6x20k_1/p-res20k_3/GND" "p-res6x20k_1/p-res20k_5/1" 44
-cap "p-res6x20k_1/p-res20k_3/GND" "selfbiasedcascode2stage_0/VP" 4.125
-cap "p-res6x20k_1/p-res20k_5/1" "m3cap50f_0/2" 195.25
-cap "m3cap50f_0/2" "m3cap50f_0/1" 471.345
-cap "p-res6x20k_1/p-res20k_3/GND" "m3cap50f_0/2" 67.7
-cap "p-res6x20k_1/p-res20k_5/1" "p-res6x20k_1/p-res20k_5/2" 363
-cap "p-res6x20k_1/p-res20k_5/1" "selfbiasedcascode2stage_0/a_n360_4860#" -63
-cap "p-res6x20k_1/p-res20k_5/2" "m3cap50f_0/1" 105.69
+cap "m3cap50f_0/2" "p-res6x20k_1/p-res20k_5/1" 195.25
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "p-res6x20k_1/p-res20k_5/1" -63
+cap "p-res6x20k_0/p-res20k_0/GND" "m3cap50f_0/2" 67.7
+cap "m3cap50f_0/1" "m3cap50f_0/2" 471.345
+cap "p-res6x20k_1/p-res20k_5/2" "p-res6x20k_1/p-res20k_5/1" 363
+cap "p-res6x20k_0/p-res20k_0/GND" "p-res6x20k_1/p-res20k_5/1" 44
+cap "selfbiasedcascode2stage_0/VP" "p-res6x20k_0/p-res20k_0/GND" 4.125
+cap "m3cap50f_0/1" "p-res6x20k_1/p-res20k_5/2" 105.69
 subcap "a_n590_2500#" -4328.37
 subcap "a_n750_3640#" -4285.31
+cap "p-res6x20k_1/p-res20k_5/1" "selfbiasedcascode2stage_0/a_n360_4860#" 220.915
 cap "p-res6x20k_1/p-res20k_5/1" "selfbiasedcascode2stage_0/a_840_6920#" 207.405
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "p-res6x20k_1/p-res20k_5/1" 220.915
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/VP" 6.5375
+cap "selfbiasedcascode2stage_0/VP" "selfbiasedcascode2stage_0/a_n360_4860#" 6.5375
 cap "selfbiasedcascode2stage_0/m3cap500f_0/1" "li_n3800_3870#" 140
 cap "selfbiasedcascode2stage_0/m3cap500f_0/2" "li_n3800_3870#" 239.4
 subcap "li_n3800_3870#" -10103
+cap "p-res6x20k_1/p-res20k_1/2" "p-res6x20k_1/p-res20k_0/1" 111.692
+cap "p-res6x20k_1/p-res20k_1/2" "p-res8x20k_1/p-res20k_4/2" 121
 cap "p-res6x20k_1/p-res20k_0/1" "p-res8x20k_1/p-res20k_4/2" 62.5862
-cap "p-res6x20k_1/p-res20k_0/1" "p-res6x20k_1/p-res20k_1/2" 111.692
-cap "p-res8x20k_1/p-res20k_4/2" "p-res6x20k_1/p-res20k_1/2" 121
 subcap "m3_n1250_3790#" -11.08
 subcap "a_n120_5090#" -6848.54
+cap "m3cap50f_1/1" "p-res6x20k_1/p-res20k_3/1" 53.79
+cap "p-res6x20k_1/p-res20k_3/2" "selfbiasedcascode2stage_0/VN" 22.6875
+cap "m3cap50f_1/1" "m3cap50f_1/2" 457.9
 cap "p-res6x20k_1/p-res20k_5/2" "m3cap50f_1/1" 74.99
-cap "p-res6x20k_1/p-res20k_3/1" "m3cap50f_1/1" 53.79
-cap "m3cap50f_1/2" "m3cap50f_1/1" 457.9
-cap "selfbiasedcascode2stage_0/VN" "p-res6x20k_1/p-res20k_3/2" 22.6875
 cap "p-res6x20k_1/p-res20k_3/GND" "m3cap50f_1/2" 67.7
 subcap "a_n120_5090#" -4748.59
-cap "p-res6x20k_1/p-res20k_3/2" "selfbiasedcascode2stage_0/w_n410_5880#" 12.6176
-cap "p-res6x20k_1/p-res20k_3/2" "selfbiasedcascode2stage_0/a_840_6920#" 60.5
-cap "p-res6x20k_1/p-res20k_3/2" "p-res6x20k_1/p-res20k_3/GND" 4.85294
-cap "p-res6x20k_1/p-res20k_3/2" "selfbiasedcascode2stage_0/VN" 103.714
-cap "selfbiasedcascode2stage_0/VN" "selfbiasedcascode2stage_0/w_n410_5880#" 82.5
-cap "selfbiasedcascode2stage_0/VN" "selfbiasedcascode2stage_0/a_840_6920#" 550
+cap "selfbiasedcascode2stage_0/VN" "p-res6x20k_1/p-res20k_3/2" 103.714
 cap "selfbiasedcascode2stage_0/VN" "p-res6x20k_1/p-res20k_3/GND" 101.437
-cap "selfbiasedcascode2stage_0/m3cap500f_0/2" "li_n3800_3870#" 239.4
+cap "p-res6x20k_1/p-res20k_3/GND" "p-res6x20k_1/p-res20k_3/2" 4.85294
+cap "selfbiasedcascode2stage_0/VN" "selfbiasedcascode2stage_0/a_840_6920#" 550
+cap "selfbiasedcascode2stage_0/a_840_6920#" "p-res6x20k_1/p-res20k_3/2" 60.5
+cap "selfbiasedcascode2stage_0/VN" "selfbiasedcascode2stage_0/w_n410_5880#" 82.5
+cap "selfbiasedcascode2stage_0/w_n410_5880#" "p-res6x20k_1/p-res20k_3/2" 12.6176
 cap "li_n3800_3870#" "selfbiasedcascode2stage_0/m3cap500f_0/1" 140
+cap "li_n3800_3870#" "selfbiasedcascode2stage_0/m3cap500f_0/2" 239.4
 cap "selfbiasedcascode2stage_0/m3cap500f_0/1" "li_n3800_3870#" 74
 cap "selfbiasedcascode2stage_0/m3cap500f_0/2" "li_n3800_3870#" 130.81
 merge "m3cap50f_1/2" "m3cap50f_1/VSUBS" -483.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38800 0 0 0 0 0 0 -1460 0 0 0 0 0 0

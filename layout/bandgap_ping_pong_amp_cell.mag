@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620741313
+timestamp 1620752477
 << nwell >>
 rect -3910 2715 -3850 2720
 rect -3130 2715 -3090 2720
@@ -836,15 +836,15 @@ timestamp 1620697026
 transform 1 0 3170 0 1 270
 box -110 20 245 625
 use cap8to1  cap8to1_0
-timestamp 1620738196
+timestamp 1620749136
 transform 1 0 -3915 0 1 -430
 box 5 30 3785 1860
 use cap8to1  cap8to1_1
-timestamp 1620738196
+timestamp 1620749136
 transform 1 0 -3890 0 1 2875
 box 5 30 3785 1860
 use selfbiasedcascode2stage  selfbiasedcascode2stage_0
-timestamp 1620692581
+timestamp 1620749136
 transform 1 0 255 0 1 -2315
 box -255 2315 4445 5470
 << labels >>

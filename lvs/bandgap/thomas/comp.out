@@ -1,0 +1,54 @@
+Flattening unmatched subcell p-res20k in circuit p-res8x20k (0)(8 instances)
+Flattening unmatched subcell p-res20k in circuit bandgap_pnp_thomas.spice (0)(1 instance)
+Flattening unmatched subcell p-res8x20k in circuit bandgap_pnp_thomas.spice (0)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: bandgap_pnp_thomas.spice        |Circuit 2: bandgap_thomas_lvs.spice        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po (2)             |sky130_fd_pr__res_xhigh_po (2)             
+sky130_fd_pr__pnp_05v0 (30)                |sky130_fd_pr__pnp_05v0 (30)                
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 45                         |Number of nets: 45                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 4 symmetries.
+Circuits match correctly.
+There were property errors.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v021 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v018 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v013 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v026 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v024 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v020 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v019 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v017 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v016 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v014 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v011 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v029 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v00 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v028 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v01 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v027 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v02 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v025 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v03 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v023 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v04 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v022 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v05 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v015 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v06 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v012 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v07 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v010 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v08 property "area" has no match in circuit 2.
+Circuit 1 bandgap_pnp_thomas.spice instance sky130_fd_pr__pnp_05v09 property "area" has no match in circuit 2.
+Cells have no pins;  pin matching not needed.
+Device classes bandgap_pnp_thomas.spice and bandgap_thomas_lvs.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: bandgap_pnp_thomas.spice

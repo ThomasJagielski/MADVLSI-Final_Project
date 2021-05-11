@@ -1,4 +1,4 @@
-**.subckt bandgap_ping_pong_amp_lvs
+**.subckt bandgap_ping_pong_amp_half_lvs
 X10 net2 Vn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
 X11 net2 Vref Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
 X12 net1 Vnn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15

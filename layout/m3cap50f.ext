@@ -1,4 +1,4 @@
-timestamp 1620687492
+timestamp 1620749136
 version 8.3
 tech sky130A
 style ngspice()
@@ -8,5 +8,5 @@ parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
 node "1" 0 2.84217e-14 -200 0 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 800 0 0 0 0
 node "2" 0 1206.28 -230 -30 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1123600 4240 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "2" "1" 368
-device csubckt sky130_fd_pr__cap_mim_m3_1 -200 0 -199 1 w=1000 l=1000 "None" "1" 720 0 "2" 600 0
+cap "1" "2" 368
+device csubckt sky130_fd_pr__cap_mim_m3_1 -200 0 -199 1 w=1000 l=1000 "None" "1" 720 0 "2" 400 0

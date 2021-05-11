@@ -1,60 +1,333 @@
-**.subckt bandgap_lvs
-XM1 Vbep net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=mult m=mult 
-XM2 Vben net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM3 net3 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM4 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=Lp W=Wp nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=mult m=mult 
-XR3 net7 net3 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR1 net8 net7 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR4 net9 net8 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR5 net4 net9 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR6 net10 net5 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR7 net11 net10 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR8 net12 net11 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XR9 net4 net12 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-X1 net3 net2 net1 selfbiasedcascode2stage_lvs
-X2 Vbep Vn Vn selfbiasedcascode2stage_lvs
-X3 Vben Vref Vref selfbiasedcascode2stage_lvs
-X4 Vben Vp Vp selfbiasedcascode2stage_lvs
-XQ3 Vbep GND GND sky130_fd_pr__pnp_05v0
-XQ4 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ5 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ6 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ7 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ8 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ9 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ10 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ11 Vben GND GND sky130_fd_pr__pnp_05v0
-XQ13 __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 GND sky130_fd_pr__pnp_05v0
-XQ14 __UNCONNECTED_PIN__2 __UNCONNECTED_PIN__3 GND sky130_fd_pr__pnp_05v0
-XQ15 __UNCONNECTED_PIN__4 __UNCONNECTED_PIN__5 GND sky130_fd_pr__pnp_05v0
-XQ16 __UNCONNECTED_PIN__6 __UNCONNECTED_PIN__7 GND sky130_fd_pr__pnp_05v0
-XQ17 __UNCONNECTED_PIN__8 __UNCONNECTED_PIN__9 GND sky130_fd_pr__pnp_05v0
-XQ18 __UNCONNECTED_PIN__10 __UNCONNECTED_PIN__11 GND sky130_fd_pr__pnp_05v0
-XQ19 __UNCONNECTED_PIN__12 __UNCONNECTED_PIN__13 GND sky130_fd_pr__pnp_05v0
-XQ20 __UNCONNECTED_PIN__14 __UNCONNECTED_PIN__15 GND sky130_fd_pr__pnp_05v0
-XQ21 __UNCONNECTED_PIN__16 __UNCONNECTED_PIN__17 GND sky130_fd_pr__pnp_05v0
-XQ22 __UNCONNECTED_PIN__18 __UNCONNECTED_PIN__19 GND sky130_fd_pr__pnp_05v0
-XQ23 __UNCONNECTED_PIN__20 __UNCONNECTED_PIN__21 GND sky130_fd_pr__pnp_05v0
-XQ24 __UNCONNECTED_PIN__22 __UNCONNECTED_PIN__23 GND sky130_fd_pr__pnp_05v0
-XQ25 __UNCONNECTED_PIN__24 __UNCONNECTED_PIN__25 GND sky130_fd_pr__pnp_05v0
-XQ26 __UNCONNECTED_PIN__26 __UNCONNECTED_PIN__27 GND sky130_fd_pr__pnp_05v0
-XQ27 __UNCONNECTED_PIN__28 __UNCONNECTED_PIN__29 GND sky130_fd_pr__pnp_05v0
-XQ28 __UNCONNECTED_PIN__30 __UNCONNECTED_PIN__31 GND sky130_fd_pr__pnp_05v0
-XQ29 __UNCONNECTED_PIN__32 __UNCONNECTED_PIN__33 GND sky130_fd_pr__pnp_05v0
-XQ30 __UNCONNECTED_PIN__34 __UNCONNECTED_PIN__35 GND sky130_fd_pr__pnp_05v0
-XQ31 __UNCONNECTED_PIN__36 __UNCONNECTED_PIN__37 GND sky130_fd_pr__pnp_05v0
-XR2 GND net6 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
-XQ1 net5 GND GND sky130_fd_pr__pnp_05v0
-XQ2 net2 net6 GND sky130_fd_pr__pnp_05v0
+**.subckt bandgap_ping_pong_amp_lvs
+X10 net2 Vn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X11 net2 Vref Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X12 net1 Vnn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X5 net3 Vp Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X7 net3 Vref Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X9 Vpp Vref Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+XC1 Vpp Vref sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X1 Vpp Vnn net1 selfbiasedcascode2stage_lvs
+XC3 Vpp Vref sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC4 Vnn net1 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC6 Vnn net1 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC5 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC7 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC8 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC9 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC10 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC11 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC12 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC13 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC14 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC15 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC16 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC17 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC18 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC19 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC20 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC21 Vnn net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC22 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC23 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC24 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC25 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC26 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC27 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC28 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC29 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC30 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC31 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC32 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC33 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC34 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC35 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC36 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC37 Vpp net3 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X20 net9 net1 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X2 net6 Vn Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X3 net6 Vref Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X4 net4 net5 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X6 net8 Vp Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X8 net8 Vref Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X13 net7 Vref Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+XC2 net7 Vref sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X14 net7 net5 net4 selfbiasedcascode2stage_lvs
+XC38 net7 Vref sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC39 net5 net4 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC40 net5 net4 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC41 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC42 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC43 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC44 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC45 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC46 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC47 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC48 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC49 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC50 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC51 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC52 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC53 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC54 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC55 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC56 net5 net6 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC57 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC58 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC59 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC60 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC61 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC62 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC63 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC64 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC65 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC66 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC67 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC68 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC69 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC70 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC71 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC72 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X15 net9 net4 Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X16 net12 Vn Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X17 net12 Vouts Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X18 net10 net11 Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X19 net14 Vp Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X21 net14 Vouts Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X22 net13 Vouts Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+XC73 net13 Vouts sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X23 net13 net11 net10 selfbiasedcascode2stage_lvs
+XC74 net13 Vouts sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC75 net11 net10 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC76 net11 net10 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC77 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC78 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC79 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC80 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC81 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC82 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC83 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC84 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC85 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC86 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC87 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC88 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC89 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC90 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC91 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC92 net11 net12 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC93 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC94 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC95 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC96 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC97 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC98 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC99 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC100 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC101 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC102 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC103 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC104 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC105 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC106 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC107 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC108 net13 net14 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X24 net20 net10 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X25 net17 Vn Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X26 net17 Vouts Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X27 net15 net16 Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X28 net19 Vp Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X29 net19 Vouts Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+X30 net18 Vouts Vphi2 Vnphi2 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+XC109 net18 Vouts sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X31 net18 net16 net15 selfbiasedcascode2stage_lvs
+XC110 net18 Vouts sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC111 net16 net15 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC112 net16 net15 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC113 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC114 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC115 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC116 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC117 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC118 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC119 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC120 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC121 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC122 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC123 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC124 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC125 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC126 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC127 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC128 net16 net17 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC129 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC130 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC131 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC132 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC133 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC134 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC135 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC136 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC137 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC138 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC139 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC140 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC141 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC142 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC143 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC144 net18 net19 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X32 net20 net15 Vphi1 Vnphi1 switch Wp=1 Lp=0.15 WW=1 LL=0.15
+XC145 net21 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+X33 net22 net21 Vouts selfbiasedcascode2stage_lvs
+XR1 net31 Vouts GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR4 net32 net21 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR5 net33 net31 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR6 net34 net33 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR7 net35 net34 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR8 net36 net35 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR9 net21 net36 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR10 net37 GND GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR11 net38 net37 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR12 net39 net38 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR13 net40 net39 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR14 net41 net40 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR15 net22 net41 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR2 net42 net32 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR16 net43 net42 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR17 net44 net43 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR18 net45 net44 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR19 net46 net45 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR20 net47 net46 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR21 GND net47 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR3 net48 net22 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR22 net49 net48 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR23 net50 net49 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR24 net51 net50 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR25 net52 net51 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR26 net53 net52 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR27 net54 net53 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XR28 net9 net54 GND sky130_fd_pr__res_xhigh_po W=0.35 L=3.5 mult=1 m=1
+XC146 net21 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC147 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC148 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC149 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC150 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC151 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC152 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC153 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC154 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC155 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC156 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC157 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC158 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC159 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC160 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC161 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC162 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC163 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC164 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC165 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC166 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC167 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC168 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC169 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC170 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC171 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC172 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC173 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC174 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC175 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC176 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC177 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC178 net9 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC179 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC180 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC181 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC182 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC183 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC184 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC185 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC186 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC187 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC188 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC189 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC190 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC191 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC192 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC193 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC194 net7 net8 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC195 net23 net24 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC196 net23 net24 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC197 net25 net26 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC198 net25 net26 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC199 net27 net28 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC200 net27 net28 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC201 net29 net30 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC202 net29 net30 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC203 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC204 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC205 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC206 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC207 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC208 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC209 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC210 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC211 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC212 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC213 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC214 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC215 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC216 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC217 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC218 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC219 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC220 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC221 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC222 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC223 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC224 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC225 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC226 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC227 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC228 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC229 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC230 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC231 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC232 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC233 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC234 net20 GND sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
 **.ends
+
+* expanding   symbol:  /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/switch.sym # of
+*+ pins=4
+
+.subckt switch  B A CLK nCLK   Wp=1 Lp=0.15 WW=1 LL=0.15
+*.iopin B
+*.iopin A
+*.ipin CLK
+*.ipin nCLK
+*.ipin CLK
+*.ipin CLK
+*.ipin nCLK
+*.ipin nCLK
+XM1 A CLK B GND sky130_fd_pr__nfet_01v8 L='LL' W='WW' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 A nCLK B VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 B CLK B VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 A CLK A VDD sky130_fd_pr__pfet_01v8 L='Lp' W='Wp/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 B nCLK B GND sky130_fd_pr__nfet_01v8 L='LL' W='WW/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM6 A nCLK A GND sky130_fd_pr__nfet_01v8 L='LL' W='WW/2' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
 
 * expanding   symbol:
 *+  /home/madvlsi/Documents/MADVLSI-Final_Project/schematic/selfbiasedcascode2stage_lvs.sym # of pins=3
@@ -396,7 +669,7 @@ XM24 vout net10 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=6 nf=1 ad='int((nf+1)/2
 XC1 net10 vout sky130_fd_pr__cap_mim_m3_1 W=22 L=22 MF=1 m=1
 .ends
 
-.GLOBAL VDD
 .GLOBAL GND
+.GLOBAL VDD
 ** flattened .save nodes
 .end

@@ -1,0 +1,114 @@
+Flattening unmatched subcell m3cap50f in circuit cap8to1 (1)(18 instances)
+Flattening unmatched subcell inverter_large in circuit selfbiasedcascode2stage (1)(1 instance)
+Flattening unmatched subcell m3cap500f in circuit selfbiasedcascode2stage (1)(1 instance)
+Flattening unmatched subcell p-res20k in circuit p-res8x20k (1)(8 instances)
+Flattening unmatched subcell p-res20k in circuit p-res6x20k (1)(6 instances)
+Flattening unmatched subcell cap8to1 in circuit bandgap_ping_pong_amp_cell (1)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit bandgap_ping_pong_amp_cell (1)(1 instance)
+Flattening unmatched subcell m3cap50f in circuit middle_ping_pong_amplifier (1)(2 instances)
+Flattening unmatched subcell p-res8x20k in circuit middle_ping_pong_amplifier (1)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit middle_ping_pong_amplifier (1)(1 instance)
+Flattening unmatched subcell p-res6x20k in circuit middle_ping_pong_amplifier (1)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage_lvs in circuit bandgap_ping_pong_amp_lvs.spice (0)(5 instances)
+Flattening unmatched subcell bandgap_ping_pong_amp_cell in circuit bandgap_ping_pong.spice (1)(4 instances)
+Flattening unmatched subcell middle_ping_pong_amplifier in circuit bandgap_ping_pong.spice (1)(1 instance)
+Flattening unmatched subcell cap8to1 in circuit bandgap_ping_pong.spice (1)(4 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: switch                          |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__pfet_01v8M4 vs. sky130_fd_pr__pfet_01v80:
+ W circuit1: 0.5   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M3 vs. sky130_fd_pr__pfet_01v82:
+ W circuit1: 0.5   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v84:
+ W circuit1: 1   circuit2: 2   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M6 vs. sky130_fd_pr__nfet_01v83:
+ W circuit1: 0.5   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M5 vs. sky130_fd_pr__nfet_01v81:
+ W circuit1: 0.5   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v85:
+ W circuit1: 1   circuit2: 2   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: switch                          |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+VDD                                        |w_n220_690# **Mismatch**                   
+nCLK                                       |nCLK                                       
+GND                                        |a_270_430# **Mismatch**                    
+A                                          |A                                          
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes switch and switch are equivalent.
+Class bandgap_ping_pong_amp_lvs.spice:  Merged 587 devices.
+Class bandgap_ping_pong_amp_lvs.spice:  Merged 3 devices.
+Class bandgap_ping_pong.spice:  Merged 621 devices.
+Class bandgap_ping_pong.spice:  Merged 3 devices.
+
+Subcircuit summary:
+Circuit 1: bandgap_ping_pong_amp_lvs.spice |Circuit 2: bandgap_ping_pong.spice         
+-------------------------------------------|-------------------------------------------
+switch (28)                                |switch (28)                                
+sky130_fd_pr__cap_mim_m3_1 (25)            |sky130_fd_pr__cap_mim_m3_1 (25)            
+sky130_fd_pr__pfet_01v8 (87)               |sky130_fd_pr__pfet_01v8 (87)               
+sky130_fd_pr__nfet_01v8 (87)               |sky130_fd_pr__nfet_01v8 (87)               
+sky130_fd_pr__res_xhigh_po (4)             |sky130_fd_pr__res_xhigh_po (4)             
+Number of devices: 231                     |Number of devices: 231                     
+Number of nets: 96                         |Number of nets: 96                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 128 symmetries.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__cap_mim_m3_1C57 vs. bandgap_ping_pong_amp_cell_1//cap8to1_1//m3cap50f_10/sky130_fd_pr__cap_mim_m3_10:
+ M circuit1: 32   circuit2: 16   (delta=16, cutoff=0)
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch20 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch15 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch9 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch13 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch11 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch3 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch7 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch8 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch27 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch18 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch12 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch4 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch32 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch24 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch22 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch30 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch17 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch26 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch21 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch29 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch16 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch25 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch19 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch28 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch10 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch2 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch5 property "LL" has no match in circuit 2.
+Circuit 1 bandgap_ping_pong_amp_lvs.spice instance switch6 property "LL" has no match in circuit 2.
+Cells have no pins;  pin matching not needed.
+Device classes bandgap_ping_pong_amp_lvs.spice and bandgap_ping_pong.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: switch bandgap_ping_pong_amp_lvs.spice

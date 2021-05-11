@@ -1,154 +1,542 @@
-timestamp 1620742954
+timestamp 1620753429
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
 use bandgap_ping_pong_amp_cell bandgap_ping_pong_amp_cell_1 1 0 7900 0 1 -9820
+use bandgap_ping_pong_amp_cell bandgap_ping_pong_amp_cell_3 1 0 43980 0 1 -9900
 use bandgap_ping_pong_amp_cell bandgap_ping_pong_amp_cell_0 1 0 7860 0 1 1140
-node "m3_n510_n4640#" 7 7273.76 -510 -4640 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1969100 34560 0 0 0 0 0 0
+use bandgap_ping_pong_amp_cell bandgap_ping_pong_amp_cell_2 1 0 43940 0 1 1060
+use middle_ping_pong_amplifier middle_ping_pong_amplifier_0 1 0 25810 0 1 -3780
+use cap8to1 cap8to1_3 1 0 53600 0 1 2910
+use cap8to1 cap8to1_1 1 0 17520 0 1 2990
+use cap8to1 cap8to1_0 1 0 17530 0 1 -7340
+use cap8to1 cap8to1_2 1 0 53610 0 1 -7420
+node "m3_n510_n4640#" 7 7256.04 -510 -4640 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1969100 34560 0 0 0 0 0 0
+node "m2_14810_n10970#" 67 8769.9 14810 -10970 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 854000 42780 0 0 0 0 0 0 0 0
+node "m2_44090_710#" 2 5154.94 44090 710 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3661400 14160 663100 3940 0 0 0 0 0 0
 node "m2_n240_n5520#" 8 1400.57 -240 -5520 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 524300 12100 0 0 0 0 0 0 0 0
+node "m2_35610_n6860#" 23 5367.53 35610 -6860 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 937000 26640 0 0 0 0 0 0 0 0
 node "m2_8010_790#" 2 5154.94 8010 790 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3661400 14160 663100 3940 0 0 0 0 0 0
 node "m2_n470_n6780#" 23 5445.43 -470 -6780 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 937000 26640 0 0 0 0 0 0 0 0
+node "m2_8010_6150#" 0 25890.4 8010 6150 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33425800 112620 0 0 0 0 0 0 0 0
+node "m1_14810_n10970#" 67 9325 14810 -10970 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 854000 42780 0 0 0 0 0 0 0 0 0 0
+node "m1_53640_n3850#" 0 93.12 53640 -3850 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 420 0 0 0 0 0 0 0 0 0 0
+node "m1_45330_n4890#" 3 11668.5 45330 -4890 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8776500 23840 462000 5240 880000 3800 0 0 0 0 0 0
+node "m1_50560_2060#" 0 51.8 50560 2060 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 0 0 0 0 0 0 0 0 0 0
+node "m1_17570_n3770#" 0 93.12 17570 -3770 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 420 0 0 0 0 0 0 0 0 0 0
+node "m1_35610_n5720#" 23 5779.68 35610 -5720 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 929400 26560 0 0 0 0 0 0 0 0 0 0
 node "m1_n240_n4390#" 7 1264.33 -240 -4390 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 425000 9900 0 0 0 0 0 0 0 0 0 0
 node "m1_9250_n4810#" 3 11668.5 9250 -4810 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8776500 23840 462000 5240 880000 3800 0 0 0 0 0 0
-node "m1_n470_n5640#" 23 6021.19 -470 -5640 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 929400 26560 0 0 0 0 0 0 0 0 0 0
-node "li_n330_n4180#" 2375 7129.69 -330 -4180 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 716400 23740 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_n170_n4320#" 2375 7207.64 -170 -4320 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35000 900 0 0 713400 22840 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_14480_2140#" 0 51.8 14480 2140 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 0 0 0 0 0 0 0 0 0 0
+node "m1_n470_n5640#" 23 6002.71 -470 -5640 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 929400 26560 0 0 0 0 0 0 0 0 0 0
+node "m1_9220_6150#" 1 36458.6 9220 6150 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18959100 119760 86000 1260 1044900 5720 0 0 0 0 0 0
+node "li_50810_n8760#" 490 3424.83 50810 -8760 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 443200 8640 30600 700 30600 700 30600 700 312900 3400 0 0 0 0
+node "li_14730_n8680#" 491 3431.07 14730 -8680 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 444000 8660 30600 700 30600 700 30600 700 312900 3400 0 0 0 0
+node "li_35230_n5610#" 87 12425.7 35230 -5610 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71000 1620 23000 860 2064900 64700 0 0 0 0 0 0 0 0
+node "li_50770_2200#" 606 7995.31 50770 2200 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 989400 14280 30600 700 30600 700 30600 700 1665300 16280 0 0 0 0
+node "li_31740_n2700#" 850 9678.47 31740 -2700 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 182400 7200 14400 480 14400 480 2025700 35500 0 0 0 0 0 0
+node "li_14690_2280#" 623 8015.82 14690 2280 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 993800 14500 30600 700 30600 700 30600 700 1665300 16300 0 0 0 0
+node "li_n330_n4180#" 20 41614.2 -330 -4180 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4807600 135800 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_35230_n5180#" 635 14075.7 35230 -5180 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63000 1580 0 0 108100 3180 1955400 61180 0 0 0 0 0 0 0 0 0 0
+node "a_53640_n3660#" 451 5811.07 53640 -3660 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 680 0 0 44800 1600 788500 21860 14400 680 47300 1300 0 0 0 0 0 0
+node "a_17560_2950#" 455 6516.16 17560 2950 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 680 0 0 46400 1640 967900 25100 14400 680 47300 1300 0 0 0 0 0 0
+node "a_n170_n4320#" 2472 43193.6 -170 -4320 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195800 6440 0 0 4914800 133040 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m3_n510_n4640#" "m1_n470_n5640#" 3079.82
-cap "a_n170_n4320#" "m2_n470_n6780#" 49.76
-cap "m3_n510_n4640#" "li_n330_n4180#" 48.165
-cap "m2_n240_n5520#" "m1_n240_n4390#" 1407.83
-cap "m2_n240_n5520#" "li_n330_n4180#" 52
-cap "m2_n240_n5520#" "m3_n510_n4640#" 126.35
+cap "a_17560_2950#" "m1_14480_2140#" 24.8
+cap "a_n170_n4320#" "m2_n240_n5520#" 1781.23
+cap "a_n170_n4320#" "m2_8010_6150#" 9641.36
+cap "a_35230_n5180#" "m1_35610_n5720#" 1645.1
+cap "m2_35610_n6860#" "m1_35610_n5720#" 2699.92
+cap "m1_35610_n5720#" "li_n330_n4180#" 77.08
+cap "li_14690_2280#" "a_35230_n5180#" 55.52
 cap "m1_n240_n4390#" "a_n170_n4320#" 2273.27
-cap "a_n170_n4320#" "li_n330_n4180#" 3047.7
-cap "m3_n510_n4640#" "a_n170_n4320#" 66.2
+cap "a_35230_n5180#" "li_n330_n4180#" 90.755
+cap "m2_35610_n6860#" "a_35230_n5180#" 44.6
+cap "m2_35610_n6860#" "li_n330_n4180#" 49.76
+cap "m2_n470_n6780#" "li_n330_n4180#" 49.76
+cap "m1_n470_n5640#" "li_n330_n4180#" 77.08
 cap "m1_n470_n5640#" "m2_n470_n6780#" 2699.92
-cap "m2_n240_n5520#" "a_n170_n4320#" 1781.23
-cap "li_n330_n4180#" "m2_n470_n6780#" 49.76
-cap "m3_n510_n4640#" "m2_n470_n6780#" 6062.02
-cap "m2_n240_n5520#" "m2_n470_n6780#" 1734.38
-cap "m1_n240_n4390#" "m1_n470_n5640#" 1243.12
+cap "a_n170_n4320#" "m1_35610_n5720#" 254.075
+cap "m1_9220_6150#" "m2_8010_6150#" 55198.4
+cap "a_35230_n5180#" "a_n170_n4320#" 2584.46
+cap "m2_35610_n6860#" "a_n170_n4320#" 49.76
+cap "a_n170_n4320#" "li_n330_n4180#" 20704.5
+cap "a_n170_n4320#" "m2_n470_n6780#" 49.76
+cap "m1_n470_n5640#" "a_n170_n4320#" 36
+cap "li_35230_n5610#" "m1_35610_n5720#" 274.508
+cap "li_31740_n2700#" "m1_35610_n5720#" 3093.67
+cap "m3_n510_n4640#" "m2_n240_n5520#" 126.35
+cap "li_14690_2280#" "li_35230_n5610#" 68.8
+cap "a_53640_n3660#" "m1_53640_n3850#" 115.682
+cap "li_35230_n5610#" "a_35230_n5180#" 7048.21
+cap "a_35230_n5180#" "li_31740_n2700#" 76.5
+cap "li_35230_n5610#" "m2_35610_n6860#" 2031.88
+cap "li_35230_n5610#" "li_n330_n4180#" 52
+cap "m2_35610_n6860#" "li_31740_n2700#" 6077.4
+cap "li_31740_n2700#" "li_n330_n4180#" 48.165
+cap "li_14690_2280#" "a_17560_2950#" 582.515
+cap "m2_14810_n10970#" "m1_14810_n10970#" 2860.9
+cap "a_35230_n5180#" "a_17560_2950#" 117.857
+cap "a_53640_n3660#" "li_50770_2200#" 564.968
+cap "m1_9220_6150#" "li_n330_n4180#" 15460.7
+cap "m1_n240_n4390#" "m2_n240_n5520#" 1407.83
+cap "li_35230_n5610#" "a_n170_n4320#" 1770.4
+cap "li_31740_n2700#" "a_n170_n4320#" 176.81
+cap "a_17560_2950#" "m1_17570_n3770#" 115.682
+cap "li_n330_n4180#" "m3_n510_n4640#" 48.165
+cap "m2_n470_n6780#" "m3_n510_n4640#" 6062.02
+cap "m1_n470_n5640#" "m3_n510_n4640#" 3079.82
+cap "a_n170_n4320#" "m1_9220_6150#" 325.6
+cap "li_35230_n5610#" "li_31740_n2700#" 126.35
+cap "a_53640_n3660#" "m1_50560_2060#" 24.8
+cap "li_n330_n4180#" "m2_n240_n5520#" 52
+cap "m2_8010_6150#" "li_n330_n4180#" 6273.24
+cap "a_n170_n4320#" "m3_n510_n4640#" 95.46
+cap "m2_n470_n6780#" "m2_n240_n5520#" 1734.38
 cap "m1_n240_n4390#" "li_n330_n4180#" 90.755
-cap "li_n330_n4180#" "m1_n470_n5640#" 77.08
-cap "bandgap_ping_pong_amp_cell_1/Vnphi2" "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" 2.4
-cap "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" "bandgap_ping_pong_amp_cell_1/a_n3380_5360#" 1.195
-subcap "m2_n240_n5520#" -440.197
-cap "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" "bandgap_ping_pong_amp_cell_1/Vphi2" 16.8
-cap "bandgap_ping_pong_amp_cell_1/Vphi2" "bandgap_ping_pong_amp_cell_1/switch_2/B" -8.75
-cap "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" "bandgap_ping_pong_amp_cell_1/switch_2/A" -5.435
-subcap "m2_n240_n5520#" -1074.54
-subcap "m1_n240_n4390#" -9.56
-subcap "li_n330_n4180#" -6635.04
-subcap "a_n170_n4320#" -6064.77
-cap "bandgap_ping_pong_amp_cell_1/Vphi1" "bandgap_ping_pong_amp_cell_1/switch_3/A" 15.1053
+cap "li_35230_n5610#" "a_17560_2950#" 99.6
+cap "m1_n470_n5640#" "m1_n240_n4390#" 1243.12
+subcap "m2_14810_n10970#" -8400.08
+subcap "m1_14810_n10970#" -8932.25
+cap "m2_14810_n10970#" "m1_14810_n10970#" -3.55271e-15
+subcap "m2_14810_n10970#" -8127.33
+subcap "m1_14810_n10970#" -8735.45
+cap "m2_14810_n10970#" "m1_14810_n10970#" -184.575
+cap "bandgap_ping_pong_amp_cell_3/a_n6260_3040#" "m1_14810_n10970#" -5.36
+subcap "li_14730_n8680#" -2946.72
+cap "bandgap_ping_pong_amp_cell_1/Vnphi2" "bandgap_ping_pong_amp_cell_1/switch_1/B" 70.32
+subcap "li_14730_n8680#" -2557.47
+subcap "li_50810_n8760#" -2660.78
+cap "bandgap_ping_pong_amp_cell_3/switch_1/B" "bandgap_ping_pong_amp_cell_3/Vnphi2" 70.32
+cap "cap8to1_0/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 112.875
+cap "cap8to1_0/m3cap50f_0/2" "cap8to1_0/m3cap50f_0/1" 540.08
+cap "cap8to1_0/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 34.7308
+cap "bandgap_ping_pong_amp_cell_3/Vnphi2" "bandgap_ping_pong_amp_cell_3/switch_2/nCLK" 2.4
+cap "bandgap_ping_pong_amp_cell_3/switch_2/nCLK" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" 1.195
+cap "cap8to1_2/m3cap50f_0/2" "cap8to1_2/m3cap50f_0/1" 139.23
+cap "cap8to1_2/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/m3cap500f_0/2" 133.875
+cap "cap8to1_2/m3cap50f_0/2" "cap8to1_2/m3cap50f_0/1" 167.215
+subcap "m2_n240_n5520#" -858.665
+cap "bandgap_ping_pong_amp_cell_1/Vphi2" "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" 19.2
+cap "bandgap_ping_pong_amp_cell_1/switch_2/A" "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" -4.24
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_0/m3cap50f_0/2" 304.5
+cap "cap8to1_0/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 93.6923
+cap "cap8to1_0/m3cap50f_0/2" "cap8to1_0/m3cap50f_0/1" -74.34
+cap "bandgap_ping_pong_amp_cell_3/switch_2/A" "bandgap_ping_pong_amp_cell_3/switch_2/nCLK" -5.435
+cap "bandgap_ping_pong_amp_cell_3/Vphi2" "bandgap_ping_pong_amp_cell_3/switch_2/nCLK" 16.8
+cap "cap8to1_2/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/m3cap500f_0/2" 304.5
+cap "cap8to1_2/m3cap50f_0/1" "cap8to1_2/m3cap50f_0/2" -50.52
+cap "cap8to1_2/m3cap50f_0/2" "cap8to1_2/m3cap50f_0/1" -107.515
+subcap "m2_n240_n5520#" -353.592
+subcap "li_n330_n4180#" -41168
+subcap "a_n170_n4320#" -42222.2
+cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_1/Vphi1" 42.96
 cap "bandgap_ping_pong_amp_cell_1/w_n7330_3740#" "m3_n510_n4640#" 6.84
 cap "bandgap_ping_pong_amp_cell_1/Vp" "bandgap_ping_pong_amp_cell_1/Vphi1" -1.42109e-14
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_1/Vphi1" 42.96
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_1/Vnphi1" 26.4
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_1/switch_3/B" 178.63
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_1/switch_3/A" 175.372
+cap "bandgap_ping_pong_amp_cell_1/switch_3/A" "bandgap_ping_pong_amp_cell_1/Vphi1" 15.1053
+cap "bandgap_ping_pong_amp_cell_1/Vnphi1" "m3_n510_n4640#" 26.4
+cap "bandgap_ping_pong_amp_cell_1/switch_3/B" "m3_n510_n4640#" 178.63
+cap "bandgap_ping_pong_amp_cell_1/switch_3/A" "m3_n510_n4640#" 175.372
+cap "bandgap_ping_pong_amp_cell_1/switch_3/A" "bandgap_ping_pong_amp_cell_1/Vp" 5.68434e-14
 cap "bandgap_ping_pong_amp_cell_1/switch_6/A" "bandgap_ping_pong_amp_cell_1/a_n3380_5360#" 51.575
-subcap "m1_9250_n4810#" -11166.2
+subcap "m1_9250_n4810#" -11184.7
 cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920#" 188.68
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 79.23
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 33.5318
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/VN" -173.812
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920#" 14.605
 cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 0.91
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 96.78
-subcap "m1_9250_n4810#" -10871.9
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" 539.36
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" 0.975
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/VN" 96.78
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 33.5318
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 79.23
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920#" 14.605
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/VN" -173.812
+subcap "m1_9250_n4810#" -10945.8
 cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" 149.115
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" 0.975
 cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" 45.2525
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920#" 185.92
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" 539.36
 cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 1.95
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920#" 185.92
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" 155.715
 cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/VN" 77.35
-cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" 155.715
-subcap "li_n330_n4180#" -6364.23
-subcap "a_n170_n4320#" -6594.82
+subcap "m1_17570_n3770#" -109.5
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_0/m3cap50f_6/2" 304.5
+subcap "m1_17570_n3770#" -87.66
+cap "cap8to1_0/m3cap50f_6/2" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 93.6923
+cap "cap8to1_0/m3cap50f_6/2" "cap8to1_0/m3cap50f_7/1" -74.55
+subcap "m1_35610_n5720#" -3820.25
+subcap "li_35230_n5610#" -10757.4
+subcap "a_35230_n5180#" -12520.6
+cap "bandgap_ping_pong_amp_cell_3/Vnphi1" "bandgap_ping_pong_amp_cell_3/Vphi1" -26.8
+subcap "m1_35610_n5720#" -7503.89
+cap "bandgap_ping_pong_amp_cell_3/w_n7330_3740#" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" 6.84
+cap "bandgap_ping_pong_amp_cell_3/Vphi1" "bandgap_ping_pong_amp_cell_3/switch_3/A" 15.1053
+cap "bandgap_ping_pong_amp_cell_3/Vphi1" "bandgap_ping_pong_amp_cell_3/Vnphi1" -51.9054
+cap "bandgap_ping_pong_amp_cell_3/switch_3/B" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" 178.63
+cap "bandgap_ping_pong_amp_cell_3/Vphi1" "bandgap_ping_pong_amp_cell_3/Vphi2" 1.42109e-14
+cap "bandgap_ping_pong_amp_cell_3/switch_3/A" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" 175.372
+cap "bandgap_ping_pong_amp_cell_3/Vnphi1" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" 26.4
+cap "bandgap_ping_pong_amp_cell_3/Vphi1" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" 42.96
+cap "bandgap_ping_pong_amp_cell_3/switch_6/A" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" 51.575
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_840_6920#" 50.48
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 20.14
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 26.63
+subcap "m1_45330_n4890#" -11301
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/VN" 102.925
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 59.09
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 73.9
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 15.295
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 1.885
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_840_6920#" 272.47
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 94.8324
+subcap "m1_45330_n4890#" -10753.5
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" 140.515
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_840_6920#" 434.9
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" -13.6
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" 1.95
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" 37.44
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" 94.8324
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" 77.35
+subcap "m1_53640_n3850#" -104.82
+subcap "a_53640_n3660#" -5904.08
+cap "cap8to1_2/m3cap50f_7/1" "cap8to1_2/m3cap50f_6/2" -15.7
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_2/m3cap50f_6/2" 304.5
+cap "cap8to1_2/m3cap50f_6/2" "cap8to1_2/m3cap50f_7/1" -78.185
+subcap "m1_n240_n4390#" -2437.63
+subcap "li_n330_n4180#" -40787.3
+subcap "a_n170_n4320#" -42447.2
+cap "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" "a_17560_2950#" 139.529
+cap "m1_17570_n3770#" "a_17560_2950#" 8.325
+subcap "m1_17570_n3770#" -95.46
+cap "a_17560_2950#" "cap8to1_0/m3cap50f_6/1" 540.08
+cap "a_17560_2950#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 34.7308
+subcap "li_31740_n2700#" -9418.05
+subcap "li_31740_n2700#" -8854.72
+subcap "a_53640_n3660#" -4820.02
+cap "m1_53640_n3850#" "a_53640_n3660#" 8.325
+cap "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/m3cap500f_0/2" "a_53640_n3660#" 119.595
+cap "cap8to1_2/m3cap50f_6/1" "a_53640_n3660#" 114.95
+cap "cap8to1_2/m3cap50f_6/1" "a_53640_n3660#" 172.285
+subcap "li_31740_n2700#" -9331.72
+subcap "li_31740_n2700#" -9087.76
 cap "m1_n240_n4390#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" -6.7
-cap "bandgap_ping_pong_amp_cell_1/cap8to1_1/m3cap50f_13/2" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" 46.4211
-cap "bandgap_ping_pong_amp_cell_1/cap8to1_1/m3cap50f_12/2" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" 175.737
-cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "bandgap_ping_pong_amp_cell_1/cap8to1_1/m3cap50f_11/2" 175.737
-cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "m2_8010_790#" 39.375
-cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "m2_8010_790#" 105
-cap "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" "m2_8010_790#" 615.74
-cap "bandgap_ping_pong_amp_cell_0/Vnphi2" "m2_8010_790#" 154.3
-cap "bandgap_ping_pong_amp_cell_0/switch_0/A" "m2_8010_790#" 470.57
-cap "m1_9250_n4810#" "bandgap_ping_pong_amp_cell_0/Vnphi2" 844.434
-cap "m1_9250_n4810#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" 1175.12
-cap "bandgap_ping_pong_amp_cell_0/Vnphi2" "m1_9250_n4810#" -113.068
-cap "m1_9250_n4810#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" -158.445
-subcap "m2_8010_790#" -5450.87
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" 39.375
-cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 61.7647
-subcap "m2_8010_790#" -3472.23
-cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 423.219
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/switch_0/CLK" 171.45
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860#" 60.775
-cap "bandgap_ping_pong_amp_cell_0/switch_0/B" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 301.275
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350#" 15.69
-cap "bandgap_ping_pong_amp_cell_0/switch_0/A" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 261.49
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 382.382
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" 517.125
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" 841.8
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" 131.25
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_0/Vnphi2" 118.125
-cap "bandgap_ping_pong_amp_cell_0/switch_1/nCLK" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" 6.25
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" -149.095
-cap "bandgap_ping_pong_amp_cell_0/Vnphi2" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" 5.625
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_0/w_6620_1290#" -180.775
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/Vnphi1" 2.94118
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/Vnphi1" 2.94118
+cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "bandgap_ping_pong_amp_cell_1/cap8to1_1/m3cap50f_13/2" 46.4211
+cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "bandgap_ping_pong_amp_cell_1/cap8to1_1/m3cap50f_12/2" 175.737
+cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "m2_8010_790#" 23.625
+cap "bandgap_ping_pong_amp_cell_1/cap8to1_1/m3cap50f_11/2" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" 175.737
+cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "m2_8010_790#" 63
+cap "m2_8010_790#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" 615.74
+cap "m2_8010_790#" "bandgap_ping_pong_amp_cell_0/Vnphi2" 154.3
+cap "bandgap_ping_pong_amp_cell_0/switch_0/A" "m2_8010_790#" 353.85
+cap "bandgap_ping_pong_amp_cell_0/Vnphi2" "m1_9250_n4810#" 720.092
+cap "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" "m1_9250_n4810#" 1036.96
+cap "m1_9250_n4810#" "a_35230_n5180#" -118.989
+cap "a_35230_n5180#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" -8.04
+cap "m1_9250_n4810#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" -165.024
+cap "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_0/1" "middle_ping_pong_amplifier_0/li_n7400_2970#" 46.2
+cap "middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_5/GND" "a_17560_2950#" 58.5
+cap "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_0/1" "a_17560_2950#" 242.08
+cap "middle_ping_pong_amplifier_0/p-res8x20k_1/2" "middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_6/GND" 234
+cap "a_35230_n5180#" "bandgap_ping_pong_amp_cell_2/a_n6260_3040#" -6.7
+cap "bandgap_ping_pong_amp_cell_2/li_n20_n730#" "bandgap_ping_pong_amp_cell_3/cap8to1_1/m3cap50f_12/2" 13.2632
+cap "bandgap_ping_pong_amp_cell_3/cap8to1_1/m3cap50f_13/2" "bandgap_ping_pong_amp_cell_2/li_n20_n730#" 46.4211
+cap "bandgap_ping_pong_amp_cell_3/cap8to1_1/m3cap50f_11/2" "bandgap_ping_pong_amp_cell_2/li_n20_n730#" 29.8421
+cap "bandgap_ping_pong_amp_cell_3/cap8to1_1/m3cap50f_12/2" "bandgap_ping_pong_amp_cell_2/li_n20_n730#" 162.474
+cap "bandgap_ping_pong_amp_cell_2/a_n200_n1070#" "bandgap_ping_pong_amp_cell_2/a_n200_n1070#" -1.2
+cap "m2_44090_710#" "bandgap_ping_pong_amp_cell_2/a_n200_n1070#" -49.68
+cap "bandgap_ping_pong_amp_cell_2/li_n20_n730#" "bandgap_ping_pong_amp_cell_3/cap8to1_1/m3cap50f_11/2" 145.895
+cap "bandgap_ping_pong_amp_cell_2/Vnphi2" "m2_44090_710#" -36.55
+cap "bandgap_ping_pong_amp_cell_2/li_n20_n730#" "m2_44090_710#" 105
+cap "bandgap_ping_pong_amp_cell_2/a_n200_n1070#" "m2_44090_710#" 130.81
+cap "m2_44090_710#" "bandgap_ping_pong_amp_cell_2/a_n6260_3040#" 62.66
+cap "m2_44090_710#" "bandgap_ping_pong_amp_cell_2/a_n6260_3040#" 293.36
+cap "bandgap_ping_pong_amp_cell_2/switch_0/A" "m2_44090_710#" -104.065
+cap "bandgap_ping_pong_amp_cell_2/li_n20_n730#" "m2_44090_710#" 22.5
+cap "bandgap_ping_pong_amp_cell_2/Vnphi2" "m2_44090_710#" 1.965
+cap "m1_45330_n4890#" "bandgap_ping_pong_amp_cell_2/Vnphi2" 909.526
+cap "bandgap_ping_pong_amp_cell_2/a_n6260_3040#" "m1_45330_n4890#" 1262.74
+subcap "m2_8010_790#" -5316.07
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" 55.125
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/Vnphi1" 55.8824
+subcap "m2_8010_790#" -3425.35
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 15.69
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 307.202
+cap "bandgap_ping_pong_amp_cell_0/switch_0/B" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 343.275
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 60.775
+cap "bandgap_ping_pong_amp_cell_0/switch_0/A" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 378.21
+cap "bandgap_ping_pong_amp_cell_0/switch_0/CLK" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 171.45
+cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 417.337
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 841.8
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_0/li_n20_n730#" 517.125
+cap "bandgap_ping_pong_amp_cell_0/Vnphi2" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 124.342
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" 138.158
+cap "bandgap_ping_pong_amp_cell_0/w_6620_1290#" "m1_9250_n4810#" -180.775
+cap "m1_9250_n4810#" "a_35230_n5180#" 5.92105
+cap "m1_9250_n4810#" "bandgap_ping_pong_amp_cell_0/switch_1/nCLK" 6.57895
+cap "bandgap_ping_pong_amp_cell_0/li_n20_n730#" "m1_9250_n4810#" -149.095
+cap "li_14690_2280#" "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_0/1" 2.2
+cap "li_14690_2280#" "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_3/1" 48.4
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 53.06
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 21.185
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/VN" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 27.91
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 1.885
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/VN" 102.925
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 83.41
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/VN" 4.05
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 94.8324
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920#" 210.03
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920#" 122.1
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 15.8824
+subcap "m2_44090_710#" -4567.48
+cap "bandgap_ping_pong_amp_cell_2/Vphi1" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" -30.95
+cap "bandgap_ping_pong_amp_cell_2/Vnphi1" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 134.761
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_120_4860#" -151.8
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/li_n20_n730#" 125.6
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n440_7350#" -67.65
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" 382.382
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/a_n200_n1070#" 18.91
+subcap "m2_44090_710#" -3216.74
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/switch_0/A" -181.88
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n440_7350#" 15.69
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" -466.5
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/switch_0/nCLK" 73.1229
+cap "bandgap_ping_pong_amp_cell_2/switch_0/CLK" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 35.25
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/switch_0/B" 42.325
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_120_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 60.775
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_2/a_n6260_3040#" 137.5
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_2/li_n20_n730#" 571.25
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 903.6
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_2/Vnphi2" 123.75
+cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 8.82353
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" -13.09
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 185.07
+cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 8.82353
 cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350#" -0.61
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860#" -13.09
-cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 109.89
+subcap "li_14690_2280#" -7534.29
+cap "bandgap_ping_pong_amp_cell_0/switch_1/B" "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" 45.375
+cap "bandgap_ping_pong_amp_cell_0/w_6620_1290#" "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" 12
+cap "bandgap_ping_pong_amp_cell_0/switch_1/B" "bandgap_ping_pong_amp_cell_0/switch_1/CLK" 70.32
+cap "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "bandgap_ping_pong_amp_cell_0/switch_1/CLK" 385.32
+subcap "li_14690_2280#" -7142.22
+cap "bandgap_ping_pong_amp_cell_0/w_6620_1290#" "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" 5.80645
+cap "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "bandgap_ping_pong_amp_cell_0/Vnphi2" 144.375
+cap "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "bandgap_ping_pong_amp_cell_0/switch_1/B" -35.175
+subcap "a_17560_2950#" -5298.22
+subcap "a_17560_2950#" -6535.51
+cap "middle_ping_pong_amplifier_0/li_n3800_3870#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 53.06
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/li_n3800_3870#" 106.59
+cap "m1_9220_6150#" "middle_ping_pong_amplifier_0/li_n3800_3870#" 116.4
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 106.88
+cap "bandgap_ping_pong_amp_cell_2/Vnphi1" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 5.88235
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 25.6757
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" -78.99
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n440_7350#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" -0.61
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_120_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" -13.09
+subcap "li_50770_2200#" -7314.1
+cap "bandgap_ping_pong_amp_cell_2/switch_1/a_270_430#" "bandgap_ping_pong_amp_cell_2/switch_1/CLK" 393.502
+cap "bandgap_ping_pong_amp_cell_2/w_6620_1290#" "bandgap_ping_pong_amp_cell_2/switch_1/a_270_430#" 12
+cap "bandgap_ping_pong_amp_cell_2/switch_1/a_270_430#" "bandgap_ping_pong_amp_cell_2/switch_1/B" 45.375
+cap "bandgap_ping_pong_amp_cell_2/switch_1/CLK" "bandgap_ping_pong_amp_cell_2/switch_1/B" 70.32
+cap "cap8to1_3/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/m3cap500f_0/2" 8.68966
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_0/switch_2/A" 57.891
 cap "bandgap_ping_pong_amp_cell_0/switch_2/nCLK" "li_n330_n4180#" 7.54286
-cap "bandgap_ping_pong_amp_cell_0/switch_2/A" "a_n170_n4320#" 230.083
+cap "bandgap_ping_pong_amp_cell_0/switch_2/A" "a_n170_n4320#" 182.417
 cap "bandgap_ping_pong_amp_cell_0/switch_2/nCLK" "a_n170_n4320#" 15.5294
-cap "bandgap_ping_pong_amp_cell_0/switch_2/A" "li_n330_n4180#" 75.3782
-cap "bandgap_ping_pong_amp_cell_0/Vphi2" "bandgap_ping_pong_amp_cell_0/switch_3/A" 15.5294
+subcap "a_17560_2950#" -5893.69
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_1/m3cap50f_0/2" 260.368
+subcap "a_17560_2950#" -5501.76
+cap "cap8to1_1/m3cap50f_0/2" "cap8to1_1/m3cap50f_0/1" 465.53
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/switch_2/A" 31.7308
+cap "bandgap_ping_pong_amp_cell_2/switch_2/nCLK" "li_n330_n4180#" 3.77143
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/switch_2/A" 5.95833
+cap "bandgap_ping_pong_amp_cell_2/switch_2/A" "li_n330_n4180#" 37.6891
+cap "bandgap_ping_pong_amp_cell_2/switch_2/nCLK" "li_n330_n4180#" 3.77143
+cap "bandgap_ping_pong_amp_cell_2/switch_2/A" "a_n170_n4320#" 230.083
+cap "bandgap_ping_pong_amp_cell_2/switch_2/nCLK" "a_n170_n4320#" 15.5294
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_3/m3cap50f_0/2" 270.345
+cap "cap8to1_3/m3cap50f_0/1" "cap8to1_3/m3cap50f_0/2" 134
+cap "cap8to1_3/m3cap50f_0/1" "cap8to1_3/m3cap50f_0/2" 170.765
 cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_0/Vphi2" 7.54286
+cap "bandgap_ping_pong_amp_cell_0/switch_3/A" "bandgap_ping_pong_amp_cell_0/Vphi2" 15.5294
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_0/switch_2/A" 88.0705
 cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_0/switch_3/A" 16.5
-cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_0/switch_3/A" 15.5294
 cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_0/Vnphi1" 7.54286
-cap "bandgap_ping_pong_amp_cell_0/switch_3/A" "bandgap_ping_pong_amp_cell_0/switch_2/A" 256.042
-cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_0/switch_2/A" 70.5833
-cap "bandgap_ping_pong_amp_cell_0/Vphi1" "bandgap_ping_pong_amp_cell_0/Vp" 7.54286
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_0/switch_3/B" 180.61
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_0/switch_3/A" 177.352
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_0/Vphi1" 38.4
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_0/w_n7330_3740#" 8.1
+cap "bandgap_ping_pong_amp_cell_0/switch_3/A" "bandgap_ping_pong_amp_cell_0/switch_2/A" 303.708
+cap "bandgap_ping_pong_amp_cell_0/switch_3/A" "bandgap_ping_pong_amp_cell_0/Vnphi1" 15.5294
+subcap "m2_8010_6150#" -25047.5
+subcap "m2_8010_6150#" -26685.1
+subcap "m1_9220_6150#" -36483.1
+subcap "m1_9220_6150#" -36492.4
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_1/m3cap50f_0/2" 270.667
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/switch_2/A" 24.75
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/switch_2/A" 8.25
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/Vphi2" 3.77143
+cap "bandgap_ping_pong_amp_cell_2/Vnphi1" "li_n330_n4180#" 3.77143
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/switch_2/A" 2.29167
+cap "bandgap_ping_pong_amp_cell_2/switch_3/A" "li_n330_n4180#" 8.25
+cap "bandgap_ping_pong_amp_cell_2/switch_3/A" "bandgap_ping_pong_amp_cell_2/Vphi2" 15.5294
+cap "bandgap_ping_pong_amp_cell_2/switch_3/A" "bandgap_ping_pong_amp_cell_2/switch_2/A" 256.042
+cap "bandgap_ping_pong_amp_cell_2/Vnphi1" "li_n330_n4180#" 3.77143
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/switch_2/A" 35.2917
+cap "li_n330_n4180#" "bandgap_ping_pong_amp_cell_2/Vphi2" 3.77143
+cap "bandgap_ping_pong_amp_cell_2/Vnphi1" "bandgap_ping_pong_amp_cell_2/switch_3/A" 15.5294
+cap "bandgap_ping_pong_amp_cell_2/switch_3/A" "li_n330_n4180#" 8.25
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_3/m3cap50f_0/2" 270.667
+cap "bandgap_ping_pong_amp_cell_0/switch_3/B" "m3_n510_n4640#" 180.61
+cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_0/switch_3/A" 9.04062
+cap "bandgap_ping_pong_amp_cell_0/Vphi1" "m3_n510_n4640#" 38.4
+cap "bandgap_ping_pong_amp_cell_0/Vp" "bandgap_ping_pong_amp_cell_0/Vphi1" 7.54286
+cap "bandgap_ping_pong_amp_cell_0/Vphi1" "bandgap_ping_pong_amp_cell_0/switch_3/A" 13.2135
+cap "bandgap_ping_pong_amp_cell_0/Vnphi1" "m3_n510_n4640#" 26.49
+cap "bandgap_ping_pong_amp_cell_0/switch_3/A" "m3_n510_n4640#" 177.352
 cap "bandgap_ping_pong_amp_cell_0/Vp" "bandgap_ping_pong_amp_cell_0/switch_3/A" 16.5
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_0/Vnphi1" 26.49
-cap "bandgap_ping_pong_amp_cell_0/switch_6/A" "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" 55.4225
-cap "bandgap_ping_pong_amp_cell_0/switch_6/nCLK" "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" 0.09
-cap "bandgap_ping_pong_amp_cell_0/switch_6/B" "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" 2.835
+cap "bandgap_ping_pong_amp_cell_0/w_n7330_3740#" "m3_n510_n4640#" 8.1
+cap "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" "bandgap_ping_pong_amp_cell_0/switch_6/A" 55.4225
+cap "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" "bandgap_ping_pong_amp_cell_0/w_n7330_3740#" 1.26
 cap "bandgap_ping_pong_amp_cell_0/switch_6/CLK" "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" -4.56
-cap "bandgap_ping_pong_amp_cell_0/w_n7330_3740#" "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" 1.26
-cap "bandgap_ping_pong_amp_cell_0/Vphi1" "m3_n510_n4640#" 8.86538
-cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_0/switch_6/B" -94.6175
-merge "bandgap_ping_pong_amp_cell_0/Vnphi2" "bandgap_ping_pong_amp_cell_1/Vphi1" -1884.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -324600 -10850 0 0 0 0 0 0 0 0 0 0
-merge "bandgap_ping_pong_amp_cell_1/Vphi1" "m1_n240_n4390#"
-merge "bandgap_ping_pong_amp_cell_0/a_n7320_3440#" "bandgap_ping_pong_amp_cell_1/a_n7320_3440#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" "bandgap_ping_pong_amp_cell_0/switch_6/nCLK" 0.09
+cap "bandgap_ping_pong_amp_cell_0/switch_6/B" "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" 2.835
+cap "bandgap_ping_pong_amp_cell_0/switch_6/B" "m3_n510_n4640#" -94.6175
+cap "m3_n510_n4640#" "bandgap_ping_pong_amp_cell_0/Vphi1" 8.86538
+subcap "m2_8010_6150#" -26638.5
+subcap "m2_8010_6150#" -23983.5
+subcap "m1_9220_6150#" -35925.4
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 128.63
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" -133.8
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" -8.4
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" 149.26
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" 294.46
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 32.7603
+subcap "m1_9220_6150#" -35577.2
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 111.586
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" -86.26
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 32.3775
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 0.975
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 78.325
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 122.179
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 156.765
+cap "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 0.975
+cap "cap8to1_1/m3cap50f_6/2" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/2" 224
+cap "bandgap_ping_pong_amp_cell_2/Vp" "bandgap_ping_pong_amp_cell_2/switch_3/A" 8.25
+cap "bandgap_ping_pong_amp_cell_2/Vphi1" "bandgap_ping_pong_amp_cell_2/Vp" 3.77143
+cap "bandgap_ping_pong_amp_cell_2/switch_3/A" "bandgap_ping_pong_amp_cell_2/Vnphi1" 0.621622
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/switch_3/A" 177.352
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/Vnphi1" 26.49
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/w_n7330_3740#" 8.1
+cap "bandgap_ping_pong_amp_cell_2/Vnphi1" "bandgap_ping_pong_amp_cell_2/switch_3/A" 7.36
+cap "bandgap_ping_pong_amp_cell_2/Vp" "bandgap_ping_pong_amp_cell_2/switch_3/A" 8.25
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/Vphi1" 38.4
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/switch_3/B" 180.61
+cap "bandgap_ping_pong_amp_cell_2/Vp" "bandgap_ping_pong_amp_cell_2/Vphi1" 3.77143
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/switch_6/A" 55.4225
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/switch_6/CLK" -3.75231
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/w_n6260_5430#" 1.26
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/switch_6/nCLK" 0.09
+cap "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "bandgap_ping_pong_amp_cell_2/switch_6/B" 3.9525
+cap "bandgap_ping_pong_amp_cell_2/Vphi1" "li_31740_n2700#" 8.05769
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 60.8
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 24.32
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 31.75
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_840_6920#" 158.34
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 2.86
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_1080_9350#" 109.505
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/VN" 82.9125
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 162.536
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 105.64
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_840_6920#" 242.51
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/VN" 55.735
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_1080_9350#" 112.525
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 0.975
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" 131.057
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/VN" 3.9875
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" -16.79
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" 97.8192
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" 0.975
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" 1.365
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_1080_9350#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" -8.2
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" 76.91
+cap "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_3/m3cap50f_6/2" 205.333
+merge "cap8to1_3/m3cap50f_0/1" "bandgap_ping_pong_amp_cell_2/switch_1/B" -3816.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -407600 -7750 -12400 -700 -12400 -700 -12400 -700 -362200 -4420 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_2/switch_1/B" "cap8to1_2/m3cap50f_6/1"
+merge "cap8to1_2/m3cap50f_6/1" "cap8to1_2/m3cap50f_7/1"
+merge "cap8to1_2/m3cap50f_7/1" "li_50770_2200#"
+merge "cap8to1_3/VSUBS" "cap8to1_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap8to1_1/VSUBS" "bandgap_ping_pong_amp_cell_2/a_n7320_3440#"
+merge "bandgap_ping_pong_amp_cell_2/a_n7320_3440#" "bandgap_ping_pong_amp_cell_0/a_n7320_3440#"
+merge "bandgap_ping_pong_amp_cell_0/a_n7320_3440#" "middle_ping_pong_amplifier_0/VSUBS"
+merge "middle_ping_pong_amplifier_0/VSUBS" "cap8to1_2/VSUBS"
+merge "cap8to1_2/VSUBS" "cap8to1_0/VSUBS"
+merge "cap8to1_0/VSUBS" "bandgap_ping_pong_amp_cell_3/a_n7320_3440#"
+merge "bandgap_ping_pong_amp_cell_3/a_n7320_3440#" "bandgap_ping_pong_amp_cell_1/a_n7320_3440#"
 merge "bandgap_ping_pong_amp_cell_1/a_n7320_3440#" "VSUBS"
-merge "bandgap_ping_pong_amp_cell_0/Vphi1" "bandgap_ping_pong_amp_cell_1/Vphi2" -3276.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -504880 -14380 0 0 0 0 0 0 0 0 0 0
-merge "bandgap_ping_pong_amp_cell_1/Vphi2" "m1_n470_n5640#"
-merge "bandgap_ping_pong_amp_cell_0/Vp" "bandgap_ping_pong_amp_cell_1/Vp" -5213.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -475000 -17360 0 0 0 0 0 0 0 0 0 0 0 0
-merge "bandgap_ping_pong_amp_cell_1/Vp" "li_n330_n4180#"
-merge "bandgap_ping_pong_amp_cell_0/switch_3/A" "bandgap_ping_pong_amp_cell_1/switch_3/A" -4352.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -418900 -14420 0 0 0 0 0 0 0 0 0 0 0 0
-merge "bandgap_ping_pong_amp_cell_1/switch_3/A" "a_n170_n4320#"
-merge "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" "bandgap_ping_pong_amp_cell_1/a_n3380_5360#" -5610.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -787390 -26395 0 0 0 0 0 0
-merge "bandgap_ping_pong_amp_cell_1/a_n3380_5360#" "m3_n510_n4640#"
-merge "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" -5588.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2145900 -14180 334000 -3740 -243500 -2300 0 0 0 0 0 0
-merge "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "m1_9250_n4810#"
-merge "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" -3514.72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2087200 -11500 -183400 -1910 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_2/Vnphi2" "bandgap_ping_pong_amp_cell_0/Vnphi2" -6268.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 696000 -2480 2617700 -41500 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_0/Vnphi2" "bandgap_ping_pong_amp_cell_1/Vphi1"
+merge "bandgap_ping_pong_amp_cell_1/Vphi1" "m1_n240_n4390#"
+merge "m1_n240_n4390#" "bandgap_ping_pong_amp_cell_3/Vphi1"
+merge "bandgap_ping_pong_amp_cell_3/Vphi1" "a_35230_n5180#"
+merge "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" -11477 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9193351 -41347 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/w_n410_5880#" "m2_44090_710#"
+merge "m2_44090_710#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#"
+merge "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#"
 merge "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/w_n410_5880#" "m2_8010_790#"
-merge "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" -2527.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -373460 -11740 0 0 0 0 0 0 0 0
-merge "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" "m2_n470_n6780#"
-merge "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" "bandgap_ping_pong_amp_cell_1/Vnphi1" -673.915 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -305800 -5980 0 0 0 0 0 0 0 0
+merge "m2_8010_790#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#"
+merge "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "m2_8010_6150#"
+merge "cap8to1_3/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_2/switch_1/a_270_430#" -5043.29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43200 -160 -1670700 -16180 342400 -3740 -244800 -2760 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_2/switch_1/a_270_430#" "cap8to1_2/m3cap50f_6/2"
+merge "cap8to1_2/m3cap50f_6/2" "a_53640_n3660#"
+merge "a_53640_n3660#" "m1_50560_2060#"
+merge "m1_50560_2060#" "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/inverter_large_0/GND"
+merge "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#"
+merge "bandgap_ping_pong_amp_cell_3/selfbiasedcascode2stage_0/a_n360_4860#" "m1_45330_n4890#"
+merge "bandgap_ping_pong_amp_cell_2/Vp" "bandgap_ping_pong_amp_cell_0/Vp" -18617.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1241680 -63522 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_0/Vp" "bandgap_ping_pong_amp_cell_3/Vp"
+merge "bandgap_ping_pong_amp_cell_3/Vp" "bandgap_ping_pong_amp_cell_1/Vp"
+merge "bandgap_ping_pong_amp_cell_1/Vp" "li_n330_n4180#"
+merge "bandgap_ping_pong_amp_cell_0/Vphi1" "bandgap_ping_pong_amp_cell_1/Vphi2" -3189.65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -371920 -14380 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_1/Vphi2" "m1_n470_n5640#"
+merge "bandgap_ping_pong_amp_cell_2/a_n3380_5360#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout" -7049.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32800 -2360 -4800 -480 -4800 -480 957410 -29515 0 0 0 0 0 0
+merge "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout" "bandgap_ping_pong_amp_cell_3/a_n3380_5360#"
+merge "bandgap_ping_pong_amp_cell_3/a_n3380_5360#" "li_31740_n2700#"
+merge "cap8to1_1/m3cap50f_0/1" "bandgap_ping_pong_amp_cell_0/switch_1/B" -4436.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 306600 -8850 65000 -700 65000 -700 65000 -700 405400 -13050 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_0/switch_1/B" "middle_ping_pong_amplifier_0/li_n7400_2970#"
+merge "middle_ping_pong_amplifier_0/li_n7400_2970#" "cap8to1_0/m3cap50f_7/1"
+merge "cap8to1_0/m3cap50f_7/1" "cap8to1_0/m3cap50f_6/1"
+merge "cap8to1_0/m3cap50f_6/1" "li_14690_2280#"
+merge "bandgap_ping_pong_amp_cell_2/switch_3/A" "bandgap_ping_pong_amp_cell_0/switch_3/A" -18904.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55800 -100 0 0 -1314070 -64761 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_0/switch_3/A" "bandgap_ping_pong_amp_cell_3/switch_3/A"
+merge "bandgap_ping_pong_amp_cell_3/switch_3/A" "bandgap_ping_pong_amp_cell_1/switch_3/A"
+merge "bandgap_ping_pong_amp_cell_1/switch_3/A" "a_n170_n4320#"
+merge "bandgap_ping_pong_amp_cell_2/Vnphi1" "bandgap_ping_pong_amp_cell_3/switch_2/nCLK" -3410.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1218440 -20140 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_3/switch_2/nCLK" "m2_35610_n6860#"
+merge "cap8to1_0/m3cap50f_0/1" "bandgap_ping_pong_amp_cell_1/switch_1/B" -422.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43200 -160 0 0 0 0 0 0 -29200 -1050 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_1/switch_1/B" "li_14730_n8680#"
+merge "bandgap_ping_pong_amp_cell_0/switch_1/nCLK" "bandgap_ping_pong_amp_cell_2/a_n6260_3040#" -7234.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1827900 -39800 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_2/a_n6260_3040#" "bandgap_ping_pong_amp_cell_0/a_n6260_3040#"
+merge "bandgap_ping_pong_amp_cell_0/a_n6260_3040#" "bandgap_ping_pong_amp_cell_1/Vnphi1"
 merge "bandgap_ping_pong_amp_cell_1/Vnphi1" "m2_n240_n5520#"
+merge "m2_n240_n5520#" "bandgap_ping_pong_amp_cell_3/Vnphi1"
+merge "bandgap_ping_pong_amp_cell_3/Vnphi1" "li_35230_n5610#"
+merge "cap8to1_1/m3cap50f_0/2" "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" -8117.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7000 -400 -3054100 -20610 448000 -5240 -131600 -4260 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_0/2"
+merge "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_0/2" "middle_ping_pong_amplifier_0/p-res8x20k_1/2"
+merge "middle_ping_pong_amplifier_0/p-res8x20k_1/2" "cap8to1_0/m3cap50f_6/2"
+merge "cap8to1_0/m3cap50f_6/2" "a_17560_2950#"
+merge "a_17560_2950#" "m1_14480_2140#"
+merge "m1_14480_2140#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND"
+merge "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#"
+merge "bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n360_4860#" "m1_9250_n4810#"
+merge "bandgap_ping_pong_amp_cell_0/a_n3380_5360#" "bandgap_ping_pong_amp_cell_1/a_n3380_5360#" -5625.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -789870 -26555 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_1/a_n3380_5360#" "m3_n510_n4640#"
+merge "bandgap_ping_pong_amp_cell_3/Vnphi2" "bandgap_ping_pong_amp_cell_1/Vnphi2" -1209.66 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -74040 -5666 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_1/Vnphi2" "m1_14810_n10970#"
+merge "bandgap_ping_pong_amp_cell_2/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" -10023.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3443801 -35516 197700 -1260 -223200 -3750 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#"
+merge "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" "middle_ping_pong_amplifier_0/m3cap50f_1/2"
+merge "middle_ping_pong_amplifier_0/m3cap50f_1/2" "m1_9220_6150#"
+merge "bandgap_ping_pong_amp_cell_2/Vphi1" "bandgap_ping_pong_amp_cell_3/Vphi2" -3339.69 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1163400 -19980 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_3/Vphi2" "m1_35610_n5720#"
+merge "bandgap_ping_pong_amp_cell_3/a_n6260_3040#" "bandgap_ping_pong_amp_cell_1/a_n6260_3040#" -990.516 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48400 -4844 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_1/a_n6260_3040#" "m2_14810_n10970#"
+merge "cap8to1_2/m3cap50f_0/1" "bandgap_ping_pong_amp_cell_3/switch_1/B" -1147.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -112000 -2960 0 0 0 0 0 0 -87800 -820 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_3/switch_1/B" "li_50810_n8760#"
+merge "bandgap_ping_pong_amp_cell_0/Vnphi1" "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" -2525.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -370260 -11740 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_amp_cell_1/switch_2/nCLK" "m2_n470_n6780#"

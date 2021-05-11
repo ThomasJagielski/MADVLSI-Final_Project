@@ -1,4 +1,4 @@
-* NGSPICE file created from bandgap_ping_pong_amp_cell.ext - technology: sky130A
+* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell.ext - technology: sky130A
 
 .subckt switch a_270_430# CLK w_n220_690# A B nCLK
 X0 A CLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
@@ -167,7 +167,7 @@ X107 a_840_6920# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__
 .ends
 
 
-* Top level circuit bandgap_ping_pong_amp_cell
+* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell
 
 Xswitch_0 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_0/A
 + switch_1/A Vnphi1 switch
