@@ -1,0 +1,8 @@
+* NGSPICE file created from p-res20k.ext - technology: sky130A
+
+
+* Top level circuit p-res20k
+
+X0 2 1 GND sky130_fd_pr__res_xhigh_po w=350000u l=3.5e+06u
+.end
+

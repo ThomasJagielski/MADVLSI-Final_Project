@@ -1,0 +1,26 @@
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: p-res20k.spice                  |Circuit 2: res.spice                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po (1)             |sky130_fd_pr__res_xhigh_po (1)             
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__res_xhigh_po0 pin GND connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__res_xhigh_poR2 pin GND connections are tied together (0)
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+  Parallelized instances disagree on pin connections.
+    Circuit1 instance sky130_fd_pr__res_xhigh_po0 pin GND connections are no connects (1)
+    Circuit2 instance sky130_fd_pr__res_xhigh_poR2 pin GND connections are tied together (0)
+sky130_fd_pr__res_xhigh_po0 vs. sky130_fd_pr__res_xhigh_poR2:
+Property mult in circuit2 has no matching property in circuit1
+Cells have no pins;  pin matching not needed.
+Device classes p-res20k.spice and res.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: p-res20k.spice
