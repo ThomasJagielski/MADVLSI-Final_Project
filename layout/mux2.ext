@@ -17,51 +17,51 @@ node "a_320_380#" 2049 700.9 320 380 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_190_970#" 1347 636.17 190 970 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28600 1800 0 0 14000 700 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_270_500#" 2363 789.6 270 500 nw 0 0 0 0 263200 2080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "muxout" "a_320_380#" 43.9494
-cap "m1_410_40#" "B" 250.67
-cap "m1_410_550#" "m1_410_40#" 145.385
-cap "muxout" "B" 468.6
-cap "A" "m1_410_40#" 250.67
-cap "m1_410_550#" "muxout" 237.56
-cap "a_320_380#" "B" 8.8
-cap "A" "muxout" 428.267
-cap "m1_410_550#" "a_320_380#" 57.525
-cap "a_240_250#" "m1_410_40#" 53.8
-cap "w_270_500#" "muxout" 10.36
-cap "A" "a_320_380#" 94.42
-cap "m1_410_550#" "B" 228.38
-cap "A" "B" 575.5
+cap "muxout" "A" 428.267
+cap "muxout" "w_270_500#" 10.36
 cap "a_240_250#" "a_320_380#" 61.3333
-cap "A" "m1_410_550#" 228.38
+cap "a_320_380#" "A" 94.42
+cap "m1_410_550#" "B" 228.38
+cap "m1_410_40#" "B" 250.67
+cap "m1_410_550#" "A" 228.38
+cap "m1_410_550#" "w_270_500#" 38.805
+cap "muxout" "a_320_380#" 43.9494
+cap "a_240_250#" "m1_410_40#" 53.8
+cap "m1_410_40#" "A" 250.67
+cap "m1_410_550#" "muxout" 237.56
+cap "B" "A" 575.5
 cap "w_270_500#" "B" 8.51
-cap "a_190_970#" "muxout" 42.2097
-cap "w_270_500#" "m1_410_550#" 38.805
-cap "w_270_500#" "A" 8.51
-cap "a_190_970#" "a_320_380#" 28.175
-cap "A" "a_240_250#" 28.42
-cap "m1_410_40#" "muxout" 238.87
-cap "a_190_970#" "m1_410_550#" 22.4625
+cap "m1_410_550#" "a_320_380#" 57.525
+cap "muxout" "m1_410_40#" 238.87
+cap "muxout" "a_190_970#" 42.2097
+cap "a_240_250#" "A" 28.42
 cap "m1_410_40#" "a_320_380#" 59.225
+cap "a_190_970#" "a_320_380#" 28.175
+cap "w_270_500#" "A" 8.51
+cap "muxout" "B" 468.6
+cap "m1_410_550#" "m1_410_40#" 145.385
+cap "B" "a_320_380#" 8.8
+cap "m1_410_550#" "a_190_970#" 22.4625
 device msubckt sky130_fd_pr__nfet_01v8 660 30 661 31 l=30 w=200 "VSUBS" "a_320_380#" 60 0 "muxout" 200 0 "B" 200 0
 device msubckt sky130_fd_pr__nfet_01v8 530 30 531 31 l=30 w=200 "VSUBS" "a_240_250#" 60 0 "A" 200 0 "muxout" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 660 730 661 731 l=30 w=200 "w_270_500#" "a_190_970#" 60 0 "muxout" 200 0 "B" 200 0
 device msubckt sky130_fd_pr__pfet_01v8 530 730 531 731 l=30 w=200 "w_270_500#" "a_320_380#" 60 0 "A" 200 0 "muxout" 200 0
-cap "muxout" "inverter_0/VN" 17.4706
-cap "B" "inverter_0/Y" 105.794
-cap "A" "inverter_0/VN" 65.4107
-cap "inverter_0/A" "inverter_0/VN" 17.575
-cap "inverter_0/VP" "inverter_0/Y" -4.9738e-14
-cap "inverter_0/A" "A" 81.5294
-cap "B" "inverter_0/VP" 3.37508e-14
-cap "inverter_0/Y" "muxout" 127.034
-cap "inverter_0/Y" "inverter_0/VN" 55.76
-cap "B" "inverter_0/VN" 24.75
-cap "inverter_0/Y" "A" 420.75
-cap "inverter_0/VP" "muxout" 36.7802
-cap "inverter_0/A" "inverter_0/Y" 85.861
-cap "B" "inverter_0/A" 22
+cap "inverter_0/VN" "A" 65.4107
+cap "inverter_0/VP" "inverter_0/A" 90.75
+cap "inverter_0/VN" "B" 24.75
 cap "inverter_0/VP" "A" 58.1429
-cap "inverter_0/A" "inverter_0/VP" 90.75
+cap "inverter_0/VN" "inverter_0/Y" 55.76
+cap "B" "inverter_0/VP" 2.84217e-14
+cap "inverter_0/VP" "inverter_0/Y" -4.9738e-14
+cap "A" "inverter_0/A" 81.5294
+cap "inverter_0/Y" "muxout" 127.034
+cap "B" "inverter_0/A" 22
+cap "inverter_0/VN" "muxout" 17.4706
+cap "inverter_0/Y" "inverter_0/A" 85.861
+cap "inverter_0/VP" "muxout" 36.7802
+cap "inverter_0/Y" "A" 420.75
+cap "inverter_0/VN" "inverter_0/A" 17.575
+cap "B" "inverter_0/Y" 105.794
 merge "inverter_0/VN" "m1_410_40#" -177.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760 0 0 0 0 0 0 0 0 0 0
 merge "m1_410_40#" "VSUBS"
 merge "inverter_0/A" "a_190_970#" -60.135 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -900 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

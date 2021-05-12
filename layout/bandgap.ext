@@ -1,4 +1,4 @@
-timestamp 1620772218
+timestamp 1620778513
 version 8.3
 tech sky130A
 style ngspice()
@@ -20,127 +20,127 @@ node "a_5730_5650#" 4048 7682.4 5730 5650 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "a_n4290_5650#" 4051 7688.27 -4290 5650 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 400 0 0 516000 25800 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_15700_5760#" 4087 7758.71 15700 5760 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 400 0 0 520800 26040 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "a_n4290_5650#" "m1_1470_1700#" 199.92
-cap "m1_11510_1700#" "a_5730_5650#" 199.92
-cap "a_15620_4260#" "m1_11510_1700#" 116.44
-cap "m1_390_990#" "m1_1470_1700#" 121.25
-cap "m1_11510_1700#" "m1_11510_1140#" 76.1538
-cap "a_n4360_4200#" "m1_1470_1700#" 149.28
-cap "m1_10570_n5640#" "m1_10570_n5080#" 1646.47
-cap "a_15620_4260#" "m1_11510_1140#" 102.48
 cap "m1_390_990#" "a_n4360_4200#" 249.5
+cap "a_n4360_4200#" "m1_1470_1700#" 149.28
+cap "m1_10570_n5080#" "m1_10570_n5640#" 1646.47
+cap "a_15620_4260#" "m1_11510_1700#" 116.44
+cap "a_n4290_5650#" "m1_1470_1700#" 199.92
+cap "m1_390_990#" "m1_1470_1700#" 121.25
+cap "a_15620_4260#" "m1_11510_1140#" 102.48
+cap "m1_11510_1700#" "a_5730_5650#" 199.92
+cap "m1_11510_1700#" "m1_11510_1140#" 76.1538
 subcap "m1_10570_n5640#" -15503.6
 subcap "m1_10570_n5080#" -8268.92
-cap "bandgap_thomas_0/selfbiasedcascode2stage_0/Vout" "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/VDD" 117.525
-cap "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/VDD" 2.84217e-14
+cap "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/VDD" "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/GND" 2.84217e-14
+cap "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/VDD" "bandgap_thomas_0/selfbiasedcascode2stage_0/Vout" 117.525
 subcap "m1_10570_n5080#" -7907.35
-cap "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/VDD" "bandgap_thomas_0/selfbiasedcascode2stage_0/Vout" 227.92
+cap "bandgap_thomas_0/selfbiasedcascode2stage_0/Vout" "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/VDD" 227.92
 cap "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/GND" "bandgap_thomas_0/selfbiasedcascode2stage_0/inverter_large_0/VDD" -33.0469
-cap "selfbiasedcascode2stage_2/w_n410_5880#" "a_n4360_4200#" 14.0625
-cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 7.73438
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/w_n410_5880#" 14.0625
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/a_n360_4860#" 7.73438
 cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 100.887
-cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 64.5968
-cap "selfbiasedcascode2stage_2/w_n410_5880#" "a_n4360_4200#" 7.03125
-subcap "m1_390_990#" -3853.8
-cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 7.73438
-cap "a_n4360_4200#" "bandgap_thomas_0/li_9280_6160#" 45
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/a_n360_4860#" 64.5968
 cap "a_n4360_4200#" "selfbiasedcascode2stage_2/w_n410_5880#" 7.03125
-cap "bandgap_thomas_0/li_9280_6160#" "a_n4360_4200#" 225
+subcap "m1_390_990#" -3853.8
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/a_n360_4860#" 7.73438
+cap "bandgap_thomas_0/li_9280_6160#" "a_n4360_4200#" 45
+cap "selfbiasedcascode2stage_2/w_n410_5880#" "a_n4360_4200#" 7.03125
+cap "a_n4360_4200#" "bandgap_thomas_0/li_9280_6160#" 225
+cap "a_n4360_4200#" "selfbiasedcascode2stage_1/a_n360_4860#" 14.3478
 cap "a_n4360_4200#" "bandgap_thomas_0/li_9280_6160#" 51.4286
-cap "selfbiasedcascode2stage_1/a_n360_4860#" "a_n4360_4200#" 14.3478
-cap "bandgap_thomas_0/bandgap_current_mirror_1/a_550_110#" "selfbiasedcascode2stage_1/a_120_4860#" 46.2
-cap "bandgap_thomas_0/bandgap_current_mirror_1/a_550_110#" "bandgap_thomas_0/bandgap_current_mirror_1/w_n270_70#" 10
-cap "selfbiasedcascode2stage_1/a_n360_4860#" "bandgap_thomas_0/bandgap_current_mirror_1/a_550_110#" 20.5135
+cap "bandgap_thomas_0/bandgap_current_mirror_1/w_n270_70#" "bandgap_thomas_0/bandgap_current_mirror_1/a_550_110#" 10
+cap "selfbiasedcascode2stage_1/a_120_4860#" "bandgap_thomas_0/bandgap_current_mirror_1/a_550_110#" 46.2
+cap "bandgap_thomas_0/bandgap_current_mirror_1/a_550_110#" "selfbiasedcascode2stage_1/a_n360_4860#" 20.5135
 cap "selfbiasedcascode2stage_1/a_120_4860#" "bandgap_thomas_0/bandgap_current_mirror_1/a_550_110#" 38.28
-cap "selfbiasedcascode2stage_3/w_n410_5880#" "selfbiasedcascode2stage_3/a_120_4860#" 29.97
-cap "selfbiasedcascode2stage_3/a_120_4860#" "selfbiasedcascode2stage_3/a_n360_4860#" 433.15
-cap "selfbiasedcascode2stage_3/a_120_4860#" "selfbiasedcascode2stage_3/w_n410_5880#" -65.23
+cap "selfbiasedcascode2stage_3/a_120_4860#" "selfbiasedcascode2stage_3/w_n410_5880#" 29.97
+cap "selfbiasedcascode2stage_3/w_n410_5880#" "selfbiasedcascode2stage_3/a_120_4860#" -65.23
+cap "selfbiasedcascode2stage_3/a_n360_4860#" "selfbiasedcascode2stage_3/a_120_4860#" 433.15
 cap "selfbiasedcascode2stage_3/a_120_4860#" "selfbiasedcascode2stage_3/a_n360_4860#" 374.6
-cap "selfbiasedcascode2stage_3/a_n440_7350#" "selfbiasedcascode2stage_3/a_n360_4860#" 43.24
+cap "selfbiasedcascode2stage_3/a_n360_4860#" "selfbiasedcascode2stage_3/a_n440_7350#" 43.24
 cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 96.0036
 cap "selfbiasedcascode2stage_2/w_n410_5880#" "a_n4360_4200#" 62.524
-cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 100.887
-cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 64.5968
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/a_n360_4860#" 100.887
 cap "selfbiasedcascode2stage_2/w_n410_5880#" "a_n4360_4200#" 7.03125
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/a_n360_4860#" 64.5968
 subcap "m1_390_990#" -2859.39
 subcap "m1_1470_1700#" -1358.84
-cap "selfbiasedcascode2stage_2/inverter_large_0/GND" "a_n4360_4200#" 7.73438
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/inverter_large_0/GND" 7.73438
 cap "selfbiasedcascode2stage_2/inverter_large_0/VDD" "a_n4360_4200#" 7.03125
 subcap "m1_1470_1700#" -2890.3
-cap "selfbiasedcascode2stage_2/inverter_large_0/GND" "selfbiasedcascode2stage_2/inverter_large_0/VDD" -1.42109e-14
 cap "selfbiasedcascode2stage_2/inverter_large_0/VDD" "selfbiasedcascode2stage_2/Vout" 307.355
+cap "selfbiasedcascode2stage_2/inverter_large_0/VDD" "selfbiasedcascode2stage_2/inverter_large_0/GND" -1.42109e-14
 cap "selfbiasedcascode2stage_1/a_n360_4860#" "a_n4360_4200#" 43.0435
 cap "selfbiasedcascode2stage_1/w_n410_5880#" "a_n4360_4200#" 57.3913
 subcap "m1_11510_1140#" -1315.99
 subcap "m1_11510_1700#" -2733.28
 cap "selfbiasedcascode2stage_1/inverter_large_0/VDD" "selfbiasedcascode2stage_1/Vout" 307.355
-cap "selfbiasedcascode2stage_3/w_n410_5880#" "selfbiasedcascode2stage_3/a_n440_7350#" -20.14
 cap "selfbiasedcascode2stage_3/w_n410_5880#" "a_15620_4260#" 34.0645
-cap "a_15620_4260#" "selfbiasedcascode2stage_3/a_n360_4860#" 42.5806
+cap "selfbiasedcascode2stage_3/a_n360_4860#" "a_15620_4260#" 42.5806
+cap "selfbiasedcascode2stage_3/w_n410_5880#" "selfbiasedcascode2stage_3/a_n440_7350#" -20.14
 cap "selfbiasedcascode2stage_3/w_n410_5880#" "selfbiasedcascode2stage_3/a_120_4860#" -6.565
-cap "selfbiasedcascode2stage_3/a_n440_7350#" "selfbiasedcascode2stage_3/w_n410_5880#" -346.91
+cap "selfbiasedcascode2stage_3/w_n410_5880#" "selfbiasedcascode2stage_3/a_n440_7350#" -346.91
 cap "selfbiasedcascode2stage_3/a_n360_4860#" "selfbiasedcascode2stage_3/a_120_4860#" 46.7
-cap "selfbiasedcascode2stage_3/a_n440_7350#" "selfbiasedcascode2stage_3/a_n360_4860#" 112.462
-cap "selfbiasedcascode2stage_3/a_n360_4860#" "selfbiasedcascode2stage_3/a_120_4860#" 46.7
+cap "selfbiasedcascode2stage_3/a_n360_4860#" "selfbiasedcascode2stage_3/a_n440_7350#" 112.462
 cap "selfbiasedcascode2stage_3/a_n440_7350#" "selfbiasedcascode2stage_3/a_n360_4860#" -238.287
-cap "selfbiasedcascode2stage_3/inverter_large_0/VDD" "selfbiasedcascode2stage_3/Vout" 28.6
-cap "selfbiasedcascode2stage_2/a_n360_4860#" "a_n4360_4200#" 50.4
+cap "selfbiasedcascode2stage_3/a_120_4860#" "selfbiasedcascode2stage_3/a_n360_4860#" 46.7
+cap "selfbiasedcascode2stage_3/Vout" "selfbiasedcascode2stage_3/inverter_large_0/VDD" 28.6
 cap "a_n4360_4200#" "selfbiasedcascode2stage_2/a_n360_4860#" 108
+cap "a_n4360_4200#" "selfbiasedcascode2stage_2/a_n360_4860#" 50.4
 subcap "m1_1470_1700#" -2892.28
 subcap "m1_1470_1700#" -2895.96
 cap "selfbiasedcascode2stage_2/Vout" "selfbiasedcascode2stage_2/inverter_large_0/VDD" 94.49
 cap "a_n4290_5650#" "selfbiasedcascode2stage_2/m3cap500f_0/1" 120
-cap "a_n4290_5650#" "selfbiasedcascode2stage_2/Vout" 279.137
 cap "a_n4290_5650#" "selfbiasedcascode2stage_2/inverter_large_0/VDD" 9.9
-cap "selfbiasedcascode2stage_1/w_n410_5880#" "a_n4360_4200#" -18.4
+cap "a_n4290_5650#" "selfbiasedcascode2stage_2/Vout" 279.137
+cap "a_n4360_4200#" "selfbiasedcascode2stage_1/w_n410_5880#" -18.4
 cap "selfbiasedcascode2stage_1/w_n410_5880#" "selfbiasedcascode2stage_1/w_n410_5880#" 0.57
 cap "a_n4360_4200#" "selfbiasedcascode2stage_1/a_840_6920#" 261.462
 cap "selfbiasedcascode2stage_1/a_n360_4860#" "a_n4360_4200#" 57.3913
 subcap "m1_11510_1700#" -2873.56
-cap "selfbiasedcascode2stage_1/Vout" "selfbiasedcascode2stage_1/inverter_large_0/VDD" 94.49
-cap "selfbiasedcascode2stage_1/Vout" "a_5730_5650#" 279.137
-cap "a_5730_5650#" "selfbiasedcascode2stage_1/m3cap500f_0/1" 120
 cap "a_5730_5650#" "selfbiasedcascode2stage_1/inverter_large_0/VDD" 9.9
-cap "selfbiasedcascode2stage_3/a_n360_4860#" "a_15620_4260#" 42.5806
+cap "a_5730_5650#" "selfbiasedcascode2stage_1/m3cap500f_0/1" 120
+cap "a_5730_5650#" "selfbiasedcascode2stage_1/Vout" 279.137
+cap "selfbiasedcascode2stage_1/Vout" "selfbiasedcascode2stage_1/inverter_large_0/VDD" 94.49
 cap "a_15620_4260#" "selfbiasedcascode2stage_3/a_840_6920#" 144.571
-cap "selfbiasedcascode2stage_3/w_n410_5880#" "a_15620_4260#" -0.683871
 cap "selfbiasedcascode2stage_3/w_n410_5880#" "selfbiasedcascode2stage_3/w_n410_5880#" 0.475
-cap "selfbiasedcascode2stage_3/Vout" "selfbiasedcascode2stage_3/inverter_large_0/VDD" 22
+cap "a_15620_4260#" "selfbiasedcascode2stage_3/a_n360_4860#" 42.5806
+cap "a_15620_4260#" "selfbiasedcascode2stage_3/w_n410_5880#" -0.683871
+cap "selfbiasedcascode2stage_3/inverter_large_0/VDD" "selfbiasedcascode2stage_3/Vout" 22
 cap "selfbiasedcascode2stage_3/Vout" "selfbiasedcascode2stage_3/m3cap500f_0/1" 109
 subcap "a_n4360_4200#" -8414.99
-cap "selfbiasedcascode2stage_2/a_n360_4860#" "selfbiasedcascode2stage_2/VP" 371.037
+cap "selfbiasedcascode2stage_2/w_n410_5880#" "selfbiasedcascode2stage_2/VP" 48.4615
+cap "selfbiasedcascode2stage_2/VP" "selfbiasedcascode2stage_2/a_n360_4860#" 371.037
 cap "selfbiasedcascode2stage_2/VP" "selfbiasedcascode2stage_2/a_840_6920#" 16.5
-cap "selfbiasedcascode2stage_2/VP" "selfbiasedcascode2stage_2/w_n410_5880#" 48.4615
 cap "a_n4290_5650#" "selfbiasedcascode2stage_2/m3cap500f_0/2" 239.4
 cap "a_n4290_5650#" "selfbiasedcascode2stage_2/m3cap500f_0/1" 140
-cap "selfbiasedcascode2stage_1/a_840_6920#" "selfbiasedcascode2stage_1/VP" 205.615
 cap "selfbiasedcascode2stage_1/a_n360_4860#" "selfbiasedcascode2stage_1/VP" 6.5375
 cap "selfbiasedcascode2stage_1/w_n410_5880#" "selfbiasedcascode2stage_1/VP" 57.3913
-cap "a_5730_5650#" "selfbiasedcascode2stage_1/m3cap500f_0/1" 140
-cap "a_5730_5650#" "selfbiasedcascode2stage_1/m3cap500f_0/2" 239.4
+cap "selfbiasedcascode2stage_1/VP" "selfbiasedcascode2stage_1/a_840_6920#" 205.615
+cap "selfbiasedcascode2stage_1/m3cap500f_0/1" "a_5730_5650#" 140
+cap "selfbiasedcascode2stage_1/m3cap500f_0/2" "a_5730_5650#" 239.4
 subcap "a_15620_4260#" -6986.85
 subcap "a_15620_4260#" -5577.88
-cap "selfbiasedcascode2stage_3/a_n360_4860#" "selfbiasedcascode2stage_3/VP" 6.5375
-cap "selfbiasedcascode2stage_3/a_840_6920#" "selfbiasedcascode2stage_3/VP" 139.672
+cap "selfbiasedcascode2stage_3/VP" "selfbiasedcascode2stage_3/a_840_6920#" 139.672
 cap "selfbiasedcascode2stage_3/VP" "selfbiasedcascode2stage_3/w_n410_5880#" 42.5806
-cap "selfbiasedcascode2stage_3/m3cap500f_0/2" "a_15700_5760#" 239.4
-cap "selfbiasedcascode2stage_3/m3cap500f_0/1" "a_15700_5760#" 140
-subcap "a_n4290_5650#" -6498.45
-cap "selfbiasedcascode2stage_2/m3cap500f_0/2" "a_n4290_5650#" 239.4
-cap "selfbiasedcascode2stage_2/m3cap500f_0/1" "a_n4290_5650#" 140
-subcap "a_5730_5650#" -8004.57
-subcap "a_5730_5650#" -6551.57
-cap "selfbiasedcascode2stage_1/m3cap500f_0/2" "a_5730_5650#" 239.4
-cap "selfbiasedcascode2stage_1/m3cap500f_0/1" "a_5730_5650#" 140
-subcap "a_15700_5760#" -7054.98
+cap "selfbiasedcascode2stage_3/VP" "selfbiasedcascode2stage_3/a_n360_4860#" 6.5375
 cap "a_15700_5760#" "selfbiasedcascode2stage_3/m3cap500f_0/2" 239.4
 cap "selfbiasedcascode2stage_3/m3cap500f_0/1" "a_15700_5760#" 140
-cap "a_n4290_5650#" "selfbiasedcascode2stage_2/m3cap500f_0/2" 93.19
-cap "a_n4290_5650#" "selfbiasedcascode2stage_2/m3cap500f_0/1" 52
-cap "a_5730_5650#" "selfbiasedcascode2stage_1/m3cap500f_0/1" 52
+subcap "a_n4290_5650#" -6498.45
+cap "a_n4290_5650#" "selfbiasedcascode2stage_2/m3cap500f_0/1" 140
+cap "a_n4290_5650#" "selfbiasedcascode2stage_2/m3cap500f_0/2" 239.4
+subcap "a_5730_5650#" -8004.57
+subcap "a_5730_5650#" -6551.57
+cap "selfbiasedcascode2stage_1/m3cap500f_0/1" "a_5730_5650#" 140
+cap "selfbiasedcascode2stage_1/m3cap500f_0/2" "a_5730_5650#" 239.4
+subcap "a_15700_5760#" -7054.98
+cap "selfbiasedcascode2stage_3/m3cap500f_0/1" "a_15700_5760#" 140
+cap "selfbiasedcascode2stage_3/m3cap500f_0/2" "a_15700_5760#" 239.4
+cap "selfbiasedcascode2stage_2/m3cap500f_0/2" "a_n4290_5650#" 93.19
+cap "selfbiasedcascode2stage_2/m3cap500f_0/1" "a_n4290_5650#" 52
 cap "a_5730_5650#" "selfbiasedcascode2stage_1/m3cap500f_0/2" 93.19
-cap "a_15700_5760#" "selfbiasedcascode2stage_3/m3cap500f_0/2" 112
-cap "a_15700_5760#" "selfbiasedcascode2stage_3/m3cap500f_0/1" 63
+cap "selfbiasedcascode2stage_1/m3cap500f_0/1" "a_5730_5650#" 52
+cap "selfbiasedcascode2stage_3/m3cap500f_0/1" "a_15700_5760#" 63
+cap "selfbiasedcascode2stage_3/m3cap500f_0/2" "a_15700_5760#" 112
 merge "selfbiasedcascode2stage_1/VP" "selfbiasedcascode2stage_2/VP" -3422.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6600 -480 0 0 279200 -6400 2920800 -18180 0 0 0 0 0 0 0 0 0 0
 merge "selfbiasedcascode2stage_2/VP" "bandgap_thomas_0/li_9280_6160#"
 merge "bandgap_thomas_0/li_9280_6160#" "a_n4360_4200#"

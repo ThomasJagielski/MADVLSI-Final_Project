@@ -1,4 +1,4 @@
-* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/temperature_sensor_layout.ext - technology: sky130A
+* NGSPICE file created from temperature_sensor_layout.ext - technology: sky130A
 
 .subckt switch a_270_430# CLK w_n220_690# A B nCLK
 X0 A CLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
@@ -540,25 +540,24 @@ Xp-res6x20k_0 p-res8x20k_0/2 VSUBS VSUBS p-res6x20k
 Xp-res6x20k_1 m3cap50f_1/1 VSUBS selfbiasedcascode2stage_0/Vout p-res6x20k
 .ends
 
-.subckt bandgap_ping_pong VSUBS bandgap_ping_pong_amp_cell_3/Vp bandgap_ping_pong_amp_cell_1/switch_5/A
-+ middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD cap8to1_3/m3cap50f_9/1
-+ bandgap_ping_pong_amp_cell_3/switch_3/A
-Xbandgap_ping_pong_amp_cell_0 bandgap_ping_pong_amp_cell_3/Vnphi1 VSUBS bandgap_ping_pong_amp_cell_3/switch_3/A
-+ cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi2
-+ bandgap_ping_pong_amp_cell_3/Vphi1 bandgap_ping_pong_amp_cell_2/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ bandgap_ping_pong_amp_cell_3/Vp bandgap_ping_pong_amp_cell
-Xbandgap_ping_pong_amp_cell_1 bandgap_ping_pong_amp_cell_2/Vnphi1 VSUBS bandgap_ping_pong_amp_cell_3/switch_3/A
-+ cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi1
-+ bandgap_ping_pong_amp_cell_3/Vphi2 bandgap_ping_pong_amp_cell_3/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ bandgap_ping_pong_amp_cell_3/Vp bandgap_ping_pong_amp_cell
-Xbandgap_ping_pong_amp_cell_2 bandgap_ping_pong_amp_cell_3/Vnphi1 VSUBS bandgap_ping_pong_amp_cell_3/switch_3/A
-+ cap8to1_3/m3cap50f_9/1 bandgap_ping_pong_amp_cell_3/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi2
-+ bandgap_ping_pong_amp_cell_3/Vphi1 bandgap_ping_pong_amp_cell_2/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ bandgap_ping_pong_amp_cell_3/Vp bandgap_ping_pong_amp_cell
-Xbandgap_ping_pong_amp_cell_3 bandgap_ping_pong_amp_cell_2/Vnphi1 VSUBS bandgap_ping_pong_amp_cell_3/switch_3/A
-+ cap8to1_3/m3cap50f_9/1 bandgap_ping_pong_amp_cell_3/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi1
-+ bandgap_ping_pong_amp_cell_3/Vphi2 bandgap_ping_pong_amp_cell_3/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
-+ bandgap_ping_pong_amp_cell_3/Vp bandgap_ping_pong_amp_cell
+.subckt bandgap_ping_pong VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
++ bandgap_ping_pong_amp_cell_1/switch_5/A cap8to1_3/m3cap50f_9/1 Vn Vp
+Xbandgap_ping_pong_amp_cell_0 bandgap_ping_pong_amp_cell_3/Vnphi1 VSUBS Vn cap8to1_1/m3cap50f_9/1
++ bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi2 bandgap_ping_pong_amp_cell_3/Vphi1
++ bandgap_ping_pong_amp_cell_2/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
++ Vp bandgap_ping_pong_amp_cell
+Xbandgap_ping_pong_amp_cell_1 bandgap_ping_pong_amp_cell_2/Vnphi1 VSUBS Vn cap8to1_1/m3cap50f_9/1
++ bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi1 bandgap_ping_pong_amp_cell_3/Vphi2
++ bandgap_ping_pong_amp_cell_3/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
++ Vp bandgap_ping_pong_amp_cell
+Xbandgap_ping_pong_amp_cell_2 bandgap_ping_pong_amp_cell_3/Vnphi1 VSUBS Vn cap8to1_3/m3cap50f_9/1
++ bandgap_ping_pong_amp_cell_3/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi2 bandgap_ping_pong_amp_cell_3/Vphi1
++ bandgap_ping_pong_amp_cell_2/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
++ Vp bandgap_ping_pong_amp_cell
+Xbandgap_ping_pong_amp_cell_3 bandgap_ping_pong_amp_cell_2/Vnphi1 VSUBS Vn cap8to1_3/m3cap50f_9/1
++ bandgap_ping_pong_amp_cell_3/switch_5/A bandgap_ping_pong_amp_cell_3/Vphi1 bandgap_ping_pong_amp_cell_3/Vphi2
++ bandgap_ping_pong_amp_cell_3/Vnphi1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
++ Vp bandgap_ping_pong_amp_cell
 Xmiddle_ping_pong_amplifier_0 VSUBS bandgap_ping_pong_amp_cell_3/switch_5/A middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0/VDD
 + cap8to1_1/m3cap50f_9/1 middle_ping_pong_amplifier
 Xcap8to1_0 VSUBS cap8to1_1/m3cap50f_9/1 cap8to1_0/m3cap50f_2/1 VSUBS cap8to1_0/m3cap50f_2/2
@@ -572,14 +571,14 @@ Xcap8to1_3 VSUBS cap8to1_3/m3cap50f_9/1 cap8to1_3/m3cap50f_2/1 VSUBS cap8to1_3/m
 .ends
 
 
-* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/temperature_sensor_layout
+* Top level circuit temperature_sensor_layout
 
 Xadc_0 VSUBS mux2_0/inverter_0/A mux2_0/inverter_0/VP adc
-Xbandgap_0 VSUBS bandgap_0/selfbiasedcascode2stage_1/VN bandgap_0/selfbiasedcascode2stage_3/VN
-+ bandgap_0/selfbiasedcascode2stage_2/VN mux2_0/inverter_0/VP bandgap
+Xbandgap_0 VSUBS bandgap_0/selfbiasedcascode2stage_1/VN bandgap_ping_pong_0/Vn bandgap_ping_pong_0/Vp
++ mux2_0/inverter_0/VP bandgap
 Xmux2_0 VSUBS mux2_0/inverter_0/A mux2_0/A mux2_0/muxout VSUBS mux2_0/inverter_0/VP
 + mux2
-Xbandgap_ping_pong_0 VSUBS bandgap_0/selfbiasedcascode2stage_2/VN bandgap_0/selfbiasedcascode2stage_1/VN
-+ mux2_0/inverter_0/VP mux2_0/A bandgap_0/selfbiasedcascode2stage_3/VN bandgap_ping_pong
+Xbandgap_ping_pong_0 VSUBS mux2_0/inverter_0/VP bandgap_0/selfbiasedcascode2stage_1/VN
++ mux2_0/A bandgap_ping_pong_0/Vn bandgap_ping_pong_0/Vp bandgap_ping_pong
 .end
 

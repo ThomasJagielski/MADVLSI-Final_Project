@@ -1,12 +1,12 @@
-timestamp 1620772218
+timestamp 1620778513
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use selfbiasedcascode2stage selfbiasedcascode2stage_0 1 0 -15170 0 1 -4980
 use adc_digital adc_digital_0 1 0 0 0 1 3330
 use comparator comparator_0 1 0 -5550 0 1 -3460
-use selfbiasedcascode2stage selfbiasedcascode2stage_0 1 0 -15170 0 1 -4980
 use switch switch_0 1 0 -14850 0 1 5040
 use switch switch_1 1 0 -14080 0 1 5040
 node "m1_n10000_900#" 4 7032.41 -10000 900 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 433200 3040 4751000 23560 0 0 0 0 0 0 0 0
@@ -25,199 +25,199 @@ node "a_n14600_6260#" 578 243.12 -14600 6260 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n13830_5080#" 9663 9323.18 -13830 5080 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 119800 7880 0 0 469600 23340 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_n14370_5730#" 6942 176.4 -14370 5730 nw 0 0 0 0 58800 1220 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "a_n15170_4870#" "a_n15740_3400#" 28.42
 cap "li_n310_1460#" "a_450_1340#" 110.88
-cap "li_n14550_5810#" "a_n15740_3400#" 49.36
-cap "w_n14370_5730#" "a_n6280_790#" 18.13
+cap "m1_n10000_340#" "a_450_1340#" 199.34
+cap "a_n6280_790#" "m1_n10000_900#" 80.08
+cap "a_n6280_790#" "a_n15740_3400#" 691.747
+cap "li_n310_1460#" "m1_n10000_340#" 894.895
+cap "a_n6280_790#" "a_n13830_5080#" 1225.22
+cap "a_n6280_790#" "w_n14370_5730#" 18.13
+cap "a_n15740_3400#" "li_n14550_5810#" 49.36
+cap "li_n14550_5500#" "a_n15740_3400#" 130.469
+cap "a_n13830_5080#" "li_n14550_5810#" 27.66
+cap "li_n14550_5810#" "w_n14370_5730#" 5.2
+cap "m1_n10000_340#" "m1_n10000_900#" 2594.38
+cap "li_n14550_5500#" "a_n14600_5080#" 27.9375
+cap "a_n15740_3400#" "a_n15170_4870#" 28.42
 cap "a_n6280_790#" "li_n14550_5810#" 90.75
 cap "a_n14600_6260#" "a_n6280_790#" 31.625
 cap "li_n14550_5500#" "li_n14550_5810#" 205.381
-cap "a_n13830_5080#" "li_n14550_5810#" 27.66
-cap "a_n6280_790#" "m1_n10000_900#" 80.08
-cap "m1_n10000_340#" "a_450_1340#" 199.34
-cap "a_n6280_790#" "a_n15740_3400#" 691.747
-cap "w_n14370_5730#" "li_n14550_5810#" 5.2
-cap "li_n14550_5500#" "a_n14600_5080#" 27.9375
-cap "li_n310_1460#" "m1_n10000_340#" 894.895
-cap "li_n14550_5500#" "a_n15740_3400#" 130.469
 cap "a_n13830_5080#" "a_n15740_3400#" 28.42
-cap "m1_n10000_340#" "m1_n10000_900#" 2594.38
-cap "a_n13830_5080#" "a_n6280_790#" 1225.22
 subcap "m1_n10000_900#" -7154.33
 subcap "m1_n10000_340#" -8199.83
 subcap "m1_n10000_900#" -6964.46
 subcap "m1_n10000_340#" -7421.83
-cap "selfbiasedcascode2stage_0/Vout" "selfbiasedcascode2stage_0/inverter_large_0/VDD" 117.525
 cap "selfbiasedcascode2stage_0/inverter_large_0/VDD" "selfbiasedcascode2stage_0/inverter_large_0/A" -61.335
+cap "selfbiasedcascode2stage_0/Vout" "selfbiasedcascode2stage_0/inverter_large_0/VDD" 117.525
 subcap "a_n6280_790#" -10624.9
 subcap "a_n6280_790#" -11840.6
 subcap "a_450_1340#" -801.2
 cap "adc_digital_0/output_register_0/clear" "adc_digital_0/output_register_0/dff_0/dff_lower_0/a_790_n400#" 904.2
 subcap "m1_n10000_900#" -6928.19
 subcap "m1_n10000_900#" -6770.67
+cap "selfbiasedcascode2stage_0/inverter_large_0/VDD" "selfbiasedcascode2stage_0/inverter_large_0/A" -61.335
 cap "selfbiasedcascode2stage_0/Vout" "selfbiasedcascode2stage_0/inverter_large_0/VDD" 227.92
-cap "selfbiasedcascode2stage_0/inverter_large_0/A" "selfbiasedcascode2stage_0/inverter_large_0/VDD" -61.335
 subcap "a_n6280_790#" -11222.1
+cap "a_n6280_790#" "comparator_0/w_n410_5880#" 3.58059
 cap "comparator_0/a_n360_4860#" "a_n6280_790#" 5.05495
-cap "comparator_0/w_n410_5880#" "a_n6280_790#" 3.58059
 subcap "a_n6280_790#" -11508.7
+cap "comparator_0/w_n410_5880#" "comparator_0/a_n440_7350#" 32.44
+cap "comparator_0/w_n410_5880#" "comparator_0/a_120_4860#" 256.885
 cap "a_n6280_790#" "comparator_0/a_n360_4860#" 5.05495
 cap "comparator_0/w_n410_5880#" "comparator_0/a_n360_4860#" 522.157
-cap "comparator_0/w_n410_5880#" "comparator_0/a_120_4860#" 256.885
-cap "comparator_0/w_n410_5880#" "comparator_0/a_n440_7350#" 32.44
 cap "comparator_0/w_n410_5880#" "a_n6280_790#" 3.58059
-cap "m1_n10000_900#" "comparator_0/a_n440_7350#" 60.18
 cap "comparator_0/a_120_4860#" "m1_n10000_900#" 258.91
-cap "comparator_0/w_n410_5880#" "comparator_0/a_120_4860#" 231.995
+cap "m1_n10000_900#" "comparator_0/a_n440_7350#" 60.18
 cap "comparator_0/w_n410_5880#" "comparator_0/a_n440_7350#" 109.54
 cap "comparator_0/a_n360_4860#" "comparator_0/w_n410_5880#" 12.3
+cap "comparator_0/a_120_4860#" "comparator_0/w_n410_5880#" 231.995
 subcap "li_n310_1460#" -11446.6
+cap "comparator_0/w_n410_5880#" "comparator_0/w_n410_5880#" 36.6776
+cap "comparator_0/w_n410_5880#" "comparator_0/vout" 388.6
+cap "comparator_0/inverter_large_1/GND" "comparator_0/inverter_large_1/VDD" 122.143
 cap "comparator_0/a_n360_4860#" "comparator_0/w_n410_5880#" 522.157
 cap "comparator_0/w_n410_5880#" "comparator_0/inverter_large_1/A" 49.2
-cap "comparator_0/w_n410_5880#" "comparator_0/w_n410_5880#" 36.6776
+cap "comparator_0/w_n410_5880#" "comparator_0/inverter_large_1/VDD" 1467.13
 cap "comparator_0/inverter_large_1/GND" "comparator_0/vout" 383.36
-cap "comparator_0/vout" "comparator_0/w_n410_5880#" 388.6
-cap "comparator_0/inverter_large_1/VDD" "comparator_0/inverter_large_1/GND" 122.143
-cap "comparator_0/inverter_large_1/GND" "comparator_0/a_n360_4860#" 115.312
-cap "comparator_0/inverter_large_1/VDD" "comparator_0/w_n410_5880#" 1467.13
+cap "comparator_0/a_n360_4860#" "comparator_0/inverter_large_1/GND" 115.312
 subcap "li_n310_1460#" -10592.4
+cap "adc_digital_0/and2_0/nand2_0/B" "adc_digital_0/drive_buffer_0/GND" 117.977
+cap "adc_digital_0/drive_buffer_0/GND" "adc_digital_0/and2_0/inverter_0/A" 55.865
+cap "adc_digital_0/and2_0/nand2_0/B" "adc_digital_0/and2_0/nand2_0/A" 40.3333
+cap "adc_digital_0/drive_buffer_0/GND" "adc_digital_0/and2_0/nand2_0/a_80_120#" -9.925
 cap "adc_digital_0/and2_0/nand2_0/A" "adc_digital_0/drive_buffer_0/GND" -31.445
-cap "adc_digital_0/and2_0/inverter_0/A" "adc_digital_0/drive_buffer_0/GND" 55.865
-cap "adc_digital_0/and2_0/nand2_0/A" "adc_digital_0/and2_0/nand2_0/B" 40.3333
-cap "adc_digital_0/and2_0/nand2_0/a_80_120#" "adc_digital_0/drive_buffer_0/GND" -9.925
-cap "adc_digital_0/drive_buffer_0/GND" "adc_digital_0/and2_0/nand2_0/B" 117.977
-cap "adc_digital_0/a_5470_n180#" "li_n310_1460#" 3.20833
-cap "adc_digital_0/a_5470_n180#" "li_n310_1460#" 396
+cap "li_n310_1460#" "adc_digital_0/a_5470_n180#" 3.20833
+cap "li_n310_1460#" "adc_digital_0/a_5470_n180#" 396
 subcap "a_n15740_3400#" -7815.69
+cap "selfbiasedcascode2stage_0/a_840_6920#" "selfbiasedcascode2stage_0/VP" 371.25
 cap "selfbiasedcascode2stage_0/VP" "selfbiasedcascode2stage_0/a_n360_4860#" 336.204
-cap "selfbiasedcascode2stage_0/VP" "selfbiasedcascode2stage_0/a_840_6920#" 371.25
 cap "comparator_0/w_n410_5880#" "a_n6280_790#" 1.47436
 cap "comparator_0/a_n360_4860#" "a_n6280_790#" 5.05495
+cap "comparator_0/w_n410_5880#" "a_n6280_790#" 1.47436
 cap "comparator_0/a_n360_4860#" "a_n6280_790#" 5.05495
-cap "a_n6280_790#" "comparator_0/w_n410_5880#" 1.47436
 cap "comparator_0/inverter_large_1/Y" "comparator_0/inverter_large_1/VDD" 138.6
-cap "comparator_0/inverter_large_1/A" "comparator_0/inverter_large_1/VDD" 55.9
+cap "comparator_0/inverter_large_1/VDD" "comparator_0/inverter_large_1/A" 55.9
 subcap "li_n14550_5500#" -3700.47
-cap "switch_0/CLK" "selfbiasedcascode2stage_0/VN" 4.38095
-cap "selfbiasedcascode2stage_0/VN" "switch_0/nCLK" 99.363
-cap "selfbiasedcascode2stage_0/a_840_6920#" "selfbiasedcascode2stage_0/a_n360_4860#" -21
-cap "switch_0/A" "selfbiasedcascode2stage_0/a_840_6920#" 21.6857
-cap "selfbiasedcascode2stage_0/a_840_6920#" "switch_0/nCLK" 11.4783
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "switch_0/nCLK" 8.5
-cap "a_n15740_3400#" "switch_0/B" 49.5
 cap "a_n15740_3400#" "selfbiasedcascode2stage_0/VN" 14.755
-cap "a_n15740_3400#" "selfbiasedcascode2stage_0/a_840_6920#" 1106.6
-cap "switch_0/A" "a_n15740_3400#" 47.4375
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "selfbiasedcascode2stage_0/a_n360_4860#" -0.85
-cap "a_n15740_3400#" "selfbiasedcascode2stage_0/a_n360_4860#" 133.333
-cap "a_n15740_3400#" "switch_0/nCLK" 66
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "switch_0/nCLK" 21.1842
-cap "selfbiasedcascode2stage_0/a_840_6920#" "switch_0/B" 22.6286
 cap "a_n15740_3400#" "selfbiasedcascode2stage_0/w_n410_5880#" 170.605
+cap "switch_0/nCLK" "selfbiasedcascode2stage_0/a_840_6920#" 11.4783
+cap "switch_0/nCLK" "a_n15740_3400#" 66
+cap "switch_0/A" "selfbiasedcascode2stage_0/a_840_6920#" 21.6857
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/w_n410_5880#" -0.85
+cap "switch_0/A" "a_n15740_3400#" 47.4375
+cap "switch_0/nCLK" "selfbiasedcascode2stage_0/a_n360_4860#" 8.5
+cap "selfbiasedcascode2stage_0/a_840_6920#" "a_n15740_3400#" 1106.6
+cap "switch_0/nCLK" "selfbiasedcascode2stage_0/VN" 99.363
+cap "switch_0/nCLK" "selfbiasedcascode2stage_0/w_n410_5880#" 21.1842
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/a_840_6920#" -21
+cap "selfbiasedcascode2stage_0/a_840_6920#" "switch_0/B" 22.6286
+cap "selfbiasedcascode2stage_0/VN" "switch_0/CLK" 4.38095
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "a_n15740_3400#" 133.333
+cap "a_n15740_3400#" "switch_0/B" 49.5
 subcap "li_n14550_5500#" -960.357
 subcap "a_n13830_5080#" -8267.58
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "switch_0/B" 81.59
-cap "selfbiasedcascode2stage_0/VN" "selfbiasedcascode2stage_0/a_n360_4860#" 103.9
-cap "switch_1/B" "selfbiasedcascode2stage_0/w_n410_5880#" 22.9059
-cap "selfbiasedcascode2stage_0/VN" "switch_1/CLK" 2.46429
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "switch_1/nCLK" 115.702
-cap "switch_1/B" "selfbiasedcascode2stage_0/a_1320_9350#" 9.70588
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "switch_1/nCLK" 10.4624
-cap "switch_1/B" "selfbiasedcascode2stage_0/a_840_6920#" 1175.9
-cap "switch_0/B" "selfbiasedcascode2stage_0/a_840_6920#" 31.625
-cap "switch_1/nCLK" "selfbiasedcascode2stage_0/a_840_6920#" 22
-cap "selfbiasedcascode2stage_0/a_0_5820#" "switch_1/nCLK" 7.26316
-cap "switch_1/B" "switch_0/B" 47.4375
-cap "switch_1/B" "switch_1/nCLK" 66
-cap "selfbiasedcascode2stage_0/VN" "switch_1/nCLK" 161
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/w_n410_5880#" 1.885
-cap "switch_1/B" "selfbiasedcascode2stage_0/a_1080_9350#" 338.25
-cap "selfbiasedcascode2stage_0/a_1080_9350#" "switch_0/B" 6.1875
-cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/w_n410_5880#" 116.05
-cap "switch_1/nCLK" "selfbiasedcascode2stage_0/a_0_5820#" 7.26316
-cap "selfbiasedcascode2stage_0/VP" "switch_1/nCLK" 62.6552
 cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/a_840_6920#" 214.67
-cap "selfbiasedcascode2stage_0/a_1800_6920#" "a_n15740_3400#" 1.88571
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "selfbiasedcascode2stage_0/w_n410_5880#" 13.68
-cap "a_n13830_5080#" "selfbiasedcascode2stage_0/w_n410_5880#" 33.4624
-cap "selfbiasedcascode2stage_0/a_1080_9350#" "a_n15740_3400#" 110
-cap "selfbiasedcascode2stage_0/a_840_6920#" "a_n15740_3400#" 528
-cap "selfbiasedcascode2stage_0/a_1320_9350#" "a_n15740_3400#" 9.70588
-cap "a_n13830_5080#" "selfbiasedcascode2stage_0/VN" 60.95
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/w_n410_5880#" 116.05
+cap "selfbiasedcascode2stage_0/VN" "switch_1/CLK" 2.46429
+cap "switch_1/B" "selfbiasedcascode2stage_0/a_1320_9350#" 9.70588
+cap "switch_1/B" "selfbiasedcascode2stage_0/a_1080_9350#" 338.25
+cap "selfbiasedcascode2stage_0/a_840_6920#" "switch_1/nCLK" 22
+cap "switch_1/nCLK" "selfbiasedcascode2stage_0/w_n410_5880#" 10.4624
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "switch_1/nCLK" 115.702
+cap "selfbiasedcascode2stage_0/VP" "switch_1/nCLK" 62.6552
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/VN" 103.9
+cap "switch_0/B" "selfbiasedcascode2stage_0/a_1080_9350#" 6.1875
+cap "switch_1/B" "switch_0/B" 47.4375
+cap "selfbiasedcascode2stage_0/a_0_5820#" "switch_1/nCLK" 7.26316
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "selfbiasedcascode2stage_0/w_n410_5880#" 1.885
+cap "switch_1/B" "selfbiasedcascode2stage_0/a_840_6920#" 1175.9
+cap "selfbiasedcascode2stage_0/VN" "switch_1/nCLK" 161
+cap "switch_1/B" "selfbiasedcascode2stage_0/w_n410_5880#" 22.9059
+cap "switch_1/nCLK" "selfbiasedcascode2stage_0/a_0_5820#" 7.26316
+cap "switch_1/B" "switch_1/nCLK" 66
+cap "switch_0/B" "selfbiasedcascode2stage_0/a_840_6920#" 31.625
+cap "selfbiasedcascode2stage_0/a_n360_4860#" "switch_0/B" 81.59
 cap "selfbiasedcascode2stage_0/w_n410_5880#" "a_n15740_3400#" 42.3176
 cap "selfbiasedcascode2stage_0/VP" "a_n13830_5080#" 3.96552
+cap "selfbiasedcascode2stage_0/w_n410_5880#" "selfbiasedcascode2stage_0/w_n410_5880#" 13.68
+cap "selfbiasedcascode2stage_0/w_n410_5880#" "a_n13830_5080#" 33.4624
+cap "selfbiasedcascode2stage_0/a_1800_6920#" "a_n15740_3400#" 1.88571
+cap "selfbiasedcascode2stage_0/VN" "a_n13830_5080#" 60.95
 cap "selfbiasedcascode2stage_0/a_840_6920#" "selfbiasedcascode2stage_0/w_n410_5880#" 2.05
-cap "a_n15740_3400#" "selfbiasedcascode2stage_0/w_n410_5880#" 9.70588
-cap "selfbiasedcascode2stage_0/w_n410_5880#" "a_n13830_5080#" 5.44737
+cap "selfbiasedcascode2stage_0/a_1320_9350#" "a_n15740_3400#" 9.70588
+cap "selfbiasedcascode2stage_0/a_840_6920#" "a_n15740_3400#" 528
+cap "selfbiasedcascode2stage_0/a_1080_9350#" "a_n15740_3400#" 110
+cap "a_n13830_5080#" "selfbiasedcascode2stage_0/w_n410_5880#" 5.44737
 cap "a_n15740_3400#" "selfbiasedcascode2stage_0/a_1800_6920#" 193.286
-cap "comparator_0/a_n440_7350#" "a_n6280_790#" 118.632
-cap "comparator_0/VP" "comparator_0/a_n360_4860#" 82.9392
+cap "a_n15740_3400#" "selfbiasedcascode2stage_0/w_n410_5880#" 9.70588
 cap "a_n6280_790#" "comparator_0/w_n410_5880#" 5.05495
-cap "a_n6280_790#" "comparator_0/a_n360_4860#" 4.17033
+cap "a_n6280_790#" "comparator_0/a_n440_7350#" 118.632
 cap "comparator_0/VP" "comparator_0/a_840_6920#" 169.125
+cap "comparator_0/a_n360_4860#" "comparator_0/VP" 82.9392
+cap "comparator_0/a_n360_4860#" "a_n6280_790#" 4.17033
+cap "comparator_0/VP" "a_n6280_790#" 0.958333
+cap "comparator_0/w_n410_5880#" "a_n6280_790#" 5.05495
+cap "comparator_0/a_n360_4860#" "comparator_0/VP" 11.9167
+cap "comparator_0/a_n360_4860#" "a_n6280_790#" 4.17033
 cap "comparator_0/a_n440_7350#" "a_n6280_790#" 2.875
-cap "a_n6280_790#" "comparator_0/w_n410_5880#" 5.05495
-cap "comparator_0/VP" "comparator_0/a_n360_4860#" 11.9167
-cap "a_n6280_790#" "comparator_0/a_n360_4860#" 4.17033
-cap "a_n6280_790#" "comparator_0/VP" 0.958333
 subcap "m1_n1370_5320#" -973.419
 subcap "m1_n1370_5320#" -448.93
 cap "adc_digital_0/counter_0/counter_b0_0/m1_n180_470#" "adc_digital_0/counter_0/counter_b0_0/m1_n180_980#" 22.5
-cap "comparator_0/inverter_large_0/A" "adc_digital_0/counter_0/counter_b0_0/m1_n180_980#" 3.225
-cap "adc_digital_0/counter_0/counter_b0_0/GND" "adc_digital_0/counter_0/counter_b0_0/m1_n180_980#" 26.5909
+cap "adc_digital_0/counter_0/counter_b0_0/m1_n180_980#" "adc_digital_0/counter_0/counter_b0_0/GND" 26.5909
+cap "adc_digital_0/counter_0/counter_b0_0/m1_n180_980#" "comparator_0/inverter_large_0/A" 3.225
 cap "adc_digital_0/counter_0/counter_b0_0/dff_0/dff_lower_0/inverter_0/VP" "adc_digital_0/counter_0/counter_b0_0/GND" 22.5
 subcap "li_n14550_5500#" -864.13
 subcap "li_n14550_5810#" -681.23
 subcap "a_n14600_5080#" -316.315
 subcap "a_n15170_4870#" -1299.86
-cap "switch_0/a_270_430#" "switch_0/B" 3.56757
 cap "switch_0/w_n220_690#" "switch_0/a_270_430#" -7.33333
-cap "switch_1/B" "switch_0/B" 23.6351
-cap "switch_0/CLK" "switch_0/B" 13.9
-cap "selfbiasedcascode2stage_0/VN" "switch_0/CLK" 6.9627
-cap "switch_0/w_n220_690#" "switch_0/B" 25.4334
-cap "selfbiasedcascode2stage_0/VN" "switch_0/nCLK" 38.881
+cap "switch_0/CLK" "selfbiasedcascode2stage_0/VN" 6.9627
+cap "switch_0/nCLK" "selfbiasedcascode2stage_0/VN" 38.881
+cap "switch_0/B" "switch_0/a_270_430#" 3.56757
+cap "switch_0/B" "switch_0/w_n220_690#" 25.4334
+cap "switch_0/B" "switch_0/CLK" 13.9
+cap "switch_0/B" "switch_1/B" 23.6351
 subcap "li_n14550_5500#" -915
 subcap "li_n14550_5810#" -207.28
 subcap "a_n14600_5080#" -1005.55
 subcap "a_n13830_5080#" -10085.6
-cap "switch_1/CLK" "switch_0/B" 25.5643
-cap "switch_0/B" "switch_1/w_n220_690#" 122.121
-cap "switch_1/B" "switch_1/w_n220_690#" 126.8
+cap "switch_1/w_n220_690#" "switch_0/a_270_430#" -7.33333
+cap "switch_1/w_n220_690#" "switch_1/B" 126.8
 cap "switch_0/a_270_430#" "switch_1/CLK" 17.475
-cap "switch_0/a_270_430#" "switch_1/w_n220_690#" -7.33333
-cap "switch_1/nCLK" "switch_0/a_270_430#" 78.5375
-cap "switch_1/B" "switch_0/B" 90.75
+cap "switch_0/a_270_430#" "switch_1/nCLK" 78.5375
+cap "switch_1/w_n220_690#" "switch_0/B" 122.121
+cap "switch_1/CLK" "switch_0/B" 25.5643
+cap "switch_1/w_n220_690#" "switch_1/CLK" 34.475
+cap "switch_0/a_270_430#" "switch_1/B" 159.871
+cap "switch_1/w_n220_690#" "switch_1/nCLK" 17.475
 cap "switch_0/a_270_430#" "switch_0/B" 335.063
-cap "switch_1/CLK" "switch_1/w_n220_690#" 34.475
-cap "switch_1/nCLK" "switch_1/w_n220_690#" 17.475
-cap "switch_1/B" "switch_0/a_270_430#" 159.871
+cap "switch_1/B" "switch_0/B" 90.75
+cap "comparator_0/a_840_6920#" "a_n13830_5080#" 13.2
 cap "comparator_0/VP" "comparator_0/a_n360_4860#" 24.75
+cap "comparator_0/a_n360_4860#" "comparator_0/VN" 0.884615
+cap "comparator_0/VP" "comparator_0/w_n410_5880#" 27.5
+cap "comparator_0/VN" "comparator_0/w_n410_5880#" 5.05495
+cap "comparator_0/a_840_6920#" "comparator_0/VP" 342.375
 cap "comparator_0/a_840_6920#" "comparator_0/VN" 9.16667
 cap "comparator_0/w_n410_5880#" "comparator_0/VN" 5.05495
 cap "comparator_0/a_n360_4860#" "comparator_0/VN" 0.884615
-cap "comparator_0/a_840_6920#" "a_n13830_5080#" 13.2
-cap "comparator_0/VP" "comparator_0/a_840_6920#" 342.375
-cap "comparator_0/w_n410_5880#" "comparator_0/VP" 27.5
-cap "comparator_0/w_n410_5880#" "comparator_0/VP" 27.5
-cap "a_n13830_5080#" "comparator_0/a_840_6920#" 404.8
-cap "comparator_0/VN" "comparator_0/a_n360_4860#" 0.884615
 cap "comparator_0/VN" "comparator_0/a_840_6920#" 2.75
 cap "a_n13830_5080#" "comparator_0/w_n410_5880#" 48.5294
-cap "comparator_0/VN" "comparator_0/w_n410_5880#" 5.05495
+cap "a_n13830_5080#" "comparator_0/a_840_6920#" 404.8
+cap "comparator_0/VP" "comparator_0/w_n410_5880#" 27.5
 cap "comparator_0/VP" "comparator_0/a_n360_4860#" 24.75
-cap "comparator_0/a_1320_9350#" "a_n13830_5080#" 9.70588
-cap "comparator_0/w_n410_5880#" "a_n13830_5080#" 22.9059
+cap "a_n13830_5080#" "comparator_0/a_840_6920#" 1155
+cap "a_n13830_5080#" "comparator_0/w_n410_5880#" 22.9059
 cap "comparator_0/a_1080_9350#" "a_n13830_5080#" 363
+cap "a_n13830_5080#" "comparator_0/a_1320_9350#" 9.70588
 cap "comparator_0/a_1320_9350#" "a_n13830_5080#" 9.70588
-cap "comparator_0/a_840_6920#" "a_n13830_5080#" 1155
 subcap "m1_n1370_5320#" -1410.71
-cap "a_n13830_5080#" "comparator_0/a_840_6920#" 462
-cap "a_n13830_5080#" "comparator_0/w_n410_5880#" 75.9
 cap "a_n13830_5080#" "comparator_0/a_1080_9350#" 62.8571
+cap "a_n13830_5080#" "comparator_0/w_n410_5880#" 75.9
+cap "a_n13830_5080#" "comparator_0/a_840_6920#" 462
 subcap "m1_n1370_5320#" -968.907
-cap "comparator_0/inverter_large_0/VDD" "adc_digital_0/counter_0/counter_b0_0/GND" 26.5909
 cap "adc_digital_0/counter_0/counter_b0_0/preset" "comparator_0/w_n410_5880#" 19.8
+cap "comparator_0/inverter_large_0/VDD" "adc_digital_0/counter_0/counter_b0_0/GND" 26.5909
 merge "comparator_0/inverter_large_0/GND" "adc_digital_0/counter_0/counter_b0_0/GND" -1016.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1200 -400 -536200 -1280 0 0 0 0 0 0 0 0 0 0
 merge "adc_digital_0/counter_0/counter_b0_0/GND" "switch_1/a_270_430#"
 merge "switch_1/a_270_430#" "switch_0/a_270_430#"
