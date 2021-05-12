@@ -1,0 +1,148 @@
+timestamp 1620776171
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use middle_ping_pong_amplifier middle_ping_pong_amplifier_0 1 0 25810 0 1 -3780
+use bandgap_ping_pong_half bandgap_ping_pong_half_0 1 0 0 0 1 0
+use cap8to1 cap8to1_1 1 0 17520 0 1 2990
+use cap8to1 cap8to1_0 1 0 17530 0 1 -7340
+node "m2_14810_n10970#" 67 8769.9 14810 -10970 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 854000 42780 0 0 0 0 0 0 0 0
+node "m2_8010_6150#" 0 23342.9 8010 6150 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24404800 83780 0 0 0 0 0 0 0 0
+node "m1_14810_n10970#" 67 9325 14810 -10970 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 854000 42780 0 0 0 0 0 0 0 0 0 0
+node "m1_17570_n3770#" 0 93.12 17570 -3770 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 420 0 0 0 0 0 0 0 0 0 0
+node "m1_14480_2140#" 0 51.8 14480 2140 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 280 0 0 0 0 0 0 0 0 0 0
+node "m1_9220_6150#" 1 26988.9 9220 6150 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12791100 85800 86000 1260 1044900 5720 0 0 0 0 0 0
+node "li_14730_n8680#" 491 3431.07 14730 -8680 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 444000 8660 30600 700 30600 700 30600 700 312900 3400 0 0 0 0
+node "li_35230_n5610#" 20 10663 35230 -5610 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 520 12000 440 1538500 52560 0 0 0 0 0 0 0 0
+node "li_31740_n2700#" 843 2488.99 31740 -2700 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 182400 7200 14400 480 14400 480 34800 820 0 0 0 0 0 0
+node "li_14690_2280#" 623 8015.82 14690 2280 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 993800 14500 30600 700 30600 700 30600 700 1665300 16300 0 0 0 0
+node "a_35230_n5180#" 303 12122.5 35230 -5180 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 500 0 0 100000 2820 1466500 49860 0 0 0 0 0 0 0 0 0 0
+node "a_17560_2950#" 455 6516.16 17560 2950 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14400 680 0 0 46400 1640 967900 25100 14400 680 47300 1300 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_17560_2950#" "m1_14480_2140#" 24.8
+cap "a_17560_2950#" "li_14690_2280#" 582.515
+cap "m1_9220_6150#" "m2_8010_6150#" 40605
+cap "li_35230_n5610#" "a_35230_n5180#" 5356.89
+cap "li_35230_n5610#" "a_17560_2950#" 99.6
+cap "m1_17570_n3770#" "a_17560_2950#" 115.682
+cap "a_17560_2950#" "a_35230_n5180#" 117.857
+cap "m2_14810_n10970#" "m1_14810_n10970#" 2860.9
+cap "li_35230_n5610#" "li_14690_2280#" 68.8
+cap "li_14690_2280#" "a_35230_n5180#" 55.52
+subcap "m2_14810_n10970#" -8400.08
+subcap "m1_14810_n10970#" -8932.25
+cap "m2_14810_n10970#" "m1_14810_n10970#" -3.55271e-15
+subcap "m2_14810_n10970#" -8127.33
+subcap "m1_14810_n10970#" -8735.45
+cap "m2_14810_n10970#" "m1_14810_n10970#" -184.575
+subcap "li_14730_n8680#" -2866.7
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi2" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/B" 70.32
+subcap "li_14730_n8680#" -2557.47
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_0/m3cap50f_0/2" 133.875
+cap "cap8to1_0/m3cap50f_0/1" "cap8to1_0/m3cap50f_0/2" 465.53
+cap "cap8to1_0/m3cap50f_0/2" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 41.1923
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_0/m3cap50f_0/2" 304.5
+cap "cap8to1_0/m3cap50f_0/2" "cap8to1_0/m3cap50f_0/1" 0.21
+cap "cap8to1_0/m3cap50f_0/2" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 93.6923
+subcap "m1_17570_n3770#" -104.82
+cap "cap8to1_0/m3cap50f_6/2" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 304.5
+subcap "m1_17570_n3770#" -89.22
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_0/m3cap50f_6/2" 93.6923
+cap "cap8to1_0/m3cap50f_7/1" "cap8to1_0/m3cap50f_6/2" 62.68
+cap "a_17560_2950#" "m1_17570_n3770#" 8.325
+cap "a_17560_2950#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" 118.529
+subcap "m1_17570_n3770#" -95.46
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/2" "a_17560_2950#" 28.2692
+cap "cap8to1_0/m3cap50f_6/1" "a_17560_2950#" 448
+subcap "li_31740_n2700#" -2123.45
+subcap "li_31740_n2700#" -1624.2
+subcap "li_31740_n2700#" -2289.91
+subcap "li_31740_n2700#" -2416.92
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/a_n6260_3040#" "a_35230_n5180#" -8.04
+cap "middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_5/GND" "a_17560_2950#" 58.5
+cap "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_0/1" "a_17560_2950#" 242.08
+cap "middle_ping_pong_amplifier_0/li_n7400_2970#" "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_0/1" 48.4
+cap "middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_6/GND" "middle_ping_pong_amplifier_0/p-res8x20k_1/2" 234
+cap "middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_3/1" "li_14690_2280#" 48.4
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/VN" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 27.91
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 53.06
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 21.185
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 94.8324
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/VN" 4.05
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/VN" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 102.925
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920#" 122.1
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 210.03
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 1.885
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" 83.41
+cap "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" 15.8824
+subcap "li_14690_2280#" -7534.29
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/CLK" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/B" 70.32
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/CLK" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" 385.32
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/B" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" 45.375
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/w_6620_1290#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" 12
+subcap "li_14690_2280#" -7142.22
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/B" -35.175
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi2" 144.375
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/w_6620_1290#" 5.80645
+subcap "a_17560_2950#" -5052.76
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_1/m3cap50f_0/2" 8.68966
+subcap "a_17560_2950#" -6605.02
+cap "middle_ping_pong_amplifier_0/li_n3800_3870#" "m2_8010_6150#" 53.06
+cap "m1_9220_6150#" "middle_ping_pong_amplifier_0/li_n3800_3870#" 116.4
+cap "m2_8010_6150#" "middle_ping_pong_amplifier_0/li_n3800_3870#" 106.59
+subcap "a_17560_2950#" -6231.56
+cap "cap8to1_1/m3cap50f_0/2" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/2" 270.345
+subcap "a_17560_2950#" -5368.88
+cap "cap8to1_1/m3cap50f_0/1" "cap8to1_1/m3cap50f_0/2" 465.53
+subcap "m2_8010_6150#" -22902.1
+subcap "m2_8010_6150#" -20869.8
+subcap "m1_9220_6150#" -27014.4
+subcap "m1_9220_6150#" -26965.2
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/2" "cap8to1_1/m3cap50f_0/2" 270.667
+subcap "m2_8010_6150#" -23831.9
+subcap "m2_8010_6150#" -22527.1
+subcap "m1_9220_6150#" -26426.8
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" -8.4
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 128.63
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" 294.46
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" -133.8
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 149.26
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 32.7603
+subcap "m1_9220_6150#" -26110.1
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 111.586
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" -86.26
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" 32.3775
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 0.975
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 122.179
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" 0.975
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/VN" 78.325
+cap "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920#" 156.765
+cap "cap8to1_1/m3cap50f_6/2" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/2" 205.333
+merge "cap8to1_1/VSUBS" "middle_ping_pong_amplifier_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "middle_ping_pong_amplifier_0/VSUBS" "cap8to1_0/VSUBS"
+merge "cap8to1_0/VSUBS" "bandgap_ping_pong_half_0/VSUBS"
+merge "bandgap_ping_pong_half_0/VSUBS" "VSUBS"
+merge "cap8to1_1/m3cap50f_0/1" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/B" -4396.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 265800 -8690 65000 -700 65000 -700 65000 -700 383000 -12840 0 0 0 0
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/B" "middle_ping_pong_amplifier_0/li_n7400_2970#"
+merge "middle_ping_pong_amplifier_0/li_n7400_2970#" "cap8to1_0/m3cap50f_7/1"
+merge "cap8to1_0/m3cap50f_7/1" "cap8to1_0/m3cap50f_6/1"
+merge "cap8to1_0/m3cap50f_6/1" "li_14690_2280#"
+merge "cap8to1_1/m3cap50f_0/2" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" -910.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7000 -400 102900 -3890 0 0 -9600 -460 0 0 0 0 0 0
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/a_270_430#" "middle_ping_pong_amplifier_0/p-res8x20k_1/2"
+merge "middle_ping_pong_amplifier_0/p-res8x20k_1/2" "cap8to1_0/m3cap50f_6/2"
+merge "cap8to1_0/m3cap50f_6/2" "a_17560_2950#"
+merge "a_17560_2950#" "m1_14480_2140#"
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/a_n6260_3040#" "li_35230_n5610#" -35.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9600 -200 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi2" "a_35230_n5180#" -1150.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 312560 -6602 0 0 0 0 0 0 0 0 0 0
+merge "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout" "li_31740_n2700#" -28.8875 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1500 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi2" "m1_14810_n10970#" -996.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56000 -4684 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n360_4860#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" -3084.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -274830 -9353 197700 -1260 -707200 -5720 0 0 0 0 0 0
+merge "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n360_4860#" "middle_ping_pong_amplifier_0/m3cap50f_1/2"
+merge "middle_ping_pong_amplifier_0/m3cap50f_1/2" "m1_9220_6150#"
+merge "cap8to1_0/m3cap50f_0/1" "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/B" -331.73 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12800 -160 0 0 0 0 0 0 -29200 -840 0 0 0 0
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/B" "li_14730_n8680#"
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/a_n6260_3040#" "m2_14810_n10970#" -961.626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56000 -4684 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/w_n410_5880#" "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" -4877.65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4355300 -16183 0 0 0 0 0 0 0 0
+merge "middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/w_n410_5880#" "m2_8010_6150#"

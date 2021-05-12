@@ -1,0 +1,646 @@
+* SPICE3 file created from bandgap_ping_pong_thomas.ext - technology: sky130A
+
+.option scale=5000u
+
+X0 middle_ping_pong_amplifier_0/m3cap50f_1/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X1 middle_ping_pong_amplifier_0/m3cap50f_1/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X2 middle_ping_pong_amplifier_0/p-res8x20k_0/2 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_1/2 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X3 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_1/2 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_2/2 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X4 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_2/2 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_3/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X5 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_4/1 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_3/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X6 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_5/2 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_4/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X7 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_5/2 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_6/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X8 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_7/1 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_6/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X9 cap8to1_1/m3cap50f_9/1 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_7/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X10 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout sky130_fd_pr__cap_mim_m3_1 l=4400 w=4400
+X11 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-1 ps=-1 w=300 l=120
+X12 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-1 ps=-1 w=300 l=120
+X13 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=8.38861e+06 pd=0 as=5.36871e+08 ps=0 w=300 l=120
+X14 VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=-1.05024e+09 pd=21919 as=0 ps=0 w=300 l=120
+X15 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X16 VSUBS VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X17 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X18 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=-1.09256e+09 pd=21919 as=-1.06388e+09 ps=21919 w=300 l=120
+X19 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X20 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# middle_ping_pong_amplifier_0/m3cap50f_1/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X21 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# middle_ping_pong_amplifier_0/p-res8x20k_0/2 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X22 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X23 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X24 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X25 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X26 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X27 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-1.10259e+09 ps=21919 w=300 l=120
+X28 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X29 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X30 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X31 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X32 VDD VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X33 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X34 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X35 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X36 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X37 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X38 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# middle_ping_pong_amplifier_0/m3cap50f_1/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X39 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X40 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X41 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X42 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X43 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X44 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X45 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X46 VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X47 VDD VDD VSUBS VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X48 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X49 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X50 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X51 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X52 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X53 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=9 pd=0 as=-0 ps=0 w=300 l=120
+X54 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X55 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X56 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X57 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X58 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X59 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X60 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# middle_ping_pong_amplifier_0/m3cap50f_1/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X61 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X62 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X63 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X64 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X65 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X66 VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X67 VDD VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X68 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X69 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X70 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# middle_ping_pong_amplifier_0/m3cap50f_1/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X71 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X72 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X73 VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X74 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X75 VSUBS VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X76 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X77 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X78 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X79 VDD VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X80 VSUBS VSUBS VDD VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X81 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X82 VSUBS VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X83 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X84 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X85 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# middle_ping_pong_amplifier_0/p-res8x20k_0/2 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X86 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X87 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X88 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X89 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X90 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X91 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X92 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X93 VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X94 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X95 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X96 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X97 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X98 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X99 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X100 VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X101 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X102 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# middle_ping_pong_amplifier_0/p-res8x20k_0/2 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X103 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X104 VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X105 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X106 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X107 VSUBS VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X108 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X109 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# middle_ping_pong_amplifier_0/p-res8x20k_0/2 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X110 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X111 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X112 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X113 VDD VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X114 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X115 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X116 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X117 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_9350# VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X118 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X119 VSUBS middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_1/2 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X120 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_1/2 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_2/2 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X121 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_2/2 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_3/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X122 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_4/1 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_3/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X123 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_5/2 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_4/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X124 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_5/2 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_6/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X125 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_7/1 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_6/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X126 middle_ping_pong_amplifier_0/m3cap50f_1/1 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_7/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X127 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_1/1 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_2/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X128 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_3/1 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_2/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X129 VSUBS middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_1/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X130 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_4/1 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_3/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X131 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_5/2 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_4/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X132 middle_ping_pong_amplifier_0/p-res6x20k_0/p-res20k_5/2 middle_ping_pong_amplifier_0/p-res8x20k_0/2 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X133 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_1/1 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_2/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X134 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_3/1 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_2/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X135 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_1/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X136 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_4/1 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_3/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X137 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_5/2 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_4/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X138 middle_ping_pong_amplifier_0/p-res6x20k_1/p-res20k_5/2 middle_ping_pong_amplifier_0/m3cap50f_1/1 VSUBS sky130_fd_pr__res_xhigh_po w=70 l=700
+X139 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X140 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A VSUBS sky130_fd_pr__nfet_01v8 ad=8 pd=98 as=0 ps=0 w=200 l=30
+X141 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X142 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X143 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X144 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X145 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X146 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__nfet_01v8 ad=-1 pd=32591 as=-0 ps=0 w=200 l=30
+X147 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 cap8to1_1/m3cap50f_9/1 VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=200 l=30
+X148 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X149 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X150 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X151 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X152 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B VSUBS sky130_fd_pr__nfet_01v8 ad=-1 pd=-1 as=-0 ps=-0 w=200 l=30
+X153 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=200 l=30
+X154 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X155 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X156 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X157 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=8.38861e+06 pd=0 as=0 ps=0 w=200 l=30
+X158 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=200 l=30
+X159 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=200 l=30
+X160 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X161 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X162 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X163 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X164 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B VSUBS sky130_fd_pr__nfet_01v8 ad=449 pd=0 as=0 ps=0 w=200 l=30
+X165 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X166 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X167 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X168 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X169 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X170 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B VSUBS sky130_fd_pr__nfet_01v8 ad=-1.05024e+09 pd=21919 as=-0 ps=0 w=200 l=30
+X171 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=200 l=30
+X172 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X173 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X174 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X175 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X176 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=200 l=30
+X177 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=200 l=30
+X178 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X179 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X180 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X181 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X182 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X183 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X184 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X185 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X186 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X187 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X188 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X189 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X190 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X191 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X192 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X193 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X194 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X195 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X196 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X197 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X198 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X199 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X200 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X201 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X202 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X203 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X204 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X205 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X206 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X207 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X208 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X209 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X210 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X211 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X212 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X213 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X214 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X215 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X216 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X217 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A sky130_fd_pr__cap_mim_m3_1 l=4400 w=4400
+X218 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X219 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X220 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=113 pd=0 as=0 ps=0 w=300 l=120
+X221 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X222 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=1.0728e+09 ps=0 w=300 l=120
+X223 VSUBS VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X224 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X225 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=8 pd=90 as=96 ps=0 w=300 l=120
+X226 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X227 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X228 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X229 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X230 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X231 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X232 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X233 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X234 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=96 ps=0 w=300 l=120
+X235 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X236 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X237 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X238 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X239 VDD VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X240 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X241 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X242 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X243 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X244 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X245 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=8.3886e+06 pd=0 as=0 ps=0 w=300 l=120
+X246 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X247 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X248 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X249 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X250 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X251 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X252 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X253 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X254 VDD VDD VSUBS VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X255 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X256 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X257 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X258 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X259 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X260 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=1.9705e+09 pd=1.97024e+09 as=-0 ps=0 w=300 l=120
+X261 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X262 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X263 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X264 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X265 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X266 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X267 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X268 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X269 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X270 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X271 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X272 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X273 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X274 VDD VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X275 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X276 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X277 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X278 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X279 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X280 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X281 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X282 VSUBS VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X283 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X284 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X285 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X286 VDD VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X287 VSUBS VSUBS VDD VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X288 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X289 VSUBS VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X290 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X291 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X292 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X293 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X294 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X295 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X296 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X297 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X298 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X299 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X300 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X301 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X302 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X303 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X304 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X305 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X306 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X307 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X308 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X309 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X310 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X311 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X312 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X313 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X314 VSUBS VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X315 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X316 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X317 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X318 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X319 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X320 VDD VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X321 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X322 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X323 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X324 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_9350# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X325 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X326 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X327 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X328 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X329 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X330 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X331 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X332 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X333 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=200 l=30
+X334 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 cap8to1_1/m3cap50f_9/1 VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=200 l=30
+X335 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X336 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X337 cap8to1_1/m3cap50f_9/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=400 l=30
+X338 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X339 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B VSUBS sky130_fd_pr__nfet_01v8 ad=-1 pd=-1 as=-0 ps=-0 w=200 l=30
+X340 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=200 l=30
+X341 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X342 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X343 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X344 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X345 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=200 l=30
+X346 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=200 l=30
+X347 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X348 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X349 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=400 l=30
+X350 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X351 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B VSUBS sky130_fd_pr__nfet_01v8 ad=8 pd=0 as=0 ps=0 w=200 l=30
+X352 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X353 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X354 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X355 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X356 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X357 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X358 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X359 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X360 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X361 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X362 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X363 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X364 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X365 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=200 l=30
+X366 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X367 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30
+X368 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X369 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X370 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X371 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X372 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X373 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X374 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X375 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X376 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X377 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X378 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X379 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X380 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X381 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X382 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X383 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X384 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X385 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X386 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X387 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X388 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X389 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X390 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X391 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X392 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X393 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X394 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X395 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X396 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X397 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X398 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X399 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X400 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X401 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X402 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X403 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X404 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A sky130_fd_pr__cap_mim_m3_1 l=4400 w=4400
+X405 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X406 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=113 ps=0 w=300 l=120
+X407 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=1.64629e+09 pd=1.70233e+09 as=0 ps=0 w=300 l=120
+X408 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=8.38861e+06 ps=0 w=300 l=120
+X409 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X410 VSUBS VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X411 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X412 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=8 ps=0 w=300 l=120
+X413 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X414 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VSUBS sky130_fd_pr__nfet_01v8 ad=8 pd=67 as=0 ps=0 w=300 l=120
+X415 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X416 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X417 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X418 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X419 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X420 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X421 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=8.30206e+06 ps=0 w=300 l=120
+X422 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X423 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X424 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X425 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X426 VDD VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X427 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X428 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X429 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X430 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X431 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X432 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X433 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X434 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X435 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X436 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X437 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X438 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X439 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X440 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X441 VDD VDD VSUBS VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X442 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X443 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X444 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VSUBS VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X445 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X446 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X447 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=8 pd=90 as=-0 ps=0 w=300 l=120
+X448 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X449 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X450 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X451 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X452 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X453 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X454 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X455 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X456 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X457 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X458 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X459 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X460 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X461 VDD VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X462 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X463 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X464 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X465 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X466 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X467 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X468 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X469 VSUBS VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X470 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X471 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X472 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X473 VDD VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X474 VSUBS VSUBS VDD VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X475 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X476 VSUBS VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=-0 ps=-0 w=300 l=120
+X477 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X478 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X479 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X480 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X481 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X482 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X483 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X484 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X485 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VDD VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X486 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X487 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X488 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X489 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X490 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X491 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X492 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X493 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X494 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X495 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X496 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X497 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X498 VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X499 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=-0 ps=0 w=300 l=120
+X500 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X501 VSUBS VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=0 as=0 ps=0 w=300 l=120
+X502 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=-0 pd=-0 as=-0 ps=-0 w=300 l=120
+X503 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X504 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X505 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=-0 ps=-0 w=300 l=120
+X506 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=0 ps=0 w=300 l=120
+X507 VDD VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=-0 pd=-0 as=-0 ps=0 w=300 l=120
+X508 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X509 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X510 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X511 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_9350# VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=300 l=120
+X512 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VSUBS VSUBS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=-0 ps=0 w=300 l=120
+X513 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X514 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X515 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X516 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X517 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X518 cap8to1_0/m3cap50f_2/1 cap8to1_0/m3cap50f_2/2 sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X519 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X520 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X521 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X522 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X523 cap8to1_0/m3cap50f_2/1 cap8to1_0/m3cap50f_2/2 sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X524 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X525 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X526 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X527 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X528 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X529 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X530 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X531 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X532 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X533 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X534 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X535 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X536 cap8to1_1/m3cap50f_2/1 cap8to1_1/m3cap50f_2/2 sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X537 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X538 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X539 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X540 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X541 cap8to1_1/m3cap50f_2/1 cap8to1_1/m3cap50f_2/2 sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X542 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X543 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X544 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X545 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X546 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X547 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+X548 cap8to1_1/m3cap50f_9/1 VSUBS sky130_fd_pr__cap_mim_m3_1 l=1000 w=1000
+C0 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 2.27fF
+C1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A 5.24fF
+C2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A 2.40fF
+C3 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 2.07fF
+C4 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 47.19fF
+C5 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vnphi1 11.59fF
+C6 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B 16.24fF
+C7 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B 2.47fF
+C8 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VDD 2.14fF
+C9 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout 3.34fF
+C10 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B 2.07fF
+C11 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VDD 2.14fF
+C12 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A 5.24fF
+C13 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B 2.22fF
+C14 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B 16.24fF
+C15 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1 46.73fF
+C16 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# 2.44fF
+C17 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A 2.31fF
+C18 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A 4.10fF
+C19 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A 2.47fF
+C20 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# 2.44fF
+C21 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# 2.44fF
+C22 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# 2.38fF
+C23 VDD middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# 2.14fF
+C24 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# 2.38fF
+C25 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VDD 3.66fF
+C26 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1 46.73fF
+C27 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A 7.20fF
+C28 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/Vnphi1 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vphi2 10.24fF
+C29 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/Vp bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/A 3.14fF
+C30 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B 15.32fF
+C31 VDD bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A 4.14fF
+C32 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B 15.32fF
+Xmiddle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/inverter_large_0 VDD VSUBS
++ middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/Vout
++ inverter_large
+Xbandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/inverter_large_0
++ VDD VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1
++ bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A inverter_large
+Xbandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/inverter_large_0
++ VDD VSUBS bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1
++ bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A inverter_large
+C33 cap8to1_1/m3cap50f_2/2 VSUBS 4.08fF
+C34 cap8to1_0/m3cap50f_2/2 VSUBS 4.08fF
+C35 cap8to1_1/m3cap50f_9/1 VSUBS 26.47fF
+C36 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_4860# VSUBS 3.56fF
+C37 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_120_5930# VSUBS 3.90fF
+C38 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_960_6890# VSUBS 4.87fF
+C39 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_8690# VSUBS 2.34fF
+C40 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1080_8690# VSUBS 2.45fF
+C41 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_7800# VSUBS 9.03fF
+C42 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_n440_7350# VSUBS 13.77fF
+C43 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_1320_9350# VSUBS 2.04fF
+C44 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_840_6920# VSUBS 10.32fF
+C45 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/a_0_5820# VSUBS 13.73fF
+C46 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS 8.00fF
+C47 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_4/B VSUBS 4.40fF
+C48 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_6/B VSUBS 22.34fF
+C49 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_1/A VSUBS 16.39fF
+C50 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_0/A VSUBS 4.51fF
+C51 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_3/B VSUBS 22.23fF
+C52 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_1/switch_5/A VSUBS 13.57fF
+C53 VDD VSUBS 111.70fF
+C54 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS 3.56fF
+C55 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_120_5930# VSUBS 3.90fF
+C56 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS 4.87fF
+C57 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS 2.34fF
+C58 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS 2.45fF
+C59 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS 9.03fF
+C60 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS 13.77fF
+C61 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_1320_9350# VSUBS 2.04fF
+C62 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS 9.64fF
+C63 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS 13.73fF
+C64 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS 8.00fF
+C65 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_4/B VSUBS 4.40fF
+C66 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_6/B VSUBS 22.34fF
+C67 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_1/A VSUBS 16.39fF
+C68 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_0/A VSUBS 4.54fF
+C69 bandgap_ping_pong_half_0/bandgap_ping_pong_amp_cell_0/switch_3/B VSUBS 22.23fF
+C70 middle_ping_pong_amplifier_0/p-res8x20k_1/p-res20k_2/2 VSUBS 2.47fF
+C71 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_4860# VSUBS 3.50fF
+C72 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_120_5930# VSUBS 3.90fF
+C73 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_960_6890# VSUBS 4.87fF
+C74 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_8690# VSUBS 2.34fF
+C75 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1080_8690# VSUBS 2.45fF
+C76 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_7800# VSUBS 9.03fF
+C77 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_n440_7350# VSUBS 13.74fF
+C78 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_1320_9350# VSUBS 2.04fF
+C79 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_840_6920# VSUBS 9.85fF
+C80 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/a_0_5820# VSUBS 13.73fF
+C81 middle_ping_pong_amplifier_0/selfbiasedcascode2stage_0/m3cap500f_0/1 VSUBS 8.00fF
+C82 middle_ping_pong_amplifier_0/p-res8x20k_0/p-res20k_2/2 VSUBS 2.38fF
+C83 middle_ping_pong_amplifier_0/p-res8x20k_0/2 VSUBS 2.48fF

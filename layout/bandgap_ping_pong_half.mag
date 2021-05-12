@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620743260
+timestamp 1620774149
 << poly >>
 rect -85 -2000 -35 -1985
 rect -85 -2020 -70 -2000
@@ -99,12 +99,12 @@ rect 6220 -175 6230 -90
 rect 6760 -175 6770 -90
 rect 6220 -185 6770 -175
 rect -255 -2320 1260 -2270
-use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_1 ~/Documents/MADVLSI-Final_Project/layout
-timestamp 1620741313
+use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_1
+timestamp 1620773905
 transform 1 0 3950 0 1 -4910
 box -3935 -575 4700 4735
 use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_0
-timestamp 1620741313
+timestamp 1620773905
 transform 1 0 3930 0 1 570
 box -3935 -575 4700 4735
 << end >>

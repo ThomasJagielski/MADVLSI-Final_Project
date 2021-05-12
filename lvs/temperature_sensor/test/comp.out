@@ -1,0 +1,2115 @@
+Flattening unmatched subcell dff_lower in circuit dff (0)(1 instance)
+Flattening unmatched subcell dff_upper in circuit dff (0)(1 instance)
+Flattening unmatched subcell inverter_large in circuit drive_buffer (0)(1 instance)
+Flattening unmatched subcell counter_b0 in circuit counter (0)(1 instance)
+Flattening unmatched subcell counter_bn in circuit counter (0)(8 instances)
+Flattening unmatched subcell m3cap50f in circuit cap8to1 (0)(18 instances)
+Flattening unmatched subcell inverter_large in circuit selfbiasedcascode2stage (0)(1 instance)
+Flattening unmatched subcell m3cap500f in circuit selfbiasedcascode2stage (0)(1 instance)
+Flattening unmatched subcell p-res20k in circuit p-res8x20k (0)(8 instances)
+Flattening unmatched subcell p-res20k in circuit p-res6x20k (0)(6 instances)
+Flattening unmatched subcell output_register in circuit adc_digital (0)(1 instance)
+Flattening unmatched subcell drive_buffer in circuit adc_digital (0)(1 instance)
+Flattening unmatched subcell counter in circuit adc_digital (0)(1 instance)
+Flattening unmatched subcell inverter_large in circuit comparator (0)(2 instances)
+Flattening unmatched subcell cap8to1 in circuit bandgap_ping_pong_amp_cell (0)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit bandgap_ping_pong_amp_cell (0)(1 instance)
+Flattening unmatched subcell m3cap50f in circuit middle_ping_pong_amplifier (0)(2 instances)
+Flattening unmatched subcell p-res8x20k in circuit middle_ping_pong_amplifier (0)(2 instances)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit middle_ping_pong_amplifier (0)(1 instance)
+Flattening unmatched subcell p-res6x20k in circuit middle_ping_pong_amplifier (0)(2 instances)
+Flattening unmatched subcell adc_digital in circuit adc (0)(1 instance)
+Flattening unmatched subcell comparator in circuit adc (0)(1 instance)
+Flattening unmatched subcell selfbiasedcascode2stage in circuit adc (0)(1 instance)
+Flattening unmatched subcell bandgap_ping_pong_amp_cell in circuit bandgap_ping_pong (0)(4 instances)
+Flattening unmatched subcell middle_ping_pong_amplifier in circuit bandgap_ping_pong (0)(1 instance)
+Flattening unmatched subcell cap8to1 in circuit bandgap_ping_pong (0)(4 instances)
+Flattening unmatched subcell adc in circuit temp_sense_test.spice (0)(1 instance)
+Flattening unmatched subcell bandgap_ping_pong in circuit temp_sense_test.spice (0)(1 instance)
+Flattening unmatched subcell selfbiasedcascode2stage_lvs in circuit temp_sense_test_lvs.spice (1)(1 instance)
+Flattening unmatched subcell comparator_lvs in circuit temp_sense_test_lvs.spice (1)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VP                                         |VP                                         
+VN                                         |VN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: nand2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nand2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+VN                                         |VN                                         
+A                                          |A                                          
+B                                          |B                                          
+VP                                         |VP                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nand2 and nand2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: and2                            |Circuit 2: and2                            
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
+nand2 (1)                                  |nand2 (1)                                  
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: and2                            |Circuit 2: and2                            
+-------------------------------------------|-------------------------------------------
+nand2_0/A                                  |A **Mismatch**                             
+nand2_0/B                                  |B **Mismatch**                             
+inverter_0/Y                               |Y **Mismatch**                             
+nand2_0/VP                                 |VP **Mismatch**                            
+VSUBS                                      |VN **Mismatch**                            
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes and2 and and2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: dff                             |Circuit 2: dff                             
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
+and2 (2)                                   |and2 (2)                                   
+nand2 (4)                                  |nand2 (4)                                  
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: dff                             |Circuit 2: dff                             
+-------------------------------------------|-------------------------------------------
+dff_upper_0/nand2_0/A                      |D **Mismatch**                             
+dff_upper_0/nand2_0/B                      |CLK **Mismatch**                           
+Q                                          |Q                                          
+dff_upper_0/nand2_2/B                      |Qn **Mismatch**                            
+dff_upper_0/and2_0/nand2_0/A               |Preset **Mismatch**                        
+dff_lower_0/and2_0/nand2_0/B               |Clear **Mismatch**                         
+VDD                                        |VDD                                        
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dff and dff are equivalent.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: switch                          |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__nfet_01v85 vs. sky130_fd_pr__nfet_01v8M1:
+ w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v83 vs. sky130_fd_pr__nfet_01v8M6:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v81 vs. sky130_fd_pr__nfet_01v8M5:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v84 vs. sky130_fd_pr__pfet_01v8M2:
+ w circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v82 vs. sky130_fd_pr__pfet_01v8M3:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v80 vs. sky130_fd_pr__pfet_01v8M4:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: switch                          |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+CLK                                        |CLK                                        
+a_270_430#                                 |GND **Mismatch**                           
+nCLK                                       |nCLK                                       
+w_n220_690#                                |VDD **Mismatch**                           
+A                                          |A                                          
+B                                          |B                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes switch and switch are equivalent.
+
+Subcircuit summary:
+Circuit 1: mux2                            |Circuit 2: mux2                            
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: mux2                            |Circuit 2: mux2                            
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+muxout                                     |Y **Mismatch**                             
+inverter_0/VP                              |VDD **Mismatch**                           
+inverter_0/A                               |S **Mismatch**                             
+VSUBS                                      |GND **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes mux2 and mux2 are equivalent.
+Class temp_sense_test.spice:  Merged 813 devices.
+Class temp_sense_test.spice:  Merged 3 devices.
+Class temp_sense_test_lvs.spice:  Merged 148 devices.
+
+Subcircuit summary:
+Circuit 1: temp_sense_test.spice           |Circuit 2: temp_sense_test_lvs.spice       
+-------------------------------------------|-------------------------------------------
+switch (30)                                |switch (2) **Mismatch**                    
+dff (26)                                   |dff (26)                                   
+inverter (20)                              |inverter (18) **Mismatch**                 
+sky130_fd_pr__nfet_01v8 (123)              |sky130_fd_pr__nfet_01v8 (40) **Mismatch**  
+sky130_fd_pr__pfet_01v8 (123)              |sky130_fd_pr__pfet_01v8 (40) **Mismatch**  
+and2 (1)                                   |and2 (1)                                   
+sky130_fd_pr__cap_mim_m3_1 (26)            |sky130_fd_pr__cap_mim_m3_1 (1) **Mismatch* 
+mux2 (1)                                   |mux2 (1)                                   
+sky130_fd_pr__res_xhigh_po (4)             |(no matching element)                      
+Number of devices: 354 **Mismatch**        |Number of devices: 129 **Mismatch**        
+Number of nets: 204 **Mismatch**           |Number of nets: 111 **Mismatch**           
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: temp_sense_test.spice           |Circuit 2: temp_sense_test_lvs.spice       
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |Net: comparator_lvs86/net13                
+  switch/a_270_430# = 30                   |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  dff/GND = 26                             |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  inverter/VN = 20                         |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/(1|3) = 61       |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/4 = 123          |                                           
+  and2/VSUBS = 1                           |                                           
+  sky130_fd_pr__nfet_01v8/2 = 37           |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 8        |                                           
+  mux2/VSUBS = 1                           |                                           
+  mux2/B = 1                               |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 3         |                                           
+  sky130_fd_pr__res_xhigh_po/3 = 4         |                                           
+  sky130_fd_pr__res_xhigh_po/(1|2) = 2     |                                           
+                                           |                                           
+Net: /adc_0//adc_digital_0/drive_buffer_0/ |Net: net14                                 
+  inverter/A = 1                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  and2/inverter_0/Y = 1                    |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: mux2_0/inverter_0/VP                  |Net: comparator_lvs86/net14                
+  switch/w_n220_690# = 30                  |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  dff/VDD = 26                             |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  inverter/VP = 20                         |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/(1|3) = 61       |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/4 = 123          |                                           
+  and2/nand2_0/VP = 1                      |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |                                           
+  sky130_fd_pr__pfet_01v8/2 = 37           |                                           
+  mux2/inverter_0/VP = 1                   |                                           
+                                           |                                           
+Net: mux2_0/A                              |Net: net16                                 
+  mux2/A = 1                               |  mux2/A = 1                               
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |Net: net15                                 
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  and2/Y = 1                               
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |Net: VDD                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  and2/VP = 1                              
+                                           |  dff/VDD = 26                             
+                                           |  inverter/VP = 18                         
+                                           |  switch/VDD = 2                           
+                                           |  sky130_fd_pr__pfet_01v8/2 = 12           
+                                           |  sky130_fd_pr__pfet_01v8/4 = 40           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 23       
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |  mux2/VDD = 1                             
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |Net: GND                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  and2/VN = 1                              
+                                           |  dff/GND = 26                             
+                                           |  inverter/VN = 18                         
+                                           |  switch/GND = 2                           
+                                           |  sky130_fd_pr__nfet_01v8/2 = 12           
+                                           |  sky130_fd_pr__nfet_01v8/4 = 40           
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 23       
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+                                           |  mux2/GND = 1                             
+                                           |  mux2/B = 1                               
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/cap8to1_1/m3cap5 |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__res_xhigh_po/(1|2) = 2     |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/cap8to1_0/m3cap5 |(no matching net)                          
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/cap8to1_0/m3cap5 |(no matching net)                          
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /adc_0//adc_digital_0//drive_buffer_0 |(no matching net)                          
+  inverter/Y = 1                           |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /adc_0//comparator_0/inverter_0/A     |(no matching net)                          
+  inverter/A = 1                           |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /adc_0//comparator_0/inverter_0/Y     |(no matching net)                          
+  inverter/Y = 1                           |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 2                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+  sky130_fd_pr__res_xhigh_po/(1|2) = 2     |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  switch/B = 1                             |                                           
+  switch/A = 1                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 2         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 7            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//bandgap_ping_po |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0//middle_ping_pon |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/A = 6                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 2         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/A = 6                             |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 3         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__res_xhigh_po/(1|2) = 1     |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/nCLK = 14                         |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/nCLK = 14                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/CLK = 14                          |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/CLK = 14                          |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/A = 4                             |                                           
+                                           |                                           
+Net: /bandgap_ping_pong_0/bandgap_ping_pon |(no matching net)                          
+  switch/A = 4                             |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: temp_sense_test.spice           |Circuit 2: temp_sense_test_lvs.spice       
+
+---------------------------------------------------------------------------------------
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: selfbiasedcascode2stage_lvs85/sk 
+  a_270_430# = 317                         |  (1,3) = (127,127)                        
+  CLK = 14                                 |  2 = 127                                  
+  w_n220_690# = 307                        |  4 = 127                                  
+  A = 5                                    |                                           
+  B = 6                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: selfbiasedcascode2stage_lvs85/sk 
+  a_270_430# = 317                         |  (1,3) = (127,126)                        
+  CLK = 14                                 |  2 = 127                                  
+  w_n220_690# = 307                        |  4 = 127                                  
+  A = 6                                    |                                           
+  B = 4                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: comparator_lvs86/sky130_fd_pr__n 
+  a_270_430# = 317                         |  (1,3) = (127,4)                          
+  CLK = 14                                 |  2 = 4                                    
+  w_n220_690# = 307                        |  4 = 127                                  
+  A = 8                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: sky130_fd_pr__nfet_01v8M26       
+  a_270_430# = 317                         |  (1,3) = (127,4)                          
+  CLK = 14                                 |  2 = 3                                    
+  w_n220_690# = 307                        |  4 = 127                                  
+  A = 8                                    |                                           
+  B = 5                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: selfbiasedcascode2stage_lvs85/sk 
+  a_270_430# = 317                         |  (1,3) = (126,126)                        
+  CLK = 14                                 |  2 = 126                                  
+  w_n220_690# = 307                        |  4 = 126                                  
+  A = 8                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: selfbiasedcascode2stage_lvs85/sk 
+  a_270_430# = 317                         |  (1,3) = (127,126)                        
+  CLK = 14                                 |  2 = 126                                  
+  w_n220_690# = 307                        |  4 = 126                                  
+  A = 5                                    |                                           
+  B = 6                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: comparator_lvs86/sky130_fd_pr__p 
+  a_270_430# = 317                         |  (1,3) = (126,4)                          
+  CLK = 14                                 |  2 = 4                                    
+  w_n220_690# = 307                        |  4 = 126                                  
+  A = 6                                    |                                           
+  B = 4                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |Instance: sky130_fd_pr__pfet_01v8M25       
+  a_270_430# = 317                         |  (1,3) = (126,4)                          
+  CLK = 14                                 |  2 = 3                                    
+  w_n220_690# = 307                        |  4 = 126                                  
+  A = 8                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 8                                    |                                           
+  B = 5                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 8                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 5                                    |                                           
+  B = 6                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 6                                    |                                           
+  B = 4                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 12                                   |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 12                                   |                                           
+  B = 5                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 12                                   |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 5                                    |                                           
+  B = 6                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 6                                    |                                           
+  B = 4                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 12                                   |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 12                                   |                                           
+  B = 5                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 12                                   |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  a_270_430# = 317                         |                                           
+  CLK = 14                                 |                                           
+  w_n220_690# = 307                        |                                           
+  A = 4                                    |                                           
+  B = 3                                    |                                           
+  nCLK = 14                                |                                           
+                                           |                                           
+Instance: adc_0//comparator_0/sky130_fd_pr |(no matching instance)                     
+  (1,3) = (317,317)                        |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: adc_0//comparator_0/sky130_fd_pr |(no matching instance)                     
+  (1,3) = (317,307)                        |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,8)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,8)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,8)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,8)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,12)                         |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 4                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,8)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 317                                  |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: adc_0//comparator_0/sky130_fd_pr |(no matching instance)                     
+  (1,3) = (307,307)                        |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: adc_0//comparator_0/sky130_fd_pr |(no matching instance)                     
+  (1,3) = (317,307)                        |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,8)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,8)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,8)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,8)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,12)                         |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (10,4)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (5,4)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (317,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 5                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (10,6)                           |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,4)                          |                                           
+  2 = 10                                   |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,8)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (307,6)                          |                                           
+  2 = 307                                  |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (8,6)                            |                                           
+  2 = 8                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,3) = (4,4)                            |                                           
+  2 = 4                                    |                                           
+  4 = 307                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 12                                   |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 3                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 12                                   |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//bandgap_pin |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 6                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 317                                  |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  1 = 5                                    |                                           
+  2 = 12                                   |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//cap8to1_0// |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 317                                  |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//cap8to1_0// |(no matching instance)                     
+  1 = 1                                    |                                           
+  2 = 1                                    |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//cap8to1_2// |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 317                                  |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,2) = (4,4)                            |                                           
+  3 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,2) = (317,5)                          |                                           
+  3 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,2) = (317,4)                          |                                           
+  3 = 317                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: bandgap_ping_pong_0//middle_ping |(no matching instance)                     
+  (1,2) = (12,5)                           |                                           
+  3 = 317                                  |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: adc_0//comparator_0//inverter_0  |(no matching instance)                     
+  A = 3                                    |                                           
+  Y = 3                                    |                                           
+  VP = 307                                 |                                           
+  VN = 317                                 |                                           
+                                           |                                           
+Instance: adc_0//adc_digital_0//drive_buff |(no matching instance)                     
+  A = 2                                    |                                           
+  Y = 3                                    |                                           
+  VP = 307                                 |                                           
+  VN = 317                                 |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.
+The following cells had property errors: switch

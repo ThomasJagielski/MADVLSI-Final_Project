@@ -1,0 +1,30 @@
+magic
+tech sky130A
+timestamp 1620776817
+<< metal1 >>
+rect 7660 0 16665 20
+<< metal2 >>
+rect 7660 0 16665 20
+<< metal3 >>
+rect 16075 4650 16370 6880
+use bandgap_ping_pong_half  bandgap_ping_pong_half_1
+timestamp 1620776817
+transform 1 0 16615 0 1 5485
+box -255 -5485 8650 5305
+use cap8to1  cap8to1_1 ~/Documents/MADVLSI-Final_Project/layout
+timestamp 1620776817
+transform 1 0 10145 0 1 1340
+box 5 30 3785 1860
+use cap8to1  cap8to1_0
+timestamp 1620776817
+transform 1 0 10145 0 1 7535
+box 5 30 3785 1860
+use middle_ping_pong_amplifier  middle_ping_pong_amplifier_0 ~/Documents/MADVLSI-Final_Project/layout
+timestamp 1620776817
+transform 1 0 11400 0 1 3755
+box -3700 -30 4680 3175
+use bandgap_ping_pong_half  bandgap_ping_pong_half_0
+timestamp 1620776817
+transform 1 0 255 0 1 5485
+box -255 -5485 8650 5305
+<< end >>

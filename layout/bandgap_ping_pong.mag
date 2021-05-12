@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1620753533
+timestamp 1620778013
 << poly >>
 rect -85 3505 -45 3515
 rect -85 3485 -75 3505
@@ -574,7 +574,7 @@ rect 8780 -1755 8835 -1750
 rect 8780 -1785 8790 -1755
 rect 8825 -1785 8835 -1755
 rect 8780 -1855 8835 -1785
-rect -255 -2320 1260 -2270
+rect -250 -2320 1260 -2270
 rect 17790 -2310 17850 -1360
 rect 26815 -1795 26870 -1790
 rect 26815 -1825 26825 -1795
@@ -612,40 +612,47 @@ rect 27020 -3960 27125 -3360
 rect 27020 -4030 27040 -3960
 rect 27105 -4030 27125 -3960
 rect 27020 -4105 27125 -4030
-use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_1
-timestamp 1620752477
-transform 1 0 3950 0 1 -4910
-box -3935 -575 4700 4735
-use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_3
-timestamp 1620752477
-transform 1 0 21990 0 1 -4950
-box -3935 -575 4700 4735
-use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_0
-timestamp 1620752477
-transform 1 0 3930 0 1 570
-box -3935 -575 4700 4735
-use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_2
-timestamp 1620752477
-transform 1 0 21970 0 1 530
-box -3935 -575 4700 4735
 use middle_ping_pong_amplifier  middle_ping_pong_amplifier_0
-timestamp 1620752477
+timestamp 1620710927
 transform 1 0 12905 0 1 -1890
 box -3700 -30 4680 3175
 use cap8to1  cap8to1_3
-timestamp 1620749136
+timestamp 1620777726
 transform 1 0 26800 0 1 1455
 box 5 30 3785 1860
 use cap8to1  cap8to1_1
-timestamp 1620749136
+timestamp 1620777726
 transform 1 0 8760 0 1 1495
 box 5 30 3785 1860
 use cap8to1  cap8to1_0
-timestamp 1620749136
+timestamp 1620777726
 transform 1 0 8765 0 1 -3670
 box 5 30 3785 1860
 use cap8to1  cap8to1_2
-timestamp 1620749136
+timestamp 1620777726
 transform 1 0 26805 0 1 -3710
 box 5 30 3785 1860
+use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_1
+timestamp 1620777726
+transform 1 0 3950 0 1 -4910
+box -3935 -575 4700 4735
+use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_3
+timestamp 1620777726
+transform 1 0 21990 0 1 -4950
+box -3935 -575 4700 4735
+use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_0
+timestamp 1620777726
+transform 1 0 3930 0 1 570
+box -3935 -575 4700 4735
+use bandgap_ping_pong_amp_cell  bandgap_ping_pong_amp_cell_2
+timestamp 1620777726
+transform 1 0 21970 0 1 530
+box -3935 -575 4700 4735
+<< labels >>
+rlabel locali -165 3410 -165 3410 7 Vp
+rlabel locali -85 3495 -85 3495 7 Vn
+rlabel space 3870 2440 3870 2440 7 Vpp
+rlabel space 3890 -3040 3890 -3040 7 net7
+rlabel space 1155 -2055 1155 -2055 7 net8
+rlabel space 1135 3395 1135 3395 7 net3
 << end >>

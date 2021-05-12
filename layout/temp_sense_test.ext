@@ -1,0 +1,101 @@
+timestamp 1620770055
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+use bandgap_ping_pong bandgap_ping_pong_0 1 0 510 0 1 11050
+use adc adc_0 1 0 16090 0 1 -8360
+use mux2 mux2_0 1 0 55110 0 1 10400
+node "m1_45840_7020#" 0 3261.53 45840 7020 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2854200 6860 0 0 0 0 0 0 0 0 0 0
+node "m1_54960_10440#" 1 292.03 54960 10440 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58200 1240 0 0 0 0 0 0 0 0 0 0
+node "m1_55940_10950#" 1 50568.6 55940 10950 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 827700 6440 52609400 183640 454400 2720 0 0 0 0 0 0
+node "m1_20700_23220#" 2 74391.9 20700 23220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56445700 179180 449400 5120 930900 3880 0 0 0 0 0 0
+node "li_54750_10240#" 122 256.8 54750 10240 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 880 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_55830_10460#" 43 177.98 55830 10460 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5600 360 5600 360 0 0 0 0 0 0 0 0 0 0
+node "li_55110_11410#" 12 18358.1 55110 11410 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1254800 62600 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_66820_11370#" 3616 6646.81 66820 11370 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10000 560 0 0 441600 22080 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_55110_11410#" "m1_20700_23220#" 1086.96
+cap "m1_55940_10950#" "li_55110_11410#" 695.12
+cap "a_66820_11370#" "li_55110_11410#" 9123.22
+cap "m1_55940_10950#" "m1_20700_23220#" 85580.7
+cap "a_66820_11370#" "m1_20700_23220#" 366.96
+cap "a_66820_11370#" "m1_55940_10950#" 181.2
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/Qnout" "adc_0/adc_digital_0/counter_0/counter_bn_7/li_2440_150#" 10.56
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/Qnout" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_lower_0/and2_0/nand2_0/B" 179.442
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/Qnout" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_lower_0/inverter_0/A" 226.875
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/Qnout" "adc_0/adc_digital_0/counter_0/counter_bn_7/li_2440_150#" 3.96
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/Qnout" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_lower_0/nand2_0/B" 287.577
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_lower_0/and2_0/inverter_0/Y" "li_55110_11410#" 62.2255
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/Qout" "li_55110_11410#" 490.875
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_lower_0/a_790_n400#" "li_55110_11410#" 261.938
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_lower_0/and2_0/nand2_0/B" "li_55110_11410#" 179.52
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_lower_0/and2_0/inverter_0/VP" "li_55110_11410#" 175.162
+cap "li_55110_11410#" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_upper_0/nand2_2/B" 306.09
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_upper_0/and2_0/inverter_0/VN" "li_55110_11410#" 41.8
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/Q" "li_55110_11410#" 80.9321
+cap "li_55110_11410#" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/li_1930_2710#" 33
+cap "li_55110_11410#" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/GND" 2.84217e-14
+cap "li_55110_11410#" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/li_1930_2620#" 33
+cap "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/VDD" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/GND" -20.7692
+subcap "m1_45840_7020#" -3156.56
+subcap "m1_45840_7020#" -2909.92
+subcap "m1_45840_7020#" -2646.93
+subcap "m1_45840_7020#" -1987.53
+cap "m1_20700_23220#" "bandgap_ping_pong_0/a_53640_n3660#" 187.087
+cap "m1_20700_23220#" "bandgap_ping_pong_0/li_50770_2200#" -34.4125
+cap "m1_20700_23220#" "bandgap_ping_pong_0/li_50770_2200#" 3.05
+cap "bandgap_ping_pong_0/a_53640_n3660#" "m1_20700_23220#" 0.625
+cap "m1_55940_10950#" "bandgap_ping_pong_0/m1_45330_n4890#" 660.05
+cap "bandgap_ping_pong_0/a_53640_n3660#" "m1_20700_23220#" 1198.57
+cap "bandgap_ping_pong_0/li_50770_2200#" "m1_55940_10950#" -50.25
+cap "bandgap_ping_pong_0/a_53640_n3660#" "m1_55940_10950#" 49.1625
+cap "bandgap_ping_pong_0/li_50770_2200#" "m1_20700_23220#" 154.925
+cap "m1_20700_23220#" "bandgap_ping_pong_0/a_53640_n3660#" 0.625
+cap "bandgap_ping_pong_0/li_50770_2200#" "m1_55940_10950#" -16.7
+cap "m1_20700_23220#" "bandgap_ping_pong_0/li_50770_2200#" 225.8
+cap "m1_55940_10950#" "bandgap_ping_pong_0/m1_45330_n4890#" 3277.65
+subcap "li_54750_10240#" -8.5375
+cap "bandgap_ping_pong_0/li_50770_2200#" "m1_55940_10950#" 87.45
+cap "bandgap_ping_pong_0/a_53640_n3660#" "m1_55940_10950#" 237.487
+cap "bandgap_ping_pong_0/li_50770_2200#" "bandgap_ping_pong_0/li_50770_2200#" -32
+subcap "m1_55940_10950#" -51186
+cap "bandgap_ping_pong_0/li_50770_2200#" "bandgap_ping_pong_0/li_50770_2200#" -17
+cap "mux2_0/B" "mux2_0/inverter_0/A" -5.68434e-14
+cap "mux2_0/B" "bandgap_ping_pong_0/li_50770_2200#" 12
+cap "mux2_0/B" "mux2_0/inverter_0/Y" 1.7053e-13
+cap "bandgap_ping_pong_0/li_50770_2200#" "mux2_0/inverter_0/VP" 150.7
+subcap "m1_55940_10950#" -49264.4
+subcap "li_55830_10460#" -225.742
+subcap "m1_55940_10950#" -49124.5
+subcap "li_55110_11410#" -17369.4
+cap "mux2_0/inverter_0/VN" "mux2_0/inverter_0/VP" 2.84217e-14
+cap "mux2_0/a_190_970#" "bandgap_ping_pong_0/li_50770_2200#" 11.3143
+cap "mux2_0/a_190_970#" "mux2_0/inverter_0/Y" 16.5
+cap "mux2_0/inverter_0/VN" "mux2_0/a_190_970#" 15.5294
+cap "mux2_0/a_190_970#" "mux2_0/inverter_0/VP" 37.125
+cap "mux2_0/a_190_970#" "mux2_0/A" 15.5294
+cap "mux2_0/a_190_970#" "mux2_0/muxout" 189.265
+subcap "m1_55940_10950#" -50077.3
+merge "mux2_0/VSUBS" "bandgap_ping_pong_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_0/VSUBS" "adc_0/VSUBS"
+merge "adc_0/VSUBS" "VSUBS"
+merge "mux2_0/muxout" "a_66820_11370#" -19.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2400 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "mux2_0/m1_410_40#" "mux2_0/inverter_0/VN" -479.172 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13500 -360 -186500 -1220 0 0 0 0 0 0 0 0 0 0
+merge "mux2_0/inverter_0/VN" "bandgap_ping_pong_0/a_53640_n3660#"
+merge "bandgap_ping_pong_0/a_53640_n3660#" "m1_54960_10440#"
+merge "m1_54960_10440#" "mux2_0/B"
+merge "mux2_0/B" "li_55830_10460#"
+merge "mux2_0/a_190_970#" "adc_0/adc_digital_0/counter_0/counter_bn_7/Qnout" -3031.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 517070 -12762 0 0 0 0 0 0 0 0 0 0 0 0
+merge "adc_0/adc_digital_0/counter_0/counter_bn_7/Qnout" "li_55110_11410#"
+merge "bandgap_ping_pong_0/m1_45330_n4890#" "m1_45840_7020#" -15678.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4627770 -58390 96000 -5120 -331500 -3880 0 0 0 0 0 0
+merge "m1_45840_7020#" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/GND"
+merge "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/GND" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_upper_0/and2_0/inverter_0/VN"
+merge "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/dff_upper_0/and2_0/inverter_0/VN" "m1_20700_23220#"
+merge "mux2_0/A" "bandgap_ping_pong_0/li_50770_2200#" -67.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4000 -260 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bandgap_ping_pong_0/li_50770_2200#" "li_54750_10240#"
+merge "mux2_0/m1_410_550#" "mux2_0/inverter_0/VP" -12293.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -563700 -6420 -2205800 -51200 -385400 -2720 0 0 0 0 0 0
+merge "mux2_0/inverter_0/VP" "bandgap_ping_pong_0/m2_44090_710#"
+merge "bandgap_ping_pong_0/m2_44090_710#" "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/VDD"
+merge "adc_0/adc_digital_0/counter_0/counter_bn_7/dff_1/VDD" "m1_55940_10950#"

@@ -18,19 +18,19 @@ node "li_200_1140#" 12 729.08 200 1140 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 substrate "a_0_n1340#" 0 0 0 -1340 ppd 0 0 0 0 0 0 0 0 0 0 28000 960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28000 960 0 0 0 0 0 0 0 0 0 0 0 0
 cap "li_570_n300#" "li_n170_n690#" 5.5
 cap "li_570_n300#" "li_n170_0#" 12.1
-cap "li_n170_0#" "li_n170_n690#" 58.08
+cap "li_n170_n690#" "li_n170_0#" 58.08
 subcap "li_n170_n690#" -7.26
-cap "p-res20k_5/2" "p-res20k_3/GND" 66
 cap "p-res20k_5/1" "p-res20k_3/2" 96.8
 cap "p-res20k_5/2" "p-res20k_3/1" 57.2
 cap "p-res20k_3/2" "p-res20k_3/GND" 66
+cap "p-res20k_5/2" "p-res20k_3/GND" 66
 subcap "li_n170_n690#" -133.32
 subcap "li_200_1140#" -820.285
-cap "p-res20k_0/GND" "p-res20k_5/2" 5.32258
 cap "p-res20k_0/GND" "p-res20k_0/2" 66
-cap "p-res20k_2/2" "p-res20k_5/2" 34.1
-cap "p-res20k_0/2" "p-res20k_2/2" 84.7
 cap "p-res20k_0/2" "p-res20k_5/2" 18.48
+cap "p-res20k_0/GND" "p-res20k_5/2" 5.32258
+cap "p-res20k_2/2" "p-res20k_0/2" 84.7
+cap "p-res20k_2/2" "p-res20k_5/2" 34.1
 cap "p-res20k_1/2" "p-res20k_0/1" 96.8
 merge "p-res20k_4/1" "p-res20k_3/2" -617.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -61600 -2040 0 0 0 0 0 0 0 0 0 0 0 0
 merge "p-res20k_3/2" "li_200_n1830#"

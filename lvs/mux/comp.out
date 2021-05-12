@@ -1,0 +1,23 @@
+Flattening unmatched subcell inverter in circuit mux2.spice (0)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: mux2.spice                      |Circuit 2: transmission_gate.spice         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+sky130_fd_pr__nfet_01v8 (3)                |sky130_fd_pr__nfet_01v8 (3)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+inverter1/sky130_fd_pr__pfet_01v8M1 vs. sky130_fd_pr__pfet_01v8M5:
+ W circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes mux2.spice and transmission_gate.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: mux2.spice

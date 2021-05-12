@@ -1,0 +1,191 @@
+* NGSPICE file created from /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell.ext - technology: sky130A
+
+.subckt switch a_270_430# CLK w_n220_690# A B nCLK
+X0 A CLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X1 B nCLK B a_270_430# sky130_fd_pr__nfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X2 B CLK B w_n220_690# sky130_fd_pr__pfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 A nCLK A a_270_430# sky130_fd_pr__nfet_01v8 ad=1.6e+12p pd=8.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 B nCLK A w_n220_690# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X5 B CLK A a_270_430# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt m3cap50f VSUBS 1 2
+X0 1 2 sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5e+06u
+.ends
+
+.subckt cap8to1 VSUBS m3cap50f_2/1 m3cap50f_9/2 m3cap50f_2/2 m3cap50f_9/1
+Xm3cap50f_10 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_11 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_12 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_13 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_14 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_15 VSUBS m3cap50f_2/1 m3cap50f_2/2 m3cap50f
+Xm3cap50f_0 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_16 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_1 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_17 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_2 VSUBS m3cap50f_2/1 m3cap50f_2/2 m3cap50f
+Xm3cap50f_3 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_4 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_5 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_6 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_7 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_9 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+Xm3cap50f_8 VSUBS m3cap50f_9/1 m3cap50f_9/2 m3cap50f
+.ends
+
+.subckt inverter_large VDD GND A Y
+X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=1.5e+12p pd=9e+06u as=2e+12p ps=1.2e+07u w=1e+06u l=150000u
+X1 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=4e+12p pd=2e+07u as=3e+12p ps=1.5e+07u w=2e+06u l=150000u
+X4 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X6 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X8 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X9 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X10 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X11 GND A Y GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt m3cap500f VSUBS 1 2
+X0 1 2 sky130_fd_pr__cap_mim_m3_1 l=2.2e+07u w=2.2e+07u
+.ends
+
+.subckt selfbiasedcascode2stage m3cap500f_0/VSUBS inverter_large_0/VDD Vout VN VP
+Xinverter_large_0 inverter_large_0/VDD m3cap500f_0/VSUBS m3cap500f_0/1 Vout inverter_large
+Xm3cap500f_0 m3cap500f_0/VSUBS m3cap500f_0/1 Vout m3cap500f
+X0 a_840_7800# a_0_5820# inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=3.6e+12p pd=1.68e+07u as=2.0595e+13p ps=9.937e+07u w=1.5e+06u l=600000u
+X1 inverter_large_0/VDD a_n440_7350# a_120_4860# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=6.47405e+12p pd=2.879e+07u as=5.4e+12p ps=2.52e+07u w=1.5e+06u l=600000u
+X2 a_840_6920# m3cap500f_0/VSUBS a_0_5820# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=3.6e+12p pd=1.68e+07u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X3 m3cap500f_0/VSUBS a_n440_7350# a_1320_9350# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=2.9664e+13p pd=8.959e+07u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X4 inverter_large_0/VDD a_0_5820# a_1320_8690# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X5 m3cap500f_0/VSUBS m3cap500f_0/VSUBS a_840_7800# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X6 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X7 a_120_5930# inverter_large_0/VDD a_n440_7350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=5.4e+12p pd=2.52e+07u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X8 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X9 a_1080_8690# VN a_840_7800# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=3.6e+12p pd=1.68e+07u as=0p ps=0u w=1.5e+06u l=600000u
+X10 a_1320_8690# VP a_1080_8690# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X11 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X12 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X13 inverter_large_0/VDD a_n440_7350# a_120_4860# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X14 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X15 a_120_5930# a_0_5820# a_n440_7350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X16 a_1320_9350# a_960_6890# m3cap500f_0/1 m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=9e+11p ps=4.2e+06u w=1.5e+06u l=600000u
+X17 inverter_large_0/VDD a_0_5820# a_120_5930# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X18 a_1320_8690# a_960_6890# m3cap500f_0/1 inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=9e+11p ps=4.2e+06u w=1.5e+06u l=600000u
+X19 a_120_5930# a_0_5820# m3cap500f_0/VSUBS inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=9.345e+12p ps=2.781e+07u w=1.5e+06u l=600000u
+X20 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X21 inverter_large_0/VDD inverter_large_0/VDD a_840_6920# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.8e+12p ps=8.4e+06u w=1.5e+06u l=600000u
+X22 a_120_5930# a_0_5820# m3cap500f_0/VSUBS inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X23 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X24 a_1320_9350# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X25 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X26 a_1320_8690# a_0_5820# inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X27 a_1080_9350# VN a_840_6920# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=3.6e+12p pd=1.68e+07u as=0p ps=0u w=1.5e+06u l=600000u
+X28 a_1320_9350# inverter_large_0/VDD a_1080_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X29 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X30 a_120_4860# a_n440_7350# a_0_5820# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X31 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X32 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X33 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X34 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X35 m3cap500f_0/VSUBS a_n440_7350# a_1080_8690# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X36 inverter_large_0/VDD inverter_large_0/VDD m3cap500f_0/VSUBS inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X37 a_0_5820# a_0_5820# a_840_7800# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=9e+11p pd=4.2e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X38 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X39 a_120_5930# a_0_5820# m3cap500f_0/VSUBS inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X40 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X41 inverter_large_0/VDD a_0_5820# a_1080_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X42 a_960_6890# m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X43 a_960_6890# inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=1.8e+12p pd=8.4e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X44 a_120_4860# m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X45 a_120_4860# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X46 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X47 a_0_5820# a_n440_7350# a_120_4860# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X48 a_120_4860# a_n440_7350# inverter_large_0/VDD m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X49 a_840_7800# VN a_1080_8690# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X50 a_840_7800# m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X51 a_n440_7350# a_0_5820# a_120_5930# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X52 a_120_4860# a_n440_7350# inverter_large_0/VDD m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X53 a_n440_7350# inverter_large_0/VDD a_120_5930# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X54 a_1320_8690# m3cap500f_0/VSUBS a_1080_8690# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X55 m3cap500f_0/VSUBS a_n440_7350# a_840_6920# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X56 inverter_large_0/VDD inverter_large_0/VDD a_840_7800# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X57 inverter_large_0/VDD a_0_5820# a_840_7800# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X58 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X59 a_840_6920# VN a_1080_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X60 a_960_6890# a_960_6890# a_840_6920# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X61 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X62 m3cap500f_0/VSUBS a_0_5820# a_120_5930# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X63 a_960_6890# a_960_6890# a_840_7800# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X64 m3cap500f_0/VSUBS m3cap500f_0/VSUBS a_960_6890# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X65 a_1080_8690# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X66 a_840_6920# inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X67 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X68 inverter_large_0/VDD inverter_large_0/VDD a_960_6890# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X69 m3cap500f_0/VSUBS m3cap500f_0/VSUBS inverter_large_0/VDD m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X70 a_n440_7350# a_n440_7350# a_840_6920# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=9e+11p pd=4.2e+06u as=0p ps=0u w=1.5e+06u l=600000u
+X71 m3cap500f_0/VSUBS inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X72 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X73 a_840_7800# a_0_5820# a_0_5820# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X74 a_1320_9350# VP a_1080_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X75 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X76 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X77 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X78 a_1080_8690# m3cap500f_0/VSUBS a_1320_8690# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X79 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X80 a_120_4860# a_n440_7350# inverter_large_0/VDD m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X81 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X82 m3cap500f_0/VSUBS a_0_5820# a_120_5930# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X83 a_840_7800# inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X84 a_1080_9350# a_0_5820# inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X85 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X86 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X87 m3cap500f_0/1 a_960_6890# a_1320_9350# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X88 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X89 m3cap500f_0/VSUBS a_0_5820# a_120_5930# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X90 m3cap500f_0/1 a_960_6890# a_1320_8690# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X91 a_1080_9350# VP a_1320_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X92 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X93 m3cap500f_0/VSUBS a_n440_7350# a_120_4860# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X94 m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X95 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X96 m3cap500f_0/VSUBS m3cap500f_0/VSUBS a_120_4860# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X97 inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X98 a_1080_8690# VP a_1320_8690# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X99 a_0_5820# m3cap500f_0/VSUBS a_840_6920# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X100 a_120_5930# a_0_5820# inverter_large_0/VDD inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X101 inverter_large_0/VDD a_n440_7350# a_120_4860# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X102 inverter_large_0/VDD m3cap500f_0/VSUBS m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X103 a_840_6920# a_n440_7350# a_n440_7350# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X104 a_840_6920# a_960_6890# a_960_6890# m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X105 a_840_7800# a_960_6890# a_960_6890# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X106 a_1080_9350# inverter_large_0/VDD a_1320_9350# inverter_large_0/VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+X107 a_840_6920# a_n440_7350# m3cap500f_0/VSUBS m3cap500f_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=600000u
+.ends
+
+
+* Top level circuit /home/madvlsi/Documents/MADVLSI-Final_Project/layout/bandgap_ping_pong_amp_cell
+
+Xswitch_0 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_0/A
++ switch_1/A Vnphi1 switch
+Xswitch_1 cap8to1_1/VSUBS Vphi2 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_1/A
++ switch_1/B switch_5/nCLK switch
+Xswitch_3 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_3/A
++ switch_3/B Vnphi1 switch
+Xswitch_2 cap8to1_1/VSUBS Vphi2 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_5/A
++ switch_3/B switch_5/nCLK switch
+Xswitch_4 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_5/A
++ switch_4/B Vnphi1 switch
+Xswitch_5 cap8to1_1/VSUBS Vphi2 selfbiasedcascode2stage_0/inverter_large_0/VDD switch_5/A
++ switch_6/B switch_5/nCLK switch
+Xswitch_6 cap8to1_1/VSUBS Vphi1 selfbiasedcascode2stage_0/inverter_large_0/VDD Vp
++ switch_6/B Vnphi1 switch
+Xcap8to1_0 cap8to1_1/VSUBS switch_0/A switch_3/B switch_1/A switch_0/A cap8to1
+Xcap8to1_1 cap8to1_1/VSUBS switch_4/B switch_6/B switch_5/A switch_4/B cap8to1
+Xselfbiasedcascode2stage_0 cap8to1_1/VSUBS selfbiasedcascode2stage_0/inverter_large_0/VDD
++ switch_1/A switch_0/A switch_4/B selfbiasedcascode2stage
+.end
+
